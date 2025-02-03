@@ -10,7 +10,8 @@
       "extract_sha256": "e01dec5fa0e981f3bb34ea9bf958e43f2f357bfec2445b7c566817c803794290",
       "image_download_size": 1916085843,
       "image_download_sha256": "2dee154571aefb8250726990d01feba10bbe458a2d2e9ba431153fca1dbc7a92",
-      "init_format": "systemd"
+      "init_format": "systemd",
+      "devices": ["pi3-64bit", "pi4-64bit", "pi5-64bit"]
     },
     {
       "name": "DuetPi (32-bit)",
@@ -22,7 +23,8 @@
       "extract_sha256": "ab775dde1f0c84d10ac8a85e2e213ba5cf0471f50b970175afa3130b876501a6",
       "image_download_size": 1912347779,
       "image_download_sha256": "98c6d32c1f2b35b0c56c85362e3f197c1b48c4df375acaee36eadbfbf3d1fca8",
-      "init_format": "systemd"
+      "init_format": "systemd",
+      "devices": ["pi3-32bit", "pi4-32bit", "pi5-32bit"]
     },
     {
       "name": "DuetPi Lite (64-bit)",
@@ -34,7 +36,8 @@
       "extract_sha256": "53e7bad3990735098276477c5a2b81ee4f79e1a95a03be5b8dbd0335d47cdfdb",
       "image_download_size": 1042073253,
       "image_download_sha256": "706d20f57b83ff493a3800338cf64e84a2397ac3169fb488a1b5579ca3117eb7",
-      "init_format": "systemd"
+      "init_format": "systemd",
+      "devices": ["pi3-64bit", "pi4-64bit", "pi5-64bit"]
     },
     {
       "name": "DuetPi Lite (32-bit)",
@@ -46,7 +49,8 @@
       "extract_sha256": "c5c8fcb927b0829fc6f2366703ceca0b5cb0d9c6b2ba216ef4ff61703114d1f7",
       "image_download_size": 1132276013,
       "image_download_sha256": "82308b29ffd3948b89415b2e559a32813f326be93d965931a32b40596b521f98",
-      "init_format": "systemd"
+      "init_format": "systemd",
+      "devices": ["pi3-32bit", "pi4-32bit", "pi5-32bit"]
     }
   ]
 }
