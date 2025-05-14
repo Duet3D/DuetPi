@@ -1,0 +1,9 @@
+duetsoftwareframework=3.6.0~rc.3 --allow-downgrades
+duetpimanagementplugin=3.6.0~rc.3 --allow-downgrades
+reprapfirmware=3.6.0~rc.3-1 --allow-downgrades
+duetpluginservice=3.6.0~rc.3 --allow-downgrades
+duetwebcontrol=3.6.0~rc.3 --allow-downgrades
+duetcontrolserver=3.6.0~rc.3 --allow-downgrades
+duetwebserver=3.6.0~rc.3 --allow-downgrades
+duettools=3.6.0~rc.3 --allow-downgrades
+duetruntime=3.6.0~rc.3 --allow-downgrades

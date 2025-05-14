@@ -1,0 +1,5 @@
+# Machine-generated file - use "minicom -s" to change parameters.
+pu port             /dev/ttyACM0
+pu localecho        Yes
+pu linewrap         Yes
+pu addcarreturn     Yes

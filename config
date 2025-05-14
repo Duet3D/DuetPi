@@ -1,5 +1,11 @@
-export IMG_NAME="DuetPi"
-export PI_GEN_RELEASE="DuetPi reference"
-export TARGET_HOSTNAME="duet3"
 export ENABLE_SSH=1
-export STAGE_LIST="stage0 stage1 stage2 stage-dsf stage3 stage4 stage-dsf-gui"
+export STAGE_LIST="stage0 stage1 stage2 stage-dsf-beta stage3 stage4 stage-dsf-gui "
+export IMG_NAME="ElementoTC_beta"
+export TARGET_HOSTNAME="ElementoTC-beta"
+export DEPLOY_COMPRESSION="xz"
+export FIRST_USER_NAME="pi"
+export FIRST_USER_PASS="f@6brix"
+export USE_QCOW2=0
+export DISABLE_FIRST_BOOT_USER_RENAME=1
+export APT_PROXY="http://develop.local:3142"
+export TARGET_ARCH='armhf'  # o 'arm64' o 'amd64'

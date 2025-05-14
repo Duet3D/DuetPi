@@ -1,0 +1,1 @@
+set global.bedTemperatureT0 = 65

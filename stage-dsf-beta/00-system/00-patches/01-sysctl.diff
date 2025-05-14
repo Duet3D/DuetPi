@@ -1,0 +1,8 @@
+--- stage-dsf.orig/rootfs/etc/sysctl.conf
++++ stage-dsf/rootfs/etc/sysctl.conf
+@@ -66,3 +66,5 @@
+ # for what other values do
+ #kernel.sysrq=438
+ 
++# Restart on Kernel panic
++kernel.panic=1

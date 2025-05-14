@@ -1,0 +1,18 @@
+[
+    {
+        "cmd_code": "M1203",
+        "cmd_name": "DoorOpen",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_open.py",
+        "cmd_enabled": true,
+        "cmd_timeout": 30,
+        "cmd_capture_output": false
+    },
+    {
+        "cmd_code": "M1204",
+        "cmd_name": "DoorClose",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_lock.py",
+        "cmd_enabled": true,
+        "cmd_timeout": 30,
+        "cmd_capture_output": false
+    }
+]

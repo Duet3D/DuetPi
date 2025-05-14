@@ -1,0 +1,9 @@
+M117 "Heating"
+M118 P0 S"Heating"
+M109 S220
+M118 P0 S"Load"
+G1 E10 F100
+G1 E70 F200
+G1 E30 F100
+M400
+M118 P0 S"Filament Loaded"

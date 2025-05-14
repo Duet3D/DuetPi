@@ -1,0 +1,16 @@
+--- stage-dsf.orig/rootfs/boot/config.txt
++++ stage-dsf/rootfs/boot/config.txt
+@@ -41,7 +41,7 @@
+ # Uncomment some or all of these to enable the optional hardware interfaces
+ #dtparam=i2c_arm=on
+ #dtparam=i2s=on
+-#dtparam=spi=on
++dtparam=spi=on
+ 
+ # Uncomment this to enable infrared communication.
+ #dtoverlay=gpio-ir,gpio_pin=17
+--- stage-dsf.orig/rootfs/boot/cmdline.txt
++++ stage-dsf/rootfs/boot/cmdline.txt
+@@ -1 +1 @@
+-console=serial0,115200 console=tty1 root=ROOTDEV rootfstype=ext4 fsck.repair=yes rootwait quiet init=/usr/lib/raspberrypi-sys-mods/firstboot
++console=serial0,115200 console=tty1 root=ROOTDEV rootfstype=ext4 fsck.repair=yes lsm=apparmor rootwait quiet init=/usr/lib/raspberrypi-sys-mods/firstboot

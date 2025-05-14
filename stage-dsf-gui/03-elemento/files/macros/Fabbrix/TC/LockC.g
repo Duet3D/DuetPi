@@ -1,0 +1,9 @@
+M564 H0 S0
+G0 C0 F18000
+G0 X480 Y{move.axes[1].max} F8000
+G0 Y{move.axes[1].max + global.yPT0Position} F2000
+M400
+G0 C60 F18000
+M400
+G0 Y0
+M564 H0 S1
