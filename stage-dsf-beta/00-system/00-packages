@@ -1,13 +1,12 @@
-blueman
 bossa-cli
 gpiod
 minicom
 vim
 dnsmasq
+openbsd-inetd
 hostapd
 proftpd-core
 telnetd
 python3-pip
-usbmount
 libcamera-apps
 libcamera-tools

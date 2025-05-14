@@ -7,3 +7,4 @@ duetcontrolserver=3.6.0~rc.3 --allow-downgrades
 duetwebserver=3.6.0~rc.3 --allow-downgrades
 duettools=3.6.0~rc.3 --allow-downgrades
 duetruntime=3.6.0~rc.3 --allow-downgrades
+jq
