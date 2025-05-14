@@ -1,1 +1,7 @@
-build-essential libjpeg9-dev imagemagick libv4l-dev cmake git 
+build-essential 
+libjpeg9-dev 
+imagemagick 
+libv4l-dev 
+cmake 
+git 
+rsync
