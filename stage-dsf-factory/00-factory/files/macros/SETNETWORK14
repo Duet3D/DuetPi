@@ -1,7 +1,0 @@
-; SetNetwork macro to set up access to dummy test Wifi network Oct 2020 Version with IP 14
-M552 S0
-G4 P1000
-M587 S"TNCAPF2FD81" P"15ED995349" I192.168.1.14
-M587
-M552 S1
-M552

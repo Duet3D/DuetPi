@@ -1,7 +1,0 @@
-;test completed macro for mini 5+ v1.0 testing
-M30 "0:/sys/config.g"
-M30 "0:/sys/config.g.bak"
-M471 S"0:/sys/config_default.g" T"0:/sys/config.g" D1
-M30 "0:/macros/SETNETWORK14"
-M30 "0:/macros/SETNETWORK24"
-echo "Test macros deleted - restart"
