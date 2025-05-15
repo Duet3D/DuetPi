@@ -14,8 +14,6 @@ cp -Rp files/.config/* "${ROOTFS_DIR}/home/pi/.config/"
 
 on_chroot << EOF
 systemctl disable cups cups-browsed
-apt-get purge -y system-config-printer
-apt-get autoremove -y
 
 update-alternatives --install /usr/share/desktop-base/duet3d.png desktop-background /usr/share/wallpapers/duet3d.png 80
 update-alternatives --set desktop-background /usr/share/wallpapers/duet3d.png

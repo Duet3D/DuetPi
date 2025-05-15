@@ -9,5 +9,5 @@ install -m644 files/splash.png "${ROOTFS_DIR}/usr/share/plymouth/themes/duet3d/s
 # Change default Plytmouth theme and turn off SSH in the GUI variant
 on_chroot << EOF
 plymouth-set-default-theme duet3d
-systemctl disable ssh
+systemctl enable ssh
 EOF
