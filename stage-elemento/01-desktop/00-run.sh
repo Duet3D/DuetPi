@@ -12,7 +12,7 @@ install -m 755 -o 1000 -g 1000 files/launch-dwc.desktop "${ROOTFS_DIR}/home/$FIR
 install -m 755 -o 1000 -g 1000 files/view-dcs-log.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/view-dcs-log.desktop"
 cp -Rp files/.config/* "${ROOTFS_DIR}/home/pi/.config/"
 cp -Rp files/config.txt "${ROOTFS_DIR}/boot/firmware/config.txt"
-cp -Rp files/cmdline.txt "${ROOTFS_DIR}/boot/firmware/cmdline.txt"
+
 
 
 on_chroot << EOF
