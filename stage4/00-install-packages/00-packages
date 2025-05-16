@@ -17,8 +17,8 @@ pprompt
 piwiz
 rp-prefapps
 ffmpeg
-vlc
-rpi-connect
+#vlc
+#rpi-connect
 rpi-imager
 labwc
 squeekboard
