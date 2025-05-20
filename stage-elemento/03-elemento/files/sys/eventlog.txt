@@ -96331,3 +96331,1445 @@ M929 S3
 2025-05-13 11:03:26 Warning: Driver 121.0 warning: over temperature warning
 2025-05-13 11:03:28 Warning: Driver 121.0 warning: over temperature warning
 2025-05-13 11:03:38 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:06:21 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:07:35 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:08:31 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:09:59 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:09:59 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:00 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:00 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:01 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:01 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:01 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:01 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:01 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:01 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:02 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:02 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:02 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:05 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:10:12 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 11:13:16 Warning: Driver 121.0 warning: over temperature warning
+2025-05-13 12:34:36 T0
+2025-05-13 12:35:00 Print End
+2025-05-13 12:35:00 Done printing file
+2025-05-13 12:35:00 Done printing file
+2025-05-13 12:35:00 Finished printing file 0:/gcodes/FETCDEV_E3PRT000293A.gcode, print time was 3h 13m
+2025-05-13 12:35:34 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-13 13:26:43 File 0:/gcodes/FETCDEV_E3PRT000292A1_80_110f.gcode selected for printing
+2025-05-13 13:28:04 AUTOBEDLEVEL
+2025-05-13 13:28:04 AUTOBEDLEVEL
+2025-05-13 13:28:05 T0
+2025-05-13 13:28:24 M568 P0 R140
+2025-05-13 13:32:55 Leadscrew adjustments made: 0.049 -0.060 0.065, points used 3, (mean, deviation) before (0.036, 0.042) after (0.000, 0.000)
+2025-05-13 13:32:55 Leadscrew adjustments made: 0.049 -0.060 0.065, points used 3, (mean, deviation) before (0.036, 0.042) after (0.000, 0.000)
+2025-05-13 13:33:05 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-13 13:33:49 Input Settings
+2025-05-13 13:33:49 InputShaping Settings
+2025-05-13 13:34:01 Printing...
+2025-05-13 14:12:05 Resume state saved
+2025-05-13 14:12:19 Printing paused at X799.5 Y351.5 Z0.3 C60.0
+2025-05-13 14:12:38 Done printing file
+2025-05-13 14:12:38 Done printing file
+2025-05-13 14:12:38 Cancelled printing file 0:/gcodes/FETCDEV_E3PRT000292A1_80_110f.gcode, print time was 0h 45m
+2025-05-13 14:12:39 T0
+2025-05-13 14:12:42 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-13 14:15:29 File 0:/gcodes/FETCDEV_E3PRT000292A_80_110_215.gcode selected for printing
+2025-05-13 14:15:29 AUTOBEDLEVEL
+2025-05-13 14:15:29 AUTOBEDLEVEL
+2025-05-13 14:15:30 T0
+2025-05-13 14:18:42 Leadscrew adjustments made: -0.163 0.070 -0.139, points used 3, (mean, deviation) before (-0.113, 0.079) after (0.000, 0.000)
+2025-05-13 14:18:42 Leadscrew adjustments made: -0.163 0.070 -0.139, points used 3, (mean, deviation) before (-0.113, 0.079) after (0.000, 0.000)
+2025-05-13 14:18:52 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 215.0/215.0
+2025-05-13 14:19:47 Input Settings
+2025-05-13 14:19:47 InputShaping Settings
+2025-05-13 14:19:59 Printing...
+2025-05-13 15:42:13 Resume state saved
+2025-05-13 15:46:55 M568 P0 A2
+2025-05-13 15:49:17 Printing resumed
+2025-05-13 15:49:17 Printing resumed
+2025-05-14 02:02:16 T0
+2025-05-14 02:02:40 Print End
+2025-05-14 02:02:40 Done printing file
+2025-05-14 02:02:40 Done printing file
+2025-05-14 02:02:40 Finished printing file 0:/gcodes/FETCDEV_E3PRT000292A_80_110_215.gcode, print time was 11h 40m
+2025-05-14 02:03:14 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-14 08:10:35 File 0:/gcodes/RET_test_distance.gcode selected for printing
+2025-05-14 08:10:36 AUTOBEDLEVEL
+2025-05-14 08:10:36 AUTOBEDLEVEL
+2025-05-14 08:10:37 T0
+2025-05-14 08:15:26 Leadscrew adjustments made: 0.286 -0.180 0.232, points used 3, (mean, deviation) before (0.183, 0.157) after (-0.000, 0.000)
+2025-05-14 08:15:26 Leadscrew adjustments made: 0.286 -0.180 0.232, points used 3, (mean, deviation) before (0.183, 0.157) after (-0.000, 0.000)
+2025-05-14 08:16:59 Leadscrew adjustments made: 0.023 -0.007 0.042, points used 3, (mean, deviation) before (0.026, 0.015) after (0.000, 0.000)
+2025-05-14 08:16:59 Leadscrew adjustments made: 0.023 -0.007 0.042, points used 3, (mean, deviation) before (0.026, 0.015) after (0.000, 0.000)
+2025-05-14 08:17:09 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 215.0/215.0
+2025-05-14 08:18:29 Input Settings
+2025-05-14 08:18:29 InputShaping Settings
+2025-05-14 08:18:41 Printing...
+2025-05-14 08:18:41 distance
+2025-05-14 08:27:36 distance
+2025-05-14 08:33:01 distance
+2025-05-14 08:38:08 distance
+2025-05-14 08:43:17 distance
+2025-05-14 08:48:27 START distance
+2025-05-14 08:53:37 retract E0.0
+2025-05-14 08:54:42 retract E0.0
+2025-05-14 08:55:39 retract E0.0
+2025-05-14 08:56:35 retract E0.0
+2025-05-14 08:57:33 retract E0.0
+2025-05-14 08:58:44 retract E0.0
+2025-05-14 08:59:42 retract E0.0
+2025-05-14 09:00:34 retract E0.0
+2025-05-14 09:01:30 retract E0.0
+2025-05-14 09:02:34 retract E0.0
+2025-05-14 09:03:37 retract E0.0
+2025-05-14 09:04:32 retract E0.0
+2025-05-14 09:05:32 retract E0.0
+2025-05-14 09:10:11 retract E0.0
+2025-05-14 09:14:51 retract E0.0
+2025-05-14 09:19:30 retract E0.0
+2025-05-14 09:24:05 retract E0.0
+2025-05-14 09:28:39 retract E0.0
+2025-05-14 09:33:10 retract E0.0
+2025-05-14 09:33:23 retract E0.0
+2025-05-14 09:33:35 retract E0.0
+2025-05-14 09:33:48 retract E0.0
+2025-05-14 09:34:01 retract E0.0
+2025-05-14 09:34:15 retract E0.0
+2025-05-14 09:34:27 retract E0.0
+2025-05-14 09:34:40 retract E0.0
+2025-05-14 09:34:52 retract E0.0
+2025-05-14 09:35:06 retract E0.0
+2025-05-14 09:35:19 retract E0.0
+2025-05-14 09:35:31 retract E0.0
+2025-05-14 09:35:43 retract E0.0
+2025-05-14 09:35:56 retract E0.0
+2025-05-14 09:36:10 retract E0.0
+2025-05-14 09:36:22 retract E0.0
+2025-05-14 09:36:34 retract E0.0
+2025-05-14 09:36:47 retract E0.0
+2025-05-14 09:37:01 retract E0.0
+2025-05-14 09:37:13 retract E0.0
+2025-05-14 09:37:26 retract E0.2
+2025-05-14 09:37:38 retract E0.2
+2025-05-14 09:37:51 retract E0.2
+2025-05-14 09:38:05 retract E0.2
+2025-05-14 09:38:17 retract E0.2
+2025-05-14 09:38:29 retract E0.2
+2025-05-14 09:38:42 retract E0.2
+2025-05-14 09:38:56 retract E0.2
+2025-05-14 09:39:08 retract E0.2
+2025-05-14 09:39:20 retract E0.2
+2025-05-14 09:39:32 retract E0.2
+2025-05-14 09:39:46 retract E0.2
+2025-05-14 09:39:59 retract E0.2
+2025-05-14 09:40:11 retract E0.2
+2025-05-14 09:40:23 retract E0.2
+2025-05-14 09:40:36 retract E0.2
+2025-05-14 09:40:49 retract E0.2
+2025-05-14 09:41:01 retract E0.2
+2025-05-14 09:41:13 retract E0.2
+2025-05-14 09:41:26 retract E0.2
+2025-05-14 09:41:40 retract E0.2
+2025-05-14 09:41:52 retract E0.2
+2025-05-14 09:42:04 retract E0.2
+2025-05-14 09:42:16 retract E0.2
+2025-05-14 09:42:29 retract E0.2
+2025-05-14 09:42:42 retract E0.2
+2025-05-14 09:42:54 retract E0.2
+2025-05-14 09:43:06 retract E0.2
+2025-05-14 09:43:19 retract E0.2
+2025-05-14 09:43:32 retract E0.2
+2025-05-14 09:43:44 retract E0.2
+2025-05-14 09:43:56 retract E0.2
+2025-05-14 09:44:08 retract E0.2
+2025-05-14 09:44:21 retract E0.2
+2025-05-14 09:44:34 retract E0.2
+2025-05-14 09:44:46 retract E0.2
+2025-05-14 09:44:58 retract E0.2
+2025-05-14 09:45:10 retract E0.2
+2025-05-14 09:45:23 retract E0.4
+2025-05-14 09:45:35 retract E0.4
+2025-05-14 09:45:47 retract E0.4
+2025-05-14 09:46:00 retract E0.4
+2025-05-14 09:46:14 retract E0.4
+2025-05-14 09:46:26 retract E0.4
+2025-05-14 09:46:37 retract E0.4
+2025-05-14 09:46:49 retract E0.4
+2025-05-14 09:47:02 retract E0.4
+2025-05-14 09:47:15 retract E0.4
+2025-05-14 09:47:27 retract E0.4
+2025-05-14 09:47:39 retract E0.4
+2025-05-14 09:47:51 retract E0.4
+2025-05-14 09:48:04 retract E0.4
+2025-05-14 09:48:16 retract E0.4
+2025-05-14 09:48:28 retract E0.4
+2025-05-14 09:48:40 retract E0.4
+2025-05-14 09:48:53 retract E0.4
+2025-05-14 09:49:05 retract E0.4
+2025-05-14 09:49:17 retract E0.4
+2025-05-14 09:49:29 retract E0.4
+2025-05-14 09:49:41 retract E0.4
+2025-05-14 09:49:54 retract E0.4
+2025-05-14 09:50:06 retract E0.4
+2025-05-14 09:50:18 retract E0.4
+2025-05-14 09:50:30 retract E0.4
+2025-05-14 09:50:43 retract E0.4
+2025-05-14 09:50:55 retract E0.4
+2025-05-14 09:51:07 retract E0.4
+2025-05-14 09:51:19 retract E0.4
+2025-05-14 09:51:31 retract E0.4
+2025-05-14 09:51:44 retract E0.4
+2025-05-14 09:51:55 retract E0.4
+2025-05-14 09:52:07 retract E0.4
+2025-05-14 09:52:19 retract E0.4
+2025-05-14 09:52:32 retract E0.4
+2025-05-14 09:52:44 retract E0.4
+2025-05-14 09:52:55 retract E0.4
+2025-05-14 09:53:07 retract E0.6
+2025-05-14 09:53:20 retract E0.6
+2025-05-14 09:53:32 retract E0.6
+2025-05-14 09:53:44 retract E0.6
+2025-05-14 09:53:56 retract E0.6
+2025-05-14 09:54:08 retract E0.6
+2025-05-14 09:54:21 retract E0.6
+2025-05-14 09:54:33 retract E0.6
+2025-05-14 09:54:44 retract E0.6
+2025-05-14 09:54:56 retract E0.6
+2025-05-14 09:55:09 retract E0.6
+2025-05-14 09:55:21 retract E0.6
+2025-05-14 09:55:32 retract E0.6
+2025-05-14 09:55:44 retract E0.6
+2025-05-14 09:55:56 retract E0.6
+2025-05-14 09:56:09 retract E0.6
+2025-05-14 09:56:20 retract E0.6
+2025-05-14 09:56:32 retract E0.6
+2025-05-14 09:56:44 retract E0.6
+2025-05-14 09:56:57 retract E0.6
+2025-05-14 09:57:09 retract E0.6
+2025-05-14 09:57:20 retract E0.6
+2025-05-14 09:57:32 retract E0.6
+2025-05-14 09:57:45 retract E0.6
+2025-05-14 09:57:57 retract E0.6
+2025-05-14 09:58:08 retract E0.6
+2025-05-14 09:58:19 retract E0.6
+2025-05-14 09:58:31 retract E0.6
+2025-05-14 09:58:44 retract E0.6
+2025-05-14 09:58:56 retract E0.6
+2025-05-14 09:59:07 retract E0.6
+2025-05-14 09:59:19 retract E0.6
+2025-05-14 09:59:31 retract E0.6
+2025-05-14 09:59:43 retract E0.6
+2025-05-14 09:59:55 retract E0.6
+2025-05-14 10:00:06 retract E0.6
+2025-05-14 10:00:18 retract E0.6
+2025-05-14 10:00:31 retract E0.6
+2025-05-14 10:00:42 retract E0.8
+2025-05-14 10:00:53 retract E0.8
+2025-05-14 10:01:05 retract E0.8
+2025-05-14 10:01:18 retract E0.8
+2025-05-14 10:01:29 retract E0.8
+2025-05-14 10:01:40 retract E0.8
+2025-05-14 10:01:52 retract E0.8
+2025-05-14 10:02:04 retract E0.8
+2025-05-14 10:02:16 retract E0.8
+2025-05-14 10:02:27 retract E0.8
+2025-05-14 10:02:38 retract E0.8
+2025-05-14 10:02:50 retract E0.8
+2025-05-14 10:03:03 retract E0.8
+2025-05-14 10:03:14 retract E0.8
+2025-05-14 10:03:25 retract E0.8
+2025-05-14 10:03:37 retract E0.8
+2025-05-14 10:03:49 retract E0.8
+2025-05-14 10:04:01 retract E0.8
+2025-05-14 10:04:12 retract E0.8
+2025-05-14 10:04:23 retract E0.8
+2025-05-14 10:04:35 retract E0.8
+2025-05-14 10:04:47 retract E0.8
+2025-05-14 10:04:58 retract E0.8
+2025-05-14 10:05:09 retract E0.8
+2025-05-14 10:05:20 retract E0.8
+2025-05-14 10:05:33 retract E0.8
+2025-05-14 10:05:44 retract E0.8
+2025-05-14 10:05:55 retract E0.8
+2025-05-14 10:06:07 retract E0.8
+2025-05-14 10:06:18 retract E0.8
+2025-05-14 10:06:30 retract E0.8
+2025-05-14 10:06:42 retract E0.8
+2025-05-14 10:06:53 retract E0.8
+2025-05-14 10:07:04 retract E0.8
+2025-05-14 10:07:17 retract E0.8
+2025-05-14 10:07:28 retract E0.8
+2025-05-14 10:07:39 retract E0.8
+2025-05-14 10:07:50 retract E0.8
+2025-05-14 10:08:02 retract E1.0
+2025-05-14 10:08:14 retract E1.0
+2025-05-14 10:08:25 retract E1.0
+2025-05-14 10:08:36 retract E1.0
+2025-05-14 10:08:47 retract E1.0
+2025-05-14 10:09:00 retract E1.0
+2025-05-14 10:09:11 retract E1.0
+2025-05-14 10:09:22 retract E1.0
+2025-05-14 10:09:33 retract E1.0
+2025-05-14 10:09:45 retract E1.0
+2025-05-14 10:09:56 retract E1.0
+2025-05-14 10:10:07 retract E1.0
+2025-05-14 10:10:18 retract E1.0
+2025-05-14 10:10:30 retract E1.0
+2025-05-14 10:10:42 retract E1.0
+2025-05-14 10:10:53 retract E1.0
+2025-05-14 10:11:04 retract E1.0
+2025-05-14 10:11:15 retract E1.0
+2025-05-14 10:11:28 retract E1.0
+2025-05-14 10:11:39 retract E1.0
+2025-05-14 10:11:50 retract E1.0
+2025-05-14 10:12:01 retract E1.0
+2025-05-14 10:12:12 retract E1.0
+2025-05-14 10:12:24 retract E1.0
+2025-05-14 10:12:35 retract E1.0
+2025-05-14 10:12:46 retract E1.0
+2025-05-14 10:12:57 retract E1.0
+2025-05-14 10:13:09 retract E1.0
+2025-05-14 10:13:20 retract E1.0
+2025-05-14 10:13:31 retract E1.0
+2025-05-14 10:13:42 retract E1.0
+2025-05-14 10:13:54 retract E1.0
+2025-05-14 10:14:06 retract E1.0
+2025-05-14 10:14:16 retract E1.0
+2025-05-14 10:14:27 retract E1.0
+2025-05-14 10:14:39 retract E1.0
+2025-05-14 10:14:51 retract E1.0
+2025-05-14 10:15:02 retract E1.0
+2025-05-14 10:15:13 retract E1.2
+2025-05-14 10:15:24 retract E1.2
+2025-05-14 10:15:36 retract E1.2
+2025-05-14 10:15:47 retract E1.2
+2025-05-14 10:15:58 retract E1.2
+2025-05-14 10:16:09 retract E1.2
+2025-05-14 10:16:21 retract E1.2
+2025-05-14 10:16:32 retract E1.2
+2025-05-14 10:16:43 retract E1.2
+2025-05-14 10:16:54 retract E1.2
+2025-05-14 10:17:05 retract E1.2
+2025-05-14 10:17:18 retract E1.2
+2025-05-14 10:17:29 retract E1.2
+2025-05-14 10:17:39 retract E1.2
+2025-05-14 10:17:50 retract E1.2
+2025-05-14 10:18:02 retract E1.2
+2025-05-14 10:18:14 retract E1.2
+2025-05-14 10:18:24 retract E1.2
+2025-05-14 10:18:35 retract E1.2
+2025-05-14 10:18:47 retract E1.2
+2025-05-14 10:18:58 retract E1.2
+2025-05-14 10:19:09 retract E1.2
+2025-05-14 10:19:20 retract E1.2
+2025-05-14 10:19:31 retract E1.2
+2025-05-14 10:19:43 retract E1.2
+2025-05-14 10:19:54 retract E1.2
+2025-05-14 10:20:05 retract E1.2
+2025-05-14 10:20:16 retract E1.2
+2025-05-14 10:20:27 retract E1.2
+2025-05-14 10:20:39 retract E1.2
+2025-05-14 10:20:50 retract E1.2
+2025-05-14 10:21:00 retract E1.2
+2025-05-14 10:21:12 retract E1.2
+2025-05-14 10:21:23 retract E1.2
+2025-05-14 10:21:35 retract E1.2
+2025-05-14 10:21:45 retract E1.2
+2025-05-14 10:21:56 retract E1.2
+2025-05-14 10:22:08 retract E1.2
+2025-05-14 10:22:19 retract E1.4
+2025-05-14 10:22:30 retract E1.4
+2025-05-14 10:22:41 retract E1.4
+2025-05-14 10:22:52 retract E1.4
+2025-05-14 10:23:04 retract E1.4
+2025-05-14 10:23:15 retract E1.4
+2025-05-14 10:23:26 retract E1.4
+2025-05-14 10:23:37 retract E1.4
+2025-05-14 10:23:49 retract E1.4
+2025-05-14 10:24:00 retract E1.4
+2025-05-14 10:24:11 retract E1.4
+2025-05-14 10:24:21 retract E1.4
+2025-05-14 10:24:33 retract E1.4
+2025-05-14 10:24:45 retract E1.4
+2025-05-14 10:24:55 retract E1.4
+2025-05-14 10:25:06 retract E1.4
+2025-05-14 10:25:17 retract E1.4
+2025-05-14 10:25:29 retract E1.4
+2025-05-14 10:25:40 retract E1.4
+2025-05-14 10:25:51 retract E1.4
+2025-05-14 10:26:02 retract E1.4
+2025-05-14 10:26:13 retract E1.4
+2025-05-14 10:26:25 retract E1.4
+2025-05-14 10:26:36 retract E1.4
+2025-05-14 10:26:47 retract E1.4
+2025-05-14 10:26:58 retract E1.4
+2025-05-14 10:27:09 retract E1.4
+2025-05-14 10:27:20 retract E1.4
+2025-05-14 10:27:31 retract E1.4
+2025-05-14 10:27:42 retract E1.4
+2025-05-14 10:27:54 retract E1.4
+2025-05-14 10:28:05 retract E1.4
+2025-05-14 10:28:16 retract E1.4
+2025-05-14 10:28:27 retract E1.4
+2025-05-14 10:28:38 retract E1.4
+2025-05-14 10:28:49 retract E1.4
+2025-05-14 10:29:00 retract E1.4
+2025-05-14 10:29:11 retract E1.4
+2025-05-14 10:29:22 retract E1.6
+2025-05-14 10:29:34 retract E1.6
+2025-05-14 10:29:45 retract E1.6
+2025-05-14 10:29:56 retract E1.6
+2025-05-14 10:30:07 retract E1.6
+2025-05-14 10:30:18 retract E1.6
+2025-05-14 10:30:29 retract E1.6
+2025-05-14 10:30:40 retract E1.6
+2025-05-14 10:30:51 retract E1.6
+2025-05-14 10:31:02 retract E1.6
+2025-05-14 10:31:14 retract E1.6
+2025-05-14 10:31:25 retract E1.6
+2025-05-14 10:31:36 retract E1.6
+2025-05-14 10:31:47 retract E1.6
+2025-05-14 10:31:58 retract E1.6
+2025-05-14 10:32:10 retract E1.6
+2025-05-14 10:32:20 retract E1.6
+2025-05-14 10:32:31 retract E1.6
+2025-05-14 10:32:42 retract E1.6
+2025-05-14 10:32:54 retract E1.6
+2025-05-14 10:33:05 retract E1.6
+2025-05-14 10:33:16 retract E1.6
+2025-05-14 10:33:27 retract E1.6
+2025-05-14 10:33:38 retract E1.6
+2025-05-14 10:33:49 retract E1.6
+2025-05-14 10:34:00 retract E1.6
+2025-05-14 10:34:11 retract E1.6
+2025-05-14 10:34:22 retract E1.6
+2025-05-14 10:34:34 retract E1.6
+2025-05-14 10:34:44 retract E1.6
+2025-05-14 10:34:55 retract E1.6
+2025-05-14 10:35:06 retract E1.6
+2025-05-14 10:35:18 retract E1.6
+2025-05-14 10:35:29 retract E1.6
+2025-05-14 10:35:40 retract E1.6
+2025-05-14 10:35:51 retract E1.6
+2025-05-14 10:36:02 retract E1.6
+2025-05-14 10:36:13 retract E1.6
+2025-05-14 10:36:24 retract E1.8
+2025-05-14 10:36:35 retract E1.8
+2025-05-14 10:36:46 retract E1.8
+2025-05-14 10:36:58 retract E1.8
+2025-05-14 10:37:09 retract E1.8
+2025-05-14 10:37:20 retract E1.8
+2025-05-14 10:37:31 retract E1.8
+2025-05-14 10:37:42 retract E1.8
+2025-05-14 10:37:54 retract E1.8
+2025-05-14 10:38:04 retract E1.8
+2025-05-14 10:38:15 retract E1.8
+2025-05-14 10:38:26 retract E1.8
+2025-05-14 10:38:38 retract E1.8
+2025-05-14 10:38:49 retract E1.8
+2025-05-14 10:38:59 retract E1.8
+2025-05-14 10:39:10 retract E1.8
+2025-05-14 10:39:22 retract E1.8
+2025-05-14 10:39:33 retract E1.8
+2025-05-14 10:39:44 retract E1.8
+2025-05-14 10:39:55 retract E1.8
+2025-05-14 10:40:06 retract E1.8
+2025-05-14 10:40:17 retract E1.8
+2025-05-14 10:40:28 retract E1.8
+2025-05-14 10:40:38 retract E1.8
+2025-05-14 10:40:50 retract E1.8
+2025-05-14 10:41:01 retract E1.8
+2025-05-14 10:41:12 retract E1.8
+2025-05-14 10:41:23 retract E1.8
+2025-05-14 10:41:34 retract E1.8
+2025-05-14 10:41:45 retract E1.8
+2025-05-14 10:41:57 retract E1.8
+2025-05-14 10:42:07 retract E1.8
+2025-05-14 10:42:18 retract E1.8
+2025-05-14 10:42:29 retract E1.8
+2025-05-14 10:42:41 retract E1.8
+2025-05-14 10:42:52 retract E1.8
+2025-05-14 10:43:03 retract E1.8
+2025-05-14 10:43:13 retract E1.8
+2025-05-14 10:43:25 retract E2.0
+2025-05-14 10:43:36 retract E2.0
+2025-05-14 10:43:47 retract E2.0
+2025-05-14 10:43:58 retract E2.0
+2025-05-14 10:44:09 retract E2.0
+2025-05-14 10:44:21 retract E2.0
+2025-05-14 10:44:31 retract E2.0
+2025-05-14 10:44:43 retract E2.0
+2025-05-14 10:44:53 retract E2.0
+2025-05-14 10:45:05 retract E2.0
+2025-05-14 10:45:16 retract E2.0
+2025-05-14 10:45:27 retract E2.0
+2025-05-14 10:45:38 retract E2.0
+2025-05-14 10:45:49 retract E2.0
+2025-05-14 10:46:00 retract E2.0
+2025-05-14 10:46:11 retract E2.0
+2025-05-14 10:46:22 retract E2.0
+2025-05-14 10:46:33 retract E2.0
+2025-05-14 10:46:45 retract E2.0
+2025-05-14 10:46:56 retract E2.0
+2025-05-14 10:47:07 retract E2.0
+2025-05-14 10:47:17 retract E2.0
+2025-05-14 10:47:29 retract E2.0
+2025-05-14 10:47:40 retract E2.0
+2025-05-14 10:47:51 retract E2.0
+2025-05-14 10:48:02 retract E2.0
+2025-05-14 10:48:13 retract E2.0
+2025-05-14 10:48:24 retract E2.0
+2025-05-14 10:48:35 retract E2.0
+2025-05-14 10:48:46 retract E2.0
+2025-05-14 10:48:57 retract E2.0
+2025-05-14 10:49:08 retract E2.0
+2025-05-14 10:49:19 retract E2.0
+2025-05-14 10:49:30 retract E2.0
+2025-05-14 10:49:40 retract E2.0
+2025-05-14 10:49:52 retract E2.0
+2025-05-14 10:50:03 retract E2.0
+2025-05-14 10:50:14 retract E2.0
+2025-05-14 10:50:24 retract E2.2
+2025-05-14 10:50:36 retract E2.2
+2025-05-14 10:50:47 retract E2.2
+2025-05-14 10:50:58 retract E2.2
+2025-05-14 10:51:09 retract E2.2
+2025-05-14 10:51:20 retract E2.2
+2025-05-14 10:51:32 retract E2.2
+2025-05-14 10:51:43 retract E2.2
+2025-05-14 10:51:54 retract E2.2
+2025-05-14 10:52:05 retract E2.2
+2025-05-14 10:52:35 retract E2.2
+2025-05-14 10:53:04 retract E2.2
+2025-05-14 10:53:34 retract E2.2
+2025-05-14 10:54:04 retract E2.2
+2025-05-14 10:54:33 retract E2.2
+2025-05-14 10:55:20 T0
+2025-05-14 10:55:42 Print End
+2025-05-14 10:55:42 Done printing file
+2025-05-14 10:55:42 Done printing file
+2025-05-14 10:55:42 Finished printing file 0:/gcodes/RET_test_distance.gcode, print time was 2h 45m
+2025-05-14 10:56:16 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-14 11:29:26 File 0:/gcodes/ret test distance_wipe 0_3 .gcode selected for printing
+2025-05-14 11:30:34 AUTOBEDLEVEL
+2025-05-14 11:30:34 AUTOBEDLEVEL
+2025-05-14 11:30:35 T0
+2025-05-14 11:35:25 Leadscrew adjustments made: -0.155 0.134 -0.124, points used 3, (mean, deviation) before (-0.092, 0.098) after (0.000, 0.000)
+2025-05-14 11:35:25 Leadscrew adjustments made: -0.155 0.134 -0.124, points used 3, (mean, deviation) before (-0.092, 0.098) after (0.000, 0.000)
+2025-05-14 11:35:35 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 215.0/215.0
+2025-05-14 11:36:53 Input Settings
+2025-05-14 11:36:53 InputShaping Settings
+2025-05-14 11:37:05 Printing...
+2025-05-14 11:37:05 distance
+2025-05-14 11:46:03 distance
+2025-05-14 11:51:31 distance
+2025-05-14 11:56:40 distance
+2025-05-14 12:01:52 distance
+2025-05-14 12:07:05 START distance
+2025-05-14 12:12:17 retract E0.0
+2025-05-14 12:13:22 retract E0.0
+2025-05-14 12:14:19 retract E0.0
+2025-05-14 12:15:15 retract E0.0
+2025-05-14 12:16:14 retract E0.0
+2025-05-14 12:17:24 retract E0.0
+2025-05-14 12:18:23 retract E0.0
+2025-05-14 12:19:16 retract E0.0
+2025-05-14 12:20:13 retract E0.0
+2025-05-14 12:21:17 retract E0.0
+2025-05-14 12:22:21 retract E0.0
+2025-05-14 12:23:16 retract E0.0
+2025-05-14 12:24:17 retract E0.0
+2025-05-14 12:28:59 retract E0.0
+2025-05-14 12:33:43 retract E0.0
+2025-05-14 12:38:25 retract E0.0
+2025-05-14 12:43:04 retract E0.0
+2025-05-14 12:47:41 retract E0.0
+2025-05-14 12:52:16 retract E0.0
+2025-05-14 12:52:30 retract E0.0
+2025-05-14 12:52:42 retract E0.0
+2025-05-14 12:52:55 retract E0.0
+2025-05-14 12:53:08 retract E0.0
+2025-05-14 12:53:22 retract E0.0
+2025-05-14 12:53:35 retract E0.0
+2025-05-14 12:53:47 retract E0.0
+2025-05-14 12:54:00 retract E0.0
+2025-05-14 12:54:14 retract E0.0
+2025-05-14 12:54:27 retract E0.0
+2025-05-14 12:54:39 retract E0.0
+2025-05-14 12:54:52 retract E0.0
+2025-05-14 12:55:05 retract E0.0
+2025-05-14 12:55:19 retract E0.0
+2025-05-14 12:55:31 retract E0.0
+2025-05-14 12:55:43 retract E0.0
+2025-05-14 12:55:56 retract E0.0
+2025-05-14 12:56:10 retract E0.0
+2025-05-14 12:56:23 retract E0.0
+2025-05-14 12:56:35 retract E0.2
+2025-05-14 12:56:48 retract E0.2
+2025-05-14 12:57:02 retract E0.2
+2025-05-14 12:57:15 retract E0.2
+2025-05-14 12:57:28 retract E0.2
+2025-05-14 12:57:40 retract E0.2
+2025-05-14 12:57:54 retract E0.2
+2025-05-14 12:58:07 retract E0.2
+2025-05-14 12:58:20 retract E0.2
+2025-05-14 12:58:32 retract E0.2
+2025-05-14 12:58:45 retract E0.2
+2025-05-14 12:58:59 retract E0.2
+2025-05-14 12:59:12 retract E0.2
+2025-05-14 12:59:24 retract E0.2
+2025-05-14 12:59:37 retract E0.2
+2025-05-14 12:59:50 retract E0.2
+2025-05-14 13:00:03 retract E0.2
+2025-05-14 13:00:15 retract E0.2
+2025-05-14 13:00:28 retract E0.2
+2025-05-14 13:00:40 retract E0.2
+2025-05-14 13:00:54 retract E0.2
+2025-05-14 13:01:07 retract E0.2
+2025-05-14 13:01:19 retract E0.2
+2025-05-14 13:01:32 retract E0.2
+2025-05-14 13:01:45 retract E0.2
+2025-05-14 13:01:58 retract E0.2
+2025-05-14 13:02:10 retract E0.2
+2025-05-14 13:02:22 retract E0.2
+2025-05-14 13:02:35 retract E0.2
+2025-05-14 13:02:49 retract E0.2
+2025-05-14 13:03:01 retract E0.2
+2025-05-14 13:03:13 retract E0.2
+2025-05-14 13:03:25 retract E0.2
+2025-05-14 13:03:39 retract E0.2
+2025-05-14 13:03:52 retract E0.2
+2025-05-14 13:04:04 retract E0.2
+2025-05-14 13:04:16 retract E0.2
+2025-05-14 13:04:29 retract E0.2
+2025-05-14 13:04:42 retract E0.4
+2025-05-14 13:04:55 retract E0.4
+2025-05-14 13:05:07 retract E0.4
+2025-05-14 13:05:20 retract E0.4
+2025-05-14 13:05:34 retract E0.4
+2025-05-14 13:05:46 retract E0.4
+2025-05-14 13:05:58 retract E0.4
+2025-05-14 13:06:10 retract E0.4
+2025-05-14 13:06:23 retract E0.4
+2025-05-14 13:06:37 retract E0.4
+2025-05-14 13:06:49 retract E0.4
+2025-05-14 13:07:01 retract E0.4
+2025-05-14 13:07:13 retract E0.4
+2025-05-14 13:07:27 retract E0.4
+2025-05-14 13:07:39 retract E0.4
+2025-05-14 13:07:51 retract E0.4
+2025-05-14 13:08:04 retract E0.4
+2025-05-14 13:08:17 retract E0.4
+2025-05-14 13:08:30 retract E0.4
+2025-05-14 13:08:42 retract E0.4
+2025-05-14 13:08:54 retract E0.4
+2025-05-14 13:09:06 retract E0.4
+2025-05-14 13:09:20 retract E0.4
+2025-05-14 13:09:32 retract E0.4
+2025-05-14 13:09:43 retract E0.4
+2025-05-14 13:09:56 retract E0.4
+2025-05-14 13:10:09 retract E0.4
+2025-05-14 13:10:22 retract E0.4
+2025-05-14 13:10:34 retract E0.4
+2025-05-14 13:10:46 retract E0.4
+2025-05-14 13:10:58 retract E0.4
+2025-05-14 13:11:11 retract E0.4
+2025-05-14 13:11:23 retract E0.4
+2025-05-14 13:11:35 retract E0.4
+2025-05-14 13:11:48 retract E0.4
+2025-05-14 13:12:01 retract E0.4
+2025-05-14 13:12:13 retract E0.4
+2025-05-14 13:12:25 retract E0.4
+2025-05-14 13:12:37 retract E0.6
+2025-05-14 13:12:50 retract E0.6
+2025-05-14 13:13:03 retract E0.6
+2025-05-14 13:13:15 retract E0.6
+2025-05-14 13:13:27 retract E0.6
+2025-05-14 13:13:40 retract E0.6
+2025-05-14 13:13:53 retract E0.6
+2025-05-14 13:14:05 retract E0.6
+2025-05-14 13:14:17 retract E0.6
+2025-05-14 13:14:28 retract E0.6
+2025-05-14 13:14:42 retract E0.6
+2025-05-14 13:14:54 retract E0.6
+2025-05-14 13:15:06 retract E0.6
+2025-05-14 13:15:18 retract E0.6
+2025-05-14 13:15:30 retract E0.6
+2025-05-14 13:15:43 retract E0.6
+2025-05-14 13:15:55 retract E0.6
+2025-05-14 13:16:07 retract E0.6
+2025-05-14 13:16:20 retract E0.6
+2025-05-14 13:16:33 retract E0.6
+2025-05-14 13:16:45 retract E0.6
+2025-05-14 13:16:57 retract E0.6
+2025-05-14 13:17:09 retract E0.6
+2025-05-14 13:17:21 retract E0.6
+2025-05-14 13:17:34 retract E0.6
+2025-05-14 13:17:46 retract E0.6
+2025-05-14 13:17:57 retract E0.6
+2025-05-14 13:18:09 retract E0.6
+2025-05-14 13:18:23 retract E0.6
+2025-05-14 13:18:35 retract E0.6
+2025-05-14 13:18:47 retract E0.6
+2025-05-14 13:18:58 retract E0.6
+2025-05-14 13:19:11 retract E0.6
+2025-05-14 13:19:24 retract E0.6
+2025-05-14 13:19:36 retract E0.6
+2025-05-14 13:19:47 retract E0.6
+2025-05-14 13:20:00 retract E0.6
+2025-05-14 13:20:09 Resume state saved
+2025-05-14 13:20:14 Error: M0: Pause the print before attempting to cancel it
+2025-05-14 13:20:17 Printing paused at X593.5 Y292.2 Z47.1 C60.0
+2025-05-14 13:20:38 Done printing file
+2025-05-14 13:20:38 Done printing file
+2025-05-14 13:20:38 Cancelled printing file 0:/gcodes/ret test distance_wipe 0_3 .gcode, print time was 1h 50m
+2025-05-14 13:20:39 T0
+2025-05-14 13:20:42 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-14 13:38:57 File 0:/gcodes/PATEST.gcode selected for printing
+2025-05-14 13:38:57 AUTOBEDLEVEL
+2025-05-14 13:38:57 AUTOBEDLEVEL
+2025-05-14 13:38:58 T0
+2025-05-14 13:42:00 Leadscrew adjustments made: -0.180 0.078 -0.153, points used 3, (mean, deviation) before (-0.124, 0.088) after (-0.000, 0.000)
+2025-05-14 13:42:00 Leadscrew adjustments made: -0.180 0.078 -0.153, points used 3, (mean, deviation) before (-0.124, 0.088) after (-0.000, 0.000)
+2025-05-14 13:42:10 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 215.0/215.0
+2025-05-14 13:43:26 Input Settings
+2025-05-14 13:43:26 InputShaping Settings
+2025-05-14 13:43:37 Printing...
+2025-05-14 14:08:40 Pressure Advance S0.030
+2025-05-14 14:08:40 Pressure Advance S0.030
+2025-05-14 14:10:28 Pressure Advance S0.040
+2025-05-14 14:10:28 Pressure Advance S0.040
+2025-05-14 14:12:17 Pressure Advance S0.050
+2025-05-14 14:12:17 Pressure Advance S0.050
+2025-05-14 14:14:07 Pressure Advance S0.060
+2025-05-14 14:14:07 Pressure Advance S0.060
+2025-05-14 14:15:57 Pressure Advance S0.070
+2025-05-14 14:15:57 Pressure Advance S0.070
+2025-05-14 14:17:48 Pressure Advance S0.080
+2025-05-14 14:17:48 Pressure Advance S0.080
+2025-05-14 14:19:38 Pressure Advance S0.090
+2025-05-14 14:19:38 Pressure Advance S0.090
+2025-05-14 14:21:29 Pressure Advance S0.100
+2025-05-14 14:21:29 Pressure Advance S0.100
+2025-05-14 14:23:21 Pressure Advance S0.110
+2025-05-14 14:23:21 Pressure Advance S0.110
+2025-05-14 14:25:12 Pressure Advance S0.120
+2025-05-14 14:25:12 Pressure Advance S0.120
+2025-05-14 14:27:04 Pressure Advance S0.130
+2025-05-14 14:27:04 Pressure Advance S0.130
+2025-05-14 14:28:56 Pressure Advance S0.140
+2025-05-14 14:28:56 Pressure Advance S0.140
+2025-05-14 14:30:48 Pressure Advance S0.150
+2025-05-14 14:30:48 Pressure Advance S0.150
+2025-05-14 14:31:02 Resume state saved
+2025-05-14 14:31:07 Error: M0: Pause the print before attempting to cancel it
+2025-05-14 14:31:10 Printing paused at X515.8 Y302.9 Z41.1 C60.0
+2025-05-14 14:34:05 Error: M32: Cannot set file to print, because a file is already being printed
+2025-05-14 14:35:51 Done printing file
+2025-05-14 14:35:51 Done printing file
+2025-05-14 14:35:51 Cancelled printing file 0:/gcodes/PATEST.gcode, print time was 0h 52m
+2025-05-14 14:35:52 T0
+2025-05-14 14:35:55 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-14 14:36:01 File 0:/gcodes/PATEST.gcode selected for printing
+2025-05-14 14:36:01 AUTOBEDLEVEL
+2025-05-14 14:36:01 AUTOBEDLEVEL
+2025-05-14 14:36:02 T0
+2025-05-14 14:39:02 Leadscrew adjustments made: -0.108 -0.035 -0.096, points used 3, (mean, deviation) before (-0.090, 0.024) after (0.000, 0.000)
+2025-05-14 14:39:02 Leadscrew adjustments made: -0.108 -0.035 -0.096, points used 3, (mean, deviation) before (-0.090, 0.024) after (0.000, 0.000)
+2025-05-14 14:39:12 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 215.0/215.0
+2025-05-14 14:40:00 Input Settings
+2025-05-14 14:40:00 InputShaping Settings
+2025-05-14 14:40:12 Printing...
+2025-05-14 15:26:35 Extruder pressure advance: 0.150, 0.000
+2025-05-14 15:27:03 Pressure Advance S0.030
+2025-05-14 15:27:03 Pressure Advance S0.030
+2025-05-14 15:56:50 Pressure Advance S0.040
+2025-05-14 15:56:50 Pressure Advance S0.040
+2025-05-14 15:59:17 Pressure Advance S0.050
+2025-05-14 15:59:17 Pressure Advance S0.050
+2025-05-14 16:01:51 Pressure Advance S0.060
+2025-05-14 16:01:51 Pressure Advance S0.060
+2025-05-14 16:04:27 Pressure Advance S0.070
+2025-05-14 16:04:27 Pressure Advance S0.070
+2025-05-14 16:07:07 Pressure Advance S0.080
+2025-05-14 16:07:07 Pressure Advance S0.080
+2025-05-14 16:09:50 Pressure Advance S0.090
+2025-05-14 16:09:50 Pressure Advance S0.090
+2025-05-14 16:12:30 Pressure Advance S0.100
+2025-05-14 16:12:30 Pressure Advance S0.100
+2025-05-14 16:15:16 Pressure Advance S0.110
+2025-05-14 16:15:16 Pressure Advance S0.110
+2025-05-14 16:17:59 Pressure Advance S0.120
+2025-05-14 16:17:59 Pressure Advance S0.120
+2025-05-14 16:20:48 Pressure Advance S0.130
+2025-05-14 16:20:48 Pressure Advance S0.130
+2025-05-14 16:23:37 Pressure Advance S0.140
+2025-05-14 16:23:37 Pressure Advance S0.140
+2025-05-14 16:26:27 Pressure Advance S0.150
+2025-05-14 16:26:27 Pressure Advance S0.150
+2025-05-14 16:29:21 Pressure Advance S0.160
+2025-05-14 16:29:21 Pressure Advance S0.160
+2025-05-14 16:32:12 Pressure Advance S0.170
+2025-05-14 16:32:12 Pressure Advance S0.170
+2025-05-14 16:33:45 Extruder pressure advance: 0.170, 0.000
+2025-05-14 16:35:07 Pressure Advance S0.180
+2025-05-14 16:35:07 Pressure Advance S0.180
+2025-05-14 16:38:02 Pressure Advance S0.190
+2025-05-14 16:38:02 Pressure Advance S0.190
+2025-05-14 16:40:56 Pressure Advance S0.200
+2025-05-14 16:40:56 Pressure Advance S0.200
+2025-05-14 16:43:53 Pressure Advance S0.210
+2025-05-14 16:43:53 Pressure Advance S0.210
+2025-05-14 16:46:47 Pressure Advance S0.220
+2025-05-14 16:46:47 Pressure Advance S0.220
+2025-05-14 16:49:40 Pressure Advance S0.230
+2025-05-14 16:49:40 Pressure Advance S0.230
+2025-05-14 16:52:36 Pressure Advance S0.240
+2025-05-14 16:52:36 Pressure Advance S0.240
+2025-05-14 16:55:28 Pressure Advance S0.250
+2025-05-14 16:55:28 Pressure Advance S0.250
+2025-05-14 16:58:23 Pressure Advance S0.260
+2025-05-14 16:58:23 Pressure Advance S0.260
+2025-05-14 17:01:16 Pressure Advance S0.270
+2025-05-14 17:01:16 Pressure Advance S0.270
+2025-05-14 17:04:09 Pressure Advance S0.280
+2025-05-14 17:04:09 Pressure Advance S0.280
+2025-05-14 17:07:03 Pressure Advance S0.290
+2025-05-14 17:07:03 Pressure Advance S0.290
+2025-05-14 17:09:56 Pressure Advance S0.300
+2025-05-14 17:09:56 Pressure Advance S0.300
+2025-05-14 17:12:51 Pressure Advance S0.310
+2025-05-14 17:12:51 Pressure Advance S0.310
+2025-05-14 17:15:50 Pressure Advance S0.320
+2025-05-14 17:15:50 Pressure Advance S0.320
+2025-05-14 17:18:45 Pressure Advance S0.330
+2025-05-14 17:18:45 Pressure Advance S0.330
+2025-05-14 17:21:43 Pressure Advance S0.340
+2025-05-14 17:21:43 Pressure Advance S0.340
+2025-05-14 17:24:37 Pressure Advance S0.350
+2025-05-14 17:24:37 Pressure Advance S0.350
+2025-05-14 17:27:31 Pressure Advance S0.360
+2025-05-14 17:27:31 Pressure Advance S0.360
+2025-05-14 17:30:27 Pressure Advance S0.370
+2025-05-14 17:30:27 Pressure Advance S0.370
+2025-05-14 17:33:20 Pressure Advance S0.380
+2025-05-14 17:33:20 Pressure Advance S0.380
+2025-05-14 17:36:15 Pressure Advance S0.390
+2025-05-14 17:36:15 Pressure Advance S0.390
+2025-05-14 17:39:07 Pressure Advance S0.400
+2025-05-14 17:39:07 Pressure Advance S0.400
+2025-05-14 17:41:58 Pressure Advance S0.410
+2025-05-14 17:41:58 Pressure Advance S0.410
+2025-05-14 17:44:50 Pressure Advance S0.420
+2025-05-14 17:44:50 Pressure Advance S0.420
+2025-05-14 17:47:42 Pressure Advance S0.430
+2025-05-14 17:47:42 Pressure Advance S0.430
+2025-05-14 17:50:33 Pressure Advance S0.440
+2025-05-14 17:50:33 Pressure Advance S0.440
+2025-05-14 17:54:50 Pressure Advance S0.450
+2025-05-14 17:54:50 Pressure Advance S0.450
+2025-05-14 17:56:22 T0
+2025-05-14 17:56:44 Print End
+2025-05-14 17:56:44 Done printing file
+2025-05-14 17:56:44 Done printing file
+2025-05-14 17:56:44 Finished printing file 0:/gcodes/PATEST.gcode, print time was 3h 20m
+2025-05-14 17:57:18 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-15 07:46:40 File 0:/gcodes/FETCDEV_E3PRT000292A.gcode selected for printing
+2025-05-15 07:46:40 AUTOBEDLEVEL
+2025-05-15 07:46:40 AUTOBEDLEVEL
+2025-05-15 07:46:41 T0
+2025-05-15 07:51:30 Leadscrew adjustments made: 0.258 -0.160 0.233, points used 3, (mean, deviation) before (0.176, 0.144) after (-0.000, 0.000)
+2025-05-15 07:51:30 Leadscrew adjustments made: 0.258 -0.160 0.233, points used 3, (mean, deviation) before (0.176, 0.144) after (-0.000, 0.000)
+2025-05-15 07:53:03 Leadscrew adjustments made: 0.021 -0.011 0.015, points used 3, (mean, deviation) before (0.013, 0.011) after (-0.000, 0.000)
+2025-05-15 07:53:03 Leadscrew adjustments made: 0.021 -0.011 0.015, points used 3, (mean, deviation) before (0.013, 0.011) after (-0.000, 0.000)
+2025-05-15 07:53:13 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 215.0/215.0
+2025-05-15 07:54:36 Input Settings
+2025-05-15 07:54:36 InputShaping Settings
+2025-05-15 07:54:50 Printing...
+2025-05-15 07:57:27 Resume state saved
+2025-05-15 07:57:39 Printing paused at X282.6 Y359.1 Z0.3 C60.0
+2025-05-15 07:57:43 Unloading
+2025-05-15 07:58:00 T0
+2025-05-15 07:59:36 Unloaded
+2025-05-15 07:59:56 T0
+2025-05-15 08:00:05 Heating
+2025-05-15 08:00:05 Heating
+2025-05-15 08:00:05 Load
+2025-05-15 08:00:30 T0
+2025-05-15 08:00:50 Filament Loaded
+2025-05-15 08:01:29 T0
+2025-05-15 08:01:29 T0
+2025-05-15 08:02:08 Printing resumed
+2025-05-15 08:02:08 Printing resumed
+2025-05-15 11:47:28 Extruder pressure advance: 0.450, 0.000
+2025-05-15 21:18:02 T0
+2025-05-15 21:18:25 Print End
+2025-05-15 21:18:26 Done printing file
+2025-05-15 21:18:26 Done printing file
+2025-05-15 21:18:26 Finished printing file 0:/gcodes/FETCDEV_E3PRT000292A.gcode, print time was 13h 27m
+2025-05-15 21:18:41 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-15 21:18:48 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-15 21:18:48 Resume state saved
+2025-05-15 21:18:48 Warning: Driver 72.0 warning: position tolerance exceeded
+2025-05-15 21:18:48 Warning: Driver 70.0 warning: position tolerance exceeded
+2025-05-16 08:05:37 Warning: Driver 70.0 warning: position tolerance exceeded
+2025-05-16 08:05:37 Warning: Driver 70.0 warning: position tolerance exceeded
+2025-05-16 08:06:00 M568 P0 S250
+2025-05-16 08:07:04 T0
+2025-05-16 08:07:21 M568 P0 S0
+2025-05-16 08:07:35 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-16 08:07:36 Connection to Duet established
+2025-05-16 08:07:36 Warning: SPI connection has been reset
+2025-05-16 08:07:36 Connection to SBC established!
+2025-05-16 08:07:43 M568 P0 R0 S0
+2025-05-16 08:07:43 M568 P1 R0 S0
+2025-05-16 08:07:44 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-16 08:07:44 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-16 08:07:44 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-16 08:07:44 Event logging stopped
+2025-05-16 08:07:44 Event logging started
+2025-05-16 08:07:44 Done!
+2025-05-16 08:32:17 File 0:/gcodes/FETCDEV_E3PRT000293A.gcode selected for printing
+2025-05-16 08:32:25 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-16 08:32:26 AUTOBEDLEVEL
+2025-05-16 08:32:26 AUTOBEDLEVEL
+2025-05-16 08:32:27 T0
+2025-05-16 08:35:53 Leadscrew adjustments made: -0.091 0.040 -0.064, points used 3, (mean, deviation) before (-0.058, 0.043) after (0.000, 0.000)
+2025-05-16 08:35:53 Leadscrew adjustments made: -0.091 0.040 -0.064, points used 3, (mean, deviation) before (-0.058, 0.043) after (0.000, 0.000)
+2025-05-16 08:36:03 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-16 08:37:36 Input Settings
+2025-05-16 08:37:36 InputShaping Settings
+2025-05-16 08:37:42 Resume state saved
+2025-05-16 08:37:46 Warning: Driver 70.0 warning: position tolerance exceeded
+2025-05-16 08:38:22 Printing resumed
+2025-05-16 08:38:22 Printing resumed
+2025-05-16 08:38:24 Printing...
+2025-05-16 09:09:12 Resume state saved
+2025-05-16 09:13:26 M568 P0 A2
+2025-05-16 09:16:14 Printing resumed
+2025-05-16 09:16:14 Printing resumed
+2025-05-16 09:16:21 Resume state saved
+2025-05-16 09:16:30 Printing paused at X456.5 Y306.3 Z0.6 C60.0
+2025-05-16 09:17:01 Printing resumed
+2025-05-16 09:17:01 Printing resumed
+2025-05-16 09:17:15 Resume state saved
+2025-05-16 09:17:23 Printing paused at X468.4 Y306.3 Z0.6 C60.0
+2025-05-16 09:17:27 M568 P0 A2
+2025-05-16 09:17:58 Printing resumed
+2025-05-16 09:17:58 Printing resumed
+2025-05-16 09:20:30 Resume state saved
+2025-05-16 09:20:53 M568 P0 A2
+2025-05-16 09:28:39 M568 P0 A2
+2025-05-16 09:29:45 Printing resumed
+2025-05-16 09:29:45 Printing resumed
+2025-05-16 09:29:49 Resume state saved
+2025-05-16 09:29:28 Event logging started
+2025-05-16 09:29:28 Done!
+2025-05-16 09:33:21 M568 P0 A2
+2025-05-16 09:36:35 File 0:/gcodes/FETCDEV_E3PRT000293A.gcode selected for printing
+2025-05-16 09:36:35 AUTOBEDLEVEL
+2025-05-16 09:36:35 AUTOBEDLEVEL
+2025-05-16 09:37:21 T0
+2025-05-16 09:39:02 Resume state saved
+2025-05-16 09:39:02 Error: Attempting to extrude with no tool selected.
+2025-05-16 09:39:20 M568 P0 A2
+2025-05-16 09:39:32 Printing resumed
+2025-05-16 09:39:32 Printing resumed
+2025-05-16 09:39:32 AUTOBEDLEVEL
+2025-05-16 09:39:32 AUTOBEDLEVEL
+2025-05-16 09:39:34 T0
+2025-05-16 09:39:40 T0
+2025-05-16 09:42:18 Leadscrew adjustments made: -0.050 0.087 -0.087, points used 3, (mean, deviation) before (-0.041, 0.056) after (0.000, 0.000)
+2025-05-16 09:42:18 Leadscrew adjustments made: -0.050 0.087 -0.087, points used 3, (mean, deviation) before (-0.041, 0.056) after (0.000, 0.000)
+2025-05-16 09:42:29 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-16 09:43:49 Input Settings
+2025-05-16 09:43:49 InputShaping Settings
+2025-05-16 09:44:01 Printing...
+2025-05-16 10:06:40 Resume state saved
+2025-05-16 10:09:20 M568 P0 A2
+2025-05-16 10:09:36 Error: M303: heater 0 target temperature must be below the temperature limit for this heater (125.0C)
+2025-05-16 10:10:01 Error: M303: Target temperature must be at least 20C above ambient temperature
+2025-05-16 10:10:06 Error: M303: heater 1 must be off and cold before auto tuning it
+2025-05-16 10:10:09 M568 P0 S0
+2025-05-16 10:13:14 Auto tune starting phase 1, heating up
+2025-05-16 10:13:14 Auto tuning heater 1 using target temperature 250.0°C and PWM 1.00 - do not leave printer unattended
+2025-05-16 10:14:00 Auto tune starting phase 2, settling
+2025-05-16 10:15:24 Event logging stopped
+2025-05-16 10:15:43 Event logging started
+2025-05-16 10:15:43 Done!
+2025-05-16 10:18:26 Warning: Driver 70.0 warning: position tolerance exceeded
+2025-05-16 10:18:44 M568 P0 A2
+2025-05-16 10:19:07 File 0:/gcodes/FETCDEV_E3PRT000293A.gcode selected for printing
+2025-05-16 10:19:55 AUTOBEDLEVEL
+2025-05-16 10:19:55 AUTOBEDLEVEL
+2025-05-16 10:20:38 T0
+2025-05-16 10:24:25 Leadscrew adjustments made: -0.100 0.042 -0.105, points used 3, (mean, deviation) before (-0.077, 0.051) after (-0.000, 0.000)
+2025-05-16 10:24:25 Leadscrew adjustments made: -0.100 0.042 -0.105, points used 3, (mean, deviation) before (-0.077, 0.051) after (-0.000, 0.000)
+2025-05-16 10:24:36 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-16 10:25:48 Input Settings
+2025-05-16 10:25:48 InputShaping Settings
+2025-05-16 10:25:59 Printing...
+2025-05-16 15:50:28 T0
+2025-05-16 15:50:52 Print End
+2025-05-16 15:50:52 Done printing file
+2025-05-16 15:50:52 Done printing file
+2025-05-16 15:50:52 Finished printing file 0:/gcodes/FETCDEV_E3PRT000293A.gcode, print time was 5h 31m
+2025-05-16 15:51:26 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-16 15:17:23 Event logging started
+2025-05-16 15:17:23 Done!
+2025-05-19 07:38:13 File 0:/gcodes/PWADV_03_250.gcode selected for printing
+2025-05-19 07:38:14 AUTOBEDLEVEL
+2025-05-19 07:38:14 AUTOBEDLEVEL
+2025-05-19 07:38:56 T0
+2025-05-19 07:36:56 Event logging started
+2025-05-19 07:36:57 Done!
+2025-05-19 07:40:56 File 0:/gcodes/PWADV_03_250.gcode selected for printing
+2025-05-19 07:41:20 Done printing file
+2025-05-19 07:41:25 Done printing file
+2025-05-19 07:41:25 Cancelled printing file 0:/gcodes/PWADV_03_250.gcode, print time was 0h 0m
+2025-05-19 07:41:25 Warning: SPI connection has been reset
+2025-05-19 07:41:25 Connection to SBC established!
+2025-05-19 07:42:30 File 0:/gcodes/PWADV_03_250.gcode selected for printing
+2025-05-19 07:42:30 AUTOBEDLEVEL
+2025-05-19 07:42:30 AUTOBEDLEVEL
+2025-05-19 07:47:26 Leadscrew adjustments made: 0.243 -0.072 0.221, points used 3, (mean, deviation) before (0.179, 0.108) after (0.000, 0.000)
+2025-05-19 07:47:26 Leadscrew adjustments made: 0.243 -0.072 0.221, points used 3, (mean, deviation) before (0.179, 0.108) after (0.000, 0.000)
+2025-05-19 07:48:59 Leadscrew adjustments made: 0.017 0.022 0.027, points used 3, (mean, deviation) before (0.022, 0.004) after (-0.000, 0.000)
+2025-05-19 07:48:59 Leadscrew adjustments made: 0.017 0.022 0.027, points used 3, (mean, deviation) before (0.022, 0.004) after (-0.000, 0.000)
+2025-05-19 07:49:09 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-19 07:50:38 Input Settings
+2025-05-19 07:50:38 InputShaping Settings
+2025-05-19 07:50:50 Printing...
+2025-05-19 08:00:32 Resume state saved
+2025-05-19 08:00:43 Printing paused at X669.1 Y316.8 Z0.3 C60.0
+2025-05-19 08:00:45 Done printing file
+2025-05-19 08:00:45 Done printing file
+2025-05-19 08:00:45 Cancelled printing file 0:/gcodes/PWADV_03_250.gcode, print time was 0h 18m
+2025-05-19 08:00:46 T0
+2025-05-19 08:00:49 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-19 08:02:00 File 0:/gcodes/PWADV_03_250.gcode selected for printing
+2025-05-19 08:02:00 AUTOBEDLEVEL
+2025-05-19 08:02:00 AUTOBEDLEVEL
+2025-05-19 08:02:01 T0
+2025-05-19 08:05:08 Leadscrew adjustments made: -0.058 0.199 -0.057, points used 3, (mean, deviation) before (-0.013, 0.091) after (0.000, 0.000)
+2025-05-19 08:05:08 Leadscrew adjustments made: -0.058 0.199 -0.057, points used 3, (mean, deviation) before (-0.013, 0.091) after (0.000, 0.000)
+2025-05-19 08:05:18 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-19 08:06:23 Input Settings
+2025-05-19 08:06:23 InputShaping Settings
+2025-05-19 08:06:35 Printing...
+2025-05-19 09:04:14 Pressure Advance S0.000
+2025-05-19 09:04:14 Pressure Advance S0.000
+2025-05-19 09:10:39 Pressure Advance S0.050
+2025-05-19 09:10:39 Pressure Advance S0.050
+2025-05-19 09:17:39 Pressure Advance S0.100
+2025-05-19 09:17:39 Pressure Advance S0.100
+2025-05-19 09:25:18 Pressure Advance S0.150
+2025-05-19 09:25:18 Pressure Advance S0.150
+2025-05-19 09:33:26 Resume state saved
+2025-05-19 09:33:34 Printing paused at X449.4 Y291.1 Z19.2 C60.0
+2025-05-19 09:33:40 Done printing file
+2025-05-19 09:33:40 Done printing file
+2025-05-19 09:33:40 Cancelled printing file 0:/gcodes/PWADV_03_250.gcode, print time was 1h 31m
+2025-05-19 09:33:41 T0
+2025-05-19 09:33:45 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-19 09:33:51 T0
+2025-05-19 09:58:28 T0
+2025-05-19 09:58:58 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-19 09:58:58 Unloading
+2025-05-19 09:59:31 T1
+2025-05-19 10:00:41 Error: Operation halted due to movement error: move duration too long
+2025-05-19 10:00:50 Unloaded
+2025-05-19 10:02:28 T1
+2025-05-19 10:02:29 T1
+2025-05-19 10:02:32 T1
+2025-05-19 10:02:39 Error: Expansion board 121 stopped sending status
+2025-05-19 10:03:23 T0
+2025-05-19 10:03:26 Error: CAN response timeout: board 121, req type 6013, RID 279
+2025-05-19 11:05:27 T0
+2025-05-19 11:05:28 T0
+2025-05-19 11:05:28 T0
+2025-05-19 11:10:19 T0
+2025-05-19 11:10:34 Event logging stopped
+2025-05-19 11:10:54 Event logging started
+2025-05-19 11:10:54 Done!
+2025-05-19 11:11:47 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-19 11:12:06 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-19 11:12:25 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-19 11:12:28 Heating
+2025-05-19 11:12:28 Heating
+2025-05-19 11:13:58 Load
+2025-05-19 11:14:43 Filament Loaded
+2025-05-19 11:15:15 File 0:/gcodes/PADV_0.01_L0.gcode selected for printing
+2025-05-19 11:15:15 AUTOBEDLEVEL
+2025-05-19 11:15:15 AUTOBEDLEVEL
+2025-05-19 11:15:16 T0
+2025-05-19 11:19:57 Leadscrew adjustments made: 0.106 0.119 0.122, points used 3, (mean, deviation) before (0.115, 0.006) after (-0.000, 0.000)
+2025-05-19 11:19:57 Leadscrew adjustments made: 0.106 0.119 0.122, points used 3, (mean, deviation) before (0.115, 0.006) after (-0.000, 0.000)
+2025-05-19 11:20:07 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-19 11:20:15 Input Settings
+2025-05-19 11:20:15 InputShaping Settings
+2025-05-19 11:20:27 Printing...
+2025-05-19 12:18:01 Pressure Advance S0.000
+2025-05-19 12:18:01 Pressure Advance S0.000
+2025-05-19 12:22:18 Pressure Advance S0.020
+2025-05-19 12:22:18 Pressure Advance S0.020
+2025-05-19 12:26:41 Pressure Advance S0.040
+2025-05-19 12:26:41 Pressure Advance S0.040
+2025-05-19 12:31:16 Pressure Advance S0.060
+2025-05-19 12:31:16 Pressure Advance S0.060
+2025-05-19 12:36:01 Pressure Advance S0.080
+2025-05-19 12:36:01 Pressure Advance S0.080
+2025-05-19 12:40:57 Pressure Advance S0.100
+2025-05-19 12:40:57 Pressure Advance S0.100
+2025-05-19 12:46:04 Pressure Advance S0.120
+2025-05-19 12:46:04 Pressure Advance S0.120
+2025-05-19 12:51:20 Pressure Advance S0.140
+2025-05-19 12:51:20 Pressure Advance S0.140
+2025-05-19 12:56:46 Pressure Advance S0.160
+2025-05-19 12:56:46 Pressure Advance S0.160
+2025-05-19 13:02:23 Pressure Advance S0.180
+2025-05-19 13:02:23 Pressure Advance S0.180
+2025-05-19 13:02:50 Resume state saved
+2025-05-19 13:02:56 Printing paused at X449.5 Y202.5 Z28.5 C60.0
+2025-05-19 13:02:57 Done printing file
+2025-05-19 13:02:57 Done printing file
+2025-05-19 13:02:57 Cancelled printing file 0:/gcodes/PADV_0.01_L0.gcode, print time was 1h 47m
+2025-05-19 13:02:59 T0
+2025-05-19 13:03:02 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-19 13:03:07 T0
+2025-05-19 13:10:01 File 0:/gcodes/FETCDEV_E3PRT000293A.gcode selected for printing
+2025-05-19 13:10:03 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-19 13:10:03 AUTOBEDLEVEL
+2025-05-19 13:10:03 AUTOBEDLEVEL
+2025-05-19 13:10:04 T0
+2025-05-19 13:13:27 Leadscrew adjustments made: -0.205 0.206 -0.216, points used 3, (mean, deviation) before (-0.138, 0.147) after (0.000, 0.000)
+2025-05-19 13:13:27 Leadscrew adjustments made: -0.205 0.206 -0.216, points used 3, (mean, deviation) before (-0.138, 0.147) after (0.000, 0.000)
+2025-05-19 13:13:38 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-19 13:13:40 Connection to Duet established
+2025-05-19 13:13:40 Warning: SPI connection has been reset
+2025-05-19 13:13:40 Connection to SBC established!
+2025-05-19 13:13:47 M568 P0 R0 S0
+2025-05-19 13:13:48 M568 P1 R0 S0
+2025-05-19 13:13:49 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-19 13:13:49 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-19 13:13:49 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-19 13:13:49 Event logging stopped
+2025-05-19 13:13:49 Event logging started
+2025-05-19 13:13:49 Done!
+2025-05-19 13:14:57 File 0:/gcodes/FETCDEV_E3PRT000293A.gcode selected for printing
+2025-05-19 13:15:23 Done printing file
+2025-05-19 13:15:23 Done printing file
+2025-05-19 13:15:23 Cancelled printing file 0:/gcodes/FETCDEV_E3PRT000293A.gcode, print time was 0h 0m
+2025-05-19 13:15:24 Error: in file daemon.g line 8: expected numeric operands
+2025-05-19 13:15:24 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-19 13:16:23 File 0:/gcodes/FETCDEV_E3PRT000293A.gcode selected for printing
+2025-05-19 13:16:23 AUTOBEDLEVEL
+2025-05-19 13:16:23 AUTOBEDLEVEL
+2025-05-19 13:19:25 Leadscrew adjustments made: -0.002 -0.011 -0.028, points used 3, (mean, deviation) before (-0.014, 0.010) after (0.000, 0.000)
+2025-05-19 13:19:25 Leadscrew adjustments made: -0.002 -0.011 -0.028, points used 3, (mean, deviation) before (-0.014, 0.010) after (0.000, 0.000)
+2025-05-19 13:19:35 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-19 13:21:01 Input Settings
+2025-05-19 13:21:01 InputShaping Settings
+2025-05-19 13:21:13 Printing...
+2025-05-19 13:21:40 Extruder pressure advance: 0.150, 0.000
+2025-05-19 13:22:00 Extruder pressure advance: 0.060, 0.000
+2025-05-19 13:53:51 M568 P0 S230
+2025-05-19 14:13:31 === Diagnostics ===
+RepRapFirmware for Duet 3 MB6HC version 3.6.0-rc.3 (2025-04-30 14:43:53) running on Duet 3 MB6HC v1.02 or 1.02a (SBC mode)
+Board ID: 08DJM-9P63L-DJMSS-6JTDJ-3SN6L-9SHZA
+Used output buffers: 1 of 40 (23 max)
+=== RTOS ===
+Static ram: 137420
+Dynamic ram: 99336 of which 40 recycled
+Never used RAM 102124, free system stack 128 words
+Tasks: SBC(2,nWait 7,1.1%,743) HEAT(3,nWait 6,0.0%,323) Move(4,nWait 6,1.0%,209) TMC(4,nWait 6,3.0%,375) CanReceiv(6,nWait 1,0.1%,769) CanSender(5,nWait 7,0.3%,325) CanClock(7,delaying,0.0%,350) MAIN(1,running,94.2%,101) IDLE(0,ready,0.1%,29) USBD(3,blocked,0.0%,144), total 100.0%
+Owned mutexes: HTTP(MAIN)
+=== Platform ===
+Last reset 00:59:51 ago, cause: reset button
+Last software reset at 2025-05-19 11:10, reason: User, Expansion spinning, available RAM 101976, slot 0
+Software reset code 0x2012 HFSR 0x00000000 CFSR 0x00000000 ICSR 0x00400000 BFAR 0x00000000 SP 0x00000000 Task SBC Freestk 0 n/a
+Error status: 0x00
+MCU temperature: min 49.0, current 52.7, max 52.8
+Supply voltage: min 24.4, current 24.6, max 25.0, under voltage events: 0, over voltage events: 0, power good: yes
+12V rail voltage: min 12.1, current 12.3, max 12.4, under voltage events: 0
+Heap OK, handles allocated/used 99/24, heap memory allocated/used/recyclable 2048/1120/856, gc cycles 14
+Events: 0 queued, 0 completed
+Date/time: 2025-05-19 14:13:30
+Slowest loop: 616.62ms; fastest: 0.05ms
+=== Storage ===
+Free file entries: 20
+SD card 0 not detected, requested/actual speed: 0.0/37.5MBytes/sec
+SD card longest read time 0.0ms, write time 0.0ms, max retries 0
+=== Move ===
+Segments created 214, maxWait 87043ms, bed comp in use: mesh, height map offset 0.000, hiccups added 0/0 (0.00/10.34ms), max steps late 0, ebfmin 0.00, ebfmax 0.00
+Pos req/act/dcf: 52036.00/52132/-0.98 29778.00/29369/0.28 65420.00/65423/-0.83 12000.00/12000/0.00
+Next step interrupt due in 274 ticks, disabled
+Driver 0: standstill, SG min 0, mspos 408, reads 37375, writes 1698 timeouts 157
+Driver 1: standstill, SG min n/a, mspos 8, reads 37401, writes 1672 timeouts 157
+Driver 2: standstill, SG min n/a, mspos 8, reads 37401, writes 1672 timeouts 157
+Driver 3: standstill, SG min n/a, mspos 8, reads 37401, writes 1672 timeouts 157
+Driver 4: standstill, SG min n/a, mspos 8, reads 37401, writes 1672 timeouts 157
+Driver 5: standstill, SG min n/a, mspos 8, reads 37401, writes 1672 timeouts 157
+Phase step loop runtime (us): min=0, max=132, frequency (Hz): min=471, max=53571
+=== DDARing 0 ===
+Scheduled moves 185222, completed 185163, LaErrors 21, Underruns [0, 0, 0]
+Segments left 9, axes/extruders owned 0x80000007, drives owned 0x80000007
+Code queue is empty
+=== DDARing 1 ===
+Scheduled moves 0, completed 0, LaErrors 0, Underruns [0, 0, 0]
+Segments left 0, axes/extruders owned 0x00000000, drives owned 0x00000000
+Code queue is empty
+=== Heat ===
+Bed heaters 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1, chamber heaters -1 -1 -1 -1 -1 -1 -1 -1, ordering errs 0
+Heater 0 is on, I-accum = 0.2
+Heater 1 is on, I-accum = 0.0
+=== GCodes ===
+Movement locks held by null, null
+HTTP* is doing "M122" in state(s) 0
+Telnet is idle in state(s) 0
+File* is idle in state(s) 3
+USB is idle in state(s) 0
+Aux is idle in state(s) 0
+Trigger* is idle in state(s) 0
+Queue* is idle in state(s) 0
+LCD is idle in state(s) 0
+SBC is idle in state(s) 0
+Daemon* is idle in state(s) 0
+Aux2 is idle in state(s) 0
+Autopause is idle in state(s) 0
+File2 is idle in state(s) 0
+Queue2 is idle in state(s) 0
+=== Filament sensors ===
+Driver 31: no data received, errs: frame 0 parity 0 ovrun 0 pol 0 ovdue 0
+=== CAN ===
+Messages queued 859549, received 404826, lost 0, ignored 0, errs 0, boc 0
+Longest wait 286ms for reply type 6041, peak Tx sync delay 651, free buffers 50 (min 39), ts 17024/17022/0
+Tx timeouts 0,0,0,0,0,0
+=== SBC interface ===
+Transfer state: 5, failed transfers: 0, checksum errors: 0
+RX/TX seq numbers: 40362/12258
+SPI underruns 0, overruns 0
+State: 5, disconnects: 0, timeouts: 0 total, 0 by SBC, IAP RAM available 0x27a74
+Buffer RX/TX: 872/2384-0, open files: 0
+2025-05-19 18:40:23 T0
+2025-05-19 18:40:38 Print End
+2025-05-19 18:40:38 Done printing file
+2025-05-19 18:40:38 Done printing file
+2025-05-19 18:40:38 Finished printing file 0:/gcodes/FETCDEV_E3PRT000293A.gcode, print time was 5h 24m
+2025-05-19 18:41:12 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-20 07:27:49 T0
+2025-05-20 07:55:00 Event logging stopped
+2025-05-20 07:55:19 Event logging started
+2025-05-20 07:55:19 Done!
+2025-05-20 07:57:27 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-20 07:57:28 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 07:57:50 G10 P0 S"{var.currentTemp}"
+2025-05-20 07:58:20 Event logging stopped
+2025-05-20 07:58:40 Event logging started
+2025-05-20 07:58:40 Done!
+2025-05-20 07:59:40 Event logging stopped
+2025-05-20 08:00:01 Event logging started
+2025-05-20 08:00:01 Done!
+2025-05-20 08:00:18 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-20 08:00:29 Connection to Duet established
+2025-05-20 08:00:29 Warning: SPI connection has been reset
+2025-05-20 08:00:29 Connection to SBC established!
+2025-05-20 08:00:37 M568 P0 R0 S0
+2025-05-20 08:00:37 M568 P1 R0 S0
+2025-05-20 08:00:37 Extruder T0 on TC
+2025-05-20 08:00:38 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-20 08:00:38 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-20 08:00:38 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:00:38 Event logging stopped
+2025-05-20 08:00:38 Event logging started
+2025-05-20 08:00:38 Done!
+2025-05-20 08:02:01 T0
+2025-05-20 08:02:08 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-20 08:02:09 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 08:02:21 G10 P0 S"{var.currentTemp}"
+2025-05-20 08:03:51 Error: in file macro line 42: G1: insufficient axes homed
+2025-05-20 08:07:03 T0
+2025-05-20 08:07:11 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/0.0
+2025-05-20 08:07:12 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 08:07:17 G10 P0 S"{var.currentTemp}"
+2025-05-20 08:07:39 Cannot calibrate filament monitor within 15mm - error!
+2025-05-20 08:07:39 Macro file 0:/sys/meltingplot/machine-override not found
+2025-05-20 08:11:44 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-20 08:11:45 Connection to Duet established
+2025-05-20 08:11:45 Warning: SPI connection has been reset
+2025-05-20 08:11:45 Connection to SBC established!
+2025-05-20 08:11:52 M568 P0 R0 S0
+2025-05-20 08:11:52 M568 P1 R0 S0
+2025-05-20 08:11:52 Extruder T0 on TC
+2025-05-20 08:11:53 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-20 08:11:53 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-20 08:11:53 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:11:53 Event logging stopped
+2025-05-20 08:11:53 Event logging started
+2025-05-20 08:11:53 Done!
+2025-05-20 08:19:16 Event logging stopped
+2025-05-20 08:19:35 Event logging started
+2025-05-20 08:19:35 Done!
+2025-05-20 08:20:24 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-20 08:20:27 Connection to Duet established
+2025-05-20 08:20:27 Warning: SPI connection has been reset
+2025-05-20 08:20:27 Connection to SBC established!
+2025-05-20 08:20:35 M568 P0 R0 S0
+2025-05-20 08:20:35 M568 P1 R0 S0
+2025-05-20 08:20:35 Extruder T0 on TC
+2025-05-20 08:20:36 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-20 08:20:36 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-20 08:20:36 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:20:36 Event logging stopped
+2025-05-20 08:20:36 Event logging started
+2025-05-20 08:20:36 Done!
+2025-05-20 08:22:32 T0
+2025-05-20 08:22:40 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-20 08:22:40 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 08:22:55 G10 P0 S"{var.currentTemp}"
+2025-05-20 08:23:03 Event logging stopped
+2025-05-20 08:23:23 Event logging started
+2025-05-20 08:23:23 Done!
+2025-05-20 08:27:47 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-20 08:27:52 Connection to Duet established
+2025-05-20 08:27:52 Warning: SPI connection has been reset
+2025-05-20 08:27:52 Connection to SBC established!
+2025-05-20 08:28:00 M568 P0 R0 S0
+2025-05-20 08:28:00 M568 P1 R0 S0
+2025-05-20 08:28:01 Extruder T0 on TC
+2025-05-20 08:28:01 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-20 08:28:01 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-20 08:28:01 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:01 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:28:02 Event logging stopped
+2025-05-20 08:28:02 Event logging started
+2025-05-20 08:28:02 Done!
+2025-05-20 08:40:50 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-20 08:40:53 Connection to Duet established
+2025-05-20 08:40:53 Warning: SPI connection has been reset
+2025-05-20 08:40:53 Connection to SBC established!
+2025-05-20 08:41:00 M568 P0 R0 S0
+2025-05-20 08:41:00 M568 P1 R0 S0
+2025-05-20 08:41:00 Extruder T0 on TC
+2025-05-20 08:41:01 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-20 08:41:01 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-20 08:41:01 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:41:01 Event logging stopped
+2025-05-20 08:41:01 Event logging started
+2025-05-20 08:41:01 Done!
+2025-05-20 08:41:57 T0
+2025-05-20 08:42:05 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-20 08:42:06 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 08:42:15 G10 P0 S"{var.currentTemp}"
+2025-05-20 08:45:15 Cannot calibrate filament monitor within 15mm - error!
+2025-05-20 08:45:15 Error: in file macro line 5: M591: Filament monitor must be connected to same CAN board as extruder driver
+2025-05-20 08:48:15 T0
+2025-05-20 08:48:22 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/0.0
+2025-05-20 08:48:23 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 08:48:46 G10 P0 S"{var.currentTemp}"
+2025-05-20 08:49:28 Error: in file filament-extrusion-calibration.g line 74: (sensors.filamentMonitors[0].calibrated.totalDistance / sensors.filamentMonitors[0].calibrated.mmPerRev * sensors.filamentMonitors[0].configured.mmPerRev) line 71: reached null object before end of selector string
+2025-05-20 08:53:09 T0
+2025-05-20 08:53:17 T0
+2025-05-20 08:53:17 T0
+2025-05-20 08:53:19 T0
+2025-05-20 08:53:56 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-20 08:55:18 Connection to Duet established
+2025-05-20 08:55:18 Warning: SPI connection has been reset
+2025-05-20 08:55:18 Connection to SBC established!
+2025-05-20 08:55:25 M568 P0 R0 S0
+2025-05-20 08:55:25 M568 P1 R0 S0
+2025-05-20 08:55:26 G10 P0 X0.000000 Y0.000000 Z-26.950001 C0.000000
+2025-05-20 08:55:26 G10 P1 X0.000000 Y0.000000 Z-26.150000 C0.000000
+2025-05-20 08:55:26 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-20 08:55:26 Event logging stopped
+2025-05-20 08:55:26 Event logging started
+2025-05-20 08:55:26 Done!
+2025-05-20 08:55:39 Error: G1: move is too slow for driver 70.0 to detect stall (increase speed or reduce M915 V parameter)
+2025-05-20 08:56:09 Error: G1: move is too slow for driver 70.0 to detect stall (increase speed or reduce M915 V parameter)
+2025-05-20 08:56:12 Error: G1: move is too slow for driver 70.0 to detect stall (increase speed or reduce M915 V parameter)
+2025-05-20 08:57:29 Error: G1: move is too slow for driver 70.0 to detect stall (increase speed or reduce M915 V parameter)
+2025-05-20 08:57:30 Error: G1: move is too slow for driver 70.0 to detect stall (increase speed or reduce M915 V parameter)
+2025-05-20 08:58:35 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-20 08:58:36 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 08:58:45 G10 P0 S"{var.currentTemp}"
+2025-05-20 08:59:50 Error: G1: intermediate position outside machine limits
+2025-05-20 09:00:27 Error: in file filament-extrusion-calibration.g line 74: (sensors.filamentMonitors[0].calibrated.totalDistance / sensors.filamentMonitors[0].calibrated.mmPerRev * sensors.filamentMonitors[0].configured.mmPerRev) line 71: reached null object before end of selector string
+2025-05-20 09:02:15 Tool on TC, no home
+2025-05-20 09:02:19 Tool on TC, no home
+2025-05-20 09:15:58 T0
+2025-05-20 09:16:50 Tool 0: offsets X0.000 Y0.000 Z-26.950 C0.000, active/standby temperature(s) 230.0/0.0
+2025-05-20 09:16:51 Warning: G29: the height map was loaded when the current Z=0 datum was not determined by probing. This may result in a height offset.
+2025-05-20 09:16:55 G10 P0 S"{var.currentTemp}"
+2025-05-20 09:17:48 Error: in file filament-extrusion-calibration.g line 74: (sensors.filamentMonitors[0].calibrated.totalDistance / sensors.filamentMonitors[0].calibrated.mmPerRev * sensors.filamentMonitors[0].configured.mmPerRev) line 71: reached null object before end of selector string
+2025-05-20 09:18:29 Error: in file filament-extrusion-calibration.g line 80: (sensors.filamentMonitors[0].calibrated.totalDistance / sensors.filamentMonitors[0].calibrated.mmPerRev * sensors.filamentMonitors[0].configured.mmPerRev) line 78: reached null object before end of selector string
+2025-05-20 09:37:33 Event logging started
+2025-05-20 09:37:33 Done!
+2025-05-20 09:56:10 T0
+2025-05-20 10:09:44 Warning: M5591: Command is not supported
+2025-05-20 10:09:47 Error: M591: missing parameter 'D'
+2025-05-20 10:09:49 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled always, 25.30mm/rev, allow 10% to 120%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-20 10:25:55 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled always, 25.30mm/rev, allow 10% to 120%, check all extruding moves every 3.0mm, mag 128 agc 10, no calibration data

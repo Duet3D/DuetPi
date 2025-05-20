@@ -23,5 +23,6 @@ G1 X500 Y300 F2000
 G30 K0 S-1
 G92 C0 
 G29 S0 K1
+G29 S3 P"scan_leveling.csv"       ; Save the current height map to file "usual.csv"
 G91
 G0 Z150
