@@ -11,13 +11,14 @@ M291 R"Calibrazione Parcheggio T0 - Inserisci tool" P"Posizione T0 sul ToolChang
 G0 C60 F6000
 M291 R"Calibrazione Parcheggio T0 - Inserisci tool" P"Il tool si autosostiene? Assicurati di aver RIMOSSO le MANI dall'area di stampa e premi ok" S2
 G0 Y{move.axes[1].min} F4000
-M291 R"Calibrazione Parcheggio T0" P"Muovi Y fino ad arrivare a toccare il parcheggio" Y1 S3
+M291 R"Calibrazione Parcheggio T0" P"Muovi Y fino ad arrivare a toccare il parcheggio e serra correttamente il parcheggio e procedi" Y1 S3
 M400
 echo >>"yPT0-offset.g" "set global.yPT0Position = " ^ move.axes[1].min - move.axes[1].machinePosition
 G0 C0 F6000
 M291 R"Calibrazione Parcheggio T0 Effettuata" P"Testing tool free"
 M98 P"0:/sys/yPT0-offset.g"
 M291 R"Calibrazione Parcheggio T0 test" P"Homing Y"
+G0 Y{move.axes[1].min} F4000
 G28 Y
 M291 R"Calibrazione Parcheggio T0 - Tool Test" P"Serra correttamente il parcheggio e procedi" S2
 T0

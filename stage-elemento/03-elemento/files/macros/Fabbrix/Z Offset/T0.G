@@ -1,7 +1,3 @@
-M566 X600 Y600 Z20                                   ; set maximum instantaneous speed changes (mm/min)
-M203 X4000 Y4000 Z3000                                 ; set maximum speeds (mm/min)
-M201 X1000 Y1000 Z40                                   ; set accelerations (mm/s^2)
-M204 P10000 T14000
 M190 S65
 M290 S0 R0                                          
 M561
@@ -9,7 +5,7 @@ G29 S2
 G10 P0 Z0 R150 S150
 M558 A1 Z1 K0 B0 P8 C"io4.in" H50 F300:150 T9000 R1 ; set Z probe type to bltouch and the dive height + speeds
 G32 
-G1 Z150 F1000
+G1 Z50 F1000
 M400
 G1 X500 Y300 F2000
 T0 P0
