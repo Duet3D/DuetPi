@@ -77,12 +77,12 @@ M574 C1 S3                                             ; Stall detect coupler at
 M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/bed pivot point at front left, rear middle and front right
 
 ; Probes
-M558 A1 Z1 K0 B0 P8 C"io4.in" H50 F300:150 T9000 R1    ; set Z probe type to bltouch and the dive height + speeds
+M558 A2 Z1 K0 B1 P8 C"io4.in" H50 F300:150 T9000 S0.1 R0.5    ; set Z probe type to bltouch and the dive height + speeds
 G31 K0 P500 X0 Y55 Z0.6                                ; 4.25   ;0.6
-;M558 K1 H10 P11 C"120.i2c.ldc1612" F8000 T8000
-;G31 K1 X0 Y36 Z0.6 P9598
-;M558.1 K1 A-3.049e-4 B4.389e-10 C-1.320e-16
-;M558.2 K1 S18 R145045
+M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F8000 T8000
+G31 K1 X0 Y36 Z0.6 P9598
+M558.1 K1 A-3.049e-4 B4.389e-10 C-1.320e-16
+M558.2 K1 S18 R145045
 
 
 ; Mesh Bed Compensation
@@ -92,7 +92,7 @@ M376 H0
 M308 S0 P"temp0" Y"thermistor" T50000 A"Heated Bed"    ; configure sensor #0
 M308 S1 P"121.temp0" Y"pt1000" A"T0"                   ; configure sensor #1
 M308 S2 P"122.temp0" Y"pt1000" A"T1"                   ; configure sensor #2
-;M308 A"CH" S3 Y"thermistor" P"120.temp0"               ; thermistor on coil         ; configure sensor #3
+M308 A"CH" S3 Y"thermistor" P"120.temp0"               ; thermistor on coil         ; configure sensor #3
 
 ; Heaters
 M950 H0 C"out0" T0                                     ; create heater #0
@@ -104,9 +104,9 @@ M307 H1 R1.774 K0.315:0.076 D6.54 E1.35 S1.00 B0 V23.4 ; configure model of heat
 M950 H2 C"122.out0" T2                                 ; create heater #2
 M143 H2 P0 T2 C0 S285 A0                               ; configure heater monitor #0 for heater #2
 M307 H2 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #2
-;M950 H3 C"!out4" T3                                    ; create heater #3
-;M143 H3 P0 T3 C0 S285 A0                               ; configure heater monitor #0 for heater #3
-;M307 H3 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #3
+M950 H3 C"!out4" T3                                    ; create heater #3
+M143 H3 P0 T3 C0 S285 A0                               ; configure heater monitor #0 for heater #3
+M307 H3 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #3
 
 ;M570 H3 P180 T20 R20
 
@@ -114,7 +114,7 @@ M307 H2 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heat
 M140 P0 H0                                             ; configure heated bed #0
 
 ; Heated chambers
-;M141 P0 H3                                             ; configure heated chamber #1
+M141 P0 H3                                             ; configure heated chamber #1
 
 ;motor temp sensor
 M308 S4 P"70.temp0" Y"thermistor" A"X"
@@ -145,7 +145,7 @@ M106 P5 S1
 
 
 ; Trigger TC/0/1
-M950 J6 C"!io6.in"
+M950 J6 C"io6.in"
 M950 J7 C"!io7.in"
 M950 J8 C"!io8.in"
 M581 T2 P6 S-1 
