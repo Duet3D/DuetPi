@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+# /!\ Warning /!\ 
+# This file may be overwritten by the plugin
+# Do not modify, create your own instead
+
 from RPi import GPIO
 import time
 

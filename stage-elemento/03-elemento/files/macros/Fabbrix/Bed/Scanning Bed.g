@@ -1,4 +1,4 @@
-M190 S60
+M190 S65
 T-1 P0
 M98 P"0:/macros/Calibration Setting Unlock/Medium Setting.g"
 G32

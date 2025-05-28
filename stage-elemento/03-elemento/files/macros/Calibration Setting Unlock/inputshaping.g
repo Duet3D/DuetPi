@@ -16,4 +16,4 @@ M117 "Input Settings"
 M118 P0 S"InputShaping Settings"
 
 
-m591 d0 s0
+m591 d0 s1

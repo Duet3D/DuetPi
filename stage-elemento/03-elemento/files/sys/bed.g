@@ -10,6 +10,7 @@ M561 ; clear any bed transform
 G29 S2  ; probe the bed and enable compensation
 G28
 M18 C
+T0 P0
 while true
     G4 P400
 	G30 P0 X0 Y20 Z-99999
@@ -19,4 +20,9 @@ while true
 	G30 P2 X1050 Y20 Z-99999 S3
     if abs(move.calibration.initial.deviation) < 0.1 || iterations > 3
         break
+
+G90                     ; absolute positioning
+G1 X550 Y300 F6000      ; go Center of bed
+G30 S-2
+T-1 P0
 G28 C

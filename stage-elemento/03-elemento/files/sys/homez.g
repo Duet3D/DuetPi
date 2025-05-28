@@ -26,4 +26,4 @@ T-1
 ;G1 H1 Z700 F1000 ; move Z towards the switch until it triggers
 ;G90             ; back to absolute mode
 G1 X500 Y300 F4500
-G30
+G30 

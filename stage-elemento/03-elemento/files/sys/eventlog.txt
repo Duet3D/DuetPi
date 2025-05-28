@@ -97773,3 +97773,1114 @@ Buffer RX/TX: 872/2384-0, open files: 0
 2025-05-20 10:09:47 Error: M591: missing parameter 'D'
 2025-05-20 10:09:49 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled always, 25.30mm/rev, allow 10% to 120%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
 2025-05-20 10:25:55 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled always, 25.30mm/rev, allow 10% to 120%, check all extruding moves every 3.0mm, mag 128 agc 10, no calibration data
+2025-05-22 21:37:17 Event logging started
+2025-05-22 21:37:17 Done!
+2025-05-23 08:19:10 Event logging stopped
+2025-05-23 08:36:27 Event logging started
+2025-05-23 08:36:27 Done!
+2025-05-23 08:36:40 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 08:37:18 AUTOBEDLEVEL
+2025-05-23 08:37:18 AUTOBEDLEVEL
+2025-05-23 08:37:40 Event logging stopped
+2025-05-23 08:38:00 Event logging started
+2025-05-23 08:38:00 Done!
+2025-05-23 08:42:19 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 08:42:20 AUTOBEDLEVEL
+2025-05-23 08:42:20 AUTOBEDLEVEL
+2025-05-23 08:42:32 T0
+2025-05-23 08:47:42 Leadscrew adjustments made: 0.319 0.057 -0.185, points used 3, (mean, deviation) before (0.071, 0.191) after (-0.000, 0.000)
+2025-05-23 08:47:42 Leadscrew adjustments made: 0.319 0.057 -0.185, points used 3, (mean, deviation) before (0.071, 0.191) after (-0.000, 0.000)
+2025-05-23 08:50:20 Leadscrew adjustments made: -0.021 0.070 0.033, points used 3, (mean, deviation) before (0.017, 0.031) after (0.000, 0.000)
+2025-05-23 08:50:20 Leadscrew adjustments made: -0.021 0.070 0.033, points used 3, (mean, deviation) before (0.017, 0.031) after (0.000, 0.000)
+2025-05-23 08:50:30 Tool 0: offsets X0.000 Y0.000 Z-26.352 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-23 08:52:01 Input Settings
+2025-05-23 08:52:01 InputShaping Settings
+2025-05-23 08:52:12 Printing...
+2025-05-23 08:53:53 Resume state saved
+2025-05-23 08:53:59 Error: M0: Pause the print before attempting to cancel it
+2025-05-23 08:54:02 Printing paused at X624.9 Y196.8 Z0.3 C60.0
+2025-05-23 08:54:04 Done printing file
+2025-05-23 08:54:04 Done printing file
+2025-05-23 08:54:04 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 11m
+2025-05-23 08:54:05 T0
+2025-05-23 08:54:09 Tool 0: offsets X0.000 Y0.000 Z-26.352 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-23 08:54:13 T0
+2025-05-23 08:55:51 Medium Settings
+2025-05-23 08:55:51 Medium Settings
+2025-05-23 08:55:51 AUTOBEDLEVEL
+2025-05-23 08:55:51 AUTOBEDLEVEL
+2025-05-23 08:56:28 Event logging stopped
+2025-05-23 08:56:45 Event logging started
+2025-05-23 08:56:45 Done!
+2025-05-23 08:56:46 T1
+2025-05-23 08:58:12 Medium Settings
+2025-05-23 08:58:12 Medium Settings
+2025-05-23 08:58:12 AUTOBEDLEVEL
+2025-05-23 08:58:12 AUTOBEDLEVEL
+2025-05-23 09:02:31 Leadscrew adjustments made: 0.040 0.114 0.014, points used 3, (mean, deviation) before (0.042, 0.032) after (-0.000, 0.000)
+2025-05-23 09:02:34 K1 CALIB
+2025-05-23 09:02:34 K1 CALIB
+2025-05-23 09:03:10 Stopped at height 0.578 mm
+2025-05-23 09:03:16 Scanning probe offset: -0.001mm, A: -2.717e-4, B: 9.189e-9, C: -3.840e-12, reading at trigger height 11450, rms error 0.004mm
+2025-05-23 09:03:16 Calibration successful, sensor drive current is 17, offset is 148526
+2025-05-23 09:03:18 K1 BED CALIBRATING
+2025-05-23 09:03:22 K1 BED CALIBRATING
+2025-05-23 09:03:34 Stopped at height 0.592 mm
+2025-05-23 09:05:07 Warning: the height map has a substantial Z offset. Suggest use Z-probe to establish Z=0 datum, then re-probe the mesh.
+2025-05-23 09:05:07 200 points probed, min error -1.594, max error -0.669, mean -1.085, deviation 0.199
+Height map saved to file 0:/sys/heightmap.csv
+2025-05-23 09:05:07 Height map saved to file 0:/sys/scan_leveling.csv
+2025-05-23 09:07:01 Medium Settings
+2025-05-23 09:07:01 Medium Settings
+2025-05-23 09:07:01 AUTOBEDLEVEL
+2025-05-23 09:07:01 AUTOBEDLEVEL
+2025-05-23 09:11:14 Leadscrew adjustments made: 0.032 0.072 0.011, points used 3, (mean, deviation) before (0.030, 0.019) after (-0.000, 0.000)
+2025-05-23 09:12:22 K1 CALIB
+2025-05-23 09:12:22 K1 CALIB
+2025-05-23 09:12:46 Stopped at height 0.383 mm
+2025-05-23 09:12:52 Scanning probe offset: -0.001mm, A: -3.151e-4, B: 9.589e-9, C: -5.464e-12, reading at trigger height 7655, rms error 0.003mm
+2025-05-23 09:12:52 Calibration successful, sensor drive current is 18, offset is 147752
+2025-05-23 09:12:54 K1 BED CALIBRATING
+2025-05-23 09:12:58 K1 BED CALIBRATING
+2025-05-23 09:13:10 Stopped at height 0.394 mm
+2025-05-23 09:14:43 200 points probed, min error -0.240, max error 0.490, mean 0.122, deviation 0.151
+Height map saved to file 0:/sys/heightmap.csv
+2025-05-23 09:14:43 Height map saved to file 0:/sys/scan_leveling.csv
+2025-05-23 09:16:55 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 09:17:02 Tool 0: offsets X0.000 Y0.000 Z-26.352 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-23 09:17:03 AUTOBEDLEVEL
+2025-05-23 09:17:03 AUTOBEDLEVEL
+2025-05-23 09:17:03 T0
+2025-05-23 09:21:38 Leadscrew adjustments made: 0.016 0.069 0.037, points used 3, (mean, deviation) before (0.034, 0.017) after (-0.000, 0.000)
+2025-05-23 09:21:38 Leadscrew adjustments made: 0.016 0.069 0.037, points used 3, (mean, deviation) before (0.034, 0.017) after (-0.000, 0.000)
+2025-05-23 09:22:52 Tool 0: offsets X0.000 Y0.000 Z-26.352 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-23 09:24:20 Input Settings
+2025-05-23 09:24:20 InputShaping Settings
+2025-05-23 09:24:32 Printing...
+2025-05-23 09:24:44 Resume state saved
+2025-05-23 09:24:57 Printing paused at X650.9 Y410.5 Z0.3 C60.0
+2025-05-23 09:24:57 Done printing file
+2025-05-23 09:24:57 Done printing file
+2025-05-23 09:24:57 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 7m
+2025-05-23 09:24:58 T0
+2025-05-23 09:25:01 Tool 0: offsets X0.000 Y0.000 Z-26.352 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-23 09:25:50 G10 P0 Z0 R150 S150
+2025-05-23 09:25:50 AUTOBEDLEVEL
+2025-05-23 09:25:50 AUTOBEDLEVEL
+2025-05-23 09:25:51 T0
+2025-05-23 09:26:43 T0
+2025-05-23 09:30:01 Leadscrew adjustments made: -0.124 0.245 0.401, points used 3, (mean, deviation) before (0.151, 0.204) after (0.000, 0.000)
+2025-05-23 09:32:39 Leadscrew adjustments made: -0.004 -0.006 -0.014, points used 3, (mean, deviation) before (-0.008, 0.004) after (-0.000, 0.000)
+2025-05-23 09:33:50 Stopped at height 49.872 mm
+2025-05-23 09:33:54 Tool 0: offsets X0.000 Y0.000 Z0.000 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-23 09:37:11 G10 L1 P0 Z"{-(move.axes[2].machinePosition)}"
+2025-05-23 09:37:41 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 09:37:41 AUTOBEDLEVEL
+2025-05-23 09:37:41 AUTOBEDLEVEL
+2025-05-23 09:37:45 T0
+2025-05-23 09:42:54 Leadscrew adjustments made: 0.128 0.156 0.153, points used 3, (mean, deviation) before (0.143, 0.011) after (0.000, 0.000)
+2025-05-23 09:42:54 Leadscrew adjustments made: 0.128 0.156 0.153, points used 3, (mean, deviation) before (0.143, 0.011) after (0.000, 0.000)
+2025-05-23 09:44:07 Tool 0: offsets X0.000 Y0.000 Z-26.302 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-23 09:44:47 Input Settings
+2025-05-23 09:44:47 InputShaping Settings
+2025-05-23 09:44:59 Printing...
+2025-05-23 11:28:39 T1
+2025-05-23 11:31:14 T1
+2025-05-23 13:40:06 Resume state saved
+2025-05-23 13:40:23 Printing resumed
+2025-05-23 13:40:23 Printing resumed
+2025-05-23 13:40:27 Resume state saved
+2025-05-23 13:40:42 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.30mm/rev, allow 10% to 120%, check all extruding moves every 3.0mm, mag 131 agc 15, measured infmm/rev, min 2147483647% max 2147483647% over 10.8mm
+2025-05-23 13:41:09 Printing resumed
+2025-05-23 13:41:09 Printing resumed
+2025-05-23 14:00:31 Resume state saved
+2025-05-23 14:00:40 Printing paused at X638.4 Y300.6 Z55.2 C60.0
+2025-05-23 14:00:47 Unloading
+2025-05-23 14:00:57 Error: Operation halted due to movement error: move duration too long
+2025-05-23 14:00:57 Done printing file
+2025-05-23 14:00:57 Done printing file
+2025-05-23 14:00:57 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 4h 21m
+2025-05-23 14:00:59 Unloaded
+2025-05-23 14:02:05 Heating
+2025-05-23 14:02:05 Heating
+2025-05-23 14:02:42 Load
+2025-05-23 14:03:27 Filament Loaded
+2025-05-23 14:04:06 M568 P0 S0
+2025-05-23 14:09:11 Error: M32: Cannot set file to print, because a file is already being printed
+2025-05-23 14:09:45 ; Configuration file for RepRapFirmware on Duet 3 Main Board 6HC
+; executed by the firmware on start-up
+;
+; generated by RepRapFirmware Configuration Tool v3.5.0-rc.3+2 on Thu Mar 28 2024 11:42:04 GMT+0100 (Ora standard dell’Europa centrale)
+
+; General
+M550 P"ElementoTC-beta"                                     ; set hostname
+M952 B0 S1000
+; Wait a moment for the CAN expansion boards to become available
+G4 S4
+
+M569.1 P70.0 T3 E8:16 R50 I0 D0
+M569.1 P71.0 T3 E8:16 R50 I0 D0
+M569.1 P72.0 T3 E8:16 R50 I0 D0
+M569.1 P73.0 T3 E4:8 R50 I0 D0
+M569.1 P74.0 T3 E4:8 R50 I0 D0
+M569.1 P75.0 T3 E4:8 R50 I0 D0
+
+; Smart Drivers
+M569 P70.0 S0 D4                                       ; driver 70.0 goes forwards (X axis)
+M569 P71.0 S1 D4                                       ; driver 71.0 goes forwards (Y axis)
+M569 P72.0 S1 D4                                       ; driver 72.0 goes forwards (Y axis)
+M569 P73.0 S0 D4                                       ; driver 73.0 goes forwards (ZL axis)
+M569 P74.0 S0 D2                                       ; driver 74.0 goes forwards (Z axis)
+M569 P75.0 S0 D4                                       ; driver 75.0 goes forwards (Z axis)
+M569 P121.0 S0 D2                                      ; driver 121.0 goes forwards (extruder 0)
+M569 P122.0 S0 D2                                      ; driver 122.0 goes forwards (extruder 1)
+M569 P0.0 S0 D2 V0                                     ; driver 122.0 goes forwards (TC)
+
+
+; Axes C
+M584 C0.0
+M350 C16
+M906 C800
+M92 C200
+M208 C0:70
+M566 C2000
+M203 C20000
+M201 C4000
+
+M584 X70.0 Y71.0:72.0 Z73.0:74.0:75.0                  ; set axis mapping
+M350 X16 Y16 Z16 I1                                    ; configure microstepping with interpolation
+M906 X2200 Y2200 Z2200                                 ; set axis driver currents
+M92 X100 Y100 Z640                                     ; configure steps per mm
+M208 X-30:1100 Y-10:600 Z0:620                         ; set minimum and maximum axis limits
+M566 X600 Y600 Z20 P1                                  ; set maximum instantaneous speed changes (mm/min)
+M203 X18000 Y18000 Z3000                                 ; set maximum speeds (mm/min)
+M201 X10000 Y10000 Z40                                   ; set accelerations (mm/s^2)
+M204 P10000 T14000
+
+; Extruders
+M584 E121.0:122.0                                      ; set extruder mapping
+M350 E4:4 I1                                           ; configure microstepping with interpolation
+M906 E1000:1000                                        ; set extruder driver currents
+M92 E210:210                                           ; configure steps per mm
+M566 E120:120                                        ; set maximum instantaneous speed changes (mm/min)
+M203 E10000:10000                                      ; set maximum speeds (mm/min)
+M201 E5000:5000                                          ; set accelerations (mm/s^2)
+
+; Kinematics
+M669 K0                                                ; configure Cartesian kinematics
+;M955 P120.0 I20                                        ; Add accelerometer on SZP with CAN address 120 and specify orientation
+M955 P121.0 I54 S800
+;M955 P122.0 I54
+
+M593 P"MZV" F27.4
+
+; Endstops
+M574 X1 P"!io0.in" S1                                  ; configure X axis endstop
+M574 Y2 P"!io1.in" S1                                  ;+!io2.in" S1                     ; configure Y axis endstop
+M574 Z1 S2 K0
+M574 Z2 P"!io3.in+!io2.in+!io5.in" S1
+M574 C1 S3                                             ; Stall detect coupler at low end of its range
+
+;M671 X-16:550:1116 Y517:-175:517 S20 ; position of leadscrew/bed pivot point at front left, rear middle and front right
+
+M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/bed pivot point at front left, rear middle and front right
+
+; Probes
+M558 A2 Z1 K0 B1 P8 C"io4.in" H50 F300:150 T9000 S0.1 R0.5    ; set Z probe type to bltouch and the dive height + speeds
+G31 K0 P500 X0 Y55 Z0.6                                ; 4.25   ;0.6
+M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F8000 T8000
+G31 K1 X0 Y36 Z0.6 P9598
+M558.1 K1 A-3.049e-4 B4.389e-10 C-1.320e-16
+M558.2 K1 S18 R145045
+
+
+; Mesh Bed Compensation
+M557 X0:1080 Y26:580 P20:10                            ; define grid for mesh bed compensation
+M376 H0
+; Sensors
+M308 S0 P"temp0" Y"thermistor" T50000 A"Heated Bed"    ; configure sensor #0
+M308 S1 P"121.temp0" Y"pt1000" A"T0"                   ; configure sensor #1
+M308 S2 P"122.temp0" Y"pt1000" A"T1"                   ; configure sensor #2
+M308 A"CH" S3 Y"thermistor" P"120.temp0"               ; thermistor on coil         ; configure sensor #3
+
+; Heaters
+M950 H0 C"out0" T0                                     ; create heater #0
+M143 H0 P0 T0 C0 S125 A0                               ; configure heater monitor #0 for heater #0
+M307 H0 R0.027 K0.040:0.000 D43.51 E1.35 S1.00 B0      ; configure model of heater #0
+M950 H1 C"121.out0" T1                                 ; create heater #1
+M143 H1 P0 T1 C0 S285 A0                               ; configure heater monitor #0 for heater #1
+M307 H1 R1.774 K0.315:0.076 D6.54 E1.35 S1.00 B0 V23.4 ; configure model of heater #1
+M950 H2 C"122.out0" T2                                 ; create heater #2
+M143 H2 P0 T2 C0 S285 A0                               ; configure heater monitor #0 for heater #2
+M307 H2 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #2
+M950 H3 C"!out4" T3                                    ; create heater #3
+M143 H3 P0 T3 C0 S285 A0                               ; configure heater monitor #0 for heater #3
+M307 H3 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #3
+
+;M570 H3 P180 T20 R20
+
+; Heated beds
+M140 P0 H0                                             ; configure heated bed #0
+
+; Heated chambers
+M141 P0 H3                                             ; configure heated chamber #1
+
+;motor temp sensor
+M308 S4 P"70.temp0" Y"thermistor" A"X"
+M308 S5 P"71.temp0" Y"thermistor" A"YL"
+M308 S6 P"72.temp0" Y"thermistor" A"YR"
+M308 S7 P"73.temp0" Y"thermistor" A"ZL"
+M308 S8 P"74.temp0" Y"thermistor" A"ZC"
+M308 S9 P"75.temp0" Y"thermistor" A"ZR"
+
+; Fans
+M950 F0 C"121.out1"                                    ; create fan #0
+M106 P0 C"FT0" S0 L0 X1 B0.1                           ; configure fan #0
+M950 F1 C"122.out1"                                    ; create fan #1
+M106 P1 C"FT1" S0 L0 X1 B0.1                           ; configure fan #1
+M950 F2 C"121.out2"                                    ; create fan #2
+M106 P2 C"FNT0" S0 B0.1 H1 T45                         ; configure fan #2
+M950 F3 C"122.out2"                                    ; create fan #3
+M106 P3 C"FNT1" S0 B0.1 H2 T45                         ; configure fan #3
+
+; Led
+M950 F4 C"out8"
+M106 P4 B300 C"LED" S1
+M106 P4 S1
+;Fan QC
+M950 F5 C"out9"
+M106 P5 B300 C"QC" S1
+M106 P5 S1
+
+
+; Trigger TC/0/1
+M950 J6 C"io6.in"
+M950 J7 C"!io7.in"
+M950 J8 C"!io8.in"
+M581 T2 P6 S-1 
+M581 T3 P7 S1
+M581 T4 P8 S1
+
+; Tools
+M563 P0 S"T0" D0 H1 F0                                 ; create tool #0
+M568 P0 R0 S0                                          ; set initial tool #0 active and standby temperatures to 0C
+M563 P1 S"T1" D1 H2 F0                                 ; create tool #0
+M568 P1 R0 S0 
+M591 D0 P3 A1 L25.3 R10:120 C"121.io1.in" E3 S2        ; MFM config
+
+; Miscellaneous
+;T0                                       ; select first tool
+if sensors.gpIn[7].value == 0 && sensors.gpIn[8].value == 0 
+    M118 P0 S"No extruder in printer, please resolve conflict"
+if sensors.gpIn[6].value == 1 && sensors.gpIn[8].value == 1
+    M118 P0 S"Extruder T0 on TC"
+    T0 P0
+    G92 C60
+if sensors.gpIn[6].value == 1 && sensors.gpIn[7].value == 1
+    M118 P0 S"Extruder T1 on TC"
+    T1 P0
+    G92 C60
+    
+
+global bedTemperatureT0 = 0
+global bedTemperatureT1 = 0
+
+global xPT0Position = 480
+global yPT0Position = 0
+
+global xPT1Position = 620
+global yPT1Position = 0
+
+M950 E0 C"led" T1 U78 Q3000000                         ; create a RGB Neopixel LED strip on the LED port and set SPI frequency to 3MHz
+M150 E0 R255 U85 B0 S78 P255
+
+M98 P"yPT0-offset.g"
+M98 P"yPT1-offset.g"
+; Load Config saved
+M501
+M929 S3
+2025-05-23 14:09:50 Event logging stopped
+2025-05-23 14:10:07 Event logging started
+2025-05-23 14:10:07 Done!
+2025-05-23 14:10:26 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 14:10:26 AUTOBEDLEVEL
+2025-05-23 14:10:26 AUTOBEDLEVEL
+2025-05-23 14:11:01 T0
+2025-05-23 14:15:23 Leadscrew adjustments made: 0.316 0.059 -0.306, points used 3, (mean, deviation) before (0.022, 0.236) after (-0.000, 0.000)
+2025-05-23 14:15:23 Leadscrew adjustments made: 0.316 0.059 -0.306, points used 3, (mean, deviation) before (0.022, 0.236) after (-0.000, 0.000)
+2025-05-23 14:18:01 Leadscrew adjustments made: -0.016 0.022 0.016, points used 3, (mean, deviation) before (0.003, 0.015) after (0.000, 0.000)
+2025-05-23 14:18:01 Leadscrew adjustments made: -0.016 0.022 0.016, points used 3, (mean, deviation) before (0.003, 0.015) after (0.000, 0.000)
+2025-05-23 14:19:14 Tool 0: offsets X0.000 Y0.000 Z-26.602 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-23 14:20:46 Input Settings
+2025-05-23 14:20:46 InputShaping Settings
+2025-05-23 14:20:57 Printing...
+2025-05-23 14:21:05 Resume state saved
+2025-05-23 14:21:12 Printing paused at X657.6 Y199.8 Z0.3 C60.0
+2025-05-23 14:21:13 Done printing file
+2025-05-23 14:21:13 Done printing file
+2025-05-23 14:21:13 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 10m
+2025-05-23 14:21:15 T0
+2025-05-23 14:21:18 Tool 0: offsets X0.000 Y0.000 Z-26.602 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-23 14:21:54 T0
+2025-05-23 14:22:07 Error: G4: Z probe readings not consistent
+2025-05-23 14:22:07 Error: G4: Z probe readings not consistent
+2025-05-23 14:22:16 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 14:22:20 Tool 0: offsets X0.000 Y0.000 Z-26.602 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-23 14:22:21 AUTOBEDLEVEL
+2025-05-23 14:22:21 AUTOBEDLEVEL
+2025-05-23 14:22:22 T0
+2025-05-23 14:22:39 Event logging stopped
+2025-05-23 14:22:56 Event logging started
+2025-05-23 14:22:56 Done!
+2025-05-23 14:22:59 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 14:23:15 Done printing file
+2025-05-23 14:23:15 Done printing file
+2025-05-23 14:23:15 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 0m
+2025-05-23 14:23:15 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-23 14:23:34 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-23 14:23:34 AUTOBEDLEVEL
+2025-05-23 14:23:34 AUTOBEDLEVEL
+2025-05-23 14:24:58 M568 P0 R210
+2025-05-23 14:28:11 Leadscrew adjustments made: 0.041 0.068 0.034, points used 3, (mean, deviation) before (0.043, 0.011) after (-0.000, 0.000)
+2025-05-23 14:28:11 Leadscrew adjustments made: 0.041 0.068 0.034, points used 3, (mean, deviation) before (0.043, 0.011) after (-0.000, 0.000)
+2025-05-23 14:29:24 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-23 14:30:13 Input Settings
+2025-05-23 14:30:13 InputShaping Settings
+2025-05-23 14:30:25 Printing...
+2025-05-23 15:56:11 Resume state saved
+2025-05-23 15:56:19 Printing paused at X638.0 Y203.8 Z1.8 C60.0
+2025-05-23 15:56:19 Done printing file
+2025-05-23 15:56:19 Done printing file
+2025-05-23 15:56:19 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 1h 32m
+2025-05-23 15:56:20 T0
+2025-05-23 15:56:24 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-23 15:56:28 T0
+2025-05-23 15:56:20 Event logging started
+2025-05-23 15:56:20 Done!
+2025-05-26 08:50:19 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-26 08:50:48 Done printing file
+2025-05-26 08:50:48 Done printing file
+2025-05-26 08:50:48 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 0m
+2025-05-26 08:50:48 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-26 08:51:30 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-26 08:51:30 AUTOBEDLEVEL
+2025-05-26 08:51:30 AUTOBEDLEVEL
+2025-05-26 08:56:06 Leadscrew adjustments made: 0.122 0.057 0.198, points used 3, (mean, deviation) before (0.141, 0.046) after (0.000, 0.000)
+2025-05-26 08:56:06 Leadscrew adjustments made: 0.122 0.057 0.198, points used 3, (mean, deviation) before (0.141, 0.046) after (0.000, 0.000)
+2025-05-26 08:57:19 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 230.0/230.0
+2025-05-26 08:58:53 Input Settings
+2025-05-26 08:58:53 InputShaping Settings
+2025-05-26 08:59:05 Printing...
+2025-05-26 09:50:43 Resume state saved
+2025-05-26 09:50:50 Printing paused at X517.8 Y218.8 Z3.3 C60.0
+2025-05-26 09:50:51 Done printing file
+2025-05-26 09:50:51 Done printing file
+2025-05-26 09:50:51 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 59m
+2025-05-26 09:50:52 T0
+2025-05-26 09:50:56 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-26 09:53:16 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-26 09:53:17 AUTOBEDLEVEL
+2025-05-26 09:53:17 AUTOBEDLEVEL
+2025-05-26 09:53:17 T0
+2025-05-26 09:57:29 Leadscrew adjustments made: -0.014 0.174 -0.011, points used 3, (mean, deviation) before (0.020, 0.066) after (-0.000, 0.000)
+2025-05-26 09:57:29 Leadscrew adjustments made: -0.014 0.174 -0.011, points used 3, (mean, deviation) before (0.020, 0.066) after (-0.000, 0.000)
+2025-05-26 09:58:42 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 245.0/245.0
+2025-05-26 10:00:13 Input Settings
+2025-05-26 10:00:13 InputShaping Settings
+2025-05-26 10:00:24 Printing...
+2025-05-26 10:04:41 T1
+2025-05-26 10:04:51 T1
+2025-05-26 10:52:06 M568 P0 S255
+2025-05-26 17:37:38 T0
+2025-05-26 17:38:01 Print End
+2025-05-26 17:38:01 Done printing file
+2025-05-26 17:38:01 Done printing file
+2025-05-26 17:38:01 Finished printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 7h 44m
+2025-05-26 17:38:27 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 07:55:16 Event logging stopped
+2025-05-27 07:55:33 Event logging started
+2025-05-27 07:55:33 Done!
+2025-05-27 08:05:09 Error: Expansion board 122 stopped sending status
+2025-05-27 08:08:17 T1
+2025-05-27 08:10:30 Event logging stopped
+2025-05-27 08:11:03 Event logging started
+2025-05-27 08:11:03 Done!
+2025-05-27 08:11:17 File 0:/gcodes/FETCDEV_SupportTest_small.gcode selected for printing
+2025-05-27 08:11:18 AUTOBEDLEVEL
+2025-05-27 08:11:18 AUTOBEDLEVEL
+2025-05-27 08:11:45 Error: M569: No encoder specified for closed loop drive mode
+2025-05-27 08:11:45 Error: M569: No encoder specified for closed loop drive mode
+2025-05-27 08:11:52 T0
+2025-05-27 08:12:27 Error: M569: No encoder specified for closed loop drive mode
+2025-05-27 08:12:27 Error: M569: No encoder specified for closed loop drive mode
+2025-05-27 08:12:38 Error: G30: Insufficient axes homed for bed probing
+2025-05-27 08:12:38 Error: G30: Insufficient axes homed for bed probing
+2025-05-27 08:12:55 Event logging stopped
+2025-05-27 08:13:28 Event logging started
+2025-05-27 08:13:28 Done!
+2025-05-27 08:13:43 File 0:/gcodes/FETCDEV_SupportTest_small.gcode selected for printing
+2025-05-27 08:13:59 Done printing file
+2025-05-27 08:13:59 Done printing file
+2025-05-27 08:13:59 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest_small.gcode, print time was 0h 0m
+2025-05-27 08:14:00 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-27 08:14:18 File 0:/gcodes/FETCDEV_SupportTest_small.gcode selected for printing
+2025-05-27 08:14:18 AUTOBEDLEVEL
+2025-05-27 08:14:18 AUTOBEDLEVEL
+2025-05-27 08:20:37 Leadscrew adjustments made: 0.328 0.080 0.346, points used 3, (mean, deviation) before (0.292, 0.091) after (0.000, 0.000)
+2025-05-27 08:20:37 Leadscrew adjustments made: 0.328 0.080 0.346, points used 3, (mean, deviation) before (0.292, 0.091) after (0.000, 0.000)
+2025-05-27 08:21:52 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 255.0/255.0
+2025-05-27 08:23:27 CAN response timeout: board 122, req type 6043, RID 171
+2025-05-27 08:23:27 CAN response timeout: board 122, req type 6043, RID 171
+2025-05-27 08:23:28 CAN response timeout: board 122, req type 6042, RID 180
+2025-05-27 08:23:28 CAN response timeout: board 122, req type 6042, RID 180
+2025-05-27 08:23:28 Input Settings
+2025-05-27 08:23:28 InputShaping Settings
+2025-05-27 08:23:36 Resume state saved
+2025-05-27 08:23:50 Printing resumed
+2025-05-27 08:23:50 Printing resumed
+2025-05-27 08:23:50 Printing...
+2025-05-27 08:24:03 Resume state saved
+2025-05-27 08:24:18 Printing resumed
+2025-05-27 08:24:18 Printing resumed
+2025-05-27 08:24:21 Error: M591: missing parameter 'D'
+2025-05-27 08:24:26 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 10, no calibration data
+2025-05-27 08:24:30 Resume state saved
+2025-05-27 08:24:48 Printing resumed
+2025-05-27 08:24:48 Printing resumed
+2025-05-27 08:24:51 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 10.6mm
+2025-05-27 08:25:02 Resume state saved
+2025-05-27 08:25:21 Printing resumed
+2025-05-27 08:25:21 Printing resumed
+2025-05-27 08:25:25 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 12.8mm
+2025-05-27 08:25:28 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 10, no calibration data
+2025-05-27 08:25:31 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 10, no calibration data
+2025-05-27 08:25:32 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 10, no calibration data
+2025-05-27 08:25:35 Resume state saved
+2025-05-27 08:25:37 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 12.7mm
+2025-05-27 08:26:22 Printing resumed
+2025-05-27 08:26:22 Printing resumed
+2025-05-27 08:26:35 Resume state saved
+2025-05-27 08:26:44 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, enabled when SD printing, 26.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 12.7mm
+2025-05-27 08:27:11 Printing resumed
+2025-05-27 08:27:11 Printing resumed
+2025-05-27 08:27:50 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 26.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 36.1mm
+2025-05-27 08:27:52 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 26.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 39.3mm
+2025-05-27 08:27:56 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 26.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 42.5mm
+2025-05-27 08:27:59 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 26.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 45.6mm
+2025-05-27 08:28:18 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-27 08:28:21 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-27 08:28:26 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 12.7mm
+2025-05-27 08:28:34 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 19.1mm
+2025-05-27 08:28:38 Resume state saved
+2025-05-27 08:28:47 Printing paused at X471.5 Y327.8 Z0.3 C60.0
+2025-05-27 08:28:53 Printing resumed
+2025-05-27 08:28:53 Printing resumed
+2025-05-27 08:28:57 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-27 08:29:01 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-27 08:29:04 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-27 08:29:06 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, no calibration data
+2025-05-27 08:29:08 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured infmm/rev, min 2147483647% max 2147483647% over 12.7mm
+2025-05-27 08:31:19 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 5985.14mm/rev, min -2403% max 7732% over 140.3mm
+2025-05-27 08:31:26 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 6283.81mm/rev, min -2523% max 8118% over 147.3mm
+2025-05-27 08:31:29 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 6283.81mm/rev, min -2523% max 8118% over 147.3mm
+2025-05-27 08:31:33 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 6552.40mm/rev, min -2631% max 8465% over 153.6mm
+2025-05-27 08:31:35 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 6552.40mm/rev, min -2631% max 8465% over 153.6mm
+2025-05-27 08:31:40 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 6765.53mm/rev, min -2717% max 8740% over 158.6mm
+2025-05-27 08:31:41 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 6765.53mm/rev, min -2717% max 8740% over 158.6mm
+2025-05-27 08:31:46 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 7033.12mm/rev, min -2824% max 9086% over 164.8mm
+2025-05-27 08:31:47 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 7033.12mm/rev, min -2824% max 9086% over 164.8mm
+2025-05-27 08:31:54 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 7331.78mm/rev, min -2944% max 9471% over 171.8mm
+2025-05-27 08:31:57 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 7468.52mm/rev, min -2999% max 9648% over 175.0mm
+2025-05-27 08:31:58 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 7468.52mm/rev, min -2999% max 9648% over 175.0mm
+2025-05-27 08:32:01 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 7604.85mm/rev, min -3054% max 9824% over 178.2mm
+2025-05-27 08:32:03 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 7741.59mm/rev, min -3109% max 10001% over 181.4mm
+2025-05-27 08:32:05 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 10, measured 7741.59mm/rev, min -3109% max 10001% over 181.4mm
+2025-05-27 08:33:38 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 13343.16mm/rev, min -12746% max 17237% over 273.6mm
+2025-05-27 08:33:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 10, measured 13655.24mm/rev, min -13044% max 17640% over 280.0mm
+2025-05-27 08:38:26 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured 26191.67mm/rev, min -25019% max 33835% over 562.7mm
+2025-05-27 08:38:29 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured 26631.63mm/rev, min -25440% max 34404% over 572.2mm
+2025-05-27 08:38:33 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured 26871.90mm/rev, min -25669% max 34714% over 577.3mm
+2025-05-27 08:42:42 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured 51699.35mm/rev, min -49385% max 66787% over 1110.7mm
+2025-05-27 08:44:48 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured 68557.86mm/rev, min -65489% max 88565% over 1406.0mm
+2025-05-27 08:45:36 Resume state saved
+2025-05-27 08:45:44 Printing paused at X576.9 Y314.9 Z1.8 C60.0
+2025-05-27 08:45:53 Printing resumed
+2025-05-27 08:45:53 Printing resumed
+2025-05-27 08:45:55 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured 73108.05mm/rev, min -69836% max 94443% over 1499.3mm
+2025-05-27 08:46:02 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 18.0mm
+2025-05-27 08:46:09 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 37.9mm
+2025-05-27 08:46:11 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 37.9mm
+2025-05-27 08:46:13 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 46.3mm
+2025-05-27 08:46:14 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 46.3mm
+2025-05-27 08:46:15 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 54.3mm
+2025-05-27 08:46:16 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 54.3mm
+2025-05-27 08:46:19 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 64.9mm
+2025-05-27 08:46:21 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 64.9mm
+2025-05-27 08:46:23 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 73.1mm
+2025-05-27 08:46:24 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 76.3mm
+2025-05-27 08:46:25 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 79.3mm
+2025-05-27 08:46:27 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 85.8mm
+2025-05-27 08:46:28 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 89.5mm
+2025-05-27 08:46:29 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 89.5mm
+2025-05-27 08:46:30 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 93.5mm
+2025-05-27 08:46:31 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 96.5mm
+2025-05-27 08:46:32 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 96.5mm
+2025-05-27 08:46:33 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 96.5mm
+2025-05-27 08:46:34 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 101.1mm
+2025-05-27 08:46:35 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 101.1mm
+2025-05-27 08:46:36 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 105.3mm
+2025-05-27 08:46:37 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 105.3mm
+2025-05-27 08:46:38 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 109.6mm
+2025-05-27 08:46:42 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 113.3mm
+2025-05-27 08:46:43 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 117.1mm
+2025-05-27 08:46:44 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 117.1mm
+2025-05-27 08:46:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 123.2mm
+2025-05-27 08:46:55 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 148.7mm
+2025-05-27 08:46:57 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 156.0mm
+2025-05-27 08:46:58 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 164.3mm
+2025-05-27 08:46:59 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 164.3mm
+2025-05-27 08:47:01 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 170.2mm
+2025-05-27 08:47:02 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 170.2mm
+2025-05-27 08:47:03 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 170.2mm
+2025-05-27 08:47:05 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 181.6mm
+2025-05-27 08:47:06 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 185.0mm
+2025-05-27 08:47:07 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 185.0mm
+2025-05-27 08:47:50 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 293.6mm
+2025-05-27 08:47:51 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 0.51mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 296.7mm
+2025-05-27 08:47:59 Resume state saved
+2025-05-27 08:48:06 Printing paused at X580.5 Y249.2 Z2.7 C60.0
+2025-05-27 08:48:12 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 319.2mm
+2025-05-27 08:48:24 Printing resumed
+2025-05-27 08:48:24 Printing resumed
+2025-05-27 08:48:28 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, no calibration data
+2025-05-27 08:48:32 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 15.9mm
+2025-05-27 08:48:34 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 20.6mm
+2025-05-27 08:48:36 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 25.3mm
+2025-05-27 08:48:36 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 29.0mm
+2025-05-27 08:48:38 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 32.0mm
+2025-05-27 08:48:39 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 35.2mm
+2025-05-27 08:48:40 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 38.3mm
+2025-05-27 08:48:41 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 41.8mm
+2025-05-27 08:48:42 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 45.5mm
+2025-05-27 08:48:44 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 49.5mm
+2025-05-27 08:48:56 Debugging on for modules: Gcodes(3 - 0xff)
+Debugging off for modules: Platform(0) Network(1) Webserver(2) Move(4) Heat(5) Kinematics(6) InputShaping(7) Debug(8) PrintMonitor(9) Storage(10) PortControl(11) DuetExpansion(12) FilamentSensors(13) WiFi(14) Display(15) SbcInterface(16) CAN(17) Expansion(18)
+2025-05-27 08:49:14 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured infmm/rev, min 2147483647% max 2147483647% over 120.3mm
+2025-05-27 08:53:28 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -784771.56mm/rev, min 18226% max -19461% over 766.4mm
+2025-05-27 08:53:32 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -792339.44mm/rev, min 18402% max -19648% over 773.8mm
+2025-05-27 08:53:34 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -797230.25mm/rev, min 18516% max -19769% over 778.5mm
+2025-05-27 08:53:35 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -800390.06mm/rev, min 18589% max -19848% over 781.6mm
+2025-05-27 08:53:36 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -803598.62mm/rev, min 18664% max -19927% over 784.8mm
+2025-05-27 08:53:37 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -807777.56mm/rev, min 18761% max -20031% over 788.8mm
+2025-05-27 08:53:38 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -811229.94mm/rev, min 18841% max -20117% over 792.2mm
+2025-05-27 08:53:38 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -811229.94mm/rev, min 18841% max -20117% over 792.2mm
+2025-05-27 08:53:39 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -811229.94mm/rev, min 18841% max -20117% over 792.2mm
+2025-05-27 08:53:40 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -816042.75mm/rev, min 18953% max -20236% over 796.9mm
+2025-05-27 08:53:41 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -819836.44mm/rev, min 19041% max -20330% over 800.6mm
+2025-05-27 08:53:42 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -824702.88mm/rev, min 19154% max -20451% over 805.4mm
+2025-05-27 08:53:43 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -824702.88mm/rev, min 19154% max -20451% over 805.4mm
+2025-05-27 08:53:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -831051.69mm/rev, min 19301% max -20608% over 811.6mm
+2025-05-27 08:53:48 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -842130.38mm/rev, min 19559% max -20883% over 822.4mm
+2025-05-27 08:53:49 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -845329.19mm/rev, min 19633% max -20962% over 825.5mm
+2025-05-27 08:55:38 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1129660.75mm/rev, min 26236% max -28013% over 1103.2mm
+2025-05-27 08:55:39 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1129660.75mm/rev, min 26236% max -28013% over 1103.2mm
+2025-05-27 08:55:40 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1135000.25mm/rev, min 26360% max -28145% over 1108.4mm
+2025-05-27 08:55:41 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1135000.25mm/rev, min 26360% max -28145% over 1108.4mm
+2025-05-27 08:55:42 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1141490.50mm/rev, min 26511% max -28306% over 1114.7mm
+2025-05-27 08:55:43 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1141490.50mm/rev, min 26511% max -28306% over 1114.7mm
+2025-05-27 08:55:43 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1144967.25mm/rev, min 26592% max -28393% over 1118.1mm
+2025-05-27 08:55:44 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1144967.25mm/rev, min 26592% max -28393% over 1118.1mm
+2025-05-27 08:55:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1144967.25mm/rev, min 26592% max -28393% over 1118.1mm
+2025-05-27 08:55:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1144967.25mm/rev, min 26592% max -28393% over 1118.1mm
+2025-05-27 08:55:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1149443.62mm/rev, min 26696% max -28504% over 1122.5mm
+2025-05-27 08:55:46 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1149443.62mm/rev, min 26696% max -28504% over 1122.5mm
+2025-05-27 08:55:46 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1149443.62mm/rev, min 26696% max -28504% over 1122.5mm
+2025-05-27 08:55:46 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1149443.62mm/rev, min 26696% max -28504% over 1122.5mm
+2025-05-27 08:55:47 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1149443.62mm/rev, min 26696% max -28504% over 1122.5mm
+2025-05-27 08:55:47 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1149443.62mm/rev, min 26696% max -28504% over 1122.5mm
+2025-05-27 08:55:48 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1155212.25mm/rev, min 26830% max -28647% over 1128.1mm
+2025-05-27 08:55:49 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1155212.25mm/rev, min 26830% max -28647% over 1128.1mm
+2025-05-27 08:55:49 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1155212.25mm/rev, min 26830% max -28647% over 1128.1mm
+2025-05-27 08:55:50 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1161580.62mm/rev, min 26978% max -28805% over 1134.4mm
+2025-05-27 08:55:51 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 131 agc 12, measured -1161580.62mm/rev, min 26978% max -28805% over 1134.4mm
+2025-05-27 08:55:53 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1165769.25mm/rev, min 27075% max -28908% over 1138.4mm
+2025-05-27 08:55:54 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1171479.25mm/rev, min 27208% max -29050% over 1144.0mm
+2025-05-27 08:55:57 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1181665.62mm/rev, min 27444% max -29303% over 1154.0mm
+2025-05-27 08:55:58 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1184947.38mm/rev, min 27520% max -29384% over 1157.2mm
+2025-05-27 08:55:59 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured -1188141.25mm/rev, min 27595% max -29463% over 1160.3mm
+2025-05-27 08:58:57 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured infmm/rev, min -2147483648% max 2147483647% over 1518.3mm
+2025-05-27 08:58:58 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured infmm/rev, min -2147483648% max 2147483647% over 1518.3mm
+2025-05-27 08:58:59 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured infmm/rev, min -2147483648% max 2147483647% over 1521.4mm
+2025-05-27 09:16:05 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 12, measured 4890.81mm/rev, min -3746% max 14854% over 3687.2mm
+2025-05-27 09:16:09 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 12, measured 4904.13mm/rev, min -3756% max 14894% over 3697.3mm
+2025-05-27 09:16:11 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 12, measured 4904.13mm/rev, min -3756% max 14894% over 3697.3mm
+2025-05-27 09:29:34 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 12, measured 1727.40mm/rev, min -2597% max 5640% over 5528.0mm
+2025-05-27 09:29:40 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 12, measured 1731.99mm/rev, min -2604% max 5655% over 5542.7mm
+2025-05-27 09:29:45 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 12, measured 1736.87mm/rev, min -2612% max 5670% over 5558.3mm
+2025-05-27 10:40:53 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 14, measured 4483.00mm/rev, min -6741% max 14636% over 15349.0mm
+2025-05-27 10:40:55 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 14, measured 4485.02mm/rev, min -6744% max 14643% over 15355.9mm
+2025-05-27 10:54:09 Duet3D magnetic filament monitor on pin 121.io1.in, firmware version 4, disabled, 25.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 14, measured 5223.86mm/rev, min -7855% max 17055% over 17906.0mm
+2025-05-27 11:01:31 Paused print, file offset=2658572
+2025-05-27 11:01:31 Paused print, file offset=2658902
+2025-05-27 11:01:31 Resume state saved
+2025-05-27 11:01:39 Printing paused at X612.5 Y329.4 Z30.6 C60.0
+2025-05-27 11:01:52 Done printing file
+2025-05-27 11:01:52 Done printing file
+2025-05-27 11:01:52 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest_small.gcode, print time was 2h 43m
+2025-05-27 11:01:53 T0
+2025-05-27 11:01:57 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 11:49:39 Event logging stopped
+2025-05-27 11:49:56 Event logging started
+2025-05-27 11:49:56 Done!
+2025-05-27 11:50:39 M568 P1 S120
+2025-05-27 11:50:49 M568 P1 A2
+2025-05-27 11:51:16 T1
+2025-05-27 11:51:53 T0
+2025-05-27 11:52:07 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 11:52:17 G10 P1 Z0 R150 S150
+2025-05-27 11:52:17 AUTOBEDLEVEL
+2025-05-27 11:52:17 AUTOBEDLEVEL
+2025-05-27 11:52:18 T1
+2025-05-27 11:55:49 Leadscrew adjustments made: -0.119 0.419 0.349, points used 3, (mean, deviation) before (0.162, 0.211) after (0.000, 0.000)
+2025-05-27 11:57:39 Leadscrew adjustments made: -0.007 -0.040 -0.009, points used 3, (mean, deviation) before (-0.014, 0.011) after (-0.000, 0.000)
+2025-05-27 11:58:30 Stopped at height 49.980 mm
+2025-05-27 11:58:41 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 11:59:34 G10 L1 P1 Z"{-(move.axes[2].machinePosition)}"
+2025-05-27 12:00:50 T1
+2025-05-27 12:01:01 M568 P1 S0
+2025-05-27 13:12:30 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 13:12:30 Heating
+2025-05-27 13:12:30 Heating
+2025-05-27 13:12:37 Event logging stopped
+2025-05-27 13:12:54 Event logging started
+2025-05-27 13:12:54 Done!
+2025-05-27 13:13:08 Heating
+2025-05-27 13:13:08 Heating
+2025-05-27 13:13:54 Load
+2025-05-27 13:15:09 Filament Loaded
+2025-05-27 13:15:55 Extruder 1 has no filament sensor
+2025-05-27 13:17:17 Event logging stopped
+2025-05-27 13:17:34 Event logging started
+2025-05-27 13:17:34 Done!
+2025-05-27 13:19:24 Event logging stopped
+2025-05-27 13:19:41 Event logging started
+2025-05-27 13:19:41 Done!
+2025-05-27 13:24:13 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-27 13:24:13 AUTOBEDLEVEL
+2025-05-27 13:24:13 AUTOBEDLEVEL
+2025-05-27 13:24:51 T1
+2025-05-27 13:29:10 Leadscrew adjustments made: 0.215 0.111 -0.283, points used 3, (mean, deviation) before (-0.003, 0.194) after (-0.000, 0.000)
+2025-05-27 13:29:10 Leadscrew adjustments made: 0.215 0.111 -0.283, points used 3, (mean, deviation) before (-0.003, 0.194) after (-0.000, 0.000)
+2025-05-27 13:31:48 Leadscrew adjustments made: -0.025 0.006 0.018, points used 3, (mean, deviation) before (-0.002, 0.017) after (0.000, 0.000)
+2025-05-27 13:31:48 Leadscrew adjustments made: -0.025 0.006 0.018, points used 3, (mean, deviation) before (-0.002, 0.017) after (0.000, 0.000)
+2025-05-27 13:33:01 Tool 0: offsets X0.000 Y0.000 Z-26.000 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 13:34:18 Input Settings
+2025-05-27 13:34:18 InputShaping Settings
+2025-05-27 13:34:30 Printing...
+2025-05-27 14:03:06 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, enabled always, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 100, measured 27.92mm/rev, min 97% max 105% over 8329.3mm
+2025-05-27 14:03:29 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, enabled always, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 100, measured 27.92mm/rev, min 97% max 105% over 8387.9mm
+2025-05-27 14:03:50 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, enabled always, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 100, measured 27.92mm/rev, min 97% max 105% over 8446.4mm
+2025-05-27 14:51:15 Resume state saved
+2025-05-27 14:51:21 Error: M0: Pause the print before attempting to cancel it
+2025-05-27 14:51:24 Printing paused at X500.3 Y352.2 Z88.2 C60.0
+2025-05-27 14:51:26 Done printing file
+2025-05-27 14:51:26 Done printing file
+2025-05-27 14:51:26 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 1h 27m
+2025-05-27 14:51:28 T1
+2025-05-27 14:51:28 Event logging stopped
+2025-05-27 14:51:45 Event logging started
+2025-05-27 14:51:45 Done!
+2025-05-27 14:53:10 Event logging stopped
+2025-05-27 14:53:27 Event logging started
+2025-05-27 14:53:27 Done!
+2025-05-27 14:54:09 T1
+2025-05-27 14:55:05 G10 P0 Z0 R150 S150
+2025-05-27 14:55:05 AUTOBEDLEVEL
+2025-05-27 14:55:05 AUTOBEDLEVEL
+2025-05-27 14:59:34 Leadscrew adjustments made: -0.135 0.299 0.226, points used 3, (mean, deviation) before (0.085, 0.166) after (0.000, 0.000)
+2025-05-27 15:02:12 Leadscrew adjustments made: -0.022 -0.059 -0.011, points used 3, (mean, deviation) before (-0.024, 0.015) after (0.000, 0.000)
+2025-05-27 15:03:23 Stopped at height 49.998 mm
+2025-05-27 15:03:27 Tool 0: offsets X0.000 Y0.000 Z0.000 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-27 15:05:03 G10 L1 P0 Z"{-(move.axes[2].machinePosition)}"
+2025-05-27 15:05:25 G10 P1 Z0 R150 S150
+2025-05-27 15:05:26 AUTOBEDLEVEL
+2025-05-27 15:05:26 AUTOBEDLEVEL
+2025-05-27 15:05:29 T0
+2025-05-27 15:09:08 Leadscrew adjustments made: 0.098 0.123 0.160, points used 3, (mean, deviation) before (0.127, 0.024) after (0.000, 0.000)
+2025-05-27 15:09:59 Stopped at height 49.850 mm
+2025-05-27 15:10:10 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-27 15:12:43 G10 L1 P1 Z"{-(move.axes[2].machinePosition)}"
+2025-05-27 15:13:11 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-27 15:13:12 AUTOBEDLEVEL
+2025-05-27 15:13:12 AUTOBEDLEVEL
+2025-05-27 15:13:15 T1
+2025-05-27 15:16:57 Leadscrew adjustments made: 0.127 0.107 0.160, points used 3, (mean, deviation) before (0.137, 0.018) after (0.000, 0.000)
+2025-05-27 15:16:57 Leadscrew adjustments made: 0.127 0.107 0.160, points used 3, (mean, deviation) before (0.137, 0.018) after (0.000, 0.000)
+2025-05-27 15:17:50 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-27 15:18:30 Input Settings
+2025-05-27 15:18:30 InputShaping Settings
+2025-05-27 15:18:42 Printing...
+2025-05-27 16:07:01 M568 P1 S234
+2025-05-27 16:19:48 Resume state saved
+2025-05-27 16:19:59 Printing paused at X500.3 Y352.2 Z61.2 C60.0
+2025-05-27 16:20:00 Done printing file
+2025-05-27 16:20:00 Done printing file
+2025-05-27 16:20:00 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 1h 6m
+2025-05-27 16:20:02 T1
+2025-05-27 16:20:07 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-27 16:20:11 T0
+2025-05-27 16:20:32 Event logging started
+2025-05-27 16:20:32 Done!
+2025-05-28 07:28:09 G10 P1 Z0 R150 S150
+2025-05-28 07:28:09 AUTOBEDLEVEL
+2025-05-28 07:28:09 AUTOBEDLEVEL
+2025-05-28 07:31:18 Leadscrew adjustments made: 0.753 0.117 0.803, points used 3, (mean, deviation) before (0.662, 0.234) after (-0.000, 0.000)
+2025-05-28 07:33:08 Leadscrew adjustments made: 0.033 0.121 0.129, points used 3, (mean, deviation) before (0.087, 0.040) after (-0.000, 0.000)
+2025-05-28 07:33:58 Stopped at height 49.917 mm
+2025-05-28 07:34:03 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 07:59:58 Event logging stopped
+2025-05-28 08:00:15 Event logging started
+2025-05-28 08:00:15 Done!
+2025-05-28 08:03:14 Event logging stopped
+2025-05-28 08:03:31 Event logging started
+2025-05-28 08:03:31 Done!
+2025-05-28 08:04:12 M568 P1 S160
+2025-05-28 08:05:24 M568 P1 S0
+2025-05-28 08:05:55 T1
+2025-05-28 08:07:20 Event logging stopped
+2025-05-28 08:07:37 Event logging started
+2025-05-28 08:07:37 Done!
+2025-05-28 08:08:36 G10 P0 Z0 R150 S150
+2025-05-28 08:08:36 AUTOBEDLEVEL
+2025-05-28 08:08:36 AUTOBEDLEVEL
+2025-05-28 08:12:49 Leadscrew adjustments made: 0.402 0.672 0.423, points used 3, (mean, deviation) before (0.458, 0.093) after (0.000, 0.000)
+2025-05-28 08:14:10 Stopped at height 0.488 mm
+2025-05-28 08:14:28 Tool 0: offsets X0.000 Y0.000 Z0.000 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-28 08:15:56 G10 L1 P0 Z"{-(move.axes[2].machinePosition)}"
+2025-05-28 08:16:27 G10 P1 Z0 R150 S150
+2025-05-28 08:16:27 AUTOBEDLEVEL
+2025-05-28 08:16:27 AUTOBEDLEVEL
+2025-05-28 08:16:30 T0
+2025-05-28 08:20:07 Leadscrew adjustments made: 0.487 0.496 0.440, points used 3, (mean, deviation) before (0.470, 0.021) after (-0.000, 0.000)
+2025-05-28 08:20:58 Stopped at height 49.964 mm
+2025-05-28 08:21:03 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-28 08:22:06 G10 L1 P1 Z"{-(move.axes[2].machinePosition)}"
+2025-05-28 08:22:37 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 08:37:05 AUTOBEDLEVEL
+2025-05-28 08:37:05 AUTOBEDLEVEL
+2025-05-28 08:37:09 T1
+2025-05-28 08:40:49 Leadscrew adjustments made: 0.052 0.297 0.195, points used 3, (mean, deviation) before (0.152, 0.084) after (-0.000, 0.000)
+2025-05-28 08:40:49 Leadscrew adjustments made: 0.052 0.297 0.195, points used 3, (mean, deviation) before (0.152, 0.084) after (-0.000, 0.000)
+2025-05-28 08:41:43 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-28 08:41:58 M568 P1 S235
+2025-05-28 08:41:59 M568 P1 S220
+2025-05-28 08:42:12 Input Settings
+2025-05-28 08:42:12 InputShaping Settings
+2025-05-28 08:42:24 Printing...
+2025-05-28 08:43:55 Resume state saved
+2025-05-28 08:44:02 Printing paused at X498.8 Y251.9 Z0.3 C60.0
+2025-05-28 08:44:03 Done printing file
+2025-05-28 08:44:03 Done printing file
+2025-05-28 08:44:03 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 0h 21m
+2025-05-28 08:44:05 T1
+2025-05-28 08:44:09 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 08:45:03 Event logging stopped
+2025-05-28 08:45:20 Event logging started
+2025-05-28 08:45:20 Done!
+2025-05-28 08:45:30 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 08:46:04 T0
+2025-05-28 08:46:09 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 08:46:09 AUTOBEDLEVEL
+2025-05-28 08:46:09 AUTOBEDLEVEL
+2025-05-28 08:46:10 T1
+2025-05-28 08:50:30 Leadscrew adjustments made: 0.261 0.106 -0.200, points used 3, (mean, deviation) before (0.049, 0.176) after (0.000, 0.000)
+2025-05-28 08:50:30 Leadscrew adjustments made: 0.261 0.106 -0.200, points used 3, (mean, deviation) before (0.049, 0.176) after (0.000, 0.000)
+2025-05-28 08:53:08 Leadscrew adjustments made: -0.002 0.055 0.019, points used 3, (mean, deviation) before (0.016, 0.019) after (-0.000, 0.000)
+2025-05-28 08:53:08 Leadscrew adjustments made: -0.002 0.055 0.019, points used 3, (mean, deviation) before (0.016, 0.019) after (-0.000, 0.000)
+2025-05-28 08:54:21 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 08:55:14 M568 P1 S220
+2025-05-28 08:55:26 Input Settings
+2025-05-28 08:55:26 InputShaping Settings
+2025-05-28 08:55:38 Printing...
+2025-05-28 08:56:44 Resume state saved
+2025-05-28 08:56:51 Error: M0: Pause the print before attempting to cancel it
+2025-05-28 08:56:54 Printing paused at X603.0 Y327.6 Z0.3 C60.0
+2025-05-28 08:57:12 Done printing file
+2025-05-28 08:57:12 Done printing file
+2025-05-28 08:57:12 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 0h 11m
+2025-05-28 08:57:14 T1
+2025-05-28 08:57:18 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 08:57:25 M568 P1 S0
+2025-05-28 08:57:26 M568 P1 R0
+2025-05-28 09:39:31 G10 P0 Z0 R150 S150
+2025-05-28 09:39:31 AUTOBEDLEVEL
+2025-05-28 09:39:31 AUTOBEDLEVEL
+2025-05-28 09:39:32 T0
+2025-05-28 09:43:41 Leadscrew adjustments made: -0.055 0.348 0.300, points used 3, (mean, deviation) before (0.158, 0.159) after (0.000, 0.000)
+2025-05-28 09:46:19 Leadscrew adjustments made: -0.017 -0.069 -0.033, points used 3, (mean, deviation) before (-0.033, 0.017) after (0.000, 0.000)
+2025-05-28 09:47:58 Tool 0: offsets X0.000 Y0.000 Z0.001 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-28 09:50:09 G10 L1 P0 Z"{-(move.axes[2].machinePosition)}"
+2025-05-28 09:50:54 G10 P1 Z0 R150 S150
+2025-05-28 09:50:54 AUTOBEDLEVEL
+2025-05-28 09:50:54 AUTOBEDLEVEL
+2025-05-28 09:50:56 Event logging stopped
+2025-05-28 09:51:13 Event logging started
+2025-05-28 09:51:13 Done!
+2025-05-28 10:07:32 G10 P0 Z0 R150 S150
+2025-05-28 10:07:32 AUTOBEDLEVEL
+2025-05-28 10:07:32 AUTOBEDLEVEL
+2025-05-28 10:08:02 T0
+2025-05-28 10:13:10 Leadscrew adjustments made: 0.221 0.241 0.290, points used 3, (mean, deviation) before (0.252, 0.027) after (-0.000, 0.000)
+2025-05-28 10:14:49 Tool 0: offsets X0.000 Y0.000 Z0.000 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-28 10:15:07 Event logging stopped
+2025-05-28 10:15:25 Event logging started
+2025-05-28 10:15:25 Done!
+2025-05-28 10:16:21 M568 P1 R150
+2025-05-28 10:16:26 G10 P1 Z0 R150 S150
+2025-05-28 10:16:26 AUTOBEDLEVEL
+2025-05-28 10:16:26 AUTOBEDLEVEL
+2025-05-28 10:17:03 T1
+2025-05-28 10:21:18 Leadscrew adjustments made: 0.186 0.355 0.227, points used 3, (mean, deviation) before (0.232, 0.055) after (-0.000, 0.000)
+2025-05-28 10:22:57 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 10:23:30 G10 L1 P1 Z"{-(move.axes[2].machinePosition)}"
+2025-05-28 10:24:16 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 10:24:17 AUTOBEDLEVEL
+2025-05-28 10:24:17 AUTOBEDLEVEL
+2025-05-28 10:24:20 T1
+2025-05-28 10:29:31 Leadscrew adjustments made: 0.263 0.165 0.219, points used 3, (mean, deviation) before (0.228, 0.032) after (0.000, 0.000)
+2025-05-28 10:29:31 Leadscrew adjustments made: 0.263 0.165 0.219, points used 3, (mean, deviation) before (0.228, 0.032) after (0.000, 0.000)
+2025-05-28 10:30:44 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 10:31:23 Input Settings
+2025-05-28 10:31:23 InputShaping Settings
+2025-05-28 10:31:35 Printing...
+2025-05-28 10:31:50 Resume state saved
+2025-05-28 10:31:55 Error: M0: Pause the print before attempting to cancel it
+2025-05-28 10:31:58 Printing paused at X493.5 Y248.9 Z0.3 C60.0
+2025-05-28 10:32:01 Done printing file
+2025-05-28 10:32:01 Done printing file
+2025-05-28 10:32:01 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 0h 7m
+2025-05-28 10:32:03 T1
+2025-05-28 10:32:08 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 10:32:54 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 10:32:55 T0
+2025-05-28 10:33:00 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 10:33:00 AUTOBEDLEVEL
+2025-05-28 10:33:00 AUTOBEDLEVEL
+2025-05-28 10:33:01 T1
+2025-05-28 10:33:43 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-28 10:33:45 Connection to Duet established
+2025-05-28 10:33:45 Warning: SPI connection has been reset
+2025-05-28 10:33:45 Connection to SBC established!
+2025-05-28 10:33:53 M568 P0 R0 S0
+2025-05-28 10:33:53 M568 P1 R0 S0
+2025-05-28 10:33:54 G10 P0 X0.000000 Y0.000000 Z-26.252001 C0.000000
+2025-05-28 10:33:54 G10 P1 X0.000000 Y0.000000 Z-25.853001 C0.000000
+2025-05-28 10:33:54 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:33:54 Event logging stopped
+2025-05-28 10:33:54 Event logging started
+2025-05-28 10:33:54 Done!
+2025-05-28 10:34:21 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 10:34:43 Done printing file
+2025-05-28 10:34:43 Done printing file
+2025-05-28 10:34:43 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 0h 0m
+2025-05-28 10:34:43 Error: in file macro line 9: M703: insufficient axes homed
+2025-05-28 10:35:32 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 10:35:32 AUTOBEDLEVEL
+2025-05-28 10:35:32 AUTOBEDLEVEL
+2025-05-28 10:39:50 Leadscrew adjustments made: 0.363 0.091 -0.168, points used 3, (mean, deviation) before (0.103, 0.202) after (-0.000, 0.000)
+2025-05-28 10:39:50 Leadscrew adjustments made: 0.363 0.091 -0.168, points used 3, (mean, deviation) before (0.103, 0.202) after (-0.000, 0.000)
+2025-05-28 10:40:57 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-28 10:40:59 Connection to Duet established
+2025-05-28 10:40:59 Warning: SPI connection has been reset
+2025-05-28 10:40:59 Connection to SBC established!
+2025-05-28 10:41:06 M568 P0 R0 S0
+2025-05-28 10:41:06 M568 P1 R0 S0
+2025-05-28 10:41:07 G10 P0 X0.000000 Y0.000000 Z-26.252001 C0.000000
+2025-05-28 10:41:07 G10 P1 X0.000000 Y0.000000 Z-25.853001 C0.000000
+2025-05-28 10:41:07 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 10:41:07 Event logging stopped
+2025-05-28 10:41:07 Event logging started
+2025-05-28 10:41:07 Done!
+2025-05-28 10:41:34 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 10:41:52 Done printing file
+2025-05-28 10:41:52 Done printing file
+2025-05-28 10:41:52 Cancelled printing file 0:/gcodes/t1_lw.gcode, print time was 0h 0m
+2025-05-28 10:41:52 Error: in file macro line 9: M703: insufficient axes homed
+2025-05-28 10:42:26 File 0:/gcodes/t1_lw.gcode selected for printing
+2025-05-28 10:42:26 AUTOBEDLEVEL
+2025-05-28 10:42:26 AUTOBEDLEVEL
+2025-05-28 10:46:46 Leadscrew adjustments made: 0.033 0.157 0.118, points used 3, (mean, deviation) before (0.089, 0.044) after (0.000, 0.000)
+2025-05-28 10:46:46 Leadscrew adjustments made: 0.033 0.157 0.118, points used 3, (mean, deviation) before (0.089, 0.044) after (0.000, 0.000)
+2025-05-28 10:46:53 Error: G30: G30 S-2 commanded with no tool selected
+2025-05-28 10:46:53 Error: G30: G30 S-2 commanded with no tool selected
+2025-05-28 10:47:01 Tool 0: offsets X0.000 Y0.000 Z-26.252 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 10:47:04 Event logging stopped
+2025-05-28 10:47:21 Event logging started
+2025-05-28 10:47:21 Done!
+2025-05-28 11:02:24 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-28 11:02:24 AUTOBEDLEVEL
+2025-05-28 11:02:24 AUTOBEDLEVEL
+2025-05-28 11:03:01 T1
+2025-05-28 11:07:18 Leadscrew adjustments made: 0.086 0.109 0.053, points used 3, (mean, deviation) before (0.077, 0.019) after (0.000, 0.000)
+2025-05-28 11:07:18 Leadscrew adjustments made: 0.086 0.109 0.053, points used 3, (mean, deviation) before (0.077, 0.019) after (0.000, 0.000)
+2025-05-28 11:07:46 Tool 0: offsets X0.000 Y0.000 Z-0.052 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 11:08:57 Input Settings
+2025-05-28 11:08:57 InputShaping Settings
+2025-05-28 11:09:09 Printing...
+2025-05-28 11:14:26 Resume state saved
+2025-05-28 11:14:30 Error: M0: Pause the print before attempting to cancel it
+2025-05-28 11:14:33 Printing paused at X578.9 Y285.5 Z0.9 C60.0
+2025-05-28 11:14:56 Done printing file
+2025-05-28 11:14:56 Done printing file
+2025-05-28 11:14:56 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 12m
+2025-05-28 11:14:57 T1
+2025-05-28 11:15:02 Tool 0: offsets X0.000 Y0.000 Z-0.052 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 11:15:12 T1
+2025-05-28 11:15:19 T1
+2025-05-28 11:16:03 G10 P1 Z0 R150 S150
+2025-05-28 11:16:03 AUTOBEDLEVEL
+2025-05-28 11:16:03 AUTOBEDLEVEL
+2025-05-28 11:16:04 T0
+2025-05-28 11:20:13 Leadscrew adjustments made: -0.058 0.392 0.358, points used 3, (mean, deviation) before (0.187, 0.182) after (-0.000, 0.000)
+2025-05-28 11:22:51 Leadscrew adjustments made: -0.025 -0.061 -0.012, points used 3, (mean, deviation) before (-0.026, 0.016) after (0.000, 0.000)
+2025-05-28 11:23:46 Tool 0: offsets X0.000 Y0.000 Z0.009 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 11:24:18 G10 L1 P1 Z"{-(move.axes[2].machinePosition)-0.2}"
+2025-05-28 11:24:42 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-28 11:24:43 AUTOBEDLEVEL
+2025-05-28 11:24:43 AUTOBEDLEVEL
+2025-05-28 11:24:46 T1
+2025-05-28 11:29:57 Leadscrew adjustments made: 0.209 0.183 0.207, points used 3, (mean, deviation) before (0.204, 0.009) after (-0.000, 0.000)
+2025-05-28 11:29:57 Leadscrew adjustments made: 0.209 0.183 0.207, points used 3, (mean, deviation) before (0.204, 0.009) after (-0.000, 0.000)
+2025-05-28 11:30:25 Tool 0: offsets X0.000 Y0.000 Z-0.209 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 11:30:57 Input Settings
+2025-05-28 11:30:57 InputShaping Settings
+2025-05-28 11:31:09 Printing...
+2025-05-28 11:32:02 Resume state saved
+2025-05-28 11:32:11 Printing paused at X518.2 Y271.9 Z0.3 C60.0
+2025-05-28 11:32:18 Done printing file
+2025-05-28 11:32:18 Done printing file
+2025-05-28 11:32:18 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 7m
+2025-05-28 11:32:19 T1
+2025-05-28 11:32:24 Tool 0: offsets X0.000 Y0.000 Z-0.209 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 11:32:56 G10 P1 Z0 R150 S150
+2025-05-28 11:32:56 AUTOBEDLEVEL
+2025-05-28 11:32:56 AUTOBEDLEVEL
+2025-05-28 11:32:57 T0
+2025-05-28 11:35:52 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-28 11:35:53 Connection to Duet established
+2025-05-28 11:35:53 Warning: SPI connection has been reset
+2025-05-28 11:35:53 Connection to SBC established!
+2025-05-28 11:36:01 M568 P0 R0 S0
+2025-05-28 11:36:01 M568 P1 R0 S0
+2025-05-28 11:36:02 G10 P0 X0.000000 Y0.000000 Z0.009000 C0.000000
+2025-05-28 11:36:02 G10 P1 X0.000000 Y0.000000 Z-26.042000 C0.000000
+2025-05-28 11:36:02 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:36:02 Event logging stopped
+2025-05-28 11:36:02 Event logging started
+2025-05-28 11:36:02 Done!
+2025-05-28 11:36:15 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-28 11:36:33 Done printing file
+2025-05-28 11:36:33 Done printing file
+2025-05-28 11:36:33 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 0m
+2025-05-28 11:36:33 Error: in file macro line 9: M703: insufficient axes homed
+2025-05-28 11:37:21 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-28 11:37:22 AUTOBEDLEVEL
+2025-05-28 11:37:22 AUTOBEDLEVEL
+2025-05-28 11:38:44 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-28 11:38:46 Connection to Duet established
+2025-05-28 11:38:46 Warning: SPI connection has been reset
+2025-05-28 11:38:46 Connection to SBC established!
+2025-05-28 11:38:52 M568 P0 R0 S0
+2025-05-28 11:38:52 M568 P1 R0 S0
+2025-05-28 11:38:53 G10 P0 X0.000000 Y0.000000 Z0.009000 C0.000000
+2025-05-28 11:38:53 G10 P1 X0.000000 Y0.000000 Z-26.042000 C0.000000
+2025-05-28 11:38:53 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-28 11:38:53 Event logging stopped
+2025-05-28 11:38:53 Event logging started
+2025-05-28 11:38:53 Done!
+2025-05-28 13:37:31 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-28 13:37:40 Event logging stopped
+2025-05-28 13:37:57 Event logging started
+2025-05-28 13:37:57 Done!
+2025-05-28 13:38:25 G10 P1 Z0 R150 S150
+2025-05-28 13:38:25 AUTOBEDLEVEL
+2025-05-28 13:38:25 AUTOBEDLEVEL
+2025-05-28 13:42:23 Leadscrew adjustments made: 0.073 0.320 -0.154, points used 3, (mean, deviation) before (0.025, 0.151) after (-0.000, 0.000)
+2025-05-28 13:45:01 Leadscrew adjustments made: -0.005 -0.031 -0.065, points used 3, (mean, deviation) before (-0.034, 0.023) after (-0.000, 0.000)
+2025-05-28 13:45:55 Tool 0: offsets X0.000 Y0.000 Z0.062 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 13:46:55 G10 L1 P1 Z"{-(move.axes[2].machinePosition)+0.2}"
+2025-05-28 13:47:15 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-28 13:47:16 AUTOBEDLEVEL
+2025-05-28 13:47:16 AUTOBEDLEVEL
+2025-05-28 13:47:19 T1
+2025-05-28 13:52:30 Leadscrew adjustments made: 0.087 0.046 0.075, points used 3, (mean, deviation) before (0.075, 0.014) after (0.000, 0.000)
+2025-05-28 13:52:30 Leadscrew adjustments made: 0.087 0.046 0.075, points used 3, (mean, deviation) before (0.075, 0.014) after (0.000, 0.000)
+2025-05-28 13:52:58 Tool 0: offsets X0.000 Y0.000 Z-0.078 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-28 13:53:30 Input Settings
+2025-05-28 13:53:30 InputShaping Settings
+2025-05-28 13:53:42 Printing...
+2025-05-28 14:16:03 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.05mm/rev, min 99% max 101% over 23.5mm
+2025-05-28 14:16:10 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.09mm/rev, min 99% max 102% over 64.0mm
+2025-05-28 14:16:20 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.14mm/rev, min 98% max 102% over 116.9mm
+2025-05-28 14:16:22 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.11mm/rev, min 98% max 102% over 129.4mm
+2025-05-28 14:16:23 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.10mm/rev, min 98% max 102% over 132.4mm
+2025-05-28 14:16:28 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.12mm/rev, min 98% max 102% over 157.7mm
+2025-05-28 14:16:34 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.12mm/rev, min 98% max 103% over 192.6mm
+2025-05-28 14:16:42 Resume state saved
+2025-05-28 14:16:49 Printing paused at X547.5 Y274.1 Z13.8 C60.0
+2025-05-28 14:17:00 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 101, measured 28.12mm/rev, min 98% max 103% over 230.4mm
+2025-05-28 14:17:09 Printing resumed
+2025-05-28 14:17:09 Printing resumed
+2025-05-28 14:17:17 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.07mm/rev, min 98% max 102% over 37.7mm
+2025-05-28 14:17:22 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.07mm/rev, min 98% max 102% over 63.0mm
+2025-05-28 14:17:36 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.08mm/rev, min 98% max 102% over 112.7mm
+2025-05-28 14:17:56 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.09mm/rev, min 97% max 103% over 192.3mm
+2025-05-28 14:20:21 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.09mm/rev, min 97% max 103% over 816.0mm
+2025-05-28 14:20:22 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.09mm/rev, min 97% max 103% over 822.1mm
+2025-05-28 14:20:24 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 28.00mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 101, measured 28.09mm/rev, min 97% max 103% over 825.4mm
+2025-05-28 14:34:25 Resume state saved
+2025-05-28 14:34:29 Event logging stopped
+2025-05-28 14:34:46 Event logging started
+2025-05-28 14:34:46 Done!
+2025-05-28 14:36:06 T1
+2025-05-28 14:40:12 Event logging stopped
+2025-05-28 14:42:09 Event logging started
+2025-05-28 14:42:09 Done!
+2025-05-28 15:00:58 ExecOnMcode: Interception filters successfully updated
+2025-05-28 15:01:39 ExecOnMcode: Interception filters successfully updated
+2025-05-28 15:09:58 ExecOnMcode: Interception filters successfully updated
+2025-05-28 15:10:05 ExecOnMcode: Interception filters successfully updated
+2025-05-28 15:11:33 ExecOnMcode: Interception filters successfully updated
+2025-05-28 15:11:49 ExecOnMcode: Interception filters successfully updated
