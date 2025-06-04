@@ -5,7 +5,7 @@ if state.status = "processing"
 	var greenLEDs = 0
 	var orangeLEDs = 0
 	var printProgress = 0 
-	set var.printProgress = (job.rawExtrusion * 100) / job.file.filament[0];
+	set var.printProgress = (job.rawExtrusion * 100) / (job.file.filament[0] + job.file.filament[1]);
 	set var.greenLEDs = ceil(var.totalLEDs * var.printProgress / 100);
 	set var.orangeLEDs = var.totalLEDs - var.greenLEDs;
 	if (var.greenLEDs > 0) 

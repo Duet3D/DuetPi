@@ -98884,3 +98884,1588 @@ Debugging off for modules: Platform(0) Network(1) Webserver(2) Move(4) Heat(5) K
 2025-05-28 15:10:05 ExecOnMcode: Interception filters successfully updated
 2025-05-28 15:11:33 ExecOnMcode: Interception filters successfully updated
 2025-05-28 15:11:49 ExecOnMcode: Interception filters successfully updated
+2025-05-28 16:26:15 Event logging started
+2025-05-28 16:26:15 Done!
+2025-05-29 08:17:27 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-29 08:18:47 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-29 08:19:01 Tool 0: offsets X0.000 Y0.000 Z0.062 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 08:19:04 Unloading
+2025-05-29 08:20:41 Unloaded
+2025-05-29 08:20:50 Heating
+2025-05-29 08:20:50 Heating
+2025-05-29 08:20:50 Load
+2025-05-29 08:21:35 Filament Loaded
+2025-05-29 08:22:24 M568 P0 S160
+2025-05-29 08:22:30 M568 P0 S150
+2025-05-29 08:24:20 G10 P0 Z0 R150 S150
+2025-05-29 08:24:20 AUTOBEDLEVEL
+2025-05-29 08:24:20 AUTOBEDLEVEL
+2025-05-29 08:24:21 T0
+2025-05-29 08:28:35 Leadscrew adjustments made: 0.319 0.062 0.413, points used 3, (mean, deviation) before (0.312, 0.112) after (0.000, 0.000)
+2025-05-29 08:31:13 Leadscrew adjustments made: 0.019 0.087 0.065, points used 3, (mean, deviation) before (0.049, 0.024) after (0.000, 0.000)
+2025-05-29 08:32:07 Tool 0: offsets X0.000 Y0.000 Z-0.059 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-29 08:36:16 G10 L1 P0 Z"{-(move.axes[2].machinePosition)}"
+2025-05-29 08:56:43 File 0:/gcodes/PLA250mm220deg.gcode selected for printing
+2025-05-29 08:56:43 AUTOBEDLEVEL
+2025-05-29 08:56:43 AUTOBEDLEVEL
+2025-05-29 08:56:46 T0
+2025-05-29 09:01:54 Leadscrew adjustments made: 0.204 0.420 0.238, points used 3, (mean, deviation) before (0.255, 0.072) after (-0.000, 0.000)
+2025-05-29 09:01:54 Leadscrew adjustments made: 0.204 0.420 0.238, points used 3, (mean, deviation) before (0.255, 0.072) after (-0.000, 0.000)
+2025-05-29 09:02:22 Tool 0: offsets X0.000 Y0.000 Z-0.220 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 09:02:55 Input Settings
+2025-05-29 09:02:55 InputShaping Settings
+2025-05-29 09:03:06 Resume state saved
+2025-05-29 09:04:37 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-29 09:04:39 Connection to Duet established
+2025-05-29 09:04:39 Warning: SPI connection has been reset
+2025-05-29 09:04:39 Connection to SBC established!
+2025-05-29 09:04:46 M568 P0 R0 S0
+2025-05-29 09:04:46 M568 P1 R0 S0
+2025-05-29 09:04:47 G10 P0 X0.000000 Y0.000000 Z-26.211000 C0.000000
+2025-05-29 09:04:47 G10 P1 X0.000000 Y0.000000 Z-25.688999 C0.000000
+2025-05-29 09:04:47 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:04:47 Event logging stopped
+2025-05-29 09:04:47 Event logging started
+2025-05-29 09:04:47 Done!
+2025-05-29 09:04:51 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-29 09:04:52 Connection to Duet established
+2025-05-29 09:04:52 Warning: SPI connection has been reset
+2025-05-29 09:04:52 Connection to SBC established!
+2025-05-29 09:04:59 M568 P0 R0 S0
+2025-05-29 09:04:59 M568 P1 R0 S0
+2025-05-29 09:05:00 G10 P0 X0.000000 Y0.000000 Z-26.211000 C0.000000
+2025-05-29 09:05:00 G10 P1 X0.000000 Y0.000000 Z-25.688999 C0.000000
+2025-05-29 09:05:00 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:05:00 Event logging stopped
+2025-05-29 09:05:00 Event logging started
+2025-05-29 09:05:00 Done!
+2025-05-29 09:05:05 T0
+2025-05-29 09:08:17 File 0:/gcodes/PLA250mm220deg.gcode selected for printing
+2025-05-29 09:08:22 Tool 0: offsets X0.000 Y0.000 Z-26.211 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 09:08:22 AUTOBEDLEVEL
+2025-05-29 09:08:22 AUTOBEDLEVEL
+2025-05-29 09:08:23 T0
+2025-05-29 09:12:35 Leadscrew adjustments made: 0.496 0.068 -0.091, points used 3, (mean, deviation) before (0.186, 0.229) after (0.000, 0.000)
+2025-05-29 09:12:35 Leadscrew adjustments made: 0.496 0.068 -0.091, points used 3, (mean, deviation) before (0.186, 0.229) after (0.000, 0.000)
+2025-05-29 09:15:13 Leadscrew adjustments made: -0.055 -0.010 0.070, points used 3, (mean, deviation) before (0.003, 0.048) after (0.000, 0.000)
+2025-05-29 09:15:13 Leadscrew adjustments made: -0.055 -0.010 0.070, points used 3, (mean, deviation) before (0.003, 0.048) after (0.000, 0.000)
+2025-05-29 09:15:42 Tool 0: offsets X0.000 Y0.000 Z-0.064 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 09:15:49 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-29 09:15:50 Connection to Duet established
+2025-05-29 09:15:50 Warning: SPI connection has been reset
+2025-05-29 09:15:50 Connection to SBC established!
+2025-05-29 09:15:57 M568 P0 R0 S0
+2025-05-29 09:15:57 M568 P1 R0 S0
+2025-05-29 09:15:58 G10 P0 X0.000000 Y0.000000 Z-26.211000 C0.000000
+2025-05-29 09:15:58 G10 P1 X0.000000 Y0.000000 Z-25.688999 C0.000000
+2025-05-29 09:15:58 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:15:58 Event logging stopped
+2025-05-29 09:15:58 Event logging started
+2025-05-29 09:15:58 Done!
+2025-05-29 09:22:02 G10 P0 Z0 R150 S150
+2025-05-29 09:22:02 AUTOBEDLEVEL
+2025-05-29 09:22:02 AUTOBEDLEVEL
+2025-05-29 09:22:40 Event logging stopped
+2025-05-29 09:22:58 Event logging started
+2025-05-29 09:22:58 Done!
+2025-05-29 09:24:14 T0
+2025-05-29 09:24:20 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-29 09:24:23 Event logging stopped
+2025-05-29 09:24:42 Event logging started
+2025-05-29 09:24:42 Done!
+2025-05-29 09:26:30 Tool 0: offsets X0.000 Y0.000 Z-26.211 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 09:26:39 File 0:/gcodes/PLA250mm220deg.gcode selected for printing
+2025-05-29 09:27:12 AUTOBEDLEVEL
+2025-05-29 09:27:12 AUTOBEDLEVEL
+2025-05-29 09:27:13 T0
+2025-05-29 09:31:26 Leadscrew adjustments made: 0.076 0.217 0.065, points used 3, (mean, deviation) before (0.096, 0.052) after (-0.000, 0.000)
+2025-05-29 09:31:26 Leadscrew adjustments made: 0.076 0.217 0.065, points used 3, (mean, deviation) before (0.096, 0.052) after (-0.000, 0.000)
+2025-05-29 09:31:54 Tool 0: offsets X0.000 Y0.000 Z-0.055 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 09:32:53 Input Settings
+2025-05-29 09:32:53 InputShaping Settings
+2025-05-29 09:32:58 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-05-29 09:33:02 Connection to Duet established
+2025-05-29 09:33:02 Warning: SPI connection has been reset
+2025-05-29 09:33:02 Connection to SBC established!
+2025-05-29 09:33:10 M568 P0 R0 S0
+2025-05-29 09:33:10 M568 P1 R0 S0
+2025-05-29 09:33:10 Extruder T0 on TC
+2025-05-29 09:33:11 G10 P0 X0.000000 Y0.000000 Z-26.211000 C0.000000
+2025-05-29 09:33:11 G10 P1 X0.000000 Y0.000000 Z-25.688999 C0.000000
+2025-05-29 09:33:11 G10 L2 P1 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P2 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P3 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P4 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P5 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P6 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P7 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P8 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 G10 L2 P9 X0.000000 Y0.000000 Z0.000000 C0.000000
+2025-05-29 09:33:11 Event logging stopped
+2025-05-29 09:33:11 Event logging started
+2025-05-29 09:33:11 Done!
+2025-05-29 09:33:36 G10 P0 Z0 R150 S150
+2025-05-29 09:33:36 AUTOBEDLEVEL
+2025-05-29 09:33:36 AUTOBEDLEVEL
+2025-05-29 09:34:09 T0
+2025-05-29 09:38:17 Leadscrew adjustments made: 0.065 0.327 0.445, points used 3, (mean, deviation) before (0.263, 0.147) after (-0.000, 0.000)
+2025-05-29 09:40:55 Leadscrew adjustments made: -0.016 -0.021 -0.002, points used 3, (mean, deviation) before (-0.011, 0.007) after (0.000, 0.000)
+2025-05-29 09:41:49 Tool 0: offsets X0.000 Y0.000 Z0.002 C0.000, active/standby temperature(s) 150.0/150.0
+2025-05-29 09:44:08 G10 L1 P0 Z"{-(move.axes[2].machinePosition)+0.2}"
+2025-05-29 09:44:39 T0
+2025-05-29 09:44:44 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 150.0/150.0
+                                                                                                                                                                                                                                                                     2025-05-29 09:44:43 Event logging started
+2025-05-29 09:44:44 Done!
+2025-05-29 09:50:55 M568 P1 S220
+2025-05-29 09:50:58 M568 P1 R220
+2025-05-29 09:51:00 M568 P1 A2
+2025-05-29 09:51:02 M568 P1 A2
+2025-05-29 09:51:04 M568 P1 A1
+2025-05-29 09:51:06 M568 P0 A1
+2025-05-29 09:51:10 M568 P0 R220
+2025-05-29 09:51:15 M568 P1 S0
+2025-05-29 09:52:57 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-29 09:53:30 T0
+2025-05-29 09:53:35 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 0.0/220.0
+2025-05-29 09:53:35 AUTOBEDLEVEL
+2025-05-29 09:53:35 AUTOBEDLEVEL
+2025-05-29 09:53:36 T1
+2025-05-29 09:58:47 Leadscrew adjustments made: 0.340 0.151 -0.006, points used 3, (mean, deviation) before (0.168, 0.131) after (0.000, 0.000)
+2025-05-29 09:58:47 Leadscrew adjustments made: 0.340 0.151 -0.006, points used 3, (mean, deviation) before (0.168, 0.131) after (0.000, 0.000)
+2025-05-29 10:01:25 Leadscrew adjustments made: -0.005 0.042 0.019, points used 3, (mean, deviation) before (0.013, 0.016) after (0.000, 0.000)
+2025-05-29 10:01:25 Leadscrew adjustments made: -0.005 0.042 0.019, points used 3, (mean, deviation) before (0.013, 0.016) after (0.000, 0.000)
+2025-05-29 10:01:53 Tool 0: offsets X0.000 Y0.000 Z-0.015 C0.000, active/standby temperature(s) 0.0/220.0
+2025-05-29 10:02:50 Input Settings
+2025-05-29 10:02:50 InputShaping Settings
+2025-05-29 10:03:02 Printing...
+2025-05-29 10:03:38 Resume state saved
+2025-05-29 10:03:47 Printing paused at X515.9 Y272.2 Z0.3 C60.0
+2025-05-29 10:03:47 Done printing file
+2025-05-29 10:03:47 Done printing file
+2025-05-29 10:03:47 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 10m
+2025-05-29 10:03:49 T1
+2025-05-29 10:03:53 Tool 0: offsets X0.000 Y0.000 Z-0.015 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 10:04:36 File 0:/gcodes/Untitled.gcode selected for printing
+2025-05-29 10:04:37 T0
+2025-05-29 10:04:42 Tool 0: offsets X0.000 Y0.000 Z-0.015 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 10:04:42 AUTOBEDLEVEL
+2025-05-29 10:04:42 AUTOBEDLEVEL
+2025-05-29 10:04:43 T1
+2025-05-29 10:08:55 Leadscrew adjustments made: 0.102 0.191 0.085, points used 3, (mean, deviation) before (0.111, 0.035) after (-0.000, 0.000)
+2025-05-29 10:08:55 Leadscrew adjustments made: 0.102 0.191 0.085, points used 3, (mean, deviation) before (0.111, 0.035) after (-0.000, 0.000)
+2025-05-29 10:09:01 Error: in file macro line 26: G30: expected number after 'S'
+2025-05-29 10:09:01 Error: in file macro line 26: G30: expected number after 'S'
+2025-05-29 10:09:09 Tool 0: offsets X0.000 Y0.000 Z-0.015 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 10:09:12 Event logging stopped
+2025-05-29 10:09:30 Event logging started
+2025-05-29 10:09:30 Done!
+2025-05-29 10:10:23 File 0:/gcodes/PLA250mm220deg.gcode selected for printing
+2025-05-29 10:11:00 T1
+2025-05-29 10:11:05 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 10:11:05 AUTOBEDLEVEL
+2025-05-29 10:11:05 AUTOBEDLEVEL
+2025-05-29 10:11:06 T0
+2025-05-29 10:15:20 Leadscrew adjustments made: 0.130 0.139 0.122, points used 3, (mean, deviation) before (0.128, 0.005) after (-0.000, 0.000)
+2025-05-29 10:15:20 Leadscrew adjustments made: 0.130 0.139 0.122, points used 3, (mean, deviation) before (0.128, 0.005) after (-0.000, 0.000)
+2025-05-29 10:16:33 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 10:17:45 Input Settings
+2025-05-29 10:17:45 InputShaping Settings
+2025-05-29 10:17:53 Resume state saved
+2025-05-29 10:18:20 Printing resumed
+2025-05-29 10:18:20 Printing resumed
+2025-05-29 10:18:20 Printing...
+2025-05-29 11:05:05 Resume state saved
+2025-05-29 11:05:13 Printing paused at X592.6 Y360.9 Z9.6 C60.0
+2025-05-29 11:05:23 Done printing file
+2025-05-29 11:05:23 Done printing file
+2025-05-29 11:05:23 Cancelled printing file 0:/gcodes/PLA250mm220deg.gcode, print time was 0h 54m
+2025-05-29 11:05:24 T0
+2025-05-29 11:05:27 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 11:22:04 File 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern.gcode selected for printing
+2025-05-29 11:22:04 AUTOBEDLEVEL
+2025-05-29 11:22:04 AUTOBEDLEVEL
+2025-05-29 11:22:05 T0
+2025-05-29 11:26:16 Leadscrew adjustments made: 0.157 0.234 0.145, points used 3, (mean, deviation) before (0.166, 0.029) after (-0.000, 0.000)
+2025-05-29 11:26:16 Leadscrew adjustments made: 0.157 0.234 0.145, points used 3, (mean, deviation) before (0.166, 0.029) after (-0.000, 0.000)
+2025-05-29 11:27:29 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 11:28:41 Input Settings
+2025-05-29 11:28:41 InputShaping Settings
+2025-05-29 11:28:53 Printing...
+2025-05-29 11:29:17 Resume state saved
+2025-05-29 11:29:25 Error: M0: Pause the print before attempting to cancel it
+2025-05-29 11:29:28 Printing paused at X487.5 Y368.2 Z0.3 C60.0
+2025-05-29 11:29:32 Done printing file
+2025-05-29 11:29:32 Done printing file
+2025-05-29 11:29:32 Cancelled printing file 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern.gcode, print time was 0h 7m
+2025-05-29 11:29:34 T1
+2025-05-29 11:29:38 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 11:38:00 File 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode selected for printing
+2025-05-29 11:38:00 AUTOBEDLEVEL
+2025-05-29 11:38:00 AUTOBEDLEVEL
+2025-05-29 11:38:01 T0
+2025-05-29 11:42:10 Leadscrew adjustments made: 0.146 0.206 0.143, points used 3, (mean, deviation) before (0.155, 0.022) after (-0.000, 0.000)
+2025-05-29 11:42:10 Leadscrew adjustments made: 0.146 0.206 0.143, points used 3, (mean, deviation) before (0.155, 0.022) after (-0.000, 0.000)
+2025-05-29 11:43:24 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 11:44:36 Input Settings
+2025-05-29 11:44:36 InputShaping Settings
+2025-05-29 11:44:43 Resume state saved
+2025-05-29 11:44:59 Printing resumed
+2025-05-29 11:44:59 Printing resumed
+2025-05-29 11:45:01 Printing...
+2025-05-29 11:52:15 T0
+2025-05-29 11:52:20 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 11:52:41 T1
+2025-05-29 11:52:46 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 11:57:20 T0
+2025-05-29 11:57:25 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 11:58:01 Resume state saved
+2025-05-29 11:58:09 Printing paused at X517.0 Y307.8 Z1.2 C60.0
+2025-05-29 11:58:11 Done printing file
+2025-05-29 11:58:11 Done printing file
+2025-05-29 11:58:11 Cancelled printing file 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode, print time was 0h 19m
+2025-05-29 11:58:13 T1
+2025-05-29 11:58:17 Tool 0: offsets X0.000 Y0.000 Z-25.600 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 11:59:34 M568 P1 R0
+2025-05-29 12:04:18 File 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode selected for printing
+2025-05-29 12:04:18 AUTOBEDLEVEL
+2025-05-29 12:04:18 AUTOBEDLEVEL
+2025-05-29 12:04:19 T0
+2025-05-29 12:07:18 Event logging stopped
+2025-05-29 12:07:36 Event logging started
+2025-05-29 12:07:36 Done!
+2025-05-29 13:11:28 File 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode selected for printing
+2025-05-29 13:11:46 Done printing file
+2025-05-29 13:11:46 Done printing file
+2025-05-29 13:11:46 Cancelled printing file 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode, print time was 0h 0m
+2025-05-29 13:11:47 Error: in file macro line 10: M703: insufficient axes homed
+2025-05-29 13:17:54 File 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode selected for printing
+2025-05-29 13:19:15 AUTOBEDLEVEL
+2025-05-29 13:19:15 AUTOBEDLEVEL
+2025-05-29 13:23:34 Leadscrew adjustments made: 0.178 0.198 0.222, points used 3, (mean, deviation) before (0.199, 0.017) after (0.000, 0.000)
+2025-05-29 13:23:34 Leadscrew adjustments made: 0.178 0.198 0.222, points used 3, (mean, deviation) before (0.199, 0.017) after (0.000, 0.000)
+2025-05-29 13:24:48 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:26:00 Input Settings
+2025-05-29 13:26:00 InputShaping Settings
+2025-05-29 13:26:08 Resume state saved
+2025-05-29 13:26:27 Printing resumed
+2025-05-29 13:26:27 Printing resumed
+2025-05-29 13:26:27 Printing...
+2025-05-29 13:33:42 T0
+2025-05-29 13:33:46 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:33:46 Error: in file tpost1.g line 16: Illegal parameter letter '.'
+2025-05-29 13:33:49 T1
+2025-05-29 13:33:51 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:33:51 Error: in file tpost1.g line 16: Illegal parameter letter '.'
+2025-05-29 13:33:54 T1
+2025-05-29 13:33:55 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:33:55 Error: in file tpost1.g line 16: Illegal parameter letter '.'
+2025-05-29 13:33:58 T1
+2025-05-29 13:33:59 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:33:59 Error: in file tpost1.g line 16: Illegal parameter letter '.'
+2025-05-29 13:34:03 T1
+2025-05-29 13:34:04 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:34:04 Error: in file tpost1.g line 16: Illegal parameter letter '.'
+2025-05-29 13:34:25 T1
+2025-05-29 13:34:30 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:39:04 T0
+2025-05-29 13:39:09 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:39:53 Resume state saved
+2025-05-29 13:40:02 Printing paused at X507.0 Y352.6 Z1.2 C60.0
+2025-05-29 13:40:46 Done printing file
+2025-05-29 13:40:46 Done printing file
+2025-05-29 13:40:46 Cancelled printing file 0:/gcodes/FETCDEV_nozzle-to-nozzle-xy-offset-calibration-pattern_t0.gcode, print time was 0h 21m
+2025-05-29 13:40:47 T1
+2025-05-29 13:40:52 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 13:49:57 File 0:/gcodes/FETCDEV_T0T1.gcode selected for printing
+2025-05-29 13:49:58 AUTOBEDLEVEL
+2025-05-29 13:49:58 AUTOBEDLEVEL
+2025-05-29 13:49:59 T0
+2025-05-29 13:54:10 Leadscrew adjustments made: 0.180 0.187 0.139, points used 3, (mean, deviation) before (0.165, 0.018) after (-0.000, 0.000)
+2025-05-29 13:54:10 Leadscrew adjustments made: 0.180 0.187 0.139, points used 3, (mean, deviation) before (0.165, 0.018) after (-0.000, 0.000)
+2025-05-29 13:55:23 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:55:23 Error: in file tpost0.g line 2: Failed to parse major T-code number (post0)
+2025-05-29 13:56:37 Input Settings
+2025-05-29 13:56:37 InputShaping Settings
+2025-05-29 13:56:44 Resume state saved
+2025-05-29 13:57:39 T0
+2025-05-29 13:57:44 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:57:44 Error: in file tpost0.g line 2: Failed to parse major T-code number (post0)
+2025-05-29 13:59:10 T0
+2025-05-29 13:59:15 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 13:59:20 Printing resumed
+2025-05-29 13:59:20 Printing resumed
+2025-05-29 13:59:22 Printing...
+2025-05-29 13:59:23 Resume state saved
+2025-05-29 13:59:42 Printing resumed
+2025-05-29 13:59:42 Printing resumed
+2025-05-29 14:05:47 T0
+2025-05-29 14:05:52 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:05:56 Warning: Driver 72.0 warning: position tolerance exceeded
+2025-05-29 14:05:56 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-29 14:06:02 Resume state saved
+2025-05-29 14:06:09 Printing resumed
+2025-05-29 14:06:09 Printing resumed
+2025-05-29 14:08:32 T1
+2025-05-29 14:08:37 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:08:42 Warning: Driver 72.0 warning: position tolerance exceeded
+2025-05-29 14:08:42 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-29 14:08:48 Resume state saved
+2025-05-29 14:08:51 Printing resumed
+2025-05-29 14:08:51 Printing resumed
+2025-05-29 14:10:31 T0
+2025-05-29 14:10:35 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:10:40 Warning: Driver 72.0 warning: position tolerance exceeded
+2025-05-29 14:10:40 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-29 14:10:46 Resume state saved
+2025-05-29 14:10:52 Printing resumed
+2025-05-29 14:10:52 Printing resumed
+2025-05-29 14:10:53 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-29 14:11:14 Resume state saved
+2025-05-29 14:11:18 Error: M0: Pause the print before attempting to cancel it
+2025-05-29 14:11:21 Printing paused at X553.4 Y286.5 Z0.9 C60.0
+2025-05-29 14:11:29 Done printing file
+2025-05-29 14:11:29 Done printing file
+2025-05-29 14:11:29 Cancelled printing file 0:/gcodes/FETCDEV_T0T1.gcode, print time was 0h 18m
+2025-05-29 14:11:31 T1
+2025-05-29 14:11:36 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 14:17:44 Warning: Driver 72.0 warning: position tolerance exceeded
+2025-05-29 14:17:44 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-05-29 14:27:43 T0
+2025-05-29 14:31:23 File 0:/gcodes/FETCDEV_T0T1.gcode selected for printing
+2025-05-29 14:31:28 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 14:31:33 Warning: Tool 0 was not driven because its heater temperatures were not high enough or it has a heater fault
+2025-05-29 14:31:37 Warning: Tool 0 was not driven because its heater temperatures were not high enough or it has a heater fault
+2025-05-29 14:31:38 AUTOBEDLEVEL
+2025-05-29 14:31:38 AUTOBEDLEVEL
+2025-05-29 14:31:39 T0
+2025-05-29 14:35:52 Leadscrew adjustments made: 0.150 0.263 0.231, points used 3, (mean, deviation) before (0.202, 0.041) after (0.000, 0.000)
+2025-05-29 14:35:52 Leadscrew adjustments made: 0.150 0.263 0.231, points used 3, (mean, deviation) before (0.202, 0.041) after (0.000, 0.000)
+2025-05-29 14:37:06 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:38:30 Input Settings
+2025-05-29 14:38:30 InputShaping Settings
+2025-05-29 14:38:38 Resume state saved
+2025-05-29 14:38:57 Printing resumed
+2025-05-29 14:38:57 Printing resumed
+2025-05-29 14:38:59 Printing...
+2025-05-29 14:45:06 T0
+2025-05-29 14:45:11 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:47:45 T1
+2025-05-29 14:47:49 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:49:39 T0
+2025-05-29 14:49:43 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:51:54 T1
+2025-05-29 14:51:59 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:53:45 T0
+2025-05-29 14:53:50 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:56:01 T1
+2025-05-29 14:56:05 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:57:52 T0
+2025-05-29 14:57:57 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:59:15 T1
+2025-05-29 14:59:19 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 14:59:40 T0
+2025-05-29 14:59:44 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:00:11 T1
+2025-05-29 15:00:15 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:00:36 T0
+2025-05-29 15:00:40 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:01:10 T1
+2025-05-29 15:01:15 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:01:35 T0
+2025-05-29 15:01:40 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:02:17 T1
+2025-05-29 15:02:44 Print End
+2025-05-29 15:02:44 Done printing file
+2025-05-29 15:02:44 Done printing file
+2025-05-29 15:02:44 Finished printing file 0:/gcodes/FETCDEV_T0T1.gcode, print time was 0h 31m
+2025-05-29 15:03:09 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 15:16:13 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-29 15:16:49 AUTOBEDLEVEL
+2025-05-29 15:16:49 AUTOBEDLEVEL
+2025-05-29 15:16:50 T0
+2025-05-29 15:22:58 Leadscrew adjustments made: 0.236 0.233 0.306, points used 3, (mean, deviation) before (0.264, 0.029) after (-0.000, 0.000)
+2025-05-29 15:22:58 Leadscrew adjustments made: 0.236 0.233 0.306, points used 3, (mean, deviation) before (0.264, 0.029) after (-0.000, 0.000)
+2025-05-29 15:24:11 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:25:30 Input Settings
+2025-05-29 15:25:30 InputShaping Settings
+2025-05-29 15:25:42 Printing...
+2025-05-29 15:32:24 T0
+2025-05-29 15:32:28 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:33:03 T1
+2025-05-29 15:33:08 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:34:34 T0
+2025-05-29 15:34:38 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:34:52 T1
+2025-05-29 15:34:56 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:36:19 T0
+2025-05-29 15:36:23 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:36:37 T1
+2025-05-29 15:36:41 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:38:01 T0
+2025-05-29 15:38:05 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:38:18 T1
+2025-05-29 15:38:23 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:39:38 T0
+2025-05-29 15:39:43 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:39:56 T1
+2025-05-29 15:40:00 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:41:13 T0
+2025-05-29 15:41:18 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:41:31 T1
+2025-05-29 15:41:36 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:42:48 T0
+2025-05-29 15:42:52 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:43:06 T1
+2025-05-29 15:43:10 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:44:22 T0
+2025-05-29 15:44:26 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:44:40 T1
+2025-05-29 15:44:44 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:45:55 T0
+2025-05-29 15:46:00 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:46:13 T1
+2025-05-29 15:46:18 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:47:32 T0
+2025-05-29 15:47:36 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:48:49 T1
+2025-05-29 15:48:53 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:50:00 T0
+2025-05-29 15:50:04 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-29 15:50:36 Resume state saved
+2025-05-29 15:50:44 Printing paused at X558.0 Y326.5 Z6.3 C60.0
+2025-05-29 15:50:50 Done printing file
+2025-05-29 15:50:50 Done printing file
+2025-05-29 15:50:50 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 34m
+2025-05-29 15:50:52 T1
+2025-05-29 15:50:57 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-29 16:29:07 Event logging started
+2025-05-29 16:29:07 Done!
+2025-05-30 08:02:49 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-30 08:18:20 AUTOBEDLEVEL
+2025-05-30 08:18:20 AUTOBEDLEVEL
+2025-05-30 08:18:53 T0
+2025-05-30 08:23:08 Leadscrew adjustments made: 0.159 0.169 0.234, points used 3, (mean, deviation) before (0.191, 0.029) after (0.000, 0.000)
+2025-05-30 08:23:08 Leadscrew adjustments made: 0.159 0.169 0.234, points used 3, (mean, deviation) before (0.191, 0.029) after (0.000, 0.000)
+2025-05-30 08:24:22 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 08:25:44 Input Settings
+2025-05-30 08:25:44 InputShaping Settings
+2025-05-30 08:25:57 Printing...
+2025-05-30 08:31:45 T0
+2025-05-30 08:31:49 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 08:33:21 T1
+2025-05-30 08:33:26 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 08:52:55 T0
+2025-05-30 08:53:00 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 08:56:18 T1
+2025-05-30 08:56:22 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 08:58:11 T0
+2025-05-30 08:58:16 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 08:59:02 Resume state saved
+2025-05-30 08:59:11 Printing paused at X537.3 Y329.6 Z6.9 C60.0
+2025-05-30 09:02:33 Done printing file
+2025-05-30 09:02:33 Done printing file
+2025-05-30 09:02:33 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 56m
+2025-05-30 09:02:35 T1
+2025-05-30 09:02:40 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 09:04:42 M568 P1 R0
+2025-05-30 09:04:47 M568 P1 S0
+2025-05-30 09:20:57 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-30 09:20:57 AUTOBEDLEVEL
+2025-05-30 09:20:57 AUTOBEDLEVEL
+2025-05-30 09:20:58 T0
+2025-05-30 09:25:21 Leadscrew adjustments made: 0.256 0.293 -0.026, points used 3, (mean, deviation) before (0.149, 0.122) after (0.000, 0.000)
+2025-05-30 09:25:21 Leadscrew adjustments made: 0.256 0.293 -0.026, points used 3, (mean, deviation) before (0.149, 0.122) after (0.000, 0.000)
+2025-05-30 09:27:59 Leadscrew adjustments made: -0.019 -0.002 -0.002, points used 3, (mean, deviation) before (-0.009, 0.007) after (0.000, 0.000)
+2025-05-30 09:27:59 Leadscrew adjustments made: -0.019 -0.002 -0.002, points used 3, (mean, deviation) before (-0.009, 0.007) after (0.000, 0.000)
+2025-05-30 09:29:12 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 09:30:30 Input Settings
+2025-05-30 09:30:30 InputShaping Settings
+2025-05-30 09:30:43 Printing...
+2025-05-30 09:38:10 Resume state saved
+2025-05-30 09:38:15 Error: M0: Pause the print before attempting to cancel it
+2025-05-30 09:38:19 Printing paused at X461.8 Y353.5 Z0.3 C60.0
+2025-05-30 09:38:29 Done printing file
+2025-05-30 09:38:29 Done printing file
+2025-05-30 09:38:29 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 17m
+2025-05-30 09:38:30 T0
+2025-05-30 09:38:34 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 09:38:36 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-30 09:38:36 AUTOBEDLEVEL
+2025-05-30 09:38:36 AUTOBEDLEVEL
+2025-05-30 09:38:37 T0
+2025-05-30 09:42:46 Leadscrew adjustments made: 0.195 0.220 0.211, points used 3, (mean, deviation) before (0.206, 0.009) after (0.000, 0.000)
+2025-05-30 09:42:46 Leadscrew adjustments made: 0.195 0.220 0.211, points used 3, (mean, deviation) before (0.206, 0.009) after (0.000, 0.000)
+2025-05-30 09:43:59 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 09:45:02 Input Settings
+2025-05-30 09:45:02 InputShaping Settings
+2025-05-30 09:45:15 Printing...
+2025-05-30 09:57:32 T0
+2025-05-30 09:57:37 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 09:59:20 T1
+2025-05-30 09:59:25 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 11:41:12 T0
+2025-05-30 11:41:16 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 11:44:04 Resume state saved
+2025-05-30 11:44:14 Printing paused at X532.0 Y434.1 Z20.7 C60.0
+2025-05-30 11:45:02 Done printing file
+2025-05-30 11:45:02 Done printing file
+2025-05-30 11:45:02 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 2h 5m
+2025-05-30 11:45:04 T1
+2025-05-30 11:45:09 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 11:45:14 M568 P1 R0
+2025-05-30 11:46:03 Unloading
+2025-05-30 11:46:50 Error: Operation halted due to movement error: move duration too long
+2025-05-30 11:46:52 Unloaded
+2025-05-30 11:49:43 T0
+2025-05-30 11:49:54 T0
+2025-05-30 11:53:33 T0
+2025-05-30 11:56:58 M568 P0 S0
+2025-05-30 11:57:01 M568 P0 R0
+2025-05-30 13:12:41 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-30 13:12:44 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:12:48 AUTOBEDLEVEL
+2025-05-30 13:12:48 AUTOBEDLEVEL
+2025-05-30 13:12:49 T1
+2025-05-30 13:17:05 Leadscrew adjustments made: 0.149 0.202 0.125, points used 3, (mean, deviation) before (0.148, 0.024) after (-0.000, 0.000)
+2025-05-30 13:17:05 Leadscrew adjustments made: 0.149 0.202 0.125, points used 3, (mean, deviation) before (0.148, 0.024) after (-0.000, 0.000)
+2025-05-30 13:18:18 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:18:25 Resume state saved
+2025-05-30 13:18:25 Warning: Tool 1 was not driven because its heater temperatures were not high enough or it has a heater fault
+2025-05-30 13:18:33 Printing resumed
+2025-05-30 13:18:33 Printing resumed
+2025-05-30 13:19:01 Input Settings
+2025-05-30 13:19:01 InputShaping Settings
+2025-05-30 13:19:14 Printing...
+2025-05-30 13:19:14 Error: M141: Can't turn heater 3 on while in fault state
+2025-05-30 13:19:14 Error: M141: Can't turn heater 3 on while in fault state
+2025-05-30 13:19:30 T0
+2025-05-30 13:24:18 Resume state saved
+2025-05-30 13:24:23 Error: M0: Pause the print before attempting to cancel it
+2025-05-30 13:24:26 Printing paused at X456.3 Y309.2 Z0.3 C60.0
+2025-05-30 13:24:29 Done printing file
+2025-05-30 13:24:29 Done printing file
+2025-05-30 13:24:29 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 11m
+2025-05-30 13:24:31 T1
+2025-05-30 13:24:36 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:25:08 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-30 13:25:09 T0
+2025-05-30 13:25:13 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:25:17 AUTOBEDLEVEL
+2025-05-30 13:25:17 AUTOBEDLEVEL
+2025-05-30 13:25:18 T1
+2025-05-30 13:29:30 Leadscrew adjustments made: 0.168 0.174 0.172, points used 3, (mean, deviation) before (0.171, 0.002) after (0.000, 0.000)
+2025-05-30 13:29:30 Leadscrew adjustments made: 0.168 0.174 0.172, points used 3, (mean, deviation) before (0.171, 0.002) after (0.000, 0.000)
+2025-05-30 13:30:44 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:31:07 Input Settings
+2025-05-30 13:31:07 InputShaping Settings
+2025-05-30 13:31:19 Printing...
+2025-05-30 13:32:08 M568 P1 S230
+2025-05-30 13:40:10 T1
+2025-05-30 13:40:15 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 13:42:29 T0
+2025-05-30 13:42:34 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 13:47:10 Resume state saved
+2025-05-30 13:47:15 Error: M0: Pause the print before attempting to cancel it
+2025-05-30 13:47:18 Printing paused at X510.7 Y308.4 Z0.9 C60.0
+2025-05-30 13:47:20 Done printing file
+2025-05-30 13:47:20 Done printing file
+2025-05-30 13:47:20 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 22m
+2025-05-30 13:47:21 T1
+2025-05-30 13:47:26 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:47:44 M568 P1 S0
+2025-05-30 13:47:46 M568 P1 R0
+2025-05-30 13:53:44 File 0:/gcodes/FETCDEV_SupportTest2.gcode selected for printing
+2025-05-30 13:53:45 T0
+2025-05-30 13:53:50 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 13:53:54 AUTOBEDLEVEL
+2025-05-30 13:53:54 AUTOBEDLEVEL
+2025-05-30 13:53:55 T1
+2025-05-30 13:58:12 Leadscrew adjustments made: 0.129 0.200 0.150, points used 3, (mean, deviation) before (0.150, 0.023) after (-0.000, 0.000)
+2025-05-30 13:58:12 Leadscrew adjustments made: 0.129 0.200 0.150, points used 3, (mean, deviation) before (0.150, 0.023) after (-0.000, 0.000)
+2025-05-30 13:59:25 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 14:00:41 Input Settings
+2025-05-30 14:00:41 InputShaping Settings
+2025-05-30 14:00:54 Printing...
+2025-05-30 14:09:45 T1
+2025-05-30 14:09:49 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:11:56 T0
+2025-05-30 14:12:01 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:20:26 T1
+2025-05-30 14:20:31 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:25:05 T0
+2025-05-30 14:25:10 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:29:55 T1
+2025-05-30 14:30:00 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:34:44 T0
+2025-05-30 14:34:49 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:37:43 T1
+2025-05-30 14:37:48 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:40:49 T0
+2025-05-30 14:40:53 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 14:43:50 Resume state saved
+2025-05-30 14:44:00 Printing paused at X555.2 Y396.1 Z2.7 C60.0
+2025-05-30 14:44:04 Done printing file
+2025-05-30 14:44:04 Done printing file
+2025-05-30 14:44:04 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest2.gcode, print time was 0h 50m
+2025-05-30 14:44:05 T1
+2025-05-30 14:44:10 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 14:45:53 M568 P1 S0
+2025-05-30 14:45:56 M568 P1 R0
+2025-05-30 14:55:10 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-05-30 14:55:11 T0
+2025-05-30 14:55:16 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 14:55:20 AUTOBEDLEVEL
+2025-05-30 14:55:20 AUTOBEDLEVEL
+2025-05-30 14:55:21 T1
+2025-05-30 14:59:42 Leadscrew adjustments made: 0.110 0.217 0.119, points used 3, (mean, deviation) before (0.132, 0.036) after (0.000, 0.000)
+2025-05-30 14:59:42 Leadscrew adjustments made: 0.110 0.217 0.119, points used 3, (mean, deviation) before (0.132, 0.036) after (0.000, 0.000)
+2025-05-30 15:00:55 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 15:02:12 Input Settings
+2025-05-30 15:02:12 InputShaping Settings
+2025-05-30 15:02:29 Printing...
+2025-05-30 15:13:14 T1
+2025-05-30 15:13:18 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 15:28:38 T0
+2025-05-30 15:28:42 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 15:33:54 T1
+2025-05-30 15:33:59 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 15:41:29 T0
+2025-05-30 15:41:33 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 15:49:07 T1
+2025-05-30 15:49:12 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 220.0/220.0
+2025-05-30 15:49:31 Resume state saved
+2025-05-30 15:49:40 Printing paused at X604.4 Y330.3 Z1.5 C60.0
+2025-05-30 15:52:44 Done printing file
+2025-05-30 15:52:44 Done printing file
+2025-05-30 15:52:44 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 54m
+2025-05-30 15:52:45 T0
+2025-05-30 15:52:49 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-05-30 15:52:57 M568 P1 S0
+2025-05-30 16:00:11 Event logging started
+2025-05-30 16:00:12 Done!
+2025-06-03 07:38:54 M568 P0 S195
+2025-06-03 07:39:21 M568 P1 R180
+2025-06-03 07:39:25 M568 P1 A2
+2025-06-03 07:39:26 M568 P1 A1
+2025-06-03 07:41:23 T0
+2025-06-03 07:41:30 Error: Attempting to extrude with no tool selected.
+2025-06-03 07:41:32 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:41:36 T0
+2025-06-03 07:41:39 Error: Attempting to extrude with no tool selected.
+2025-06-03 07:41:41 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:41:58 T0
+2025-06-03 07:42:02 Error: Attempting to extrude with no tool selected.
+2025-06-03 07:42:04 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:44:52 T0
+2025-06-03 07:44:59 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:45:02 T0
+2025-06-03 07:45:03 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:45:06 T0
+2025-06-03 07:45:07 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:45:17 T0
+2025-06-03 07:45:19 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:46:01 T0
+2025-06-03 07:46:02 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:46:09 T0
+2025-06-03 07:46:10 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:46:15 Tool on TC, no home
+2025-06-03 07:46:25 T0
+2025-06-03 07:46:26 T0
+2025-06-03 07:46:38 Warning: Tool 0 was not driven because its heater temperatures were not high enough or it has a heater fault
+2025-06-03 07:46:41 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:46:43 Warning: Tool 0 was not driven because its heater temperatures were not high enough or it has a heater fault
+2025-06-03 07:46:46 T0
+2025-06-03 07:46:47 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/0.0
+2025-06-03 07:47:08 M568 P0 R190
+2025-06-03 07:51:27 Error: Attempting to extrude with no tool selected.
+2025-06-03 07:51:28 T0
+2025-06-03 07:51:29 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/190.0
+2025-06-03 07:51:33 Event logging stopped
+2025-06-03 07:51:50 Event logging started
+2025-06-03 07:51:50 Done!
+2025-06-03 07:51:56 M568 P0 S195
+2025-06-03 07:52:01 M568 P0 R180
+2025-06-03 07:52:05 M568 P1 S195
+2025-06-03 07:52:08 M568 P1 R180
+2025-06-03 07:52:09 M568 P1 A2
+2025-06-03 07:52:11 M568 P1 A1
+2025-06-03 07:52:50 T0
+2025-06-03 07:52:57 Error: Attempting to extrude with no tool selected.
+2025-06-03 07:52:59 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:55:10 T0
+2025-06-03 07:55:17 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:55:21 T0
+2025-06-03 07:55:23 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:55:27 T0
+2025-06-03 07:55:30 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:56:05 T0
+2025-06-03 07:56:07 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:56:10 T0
+2025-06-03 07:56:13 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:57:01 T0
+2025-06-03 07:57:04 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 195.0/180.0
+2025-06-03 07:58:04 Error: Push(): stack overflow on HTTP
+2025-06-03 07:58:09 Event logging stopped
+2025-06-03 07:58:26 Event logging started
+2025-06-03 07:58:26 Done!
+2025-06-03 07:59:05 T0
+2025-06-03 07:59:13 Error: Push(): stack overflow on HTTP
+2025-06-03 07:59:20 Error: Push(): stack overflow on HTTP
+2025-06-03 08:02:37 Error: Push(): stack overflow on HTTP
+2025-06-03 08:02:43 Error: Push(): stack overflow on HTTP
+2025-06-03 08:03:43 Tool 0: offsets X0.000 Y0.000 Z-25.500 C0.000, active/standby temperature(s) 0.0/0.0
+2025-06-03 08:03:45 T0
+2025-06-03 08:30:49 T0
+2025-06-03 08:34:34 M568 P1 A2
+2025-06-03 08:34:42 M568 P1 A1
+2025-06-03 08:34:44 M568 P1 A0
+2025-06-03 08:34:46 T1
+2025-06-03 08:34:53 T1
+2025-06-03 09:08:51 T0
+2025-06-03 09:09:51 T0
+2025-06-03 09:14:57 M568 P1 R180
+2025-06-03 09:15:17 T0
+2025-06-03 09:20:07 T1
+2025-06-03 09:20:28 Error: Attempting to extrude with no tool selected.
+2025-06-03 09:20:41 Tool 1 is selected
+2025-06-03 09:23:47 T1
+2025-06-03 09:23:54 T0
+2025-06-03 09:28:52 T0 Pre
+2025-06-03 09:28:54 T0 Post
+2025-06-03 09:30:54 T0 Free
+2025-06-03 09:30:55 T0
+2025-06-03 09:31:04 T0 Pre
+2025-06-03 09:31:06 T0 Post
+2025-06-03 09:31:15 T0 Free
+2025-06-03 09:31:16 T0
+2025-06-03 09:31:18 T1 Pre
+2025-06-03 09:31:20 Error: Attempting to extrude with no tool selected.
+2025-06-03 09:31:20 T1 Post
+2025-06-03 09:31:32 T1 Free
+2025-06-03 09:31:37 T1 Pre
+2025-06-03 09:31:38 Error: Attempting to extrude with no tool selected.
+2025-06-03 09:31:38 T1 Post
+2025-06-03 09:31:40 T1 Free
+2025-06-03 09:31:56 T0 Pre
+2025-06-03 09:31:58 T0 Post
+2025-06-03 09:32:01 T0 Free
+2025-06-03 09:32:02 T0
+2025-06-03 09:32:05 T1 Pre
+2025-06-03 09:32:07 Error: Attempting to extrude with no tool selected.
+2025-06-03 09:32:08 T1 Post
+2025-06-03 09:32:10 T1 Free
+2025-06-03 09:32:21 T1 Pre
+2025-06-03 09:32:22 Error: Attempting to extrude with no tool selected.
+2025-06-03 09:32:22 T1 Post
+2025-06-03 09:32:24 T1 Free
+2025-06-03 09:32:25 T1
+2025-06-03 09:36:33 Error: G1: driver 71.0 is not in spreadCycle mode
+2025-06-03 09:37:26 T0 Pre
+2025-06-03 09:37:28 T0 Post
+2025-06-03 09:41:52 T0 Free
+2025-06-03 09:41:53 T0
+2025-06-03 09:41:57 T0 Pre
+2025-06-03 09:41:58 T0 Post
+2025-06-03 09:42:48 T0 Free
+2025-06-03 09:42:55 T0
+2025-06-03 09:46:27 T1
+2025-06-03 09:47:20 T1 Pre
+2025-06-03 09:47:26 Error: Attempting to extrude with no tool selected.
+2025-06-03 09:47:26 T1 Post
+2025-06-03 09:47:30 T1 Free
+2025-06-03 09:47:31 T1
+2025-06-03 09:56:00 M568 P1 R0
+2025-06-03 10:02:17 T0 Pre
+2025-06-03 10:02:20 T0 Post
+2025-06-03 13:24:03 T0 Free
+2025-06-03 13:24:04 T0
+2025-06-03 13:24:10 T0 Pre
+2025-06-03 13:24:12 T0 Post
+2025-06-03 13:24:14 T0 Free
+2025-06-03 13:24:15 T0
+2025-06-03 13:24:51 T0 Pre
+2025-06-03 13:24:53 T0 Post
+2025-06-03 13:24:55 T0 Free
+2025-06-03 13:24:56 T0
+2025-06-03 13:25:34 T0 Pre
+2025-06-03 13:25:36 T0 Post
+2025-06-03 13:25:38 T0 Free
+2025-06-03 13:25:39 T0
+2025-06-03 13:26:45 T1 Pre
+2025-06-03 13:26:48 T1 Post
+2025-06-03 13:26:50 T1 Free
+2025-06-03 13:26:51 T1
+2025-06-03 13:27:06 T0 Pre
+2025-06-03 13:27:09 T0 Post
+2025-06-03 13:27:10 T0 Free
+2025-06-03 13:27:12 T0
+2025-06-03 13:27:13 T1 Pre
+2025-06-03 13:27:16 T1 Post
+2025-06-03 13:27:17 T1 Free
+2025-06-03 13:27:19 T1
+2025-06-03 13:27:20 T0 Pre
+2025-06-03 13:27:23 T0 Post
+2025-06-03 13:27:24 T0 Free
+2025-06-03 13:27:26 T0
+2025-06-03 13:27:27 T1 Pre
+2025-06-03 13:27:30 T1 Post
+2025-06-03 13:28:05 T1 Free
+2025-06-03 13:28:07 T1
+2025-06-03 13:28:08 T0 Pre
+2025-06-03 13:28:11 T0 Post
+2025-06-03 13:28:12 T0 Free
+2025-06-03 13:28:13 T0
+2025-06-03 13:28:15 T0 Pre
+2025-06-03 13:28:17 T0 Post
+2025-06-03 13:28:20 T0 Free
+2025-06-03 13:28:20 T0
+2025-06-03 13:28:23 T0 Pre
+2025-06-03 13:28:25 T0 Post
+2025-06-03 13:28:26 T0 Free
+2025-06-03 13:28:26 T0
+2025-06-03 13:28:52 T0 Pre
+2025-06-03 13:28:53 T0 Post
+2025-06-03 13:28:55 T0 Free
+2025-06-03 13:28:55 T0
+2025-06-03 13:28:57 T0 Pre
+2025-06-03 13:28:58 T0 Post
+2025-06-03 13:32:10 File 0:/gcodes/Untitled.gcode selected for printing
+2025-06-03 13:32:10 T0 Free
+2025-06-03 13:32:11 T0
+2025-06-03 13:32:12 T1 Pre
+2025-06-03 13:32:14 T1 Post
+2025-06-03 13:41:17 AUTOBEDLEVEL
+2025-06-03 13:41:17 AUTOBEDLEVEL
+2025-06-03 13:41:18 T1 Free
+2025-06-03 13:41:19 T1
+2025-06-03 13:47:05 Leadscrew adjustments made: -0.091 0.169 0.206, points used 3, (mean, deviation) before (0.073, 0.121) after (0.000, 0.000)
+2025-06-03 13:47:05 Leadscrew adjustments made: -0.091 0.169 0.206, points used 3, (mean, deviation) before (0.073, 0.121) after (0.000, 0.000)
+2025-06-03 13:49:43 Leadscrew adjustments made: 0.054 0.043 -0.000, points used 3, (mean, deviation) before (0.030, 0.021) after (-0.000, 0.000)
+2025-06-03 13:49:43 Leadscrew adjustments made: 0.054 0.043 -0.000, points used 3, (mean, deviation) before (0.030, 0.021) after (-0.000, 0.000)
+2025-06-03 13:50:52 T1 Pre
+2025-06-03 13:50:56 Error: Attempting to extrude with no tool selected.
+2025-06-03 13:50:56 T1 Post
+2025-06-03 13:52:16 Input Settings
+2025-06-03 13:52:16 InputShaping Settings
+2025-06-03 13:52:28 Printing...
+2025-06-03 13:53:42 T1 Free
+2025-06-03 13:53:45 T1
+2025-06-03 13:53:47 T0 Pre
+2025-06-03 13:53:49 T0 Post
+2025-06-03 13:55:56 T0 Free
+2025-06-03 13:56:00 T0
+2025-06-03 13:56:01 T1 Pre
+2025-06-03 13:56:03 Error: Attempting to extrude with no tool selected.
+2025-06-03 13:56:04 T1 Post
+2025-06-03 13:57:08 T1 Free
+2025-06-03 13:57:11 T1
+2025-06-03 13:57:13 T0 Pre
+2025-06-03 13:57:15 T0 Post
+2025-06-03 13:57:44 T0 Free
+2025-06-03 13:57:48 T0
+2025-06-03 13:57:49 T1 Pre
+2025-06-03 13:57:52 Error: Attempting to extrude with no tool selected.
+2025-06-03 13:57:52 T1 Post
+2025-06-03 13:58:38 T1 Free
+2025-06-03 13:58:42 T1
+2025-06-03 13:58:43 T0 Pre
+2025-06-03 13:58:46 T0 Post
+2025-06-03 13:59:15 T0 Free
+2025-06-03 13:59:18 T0
+2025-06-03 13:59:20 T1 Pre
+2025-06-03 13:59:22 Error: Attempting to extrude with no tool selected.
+2025-06-03 13:59:22 T1 Post
+2025-06-03 14:00:15 T1 Free
+2025-06-03 14:00:18 T1
+2025-06-03 14:00:20 T0 Pre
+2025-06-03 14:00:22 T0 Post
+2025-06-03 14:00:52 T0 Free
+2025-06-03 14:00:55 T0
+2025-06-03 14:00:56 T1 Pre
+2025-06-03 14:00:59 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:00:59 T1 Post
+2025-06-03 14:01:56 T1 Free
+2025-06-03 14:01:59 T1
+2025-06-03 14:02:00 T0 Pre
+2025-06-03 14:02:03 T0 Post
+2025-06-03 14:02:32 T0 Free
+2025-06-03 14:02:36 T0
+2025-06-03 14:02:37 T1 Pre
+2025-06-03 14:02:39 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:02:39 T1 Post
+2025-06-03 14:03:37 T1 Free
+2025-06-03 14:03:40 T1
+2025-06-03 14:03:42 T0 Pre
+2025-06-03 14:03:44 T0 Post
+2025-06-03 14:04:13 T0 Free
+2025-06-03 14:04:17 T0
+2025-06-03 14:04:18 T1 Pre
+2025-06-03 14:04:20 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:04:20 T1 Post
+2025-06-03 14:05:19 T1 Free
+2025-06-03 14:05:23 T1
+2025-06-03 14:05:24 T0 Pre
+2025-06-03 14:05:26 T0 Post
+2025-06-03 14:05:56 T0 Free
+2025-06-03 14:06:00 T0
+2025-06-03 14:06:01 T1 Pre
+2025-06-03 14:06:03 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:06:03 T1 Post
+2025-06-03 14:07:03 T1 Free
+2025-06-03 14:07:06 T1
+2025-06-03 14:07:08 T0 Pre
+2025-06-03 14:07:10 T0 Post
+2025-06-03 14:07:40 T0 Free
+2025-06-03 14:07:43 T0
+2025-06-03 14:07:44 T1 Pre
+2025-06-03 14:07:47 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:07:47 T1 Post
+2025-06-03 14:08:47 T1 Free
+2025-06-03 14:08:50 T1
+2025-06-03 14:08:52 T0 Pre
+2025-06-03 14:08:54 T0 Post
+2025-06-03 14:09:23 T0 Free
+2025-06-03 14:09:27 T0
+2025-06-03 14:09:28 T1 Pre
+2025-06-03 14:09:30 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:09:30 T1 Post
+2025-06-03 14:10:30 T1 Free
+2025-06-03 14:10:33 T1
+2025-06-03 14:10:34 T0 Pre
+2025-06-03 14:10:37 T0 Post
+2025-06-03 14:11:07 T0 Free
+2025-06-03 14:11:10 T0
+2025-06-03 14:11:11 T1 Pre
+2025-06-03 14:11:13 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:11:13 T1 Post
+2025-06-03 14:12:13 T1 Free
+2025-06-03 14:12:16 T1
+2025-06-03 14:12:18 T0 Pre
+2025-06-03 14:12:20 T0 Post
+2025-06-03 14:12:50 T0 Free
+2025-06-03 14:12:53 T0
+2025-06-03 14:12:54 T1 Pre
+2025-06-03 14:12:56 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:12:56 T1 Post
+2025-06-03 14:13:56 T1 Free
+2025-06-03 14:13:59 T1
+2025-06-03 14:14:01 T0 Pre
+2025-06-03 14:14:03 T0 Post
+2025-06-03 14:14:33 T0 Free
+2025-06-03 14:14:36 T0
+2025-06-03 14:14:37 T1 Pre
+2025-06-03 14:14:39 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:14:39 T1 Post
+2025-06-03 14:15:38 T1 Free
+2025-06-03 14:15:42 T1
+2025-06-03 14:15:43 T0 Pre
+2025-06-03 14:15:45 T0 Post
+2025-06-03 14:16:16 T0 Free
+2025-06-03 14:16:19 T0
+2025-06-03 14:16:20 T1 Pre
+2025-06-03 14:16:22 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:16:22 T1 Post
+2025-06-03 14:17:21 T1 Free
+2025-06-03 14:17:24 T1
+2025-06-03 14:17:25 T0 Pre
+2025-06-03 14:17:28 T0 Post
+2025-06-03 14:17:57 T0 Free
+2025-06-03 14:18:01 T0
+2025-06-03 14:18:02 T1 Pre
+2025-06-03 14:18:04 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:18:04 T1 Post
+2025-06-03 14:19:01 T1 Free
+2025-06-03 14:19:04 T1
+2025-06-03 14:19:06 T0 Pre
+2025-06-03 14:19:08 T0 Post
+2025-06-03 14:19:38 T0 Free
+2025-06-03 14:19:41 T0
+2025-06-03 14:19:42 T1 Pre
+2025-06-03 14:19:44 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:19:44 T1 Post
+2025-06-03 14:20:40 T1 Free
+2025-06-03 14:20:43 T1
+2025-06-03 14:20:45 T0 Pre
+2025-06-03 14:20:47 T0 Post
+2025-06-03 14:21:14 T0 Free
+2025-06-03 14:21:17 T0
+2025-06-03 14:21:18 T1 Pre
+2025-06-03 14:21:20 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:21:20 T1 Post
+2025-06-03 14:22:16 T1 Free
+2025-06-03 14:22:19 T1
+2025-06-03 14:22:21 T0 Pre
+2025-06-03 14:22:23 T0 Post
+2025-06-03 14:22:47 T0 Free
+2025-06-03 14:22:50 T0
+2025-06-03 14:22:51 T1 Pre
+2025-06-03 14:22:53 Error: Attempting to extrude with no tool selected.
+2025-06-03 14:22:53 T1 Post
+2025-06-03 14:40:23 T1 Free
+2025-06-03 14:40:26 Warning: Driver 70.0 warning: position tolerance exceeded
+2025-06-03 14:40:30 Resume state saved
+2025-06-03 14:40:30 Warning: Driver 71.0 warning: position tolerance exceeded
+2025-06-03 14:41:48 T1
+2025-06-03 14:42:02 Printing resumed
+2025-06-03 14:42:02 Printing resumed
+2025-06-03 14:42:27 Print End
+2025-06-03 14:42:27 Done printing file
+2025-06-03 14:42:27 Done printing file
+2025-06-03 14:42:27 Finished printing file 0:/gcodes/Untitled.gcode, print time was 1h 8m
+2025-06-03 14:42:27 T0 Pre
+2025-06-03 14:42:52 T0 Post
+2025-06-03 14:42:52 Warning: Tool 0 was not driven because its heater temperatures were not high enough or it has a heater fault
+2025-06-03 14:43:47 T0 Free
+2025-06-03 14:43:48 T0
+2025-06-03 14:43:49 T1 Pre
+2025-06-03 14:43:51 T1 Post
+2025-06-03 14:43:52 Unloading
+2025-06-03 14:44:34 Unloaded
+2025-06-03 14:46:40 T1 Free
+2025-06-03 14:46:41 T1
+2025-06-03 14:46:43 T0 Pre
+2025-06-03 14:46:45 T0 Post
+2025-06-03 14:46:47 T0 Free
+2025-06-03 14:46:47 T0
+2025-06-03 14:46:49 T1 Pre
+2025-06-03 14:46:52 T1 Post
+2025-06-03 14:46:53 T1 Free
+2025-06-03 14:46:54 T1
+2025-06-03 14:46:55 T0 Pre
+2025-06-03 14:46:58 T0 Post
+2025-06-03 14:47:41 Heating
+2025-06-03 14:47:41 Heating
+2025-06-03 14:49:06 Load
+2025-06-03 14:49:51 Filament Loaded
+2025-06-03 14:51:53 Unloading
+2025-06-03 14:52:01 Unloaded
+2025-06-03 14:52:10 T0 Free
+2025-06-03 14:52:10 T0
+2025-06-03 14:54:26 T0
+2025-06-03 14:58:42 T0
+2025-06-03 14:59:13 T0 Pre
+2025-06-03 14:59:20 T0 Post
+2025-06-03 14:59:20 Heating
+2025-06-03 14:59:20 Heating
+2025-06-03 14:59:36 Loading
+2025-06-03 15:00:21 Filament Loaded
+2025-06-03 15:01:11 M568 P0 S0
+2025-06-03 15:07:16 Unloading
+2025-06-03 15:07:16 Unloading
+2025-06-03 15:08:44 G10 T0 S170
+2025-06-03 15:09:38 Unloaded
+2025-06-03 15:09:38 Unloaded
+2025-06-03 15:10:30 Heating
+2025-06-03 15:10:57 Loading
+2025-06-03 15:11:54 Filament Loaded
+2025-06-03 15:14:09 T0 Free
+2025-06-03 15:14:10 T0
+2025-06-03 15:14:11 T1 Pre
+2025-06-03 15:14:13 T1 Post
+2025-06-03 15:14:14 Heating
+2025-06-03 15:14:14 Heating
+2025-06-03 15:14:36 Load
+2025-06-03 15:15:51 Filament Loaded
+2025-06-03 15:15:52 Error: G1: intermediate position outside machine limits
+2025-06-03 15:15:52 Error: G1: intermediate position outside machine limits
+2025-06-03 15:15:52 Error: G1: intermediate position outside machine limits
+2025-06-03 15:15:52 Error: G1: intermediate position outside machine limits
+2025-06-03 15:15:52 Error: G1: intermediate position outside machine limits
+2025-06-03 15:15:52 Error: G1: intermediate position outside machine limits
+2025-06-03 15:16:00 Error: G1: intermediate position outside machine limits
+2025-06-03 15:16:01 Error: G1: intermediate position outside machine limits
+2025-06-03 15:19:06 T1
+2025-06-03 15:19:09 T1
+2025-06-03 15:19:46 M568 P0 S0
+2025-06-03 15:21:29 M568 P1 S0
+2025-06-03 15:22:06 Event logging stopped
+2025-06-03 15:22:23 Event logging started
+2025-06-03 15:22:23 Done!
+2025-06-03 15:33:18 File 0:/gcodes/Untitled.gcode selected for printing
+2025-06-03 15:33:19 T0 Pre
+2025-06-03 15:33:36 Done printing file
+2025-06-03 15:33:36 Done printing file
+2025-06-03 15:33:36 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 0m
+2025-06-03 15:33:36 T0 Post
+2025-06-03 15:33:36 Error: in file macro line 13: T0: insufficient axes homed
+2025-06-03 15:34:18 T0 Free
+2025-06-03 15:34:33 Warning: Driver 75.0 warning: position tolerance exceeded
+2025-06-03 15:34:33 Warning: Driver 73.0 warning: position tolerance exceeded
+2025-06-03 15:34:37 Error: G4: Z probe readings not consistent
+2025-06-03 15:34:37 Error: G4: Z probe readings not consistent
+2025-06-03 15:35:45 Event logging stopped
+2025-06-03 15:36:02 Event logging started
+2025-06-03 15:36:02 Done!
+2025-06-03 15:36:13 File 0:/gcodes/Untitled.gcode selected for printing
+2025-06-03 15:36:13 T0 Pre
+2025-06-03 15:36:34 Done printing file
+2025-06-03 15:36:34 Done printing file
+2025-06-03 15:36:34 Cancelled printing file 0:/gcodes/Untitled.gcode, print time was 0h 0m
+2025-06-03 15:36:34 T0 Post
+2025-06-03 15:36:34 Error: in file macro line 13: T0: insufficient axes homed
+2025-06-03 15:36:37 File 0:/gcodes/Untitled.gcode selected for printing
+2025-06-03 15:36:49 G10 P0 R170
+2025-06-03 15:36:49 Error: in GCode file line 880: G10: Invalid tool number
+2025-06-03 15:36:49 Error: in GCode file line 880: G10: Invalid tool number
+2025-06-03 15:36:49 AUTOBEDLEVEL
+2025-06-03 15:36:49 AUTOBEDLEVEL
+2025-06-03 15:36:49 T0 Free
+2025-06-03 15:42:42 M568 P1 R160
+2025-06-03 15:43:00 Leadscrew adjustments made: -0.274 0.645 -0.186, points used 3, (mean, deviation) before (-0.079, 0.313) after (0.000, 0.000)
+2025-06-03 15:43:00 Leadscrew adjustments made: -0.274 0.645 -0.186, points used 3, (mean, deviation) before (-0.079, 0.313) after (0.000, 0.000)
+2025-06-03 15:45:37 Leadscrew adjustments made: 0.079 0.121 -0.018, points used 3, (mean, deviation) before (0.047, 0.048) after (-0.000, 0.000)
+2025-06-03 15:45:37 Leadscrew adjustments made: 0.079 0.121 -0.018, points used 3, (mean, deviation) before (0.047, 0.048) after (-0.000, 0.000)
+2025-06-03 15:46:47 T0 Pre
+2025-06-03 15:46:50 T0 Post
+2025-06-03 15:47:23 Input Settings
+2025-06-03 15:47:24 InputShaping Settings
+2025-06-03 15:47:36 Printing...
+2025-06-03 15:49:32 T0 Free
+2025-06-03 15:49:35 T0
+2025-06-03 15:49:36 T1 Pre
+2025-06-03 15:49:39 T1 Post
+2025-06-03 15:50:28 Resume state saved
+2025-06-03 15:50:46 Printing resumed
+2025-06-03 15:50:46 Printing resumed
+2025-06-03 15:50:51 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, enabled always, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 95, measured 29.34mm/rev, min 11% max 108% over 70.3mm
+2025-06-03 15:50:52 Resume state saved
+2025-06-03 15:51:16 Printing resumed
+2025-06-03 15:51:16 Printing resumed
+2025-06-03 15:51:37 M568 P1 S220
+2025-06-03 15:52:41 T1 Free
+2025-06-03 15:52:45 T1
+2025-06-03 15:52:46 T0 Pre
+2025-06-03 15:52:49 T0 Post
+2025-06-03 15:53:40 T0 Free
+2025-06-03 15:53:43 T0
+2025-06-03 15:53:44 T1 Pre
+2025-06-03 15:53:47 T1 Post
+2025-06-03 15:54:47 T1 Free
+2025-06-03 15:54:50 T1
+2025-06-03 15:54:52 T0 Pre
+2025-06-03 15:54:54 T0 Post
+2025-06-03 15:55:41 T0 Free
+2025-06-03 15:55:44 T0
+2025-06-03 15:55:45 T1 Pre
+2025-06-03 15:55:47 T1 Post
+2025-06-03 15:56:46 T1 Free
+2025-06-03 15:56:49 T1
+2025-06-03 15:56:51 T0 Pre
+2025-06-03 15:56:53 T0 Post
+2025-06-03 15:57:42 T0 Free
+2025-06-03 15:57:46 T0
+2025-06-03 15:57:47 T1 Pre
+2025-06-03 15:57:49 T1 Post
+2025-06-03 15:58:48 T1 Free
+2025-06-03 15:58:52 T1
+2025-06-03 15:58:53 T0 Pre
+2025-06-03 15:58:56 T0 Post
+2025-06-03 15:59:46 T0 Free
+2025-06-03 15:59:50 T0
+2025-06-03 15:59:51 T1 Pre
+2025-06-03 15:59:53 T1 Post
+2025-06-03 16:00:52 T1 Free
+2025-06-03 16:00:56 T1
+2025-06-03 16:00:58 T0 Pre
+2025-06-03 16:01:00 T0 Post
+2025-06-03 16:01:51 T0 Free
+2025-06-03 16:01:54 T0
+2025-06-03 16:01:55 T1 Pre
+2025-06-03 16:01:57 T1 Post
+2025-06-03 16:02:57 T1 Free
+2025-06-03 16:03:00 T1
+2025-06-03 16:03:02 T0 Pre
+2025-06-03 16:03:04 T0 Post
+2025-06-03 16:03:55 T0 Free
+2025-06-03 16:03:58 T0
+2025-06-03 16:03:59 T1 Pre
+2025-06-03 16:04:01 T1 Post
+2025-06-03 16:05:01 T1 Free
+2025-06-03 16:05:05 T1
+2025-06-03 16:05:06 T0 Pre
+2025-06-03 16:05:08 T0 Post
+2025-06-03 16:06:01 T0 Free
+2025-06-03 16:06:04 T0
+2025-06-03 16:06:05 T1 Pre
+2025-06-03 16:06:07 T1 Post
+2025-06-03 16:07:07 T1 Free
+2025-06-03 16:07:10 T1
+2025-06-03 16:07:12 T0 Pre
+2025-06-03 16:07:14 T0 Post
+2025-06-03 16:08:04 T0 Free
+2025-06-03 16:08:08 T0
+2025-06-03 16:08:09 T1 Pre
+2025-06-03 16:08:11 T1 Post
+2025-06-03 16:09:11 T1 Free
+2025-06-03 16:09:14 T1
+2025-06-03 16:09:16 T0 Pre
+2025-06-03 16:09:18 T0 Post
+2025-06-03 16:10:07 T0 Free
+2025-06-03 16:10:10 T0
+2025-06-03 16:10:11 T1 Pre
+2025-06-03 16:10:14 T1 Post
+2025-06-03 16:11:13 T1 Free
+2025-06-03 16:11:16 T1
+2025-06-03 16:11:18 T0 Pre
+2025-06-03 16:11:20 T0 Post
+2025-06-03 16:12:09 T0 Free
+2025-06-03 16:12:13 T0
+2025-06-03 16:12:14 T1 Pre
+2025-06-03 16:12:16 T1 Post
+2025-06-03 16:13:15 T1 Free
+2025-06-03 16:13:18 T1
+2025-06-03 16:13:20 T0 Pre
+2025-06-03 16:13:22 T0 Post
+2025-06-03 16:14:10 T0 Free
+2025-06-03 16:14:13 T0
+2025-06-03 16:14:14 T1 Pre
+2025-06-03 16:14:16 T1 Post
+2025-06-03 16:15:15 T1 Free
+2025-06-03 16:15:19 T1
+2025-06-03 16:15:21 T0 Pre
+2025-06-03 16:15:23 T0 Post
+2025-06-03 16:16:08 T0 Free
+2025-06-03 16:16:11 T0
+2025-06-03 16:16:12 T1 Pre
+2025-06-03 16:16:14 T1 Post
+2025-06-03 16:17:14 T1 Free
+2025-06-03 16:17:17 T1
+2025-06-03 16:17:19 T0 Pre
+2025-06-03 16:17:21 T0 Post
+2025-06-03 16:18:06 T0 Free
+2025-06-03 16:18:09 T0
+2025-06-03 16:18:10 T1 Pre
+2025-06-03 16:18:12 T1 Post
+2025-06-03 16:19:11 T1 Free
+2025-06-03 16:19:15 T1
+2025-06-03 16:19:16 T0 Pre
+2025-06-03 16:19:18 T0 Post
+2025-06-03 16:20:02 T0 Free
+2025-06-03 16:20:05 T0
+2025-06-03 16:20:07 T1 Pre
+2025-06-03 16:20:09 T1 Post
+2025-06-03 16:21:08 T1 Free
+2025-06-03 16:21:11 T1
+2025-06-03 16:21:13 T0 Pre
+2025-06-03 16:21:15 T0 Post
+2025-06-03 16:21:54 T0 Free
+2025-06-03 16:21:57 T0
+2025-06-03 16:21:58 T1 Pre
+2025-06-03 16:22:00 T1 Post
+2025-06-03 16:22:54 T1 Free
+2025-06-03 16:22:58 T1
+2025-06-03 16:23:00 T0 Pre
+2025-06-03 16:23:02 T0 Post
+2025-06-03 16:23:40 T0 Free
+2025-06-03 16:23:44 T0
+2025-06-03 16:23:45 T1 Pre
+2025-06-03 16:23:47 T1 Post
+2025-06-03 16:24:34 T1 Free
+2025-06-03 16:24:37 T1
+2025-06-03 16:24:39 T0 Pre
+2025-06-03 16:24:41 T0 Post
+                                                                                                                                                                                                                                                                                                                                                                                            2025-06-03 16:33:45 Event logging started
+2025-06-03 16:33:45 Done!
+2025-06-04 07:42:36 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-06-04 07:43:30 AUTOBEDLEVEL
+2025-06-04 07:43:30 AUTOBEDLEVEL
+2025-06-04 07:43:30 T0 Free
+2025-06-04 07:44:04 T0
+2025-06-04 07:48:18 Leadscrew adjustments made: 0.248 0.100 0.318, points used 3, (mean, deviation) before (0.251, 0.069) after (0.000, 0.000)
+2025-06-04 07:48:18 Leadscrew adjustments made: 0.248 0.100 0.318, points used 3, (mean, deviation) before (0.251, 0.069) after (0.000, 0.000)
+2025-06-04 07:49:27 T0 Pre
+2025-06-04 07:49:31 T0 Post
+2025-06-04 07:50:10 Input Settings
+2025-06-04 07:50:10 InputShaping Settings
+2025-06-04 07:50:22 Printing...
+2025-06-04 07:56:00 Resume state saved
+2025-06-04 07:56:08 Printing paused at X626.5 Y287.8 Z0.3 C60.0
+2025-06-04 07:56:09 Done printing file
+2025-06-04 07:56:09 Done printing file
+2025-06-04 07:56:09 Cancelled printing file 0:/gcodes/FETCDEV_SupportTest.gcode, print time was 0h 13m
+2025-06-04 07:56:09 T0 Free
+2025-06-04 07:56:11 T0
+2025-06-04 07:56:12 T0 Pre
+2025-06-04 07:56:13 T0 Post
+2025-06-04 07:56:45 File 0:/gcodes/FETCDEV_SupportTest.gcode selected for printing
+2025-06-04 07:57:41 AUTOBEDLEVEL
+2025-06-04 07:57:41 AUTOBEDLEVEL
+2025-06-04 07:57:41 T0 Free
+2025-06-04 07:57:42 T0
+2025-06-04 08:02:05 Leadscrew adjustments made: 0.163 0.265 0.100, points used 3, (mean, deviation) before (0.156, 0.052) after (0.000, 0.000)
+2025-06-04 08:02:05 Leadscrew adjustments made: 0.163 0.265 0.100, points used 3, (mean, deviation) before (0.156, 0.052) after (0.000, 0.000)
+2025-06-04 08:03:14 T0 Pre
+2025-06-04 08:03:18 T0 Post
+2025-06-04 08:03:56 Input Settings
+2025-06-04 08:03:56 InputShaping Settings
+2025-06-04 08:04:08 Printing...
+2025-06-04 08:16:23 T0 Free
+2025-06-04 08:16:26 T0
+2025-06-04 08:16:27 T1 Pre
+2025-06-04 08:16:29 T1 Post
+2025-06-04 08:17:19 Resume state saved
+2025-06-04 08:21:13 Printing resumed
+2025-06-04 08:21:13 Printing resumed
+2025-06-04 08:22:35 T1 Free
+2025-06-04 08:22:38 T1
+2025-06-04 08:22:40 T0 Pre
+2025-06-04 08:22:42 T0 Post
+2025-06-04 09:24:17 T0 Free
+2025-06-04 09:24:20 T0
+2025-06-04 09:24:22 T1 Pre
+2025-06-04 09:24:24 T1 Post
+2025-06-04 09:33:38 T1 Free
+2025-06-04 09:33:41 T1
+2025-06-04 09:33:43 T0 Pre
+2025-06-04 09:33:45 T0 Post
+2025-06-04 09:36:36 T0 Free
+2025-06-04 09:36:39 T0
+2025-06-04 09:36:40 T1 Pre
+2025-06-04 09:36:42 T1 Post
+2025-06-04 09:46:23 T1 Free
+2025-06-04 09:46:26 T1
+2025-06-04 09:46:28 T0 Pre
+2025-06-04 09:46:30 T0 Post
+2025-06-04 09:49:19 T0 Free
+2025-06-04 09:49:22 T0
+2025-06-04 09:49:23 T1 Pre
+2025-06-04 09:49:25 T1 Post
+2025-06-04 09:55:10 T1 Free
+2025-06-04 09:55:13 T1
+2025-06-04 09:55:15 T0 Pre
+2025-06-04 09:55:17 T0 Post
+2025-06-04 10:01:08 T0 Free
+2025-06-04 10:01:11 T0
+2025-06-04 10:01:12 T1 Pre
+2025-06-04 10:01:14 T1 Post
+2025-06-04 10:03:18 T1 Free
+2025-06-04 10:03:22 T1
+2025-06-04 10:03:23 T0 Pre
+2025-06-04 10:03:26 T0 Post
+2025-06-04 10:09:42 T0 Free
+2025-06-04 10:09:45 T0
+2025-06-04 10:09:46 T1 Pre
+2025-06-04 10:09:48 T1 Post
+2025-06-04 10:11:59 T1 Free
+2025-06-04 10:12:02 T1
+2025-06-04 10:12:04 T0 Pre
+2025-06-04 10:12:06 T0 Post
+2025-06-04 10:18:25 T0 Free
+2025-06-04 10:18:28 T0
+2025-06-04 10:18:29 T1 Pre
+2025-06-04 10:18:31 T1 Post
+                                                            2025-06-04 11:26:34 Event logging started
+2025-06-04 11:26:34 Done!
+2025-06-04 13:36:00 M568 P1 R160
+2025-06-04 13:36:01 T1 Free
+2025-06-04 13:36:03 Event logging stopped
+2025-06-04 13:36:20 Event logging started
+2025-06-04 13:36:21 Done!
+2025-06-04 13:55:49 Event logging stopped
+2025-06-04 14:07:05 Event logging started
+2025-06-04 14:07:05 Done!
+2025-06-04 14:11:27 T1 Free
+2025-06-04 14:12:08 T1
+2025-06-04 14:19:32 T0 Pre
+2025-06-04 14:19:34 T0 Post
+2025-06-04 14:19:44 Event logging stopped
+2025-06-04 14:20:01 Event logging started
+2025-06-04 14:20:02 Done!
+2025-06-04 14:20:26 T0 Free
+2025-06-04 14:20:55 Event logging stopped
+2025-06-04 14:21:12 Event logging started
+2025-06-04 14:21:12 Done!
+2025-06-04 14:21:40 T0 Free
+2025-06-04 14:21:45 Event logging stopped
+2025-06-04 14:22:02 Event logging started
+2025-06-04 14:22:02 Done!
+2025-06-04 14:23:30 T0 Free
+2025-06-04 14:23:33 Event logging stopped
+2025-06-04 14:23:50 Event logging started
+2025-06-04 14:23:50 Done!
+2025-06-04 14:23:53 T0 Free
+2025-06-04 14:24:21 Event logging stopped
+2025-06-04 14:24:38 Event logging started
+2025-06-04 14:24:38 Done!
+2025-06-04 14:25:21 T0 Free
+2025-06-04 14:25:30 Event logging stopped
+2025-06-04 14:25:48 Event logging started
+2025-06-04 14:25:48 Done!
+2025-06-04 14:26:21 T0 Free
+2025-06-04 14:26:43 T0
+2025-06-04 14:29:19 T0 Pre
+2025-06-04 14:29:20 T0 Post
+2025-06-04 14:29:24 T0 Free
+2025-06-04 14:29:25 T0
+2025-06-04 14:29:26 T1 Pre
+2025-06-04 14:29:28 T1 Post
+2025-06-04 14:29:34 T1 Free
+2025-06-04 14:29:35 T1
+2025-06-04 14:30:32 T0 Pre
+2025-06-04 14:30:34 T0 Post
+2025-06-04 14:30:36 T0 Free
+2025-06-04 14:30:37 T0
+2025-06-04 14:30:38 T1 Pre
+2025-06-04 14:30:40 T1 Post
+2025-06-04 14:30:42 T1 Free
+2025-06-04 14:30:42 T1
+2025-06-04 14:30:49 T0 Pre
+2025-06-04 14:30:51 T0 Post
+2025-06-04 14:30:54 T0 Free
+2025-06-04 14:30:54 T0
+2025-06-04 14:30:55 T1 Pre
+2025-06-04 14:30:57 T1 Post
+2025-06-04 14:30:59 T1 Free
+2025-06-04 14:30:59 T1
+2025-06-04 14:31:00 T0 Pre
+2025-06-04 14:31:03 T0 Post
+2025-06-04 14:35:17 File 0:/gcodes/Untitled1.gcode selected for printing
+2025-06-04 14:35:17 T0 Free
+2025-06-04 14:35:18 T0
+2025-06-04 14:35:19 T1 Pre
+2025-06-04 14:35:21 T1 Post
+2025-06-04 14:36:03 AUTOBEDLEVEL
+2025-06-04 14:36:03 AUTOBEDLEVEL
+2025-06-04 14:36:03 T1 Free
+2025-06-04 14:36:03 T1
+2025-06-04 14:40:18 Leadscrew adjustments made: 0.052 0.362 0.045, points used 3, (mean, deviation) before (0.103, 0.111) after (0.000, 0.000)
+2025-06-04 14:40:18 Leadscrew adjustments made: 0.052 0.362 0.045, points used 3, (mean, deviation) before (0.103, 0.111) after (0.000, 0.000)
+2025-06-04 14:42:56 Leadscrew adjustments made: 0.014 0.053 0.012, points used 3, (mean, deviation) before (0.020, 0.014) after (-0.000, 0.000)
+2025-06-04 14:42:57 Leadscrew adjustments made: 0.014 0.053 0.012, points used 3, (mean, deviation) before (0.020, 0.014) after (-0.000, 0.000)
+2025-06-04 14:44:06 T1 Pre
+2025-06-04 14:44:10 T1 Post
+2025-06-04 14:44:34 Input Settings
+2025-06-04 14:44:34 InputShaping Settings
+2025-06-04 14:44:43 Resume state saved
+2025-06-04 14:45:01 Printing resumed
+2025-06-04 14:45:01 Printing resumed
+2025-06-04 14:45:01 Printing...
+2025-06-04 14:46:11 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 132 agc 99, measured 44.79mm/rev, min 10% max 158% over 289.5mm
+2025-06-04 14:46:20 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 132 agc 99, measured 46.20mm/rev, min 10% max 163% over 324.2mm
+2025-06-04 14:46:22 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 132 agc 99, measured 46.24mm/rev, min 10% max 163% over 333.5mm
+2025-06-04 14:46:29 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 97, measured 48.16mm/rev, min 8% max 170% over 359.2mm
+2025-06-04 14:46:33 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 97, measured 48.71mm/rev, min 8% max 172% over 374.7mm
+2025-06-04 14:46:34 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 48.98mm/rev, min 8% max 173% over 377.8mm
+2025-06-04 14:48:45 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 97, measured 73.97mm/rev, min -10% max 261% over 851.1mm
+2025-06-04 14:48:46 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 97, measured 74.36mm/rev, min -10% max 263% over 855.6mm
+2025-06-04 14:48:48 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 130 agc 97, measured 74.70mm/rev, min -10% max 264% over 859.5mm
+2025-06-04 14:50:14 T1 Free
+2025-06-04 14:50:18 T1
+2025-06-04 14:50:19 T0 Pre
+2025-06-04 14:50:21 T0 Post
+2025-06-04 14:50:59 T0 Free
+2025-06-04 14:51:02 T0
+2025-06-04 14:51:03 T1 Pre
+2025-06-04 14:51:05 T1 Post
+2025-06-04 14:51:25 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 97, measured 1039.33mm/rev, min 0% max 300% over 21.3mm
+2025-06-04 14:51:30 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1992.15mm/rev, min -57% max 575% over 42.8mm
+2025-06-04 14:51:32 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1158.49mm/rev, min -33% max 555% over 56.6mm
+2025-06-04 14:51:34 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 129 agc 97, measured 1144.40mm/rev, min -33% max 548% over 61.5mm
+2025-06-04 14:51:35 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1177.05mm/rev, min -34% max 564% over 65.5mm
+2025-06-04 14:51:38 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1464.48mm/rev, min -42% max 702% over 81.5mm
+2025-06-04 14:51:39 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1464.48mm/rev, min -42% max 702% over 81.5mm
+2025-06-04 14:51:41 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1324.65mm/rev, min -38% max 635% over 94.4mm
+2025-06-04 14:51:43 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1510.50mm/rev, min -77% max 724% over 103.3mm
+2025-06-04 14:51:48 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 1835.75mm/rev, min -94% max 880% over 129.1mm
+2025-06-04 14:52:30 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 3611.16mm/rev, min -733% max 1730% over 345.6mm
+2025-06-04 14:52:31 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 3669.67mm/rev, min -745% max 1758% over 351.2mm
+2025-06-04 14:52:32 Duet3D magnetic filament monitor on pin 122.io1.in, firmware version 4, disabled, 25.10mm/rev, allow 60% to 160%, check all extruding moves every 3.0mm, mag 128 agc 97, measured 3595.89mm/rev, min -730% max 1723% over 358.2mm
+2025-06-04 14:59:25 Resume state saved
+2025-06-04 14:59:32 Printing paused at X545.0 Y262.8 Z1.5 C60.0
+2025-06-04 14:59:34 Done printing file
+2025-06-04 14:59:34 Done printing file
+2025-06-04 14:59:34 Cancelled printing file 0:/gcodes/Untitled1.gcode, print time was 0h 23m
+2025-06-04 14:59:34 T1 Free
+2025-06-04 14:59:35 T1
+2025-06-04 14:59:36 T0 Pre
+2025-06-04 14:59:39 T0 Post
+2025-06-04 14:59:43 T0 Free
+2025-06-04 14:59:44 T0
+2025-06-04 14:59:45 T1 Pre
+2025-06-04 14:59:47 T1 Post
+2025-06-04 14:59:51 M568 P1 S205
+2025-06-04 14:59:53 M568 P1 S235
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:00:56 Error: G1: intermediate position outside machine limits
+2025-06-04 15:02:12 T1 Free
+2025-06-04 15:02:12 T1
+2025-06-04 15:02:12 T0
+2025-06-04 15:02:13 T0 Pre
+2025-06-04 15:02:15 T0 Post
+2025-06-04 15:02:16 Unloading
+2025-06-04 15:02:16 Unloading
+2025-06-04 15:03:46 G10 T0 S170
+2025-06-04 15:05:18 Unloaded
+2025-06-04 15:05:18 Unloaded
+2025-06-04 15:05:47 Event logging stopped
+2025-06-04 15:06:04 Event logging started
+2025-06-04 15:06:04 Done!
+2025-06-04 15:08:29 T0 Free
+2025-06-04 15:08:50 T0
+2025-06-04 15:09:14 T0 Pre
+2025-06-04 15:09:15 T0 Post
+2025-06-04 15:09:15 Heating
+2025-06-04 15:10:10 Loading
+2025-06-04 15:11:07 Filament Loaded
+2025-06-04 15:11:19 T0 Free
+2025-06-04 15:11:20 T0
+2025-06-04 15:11:21 T1 Pre
+2025-06-04 15:11:23 T1 Post
+2025-06-04 15:11:25 T1 Free
+2025-06-04 15:11:25 T1
+2025-06-04 15:12:39 Warning: SPI connection has been reset
+2025-06-04 15:12:39 Connection to SBC established!
+2025-06-04 15:12:51 Warning: SPI connection has been reset
+2025-06-04 15:12:51 Connection to SBC established!
+2025-06-04 15:13:31 T1
+2025-06-04 15:13:37 Warning: SPI connection has been reset
+2025-06-04 15:13:37 Connection to SBC established!
+2025-06-04 15:14:15 T1 Pre
+2025-06-04 15:14:21 T1 Post
+2025-06-04 15:14:22 T1 Free
+2025-06-04 15:14:23 T1
+2025-06-04 15:14:24 T0 Pre
+2025-06-04 15:14:26 T0 Post
+2025-06-04 15:14:28 Event logging stopped
+2025-06-04 15:14:45 Event logging started
+2025-06-04 15:14:45 Done!
+2025-06-04 15:19:59 T0 Free
+2025-06-04 15:20:34 T0
+2025-06-04 15:20:35 T1 Pre
+2025-06-04 15:20:37 T1 Post
+2025-06-04 15:20:37 Unloading
+2025-06-04 15:20:37 Unloading
+2025-06-04 15:22:25 G10 P1 S170
+2025-06-04 15:23:54 Unloaded
+2025-06-04 15:23:54 Unloaded
+2025-06-04 15:24:54 M568 P1 S0
