@@ -21,4 +21,6 @@ update-alternatives --set desktop-background /usr/share/wallpapers/duet3d.png
 
 raspi-config nonint do_camera 0
 raspi-config nonint do_glamor 0
+
+raspi-config nonint do_wayland W2
 EOF
