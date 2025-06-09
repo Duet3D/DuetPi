@@ -1,4 +1,3 @@
-RepRapFirmware filament assignment file v1 generated at 2025-05-27 13:15
+RepRapFirmware filament assignment file v1 generated at 2025-06-04 15:23
 extruder,filament
-1,2_PETG
-0,1_PETG
+0,1_PLA
