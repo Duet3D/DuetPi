@@ -5,20 +5,20 @@
         "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_init.py",
         "cmd_enabled": true,
         "cmd_timeout": 30,
-        "cmd_capture_output": true
+        "cmd_capture_output": false
     },
     {
         "cmd_code": "M1202",
-        "cmd_name": "lock",
-        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_lock.py",
+        "cmd_name": "door_open",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_open.py",
         "cmd_enabled": true,
         "cmd_timeout": 30,
         "cmd_capture_output": false
     },
     {
         "cmd_code": "M1203",
-        "cmd_name": "open",
-        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_open.py",
+        "cmd_name": "door_close",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_lock.py",
         "cmd_enabled": true,
         "cmd_timeout": 30,
         "cmd_capture_output": false

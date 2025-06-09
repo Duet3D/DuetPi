@@ -1,5 +1,5 @@
 if state.status = "idle"
-	;M141 S{heat.heaters[3].current + 1}
+	M141 S{heat.heaters[3].current + 1}
 if state.status = "processing"
 	var totalLEDs = 78;
 	var greenLEDs = 0

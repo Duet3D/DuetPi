@@ -1,1 +1,4 @@
+if sensors.gpIn[9].value = 1 && sensors.gpIn[10].value = 0
+    M118 P0 S"INTERBLOCCO DISATTIVATO, PORTA CHIUSA"
 M1203
+
