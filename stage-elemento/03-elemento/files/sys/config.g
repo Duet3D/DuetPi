@@ -52,7 +52,7 @@ M204 P10000 T14000
 M584 E121.0:122.0                                      ; set extruder mapping
 M350 E4:4 I1                                           ; configure microstepping with interpolation
 M906 E1000:1000                                        ; set extruder driver currents
-M92 E210:210                                           ; configure steps per mm
+M92 E260:224                                           ; configure steps per mm
 M566 E120:120                                        ; set maximum instantaneous speed changes (mm/min)
 M203 E10000:10000                                      ; set maximum speeds (mm/min)
 M201 E5000:5000                                          ; set accelerations (mm/s^2)
