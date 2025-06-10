@@ -1,7 +1,8 @@
 M118 P0 L2 S"T1 Pre"
-if (move.axes[0].homed = false || move.axes[1].homed = false)
+if move.axes[0].homed == false || move.axes[1].homed == false || move.axes[3].homed == false 
     G28 Y
 	G28 X
+	G28 C
 M564 H1 S0
 G0 C0 F10000
 G0 X{global.xPT1Position} Y{move.axes[1].min - global.yPT0Position + 11} F8000
