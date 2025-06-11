@@ -10,6 +10,8 @@ make USE_LIBCAMERA=0
 # Installa binario
 install -v -m 755 ustreamer /usr/local/bin/ustreamer
 
+rm -rf /opt/ustreamer
+
 # Crea utente dedicato
 useradd -r -s /usr/sbin/nologin ustreamer
 

@@ -1,8 +1,7 @@
 if state.status = "processing"
     T1
-    M118 P0 S"Heating"
     M109 S{heat.heaters[1].active}
-    M118 P0 S"Loading"
+    M118 P0 S"Loading PLA"
     M83
     G1 E10 F100
     G1 E70 F200
@@ -10,9 +9,9 @@ if state.status = "processing"
     M400
 else
     T1
-    M118 P0 S"Heating"
-    M109 S210
-    M118 P0 S"Loading"
+    M118 P0 S"Heating for PLA"
+    M109 S220
+    M118 P0 S"Loading PLA"
     M83
     G1 E10 F100
     G1 E70 F200
@@ -20,6 +19,7 @@ else
     M400
     M106 S255
     M109 S41
+    M116
     M106 S0
-M118 P0 S"Filament Loaded"
+M118 P0 S"PLA Loaded on T1"
 

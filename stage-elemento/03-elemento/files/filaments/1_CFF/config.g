@@ -1,2 +1,2 @@
-M307 H1 R2.960 K0.322:0.031 D5.49 E1.35 S0.80 B0 V23.3
-M92 E1000
+M572 D0 S0.060							        ;Pressure Adv PLA settings
+M591 D0 S1 L28.2 A0 E3                          ;Filament Monitor settings
