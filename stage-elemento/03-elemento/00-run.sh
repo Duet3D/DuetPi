@@ -19,7 +19,7 @@ cp -rp files/filaments/* "${ROOTFS_DIR}/opt/dsf/sd/filaments/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/boot/gcodes/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/opt/dsf/sd/gcodes/"
 #cp -Rp files/plugins/* "${ROOTFS_DIR}/opt/dsf/plugins/"
-cp -rp files/TC_beta "${ROOTFS_DIR}/boot/TC_beta"
+cp -rp files/TC_beta "${ROOTFS_DIR}/boot/"
 
 cp files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/"
 
@@ -31,5 +31,4 @@ systemctl disable bluetooth
 
 update-alternatives --install /usr/share/desktop-base/720_1280_background.png desktop-background /usr/share/wallpapers/720_1280_background.png 80
 update-alternatives --set desktop-background /usr/share/wallpapers/720_1280_background.png
-
 EOF
