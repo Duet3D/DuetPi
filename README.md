@@ -386,7 +386,7 @@ to `./stage2` (if building a minimal system).
 ```bash
 # Example for building a lite system
 echo "IMG_NAME='raspios'" > config
-touch ./stage3/SKIP ./stage4/SKIP ./stage5/SKIP
+touch ./stage0/SKIP ./stage1/SKIP ./stage2/SKIP ./stage-dsf/SKIP ./stage3/SKIP ./stage4/SKIP ./stage5/SKIP 
 touch ./stage4/SKIP_IMAGES ./stage5/SKIP_IMAGES
 sudo ./build.sh  # or ./build-docker.sh
 ```
