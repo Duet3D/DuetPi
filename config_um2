@@ -1,0 +1,9 @@
+export ENABLE_SSH=1
+export STAGE_LIST="stage0 stage1 stage2 stage-dsf stage3 stage4 stage-um2"
+export IMG_NAME="UM2"
+export TARGET_HOSTNAME="UM2"
+export DEPLOY_COMPRESSION="xz"
+export FIRST_USER_NAME="pi"
+export FIRST_USER_PASS="f@6brix"
+export USE_QCOW2=0
+export DISABLE_FIRST_BOOT_USER_RENAME=1

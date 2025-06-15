@@ -1,0 +1,82 @@
+﻿2024-04-12 13:59:43 Event logging started
+2024-04-12 13:59:43 === Diagnostics ===
+RepRapFirmware for Duet 3 Mini 5+ version 3.5.0-rc.4 (2024-04-09 09:45:40) running on Duet 3 Mini5plus WiFi (SBC mode)
+Board ID: 8LG5J-4T9RL-D65J0-40KMD-JDW2Z-HPBKQ
+Used output buffers: 1 of 40 (18 max)
+=== RTOS ===
+Static ram: 103232
+Dynamic ram: 107992 of which 0 recycled
+Never used RAM 27336, free system stack 208 words
+Tasks: SBC(2,ready,1.7%,300) HEAT(3,nWait 1,0.0%,351) Move(4,nWait 6,0.0%,355) CanReceiv(6,nWait 1,0.0%,940) CanSender(5,nWait 7,0.0%,336) CanClock(7,delaying,0.0%,334) TMC(4,delaying,0.8%,111) MAIN(2,running,96.7%,666) IDLE(0,ready,0.0%,30) AIN(4,delaying,0.8%,265), total 100.0%
+Owned mutexes: Daemon(MAIN)
+=== Platform ===
+Last reset 00:05:10 ago, cause: power up
+Last software reset at 2024-04-10 20:32, reason: StuckInSpinLoop, Gcodes spinning, available RAM 26936, slot 1
+Software reset code 0x4083 HFSR 0x00000000 CFSR 0x00000000 ICSR 0x0000080f BFAR 0xe000ed38 SP 0x20004054 Task MAIN Freestk 1001 ok
+Stack: 0001d7e5 0001d7fc 210f0000 4208c000 3f000000 369dc3a0 3edb7b94 3331bb4c 20031a14 20002b03 00000002 00000002 00196220 20031a5c 0000012c 20023538 00000000 43425320 722c3228 74696157 0000003a 00000000 00000000 00000000 0001a734 0000000c 00000000
+Error status: 0x00
+Aux0 errors 0,0,0
+MCU revision 3, ADC conversions started 311225, completed 311225, timed out 0, errs 0
+MCU temperature: min 16.4, current 17.9, max 18.2
+Supply voltage: min 24.2, current 24.2, max 24.3, under voltage events: 0, over voltage events: 0, power good: yes
+Heap OK, handles allocated/used 99/21, heap memory allocated/used/recyclable 2048/956/576, gc cycles 3
+Events: 0 queued, 0 completed
+Driver 0: standstill, SG min 0, read errors 0, write errors 0, ifcnt 13, reads 6586, writes 0, timeouts 0, DMA errors 0, CC errors 0
+Driver 1: standstill, SG min 0, read errors 0, write errors 0, ifcnt 13, reads 6586, writes 0, timeouts 0, DMA errors 0, CC errors 0
+Driver 2: standstill, SG min 0, read errors 0, write errors 0, ifcnt 13, reads 6586, writes 0, timeouts 0, DMA errors 0, CC errors 0
+Driver 3: standstill, SG min 0, read errors 0, write errors 0, ifcnt 13, reads 6587, writes 0, timeouts 0, DMA errors 0, CC errors 0
+Driver 4: standstill, SG min 0, read errors 0, write errors 0, ifcnt 13, reads 6586, writes 0, timeouts 0, DMA errors 0, CC errors 0
+Driver 5: not present
+Driver 6: not present
+Date/time: 2024-04-12 13:59:43
+Cache data hit count 653118494
+Slowest loop: 4.34ms; fastest: 0.19ms
+=== Storage ===
+Free file entries: 20
+SD card 0 not detected, interface speed: 0.0MBytes/sec
+SD card longest read time 0.0ms, write time 0.0ms, max retries 0
+=== Move ===
+DMs created 83, segments created 0, maxWait 0ms, bed compensation in use: none, height map offset 0.000, max steps late 0, min interval 0, bad calcs 0, ebfmin 0.00, ebfmax 0.00
+no step interrupt scheduled
+Moves shaped first try 0, on retry 0, too short 0, wrong shape 0, maybepossible 0
+=== DDARing 0 ===
+Scheduled moves 0, completed 0, hiccups 0, stepErrors 0, LaErrors 0, Underruns [0, 0, 0], CDDA state -1
+=== DDARing 1 ===
+Scheduled moves 0, completed 0, hiccups 0, stepErrors 0, LaErrors 0, Underruns [0, 0, 0], CDDA state -1
+=== Heat ===
+Bed heaters 0 -1 -1 -1, chamber heaters -1 -1 -1 -1, ordering errs 0
+=== GCodes ===
+Movement locks held by null, null
+HTTP is idle in state(s) 0
+Telnet is idle in state(s) 0
+File is idle in state(s) 0
+USB is idle in state(s) 0
+Aux is assembling a command in state(s) 0
+Trigger* is idle in state(s) 0
+Queue is idle in state(s) 0
+LCD is idle in state(s) 0
+SBC is idle in state(s) 0
+Daemon* is doing "M122" in state(s) 0 0, running macro
+Aux2 is idle in state(s) 0
+Autopause is idle in state(s) 0
+File2 is idle in state(s) 0
+Queue2 is idle in state(s) 0
+Q0 segments left 0, axes/extruders owned 0x0000403
+Code queue 0 is empty
+Q1 segments left 0, axes/extruders owned 0x0000000
+Code queue 1 is empty
+=== Filament sensors ===
+check 1363136 clear 0
+Extruder 0 sensor: ok
+=== CAN ===
+Messages queued 1127, received 0, lost 0, errs 590750, boc 0
+Longest wait 0ms for reply type 0, peak Tx sync delay 0, free buffers 26 (min 26), ts 626/0/0
+Tx timeouts 0,0,626,0,0,501 last cancelled message type 30 dest 127
+=== SBC interface ===
+Transfer state: 5, failed transfers: 0, checksum errors: 0
+RX/TX seq numbers: 11666/11666
+SPI underruns 0, overruns 0
+State: 5, disconnects: 0, timeouts: 0 total, 0 by SBC, IAP RAM available 0x0d3f4
+Buffer RX/TX: 0/0-0, open files: 0
+2024-04-12 13:59:45 stop logging
+2024-04-12 13:59:45 Event logging stopped

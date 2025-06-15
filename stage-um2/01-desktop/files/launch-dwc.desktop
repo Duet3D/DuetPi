@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Duet Web Control
+Comment=Launch Duet Web Control in fullscreen mode
+Icon=/usr/share/icons/dwc.png
+Exec=/usr/bin/launch-dwc
+Type=Application
+Encoding=UTF-8
+Terminal=false

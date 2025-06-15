@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=duet3d
+Description=Duet3D Desktop Splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/duet3d
+ScriptFile=/usr/share/plymouth/themes/duet3d/duet3d.script

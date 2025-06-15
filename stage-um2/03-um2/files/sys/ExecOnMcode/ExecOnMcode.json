@@ -1,0 +1,10 @@
+[
+    {
+        "cmd_code": "M1201",
+        "cmd_name": "user-satisfaction",
+        "cmd_command": "user_satisfaction.py",
+        "cmd_enabled": true,
+        "cmd_timeout": 30,
+        "cmd_capture_output": true
+    }
+]
