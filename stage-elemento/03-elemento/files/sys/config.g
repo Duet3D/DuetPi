@@ -12,9 +12,9 @@ G4 S4
 M569.1 P70.0 T3 E8:16 R50 I0 D0
 M569.1 P71.0 T3 E8:16 R50 I0 D0
 M569.1 P72.0 T3 E8:16 R50 I0 D0
-M569.1 P73.0 T3 E4:8 R50 I0 D0
-M569.1 P74.0 T3 E4:8 R50 I0 D0
-M569.1 P75.0 T3 E4:8 R50 I0 D0
+M569.1 P73.0 T3 E4:8 R100 I0 D0
+M569.1 P74.0 T3 E4:8 R100 I0 D0
+M569.1 P75.0 T3 E4:8 R100 I0 D0
 
 ; Smart Drivers
 M569 P70.0 S0 D4                                       ; driver 70.0 goes forwards (X axis)
@@ -44,7 +44,7 @@ M906 X2200 Y2200 Z2200                                 ; set axis driver current
 M92 X100 Y100 Z640                                     ; configure steps per mm
 M208 X-30:1100 Y-10:600 Z0:620                         ; set minimum and maximum axis limits
 M566 X600 Y600 Z20 P1                                  ; set maximum instantaneous speed changes (mm/min)
-M203 X18000 Y18000 Z3000                                 ; set maximum speeds (mm/min)
+M203 X18000 Y18000 Z1500                                 ; set maximum speeds (mm/min)
 M201 X10000 Y10000 Z40                                   ; set accelerations (mm/s^2)
 M204 P10000 T14000
 
@@ -76,9 +76,9 @@ M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/b
 
 ; Probes
 M558 A2 Z1 K0 B1 P8 C"io4.in" H50 F300:150 T9000 S0.1 R0.5    ; set Z probe type to bltouch and the dive height + speeds
-G31 K0 P25 X0 Y55                              ; 4.25   ;0.6
+G31 K0 P500 X0 Y55 Z-24.30                            ; 4.25   ;0.6
 M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F3000 T3000
-G31 K1 X0 Y36 Z0.6 P9598
+G31 K1 X0 Y36 P9598
 M558.1 K1 A-3.049e-4 B4.389e-10 C-1.320e-16
 M558.2 K1 S18 R145045
 
@@ -95,7 +95,7 @@ M308 A"CH" S3 Y"thermistor" P"120.temp0"               ; thermistor on coil     
 ; Heaters
 M950 H0 C"out0" T0                                     ; create heater #0
 M143 H0 P0 T0 C0 S125 A0                               ; configure heater monitor #0 for heater #0
-M307 H0 R0.027 K0.040:0.000 D43.51 E1.35 S1.00 B0      ; configure model of heater #0
+M307 H0 R0.027 K0.040:0.000 D43.51 E1.35 S1.00 B1      ; configure model of heater #0
 M950 H1 C"121.out0" T1                                 ; create heater #1
 M143 H1 P0 T1 C0 S285 A0                               ; configure heater monitor #0 for heater #1
 M307 H1 R1.774 K0.315:0.076 D6.54 E1.35 S1.00 B0 V23.4 ; configure model of heater #1
@@ -164,13 +164,13 @@ M591 D1 P3 C"122.io1.in" S1 L28.2 A0 E3      ; MFM config
 
 ; Miscellaneous
 ;T0                                       ; select first tool
-if sensors.gpIn[7].value == 0 && sensors.gpIn[8].value == 0 
+if sensors.gpIn[7].value == 1 && sensors.gpIn[8].value == 1 
     M118 P0 S"No extruder in printer, please resolve conflict"
-if sensors.gpIn[6].value == 1 && sensors.gpIn[8].value == 1
+if sensors.gpIn[6].value == 1 && sensors.gpIn[7].value == 0
     M118 P0 S"Extruder T0 on TC"
     T0 P0
     G92 C60
-if sensors.gpIn[6].value == 1 && sensors.gpIn[7].value == 1
+if sensors.gpIn[6].value == 1 && sensors.gpIn[8].value == 0
     M118 P0 S"Extruder T1 on TC"
     T1 P0
     G92 C60

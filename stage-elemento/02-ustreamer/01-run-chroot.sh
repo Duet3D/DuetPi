@@ -2,13 +2,10 @@
 set -e
 
 # Clona e compila uStreamer
-cd /opt
-git clone https://github.com/pikvm/ustreamer.git
-cd ustreamer
-make USE_LIBCAMERA=0
-
-# Installa binario
-install -v -m 755 ustreamer /usr/local/bin/ustreamer
+#cd /opt
+#git clone https://github.com/pikvm/ustreamer.git
+#cd ustreamer
+#make USE_LIBCAMERA=0
 
 # Crea utente dedicato
 useradd -r -s /usr/sbin/nologin ustreamer
