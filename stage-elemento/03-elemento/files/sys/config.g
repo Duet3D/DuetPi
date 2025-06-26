@@ -148,11 +148,13 @@ M950 J7 C"!io7.in"
 M950 J8 C"!io8.in"
 M950 J9 C"^io0.in"
 M950 J10 C"io1.in"
+M950 J11 C"^io0.out"
 M581 T2 P6 S-1 
 M581 T3 P7 S1
 M581 T4 P8 S1
 M581 T5 P9 S0
 M581 T6 P10 S1
+M581 T7 P11 S1
 
 ; Tools
 M563 P0 S"T0" D0 H1 F0                                 ; create tool #0

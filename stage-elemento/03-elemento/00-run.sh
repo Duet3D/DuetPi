@@ -19,7 +19,7 @@ cp -rp files/filaments/* "${ROOTFS_DIR}/opt/dsf/sd/filaments/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/boot/gcodes/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/opt/dsf/sd/gcodes/"
 #cp -Rp files/plugins/* "${ROOTFS_DIR}/opt/dsf/plugins/"
-cp -Rp files/TC_beta "${ROOTFS_DIR}/boot/"
+cp -Rp files/TC_beta "${ROOTFS_DIR}/boot/TC_beta"
  
 install -m 644 files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/"
 
