@@ -5,7 +5,7 @@
 
 ; General
 M550 P"ElementoTC"                                     ; set hostname
-M952 B0 S1000
+
 ; Wait a moment for the CAN expansion boards to become available
 G4 S4
 
@@ -161,7 +161,7 @@ M563 P0 S"T0" D0 H1 F0                                 ; create tool #0
 M568 P0 R0 S0                                          ; set initial tool #0 active and standby temperatures to 0C
 M563 P1 S"T1" D1 H2 F0                                 ; create tool #0
 M568 P1 R0 S0 
-M591 D0 P3 C"121.io1.in" S1 L31 A0 E10       ; MFM config
+M591 D0 P3 C"121.io1.in" S1 L25.3 A0 E3      ; MFM config
 M591 D1 P3 C"122.io1.in" S1 L28.2 A0 E3      ; MFM config
 
 ; Miscellaneous

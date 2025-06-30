@@ -1,7 +1,7 @@
 ; Complete Sequential Z Calibration OPTIMIZED: Bed Tilt -> Single G30 Reference -> T0 -> T1
 ; Procedura ottimizzata: Tilt bed -> UN SOLO riferimento G30 -> T0 -> T1
 
-M291 P"🎯 CALIBRAZIONE Z COMPLETA OTTIMIZZATA. Sequenza: 1) Tilt bed 2) Riferimento G30 unico 3) Offset T0 4) Offset T1" R"Calibrazione Z Ottimizzata" S2
+M291 P"CALIBRAZIONE Z OFFSET T0/T1. Sequenza: 1) Tilt bed 2) Riferimento Piano di stampa 3) Offset T0 4) Offset T1" R"Calibrazione Z Offset" S2
 
 ; Definizione variabili per movimenti custom
 ; Movimenti Z disponibili: 0.1mm, 0.05mm, 0.02mm, 0.01mm
@@ -13,9 +13,9 @@ var zUltraFineStep = 0.05 ; Movimento ultra-fine
 ; ========================================
 ; FASE 1: PREPARAZIONE SISTEMA
 ; ========================================
-M291 P"🔧 FASE 1: PREPARAZIONE SISTEMA. Riscaldamento bed a 65°C..." R"Fase 1: Preparazione" S0 T10
+M291 P"FASE 1: PREPARAZIONE SISTEMA. Riscaldamento bed a 65°C..." R"Fase 1: Preparazione" S0 T10
 
-M190 S0
+M190 S65
 M290 S0 R0
 M561                                            ; DISABILITA compensazione bed (CRUCIALE!)
 G10 L1 P0 Z-35

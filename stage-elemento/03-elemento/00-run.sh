@@ -19,11 +19,11 @@ cp -rp files/filaments/* "${ROOTFS_DIR}/opt/dsf/sd/filaments/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/boot/gcodes/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/opt/dsf/sd/gcodes/"
 #cp -Rp files/plugins/* "${ROOTFS_DIR}/opt/dsf/plugins/"
-cp -Rp files/TC_beta "${ROOTFS_DIR}/boot/TC_beta"
- 
-install -m 644 files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/"
+cp -p files/TC_beta "${ROOTFS_DIR}/boot/TC_beta"
 
-install -m 644 files/720_1280_background.png "${ROOTFS_DIR}/usr/share/wallpapers/720_1280_background.png"
+install -m 644 -v files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/"
+
+install -m 644 -v files/720_1280_background.png "${ROOTFS_DIR}/usr/share/wallpapers/720_1280_background.png"
 
 on_chroot << EOF
 chown -R dsf:dsf /opt/dsf/sd/*
