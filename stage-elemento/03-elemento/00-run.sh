@@ -19,7 +19,7 @@ cp -rp files/filaments/* "${ROOTFS_DIR}/opt/dsf/sd/filaments/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/boot/gcodes/"
 cp -rp files/gcodes/* "${ROOTFS_DIR}/opt/dsf/sd/gcodes/"
 #cp -Rp files/plugins/* "${ROOTFS_DIR}/opt/dsf/plugins/"
-cp -p files/TC_beta "${ROOTFS_DIR}/boot/TC_beta"
+cp -p files/TC "${ROOTFS_DIR}/opt/dsf/sd/sys/TC.conf"
 
 install -m 644 -v files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/"
 
@@ -29,7 +29,7 @@ on_chroot << EOF
 chown -R dsf:dsf /opt/dsf/sd/*
 systemctl disable bluetooth 
 systemctl enable ssh
-
 update-alternatives --install /usr/share/desktop-base/720_1280_background.png desktop-background /usr/share/wallpapers/720_1280_background.png 80
 update-alternatives --set desktop-background /usr/share/wallpapers/720_1280_background.png
+
 EOF

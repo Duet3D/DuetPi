@@ -18,5 +18,6 @@ M400
 G0 C0 F6000
 M400
 G0 Y{-global.yPT0Position + 11}
+G0 Y{move.axes[1].min}
 M400
-M564 H0 S1
+M564 H1 S1

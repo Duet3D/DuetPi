@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=View DCS log
+Comment=View the log of Duet Control Server
+Icon=/usr/share/icons/Adwaita/scalable/apps/help-browser-symbolic.svg
+Exec=env SYSTEMD_LESS=RXMK /usr/bin/journalctl -u duetcontrolserver -e
+Type=Application
+Encoding=UTF-8
+Terminal=true

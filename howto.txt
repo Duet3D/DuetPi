@@ -1,0 +1,28 @@
+tcbeta config_beta
+elementotc vecchia, firmware aggiornato al 30/06/25
+${ROOTFS_DIR}/boot/ to ${ROOTFS_DIR}/boot/firmware/ in 03-elemento
+
+
+
+
+
+tc config
+elemento tc 1, firmware del 2/7/2025, 
+    eliminato chromium cartella da 01 Desktop .config - testing
+    procedure funzionanti da validare ultima volta.
+    test:
+        -   bed scanning
+        -   bed probe
+        -   bed tilt
+        -   carica
+        -   scarica
+        -   avvia stampa
+        -   pausa
+        -   riprendi senza tool
+        -   calibra pid t0
+        -   calibra pid t1
+        -   calibra pid bed
+        -   z scanning calibration remove last offset?
+        
+config_um2
+        -   not tested
