@@ -9,9 +9,9 @@ M550 P"ElementoTC"                                     ; set hostname
 ; Wait a moment for the CAN expansion boards to become available
 G4 S2
 
-M569.1 P70.0 T3 E8:16 R50 I0 D0
-M569.1 P71.0 T3 E8:16 R50 I0 D0
-M569.1 P72.0 T3 E8:16 R50 I0 D0
+M569.1 P70.0 T3 E8:16 R100 I0 D0
+M569.1 P71.0 T3 E8:16 R100 I0 D0
+M569.1 P72.0 T3 E8:16 R100 I0 D0
 M569.1 P73.0 T3 E4:8 R100 I0 D0
 M569.1 P74.0 T3 E4:8 R100 I0 D0
 M569.1 P75.0 T3 E4:8 R100 I0 D0
@@ -27,6 +27,8 @@ M569 P121.0 S0 D2                                      ; driver 121.0 goes forwa
 M569 P122.0 S0 D2                                      ; driver 122.0 goes forwards (extruder 1)
 M569 P0.0 S0 D2 V0                                     ; driver 122.0 goes forwards (TC)
 
+;assicura motori più freddi
+M917 X70 Y70 Z80 E70:70
 
 ; Axes C
 M584 C0.0
@@ -190,9 +192,19 @@ global yPT1Position = 0
 M950 E0 C"led" T1 U78 Q3000000                         ; create a RGB Neopixel LED strip on the LED port and set SPI frequency to 3MHz
 M150 E0 R255 U85 B0 S78 P255
 
+;Load Offset tool 
 M98 P"yPT0-offset.g"
 M98 P"yPT1-offset.g"
+
 ; Load Config saved
+M98 P"TC.conf"
+;M98 P"TCb.conf"
 M501
+
+;unlock door
 M1201
+
+;Start logging level 3
 M929 S3
+
+

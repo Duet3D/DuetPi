@@ -1,1 +1,0 @@
-console=tty1 root=PARTUUID=8636a078-02 rootfstype=ext4 fsck.repair=yes lsm=apparmor rootwait quiet splash logo.nologo plymouth.ignore-serial-consoles

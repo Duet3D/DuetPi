@@ -2,7 +2,7 @@
 M566 X600 Y600 P1                         ; set maximum instantaneous speed changes (mm/min)
 M203 X18000 Y18000                          ; set maximum speeds (mm/min)
 M201 X10000 Y10000                          ; set accelerations (mm/s^2)
-M906 E1000:1000
+M906 E1200:1200
 
 M593 P"MZV" F27.4
 

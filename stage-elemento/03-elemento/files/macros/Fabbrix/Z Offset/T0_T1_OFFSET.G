@@ -332,16 +332,16 @@ if input = 0  ; Yes
     
     ; Test T0
     T0
-    G1 X550 Y300 F2000
     G1 Z15 F250
+    G1 X550 Y300 F2000
     G1 Z0.2 F100
     M291 P"TEST T0: Verificare distanza nozzle-bed. OK?" R"Verifica T0" S4 K{"Si", "No"}
     var t0TestResult = input
     
     ; Test T1
     T1
-    G1 X550 Y300 F2000
     G1 Z15 F250
+    G1 X550 Y300 F2000
     G1 Z0.2 F100
     M291 P"TEST T1: Verificare distanza nozzle-bed. OK?" R"Verifica T1" S4 K{"Si", "No"}
     var t1TestResult = input

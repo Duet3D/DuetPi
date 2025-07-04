@@ -3,7 +3,7 @@ elementotc vecchia, firmware aggiornato al 30/06/25
 ${ROOTFS_DIR}/boot/ to ${ROOTFS_DIR}/boot/firmware/ in 03-elemento
 
 
-
+UNITO TUTTO IN ELEMENTO -- RICORDATI DI RIFARE OFFSET A TUTTO --
 
 
 tc config
