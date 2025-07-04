@@ -8,7 +8,7 @@ set -e
 #make USE_LIBCAMERA=0
 
 # Crea utente dedicato
-userdel ustreamer
+id upstreamer &>/dev/null && userdel upstreamer
 useradd -r -s /usr/sbin/nologin ustreamer
 
 usermod -aG video ustreamer
