@@ -1,6 +1,6 @@
 if state.status = "idle"
 	M141 S{heat.heaters[3].current + 1}
-if state.status = "processing"
+elif state.status = "processing"
 	var totalLEDs = 78;
 	var greenLEDs = 0
 	var orangeLEDs = 0

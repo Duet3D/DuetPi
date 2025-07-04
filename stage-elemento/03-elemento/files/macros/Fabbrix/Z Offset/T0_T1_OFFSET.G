@@ -15,7 +15,7 @@ var zUltraFineStep = 0.05 ; Movimento ultra-fine
 ; ========================================
 M291 P"FASE 1: PREPARAZIONE SISTEMA. Riscaldamento bed a 65°C..." R"Fase 1: Preparazione" S0 T10
 
-M190 S60
+M190 S50
 M290 S0 R0
 M561                                            ; DISABILITA compensazione bed (CRUCIALE!)
 M501

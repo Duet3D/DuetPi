@@ -21,7 +21,4 @@ while true
 
 G90                     ; absolute positioning
 G1 X550 Y300 F6000      ; go Center of bed
-T0 P0
-G30 K0 S-2
-T-1 P0
 G28 C

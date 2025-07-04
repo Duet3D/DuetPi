@@ -23,6 +23,7 @@ elemento tc 1, firmware del 2/7/2025,
         -   calibra pid t1
         -   calibra pid bed
         -   z scanning calibration remove last offset?
+        -   stampa senza piano
         
 config_um2
         -   not tested

@@ -7,7 +7,7 @@
 M550 P"ElementoTC"                                     ; set hostname
 
 ; Wait a moment for the CAN expansion boards to become available
-G4 S4
+G4 S2
 
 M569.1 P70.0 T3 E8:16 R50 I0 D0
 M569.1 P71.0 T3 E8:16 R50 I0 D0
@@ -40,7 +40,7 @@ M201 C4000
 
 M584 X70.0 Y71.0:72.0 Z73.0:74.0:75.0                  ; set axis mapping
 M350 X16 Y16 Z16 I1                                    ; configure microstepping with interpolation
-M906 X2200 Y2200 Z2200                                 ; set axis driver currents
+M906 X2200 Y2200 Z2000                                 ; set axis driver currents
 M92 X100 Y100 Z640                                     ; configure steps per mm
 M208 X-30:1100 Y-10:600 Z0:620                         ; set minimum and maximum axis limits
 M566 X600 Y600 Z20 P1                                  ; set maximum instantaneous speed changes (mm/min)
@@ -75,12 +75,12 @@ M574 C1 S3                                             ; Stall detect coupler at
 M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/bed pivot point at front left, rear middle and front right
 
 ; Probes
-M558 A2 Z1 K0 B1 P8 C"io4.in" H50 F300:150 T9000 S0.1 R0.5    ; set Z probe type to bltouch and the dive height + speeds
-G31 K0 P500 X0 Y55 Z-24.30                            ; 4.25   ;0.6
+M558 A2 Z1 K0 B1 P8 C"io4.in" H35 F300:150 T9000 S0.1 R0.5    ; set Z probe type to bltouch and the dive height + speeds
+G31 K0 P500 X0 Y55 Z0.6                            ; 4.25   ;0.6
 M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F3000 T3000
-G31 K1 X0 Y36 P9598
-M558.1 K1 A-3.049e-4 B4.389e-10 C-1.320e-16
-M558.2 K1 S18 R145045
+G31 K1 X0 Y36 P8248
+M558.1 K1 A-6.163e-4 B8.308e-8 C-3.304e-11
+M558.2 K1 S16 R136875
 
 
 ; Mesh Bed Compensation

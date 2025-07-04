@@ -1,1 +1,1 @@
-﻿set global.yPT1Position = 79.4
+﻿set global.yPT1Position = 75.810

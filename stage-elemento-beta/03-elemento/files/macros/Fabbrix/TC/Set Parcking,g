@@ -1,450 +1,169 @@
-; Complete Y Offset Tool Calibration - Manual + Automatic Sensorless
-; Calibrazione Offset Y per ingaggio tool - Manuale + Automatica Sensorless
-; Compatible with RepRapFirmware 3.6.0 DSC Mode
-; Optimized for MC23L motors
-
-M291 P"CALIBRAZIONE Y OFFSET TOOL T0/T1. Sequenza: 1) Calibrazione Manuale 2) Calibrazione Automatica Sensorless 3) Verifica" R"Calibrazione Y Offset" S2
-
-; Definizione variabili per movimenti (ridotte a 3 fasi)
-var yCoarseStep = 2.0      ; Movimento grossolano Y
-var yMediumStep = 0.5      ; Movimento medio Y  
-var yFineStep = 0.1        ; Movimento fine Y
-
-var yParkingDistance = -78  ; Distanza approssimativa di parcheggio (da 0 a posizione ingaggio)
-var yCalibrationPos = -75   ; Posizione iniziale per calibrazione manuale
-var ySafetyOffset = -5      ; Offset di sicurezza per evitare collisioni
-
-; Posizioni X dei tool (coordinate fisse)
-var xPT0Position = 480      ; Posizione X fissa per T0
-var xPT1Position = 620      ; Posizione X fissa per T1
-
-; Configurazione sensorless basata su MC23L e tua macro homing
-var sensorlessCurrentNormal = 2200   ; Corrente normale Y (dalla tua config)
-var sensorlessCurrentReduced = 100   ; Corrente ridotta per sensorless (dalla tua M913)
-var sensorlessThreshold = 190        ; Soglia stall detection (dalla tua M915)
-var sensorlessSpeedSlow = 500        ; Velocità lenta per sensorless (dalla tua macro)
-var sensorlessSpeedFast = 3000       ; Velocità veloce per movimento (dalla tua macro)
-
-; Variabili per risultati calibrazione
-var t0YOffsetManual = 0
-var t1YOffsetManual = 0
-var t0YOffsetSensorless = 0
-var t1YOffsetSensorless = 0
-
-; ========================================
-; FASE 1: PREPARAZIONE SISTEMA
-; ========================================
-M291 P"FASE 1: PREPARAZIONE SISTEMA. Inizializzazione parametri e posizionamento..." R"Fase 1: Preparazione" S0 T5
-
-; Preparazione sistema
-T-1                                 ; Deseleziona tutti i tool
-G28                                ; Disabilita motori clone/duplicazione
-G90                                ; Coordinate assolute
-M564 H0 S0                         ; Permetti movimenti oltre limiti software
-
-; Posizionamento sicuro iniziale
-G1 Z200 F1000                       ; Posizione sicura Z
-
-G1 X400 Y50 F3000                      ; Posizione centrale X temporanea
-
-; Configurazione driver Y come nella tua macro
-M569 P71.0 S1 D2                   ; Driver Y configurazione normale
-M569 P72.0 S1 D2                   ; Driver Y configurazione normale
-M906 Y{var.sensorlessCurrentNormal} ; Corrente normale Y
-M913 Y100                          ; Reset percentuale corrente
-
-M291 P"Sistema preparato. Posizione di riferimento Y=0 stabilita. Tool positions: T0=X480, T1=X620" R"Preparazione Completata" S0 T3
-
-; ========================================
-; FASE 2: CALIBRAZIONE MANUALE T0 (3 FASI)
-; ========================================
-M291 P"FASE 2: CALIBRAZIONE MANUALE T0. Posizionamento manuale per trovare la posizione di ingaggio..." R"Fase 2: Calibrazione Manuale T0" S0 T5
-
-; Posizionamento iniziale per T0
-G1 X{var.xPT0Position} F3000       ; Posizione X corretta per T0
-G1 Y{var.yCalibrationPos} F1000    ; Posizione iniziale approssimativa Y
-M400                               ; Attendi completamento movimento
-M291 R"Calibrazione Parcheggio T1 - Inserisci tool" P"Posizione T1 sul ToolChange e premi ok" S2
+T-1
+M291 R"Calibrazione Parcheggio T0 - AVVERTENZA IMPORTANTE" P"ATTENZIONE: Questa procedura cancellerà tutti gli offset! Procedere esclusivamente se strettamente necessario e sotto supervisione dell'assistenza tecnica." S2
+M30 sys/yPT0-offset.g
+G28        ;da valutare quando e come far lasciare il tool o cosa farne del tool se serve che sia agganciato
+G0 C0 F6000     ;Azzeramento Tool
+M291 R"Calibrazione Parcheggio T0 - Fase di Homing" P"Esecuzione dell'azzeramento degli assi in corso. Attendere il completamento dell'operazione."
+G0 Z50 F1500
+M564 H0 S0 ;disabilita i limiti software e permette di muovere assi non azzerati
+G0 X{global.xPT0Position} Y200 F10000
+M291 R"Calibrazione Parcheggio T0 - Posizionamento Utensile" P"Posizionare manualmente l'utensile T0 sul sistema di cambio utensile (ToolChange). Verificare il corretto allineamento prima di premere OK per continuare." S2
 G0 C60 F6000
-
-M291 P"T0 - Posizionamento T0 in X=480mm, Y iniziale. Calibrazione manuale per trovare esatta posizione Y di ingaggio." R"T0: Posizionamento" S0 T3
-
-; FASE 1/3: Movimento grossolano T0
-M291 P{"T0 - MOVIMENTO GROSSOLANO: " ^ var.yCoarseStep ^ "mm"} R"T0: Fase 1/3 - Grossolano" S0 T3
-
+M291 R"Calibrazione Parcheggio T0 - Verifica Stabilità" P"Verificare che l'utensile sia correttamente sostenuto e stabile. RIMUOVERE IMMEDIATAMENTE le mani dall'area di stampa prima di procedere. Premere OK" S2
+G0 Y{move.axes[1].min} F3000
+M564 H0 S0
+G91
 while true
-    M291 R{"T0 Grossolano ±" ^ var.yCoarseStep ^ "mm"} P"Muovere verso posizione di ingaggio T0:" S4 K{"Y-" ^ var.yCoarseStep ^ "mm","Y+" ^ var.yCoarseStep ^ "mm","Prossima Fase","STOP"}
-    
-    if input = 0      ; Y negativo (verso parcheggio)
-        G91
-        G1 Y{-var.yCoarseStep} F800
-        G90
-        M400
-        M291 P{"T0 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 1    ; Y positivo (verso centro)
-        G91
-        G1 Y{var.yCoarseStep} F800
-        G90
-        M400
-        M291 P{"T0 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 2    ; Prossima fase
-        break
-    elif input = 3    ; STOP
-        abort "Calibrazione T0 annullata"
-
-; FASE 2/3: Movimento medio T0
-M291 P{"T0 - MOVIMENTO MEDIO: " ^ var.yMediumStep ^ "mm"} R"T0: Fase 2/3 - Medio" S0 T3
-
-while true
-    M291 R{"T0 Medio ±" ^ var.yMediumStep ^ "mm"} P"Regolazione media posizione T0:" S4 K{"Y-" ^ var.yMediumStep ^ "mm","Y+" ^ var.yMediumStep ^ "mm","Prossima Fase","Fase Precedente","STOP"}
-    
+    M291 R"Calibrazione T0, avvicinati a 5mm dalle spine di parcheggio" P"Scegliere l'azione:" S4 K{"-5mm","+5mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
-        G1 Y{-var.yMediumStep} F400
+        G1 Y-5 F600
         G90
         M400
-        M291 P{"T0 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
     elif input = 1
         G91
-        G1 Y{var.yMediumStep} F400
+        G1 Y5 F600
         G90
         M400
-        M291 P{"T0 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 2
+	elif input = 2
         break
     elif input = 3
-        M291 P"Ritorno fase grossolana T0..." R"Ritorno" S0 T1
-        continue
-    elif input = 4
-        abort "Calibrazione T0 annullata"
-
-; FASE 3/3: Movimento fine T0
-M291 P{"T0 - MOVIMENTO FINE: " ^ var.yFineStep ^ "mm"} R"T0: Fase 3/3 - Fine" S0 T3
+        abort "Calibrazione TC su T0 annullata"
 
 while true
-    M291 R{"T0 Fine ±" ^ var.yFineStep ^ "mm"} P"Posizione ESATTA di ingaggio T0:" S4 K{"Y-" ^ var.yFineStep ^ "mm","Y+" ^ var.yFineStep ^ "mm","SALVA T0","Fase Precedente","STOP"}
-    
+    M291 R"Calibrazione T0 Fine, centra le spine fino a inserirne metà nel tool" P"Scegliere l'azione:" S4 K{"-1mm","+1mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
-        G1 Y{-var.yFineStep} F200
+        G1 Y-1 F400
         G90
         M400
-        M291 P{"T0 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
     elif input = 1
         G91
-        G1 Y{var.yFineStep} F200
+        G1 Y1 F400
         G90
         M400
-        M291 P{"T0 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 2
-        M291 P"Salvataggio posizione Y per T0..." R"Salvataggio T0" S0 T3
-        set var.t0YOffsetManual = {move.axes[1].machinePosition}
-        M291 P{"T0 Offset Y Manuale salvato: " ^ var.t0YOffsetManual ^ "mm"} R"T0 Salvato" S0 T3
+	elif input = 2
         break
     elif input = 3
-        M291 P"Ritorno fase media T0..." R"Ritorno" S0 T1
-        continue
-    elif input = 4
-        abort "Calibrazione T0 annullata"
+        abort "Calibrazione TC su T0 annullata"
 
-M291 P"OFFSET Y MANUALE T0 COMPLETATO! Passaggio alla calibrazione T1..." R"T0 Completato" S0 T3
+while true
+    M291 R"Calibrazione T0 Fine, inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza" P"Scegliere l'azione:" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T0","CANCELLA"}
+    if input = 0
+        G91
+        G1 Y-0.1 F200
+        G90
+        M400
+    elif input = 1
+        G91
+        G1 Y0.1 F200
+        G90
+        M400
+	elif input = 2
+        break
+    elif input = 3
+        abort "Calibrazione TC su T0 annullata"
 
-; ========================================
-; FASE 3: CALIBRAZIONE MANUALE T1 (3 FASI)
-; ========================================
-M291 P"FASE 3: CALIBRAZIONE MANUALE T1. Posizionamento manuale per T1..." R"Fase 3: Calibrazione Manuale T1" S0 T5
+M400
+echo >>"yPT0-offset.g" "set global.yPT0Position = " ^ move.axes[1].min - move.axes[1].machinePosition
+G0 C0 F6000
+M400
+M291 R"Calibrazione Parcheggio T0 - Calibrazione Completata" P"Avvio della procedura di test per verificare il corretto rilascio dell'utensile."
+M291 R"Calibrazione Parcheggio T0 - Test di Verifica" P"Esecuzione dell'azzeramento dell'asse Y per la verifica finale."
+M98 P"yPT0-offset.g"
+G90
+G0 Y{move.axes[1].min} F4000
+G28 Y
+T0 P0
+M400
+G0 Y0
+M291 R"Calibrazione Parcheggio T0 - Verifica Aggancio" P"Verificare visivamente che l'utensile sia correttamente agganciato e posizionato. L'utensile risulta correttamente inserito?" S2
+T-1
+M291 R"Calibrazione Parcheggio T0 - Verifica Parcheggio" P"Verificare che l'utensile sia correttamente parcheggiato nella posizione di riposo. Il parcheggio risulta corretto?" S2
+M291 R"Calibrazione Parcheggio T0 - Procedura Terminata" S2 P"La calibrazione del parcheggio per l'utensile T0 è stata completata con successo."
 
-; Posizionamento iniziale per T1
-G1 X{var.xPT1Position} F3000       ; Posizione X corretta per T1
-G1 Y{var.yCalibrationPos} F1000    ; Posizione Y iniziale
-M400                               ; Attendi completamento movimento
-M291 R"Calibrazione Parcheggio T1 - Inserisci tool" P"Posizione T1 sul ToolChange e premi ok" S2
+
+T-1
+M291 R"Calibrazione Parcheggio T1 - AVVERTENZA IMPORTANTE" P"ATTENZIONE: Questa procedura cancellerà tutti gli offset! Procedere esclusivamente se strettamente necessario e sotto supervisione dell'assistenza tecnica." S2
+M30 sys/yPT1-offset.g
+G28        ;da valutare quando e come far lasciare il tool o cosa farne del tool se serve che sia agganciato
+G0 C0 F6000     ;Azzeramento Tool
+M291 R"Calibrazione Parcheggio T1 - Fase di Homing" P"Esecuzione dell'azzeramento degli assi in corso. Attendere il completamento dell'operazione."
+G0 Z50 F1500
+M564 H0 S0 ;disabilita i limiti software e permette di muovere assi non azzerati
+G0 X{global.xPT1Position} Y200 F10000
+M291 R"Calibrazione Parcheggio T1 - Posizionamento Utensile" P"Posizionare manualmente l'utensile T1 sul sistema di cambio utensile (ToolChange). Verificare il corretto allineamento prima di premere OK per continuare." S2
 G0 C60 F6000
-
-M291 P"T1 - Posizionamento T1 in X=620mm, Y iniziale. Calibrazione manuale per trovare esatta posizione Y di ingaggio." R"T1: Posizionamento" S0 T3
-
-; FASE 1/3: Movimento grossolano T1
-M291 P{"T1 - MOVIMENTO GROSSOLANO: " ^ var.yCoarseStep ^ "mm"} R"T1: Fase 1/3 - Grossolano" S0 T3
-
+M291 R"Calibrazione Parcheggio T1 - Verifica Stabilità" P"Verificare che l'utensile sia correttamente sostenuto e stabile. RIMUOVERE IMMEDIATAMENTE le mani dall'area di stampa prima di procedere. Premere OK" S2
+G0 Y{move.axes[1].min} F3000
+M564 H0 S0
+G91
 while true
-    M291 R{"T1 Grossolano ±" ^ var.yCoarseStep ^ "mm"} P"Muovere verso posizione di ingaggio T1:" S4 K{"Y-" ^ var.yCoarseStep ^ "mm","Y+" ^ var.yCoarseStep ^ "mm","Prossima Fase","STOP"}
-    
+    M291 R"Calibrazione T1, avvicinati a 5mm dalle spine di parcheggio" P"Scegliere l'azione:" S4 K{"-5mm","+5mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
-        G1 Y{-var.yCoarseStep} F800
+        G1 Y-5 F600
         G90
         M400
-        M291 P{"T1 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
     elif input = 1
         G91
-        G1 Y{var.yCoarseStep} F800
+        G1 Y5 F600
         G90
         M400
-        M291 P{"T1 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 2
+	elif input = 2
         break
     elif input = 3
-        abort "Calibrazione T1 annullata"
-
-; FASE 2/3: Movimento medio T1
-M291 P{"T1 - MOVIMENTO MEDIO: " ^ var.yMediumStep ^ "mm"} R"T1: Fase 2/3 - Medio" S0 T3
+        abort "Calibrazione TC su T1 annullata"
 
 while true
-    M291 R{"T1 Medio ±" ^ var.yMediumStep ^ "mm"} P"Regolazione media T1:" S4 K{"Y-" ^ var.yMediumStep ^ "mm","Y+" ^ var.yMediumStep ^ "mm","Prossima Fase","Fase Precedente","STOP"}
-    
+    M291 R"Calibrazione T1 Fine, centra le spine fino a inserirne metà nel tool" P"Scegliere l'azione:" S4 K{"-1mm","+1mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
-        G1 Y{-var.yMediumStep} F400
+        G1 Y-1 F400
         G90
         M400
-        M291 P{"T1 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
     elif input = 1
         G91
-        G1 Y{var.yMediumStep} F400
+        G1 Y1 F400
         G90
         M400
-        M291 P{"T1 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 2
+	elif input = 2
         break
     elif input = 3
-        M291 P"Ritorno fase grossolana T1..." R"Ritorno" S0 T1
-        continue
-    elif input = 4
-        abort "Calibrazione T1 annullata"
-
-; FASE 3/3: Movimento fine T1
-M291 P{"T1 - MOVIMENTO FINE: " ^ var.yFineStep ^ "mm"} R"T1: Fase 3/3 - Fine" S0 T3
+        abort "Calibrazione TC su T1 annullata"
 
 while true
-    M291 R{"T1 Fine ±" ^ var.yFineStep ^ "mm"} P"Posizione ESATTA di ingaggio T1:" S4 K{"Y-" ^ var.yFineStep ^ "mm","Y+" ^ var.yFineStep ^ "mm","SALVA T1","Fase Precedente","STOP"}
-    
+    M291 R"Calibrazione T1 Fine, inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza" P"Scegliere l'azione:" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T1","CANCELLA"}
     if input = 0
         G91
-        G1 Y{-var.yFineStep} F200
+        G1 Y-0.1 F200
         G90
         M400
-        M291 P{"T1 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
     elif input = 1
         G91
-        G1 Y{var.yFineStep} F200
+        G1 Y0.1 F200
         G90
         M400
-        M291 P{"T1 Y: " ^ move.axes[1].machinePosition ^ "mm"} R"Posizione" S0 T1
-    elif input = 2
-        M291 P"Salvataggio posizione Y per T1..." R"Salvataggio T1" S0 T3
-        set var.t1YOffsetManual = {move.axes[1].machinePosition}
-        M291 P{"T1 Offset Y Manuale salvato: " ^ var.t1YOffsetManual ^ "mm"} R"T1 Salvato" S0 T3
+	elif input = 2
         break
     elif input = 3
-        M291 P"Ritorno fase media T1..." R"Ritorno" S0 T1
-        continue
-    elif input = 4
-        abort "Calibrazione T1 annullata"
+        abort "Calibrazione TC su T1 annullata"
 
-M291 P"OFFSET Y MANUALE T1 COMPLETATO!" R"T1 Completato" S0 T3
+M400
+echo >>"yPT1-offset.g" "set global.yPT1Position = " ^ move.axes[1].min - move.axes[1].machinePosition
+G0 C0 F18000
+M400
+M291 R"Calibrazione Parcheggio T1 - Calibrazione Completata" P"Avvio della procedura di test per verificare il corretto rilascio dell'utensile."
+M291 R"Calibrazione Parcheggio T1 - Test di Verifica" P"Esecuzione dell'azzeramento dell'asse Y per la verifica finale."
+M98 P"yPT1-offset.g"
+G90
+G0 Y{move.axes[1].min} F4000
+G28 Y
+T1 P0
+M400
+G0 Y0
+M291 R"Calibrazione Parcheggio T1 - Verifica Aggancio" P"Verificare visivamente che l'utensile sia correttamente agganciato e posizionato. L'utensile risulta correttamente inserito?" S2
+T-1
+M291 R"Calibrazione Parcheggio T1 - Verifica Parcheggio" P"Verificare che l'utensile sia correttamente parcheggiato nella posizione di riposo. Il parcheggio risulta corretto?" S2
+M291 R"Calibrazione Parcheggio T1 - Procedura Terminata" S2 P"La calibrazione del parcheggio per l'utensile T1 è stata completata con successo."
 
-; ========================================
-; FASE 4: CALIBRAZIONE AUTOMATICA SENSORLESS T0
-; ========================================
-M291 P"FASE 4: CALIBRAZIONE AUTOMATICA SENSORLESS T0. Calibrazione automatica usando sensorless homing MC23L..." R"Fase 4: Sensorless T0" S0 T5
-
-M291 P"ATTENZIONE: La calibrazione sensorless utilizzerà configurazione MC23L ottimizzata. Continuare?" R"Conferma Sensorless T0" S4 K{"Si", "No"}
-
-if input = 1  ; No
-    M291 P"Saltata calibrazione sensorless T0." R"T0 Saltato" S0 T3
-    set var.t0YOffsetSensorless = {var.t0YOffsetManual}
-else
-    ; Preparazione sensorless T0 - Configurazione MC23L
-    M291 P"Preparazione sensorless MC23L per T0..." R"Prep T0" S0 T3
-    
-    ; Posizionamento sicuro per T0
-    G1 X{var.xPT0Position} F3000              ; Posizione X corretta per T0
-    G1 Y{var.ySafetyOffset} F1000
-    M400
-    
-    ; Configurazione MC23L per sensorless (basata sulla tua macro)
-    M569 P71.0 S1 D2                           ; Driver Y configurazione normale
-    M569 P72.0 S1 D2                           ; Driver Y configurazione normale  
-    M915 P71.0 S0 F0 H{var.sensorlessThreshold} R0  ; Imposta soglia stall detection
-    M915 P72.0 S0 F0 H{var.sensorlessThreshold} R0  ; Imposta soglia stall detection
-    M574 Y2 S4                                 ; Configura endstop per stall detection
-    M906 Y{var.sensorlessCurrentNormal}        ; Corrente normale
-    M913 Y{var.sensorlessCurrentReduced}      ; Riduce corrente per sensorless
-    M564 H0 S0                                 ; Permetti movimenti oltre limiti
-    M400                                       ; Attendi applicazione parametri
-    
-    ; Movimento sensorless verso la posizione di ingaggio (come nella tua macro)
-    M291 P"Esecuzione sensorless homing T0..." R"Homing T0" S0 T3
-    
-    G91                                        ; Coordinate relative
-    G1 H2 Y-0.5 F{var.sensorlessSpeedSlow}   ; Piccolo movimento preparatorio
-    G1 H1 Y-100 F{var.sensorlessSpeedSlow}   ; Movimento con stall detection verso Y negativo
-    G90                                        ; Torna a coordinate assolute
-    M400                                       ; Attendi completamento
-    
-    ; Salva posizione rilevata
-    set var.t0YOffsetSensorless = {move.axes[1].machinePosition}
-    
-    ; Ripristina configurazione normale MC23L
-    M569 P71.0 S1 D4                          ; Driver Y configurazione normale finale
-    M569 P72.0 S1 D4                          ; Driver Y configurazione normale finale
-    M913 Y100                                 ; Ripristina percentuale corrente normale
-    
-    M291 P{"T0 Sensorless MC23L completato. Posizione rilevata: " ^ var.t0YOffsetSensorless ^ "mm"} R"T0 Sensorless OK" S0 T3
-
-; ========================================
-; FASE 5: CALIBRAZIONE AUTOMATICA SENSORLESS T1
-; ========================================
-M291 P"FASE 5: CALIBRAZIONE AUTOMATICA SENSORLESS T1. Calibrazione automatica T1..." R"Fase 5: Sensorless T1" S0 T5
-
-M291 P"Continuare con calibrazione sensorless T1?" R"Conferma Sensorless T1" S4 K{"Si", "No"}
-
-if input = 1  ; No
-    M291 P"Saltata calibrazione sensorless T1." R"T1 Saltato" S0 T3
-    set var.t1YOffsetSensorless = {var.t1YOffsetManual}
-else
-    ; Preparazione sensorless T1 - Configurazione MC23L
-    M291 P"Preparazione sensorless MC23L per T1..." R"Prep T1" S0 T3
-    
-    ; Posizionamento sicuro per T1
-    G1 X{var.xPT1Position} F3000              ; Posizione X corretta per T1
-    G1 Y{var.ySafetyOffset} F1000
-    M400
-    
-    ; Configurazione MC23L per sensorless
-    M569 P71.0 S1 D2
-    M569 P72.0 S1 D2
-    M915 P71.0 S0 F0 H{var.sensorlessThreshold} R0
-    M915 P72.0 S0 F0 H{var.sensorlessThreshold} R0
-    M574 Y2 S4
-    M906 Y{var.sensorlessCurrentNormal}
-    M913 Y{var.sensorlessCurrentReduced}
-    M564 H0 S0
-    M400
-    
-    ; Movimento sensorless T1
-    M291 P"Esecuzione sensorless homing T1..." R"Homing T1" S0 T3
-    
-    G91
-    G1 H2 Y-0.5 F{var.sensorlessSpeedSlow}
-    G1 H1 Y-100 F{var.sensorlessSpeedSlow}
-    G90
-    M400
-    
-    ; Salva posizione rilevata
-    set var.t1YOffsetSensorless = {move.axes[1].machinePosition}
-    
-    ; Ripristina configurazione normale MC23L
-    M569 P71.0 S1 D4
-    M569 P72.0 S1 D4
-    M913 Y100
-    
-    M291 P{"T1 Sensorless MC23L completato. Posizione rilevata: " ^ var.t1YOffsetSensorless ^ "mm"} R"T1 Sensorless OK" S0 T3
-
-; ========================================
-; FASE 6: VERIFICA E SALVATAGGIO
-; ========================================
-M291 P"FASE 6: VERIFICA RISULTATI E SALVATAGGIO. Analisi dei risultati ottenuti..." R"Fase 6: Verifica" S0 T5
-
-; Calcolo differenze tra manuale e sensorless
-var t0Difference = {abs(var.t0YOffsetManual - var.t0YOffsetSensorless)}
-var t1Difference = {abs(var.t1YOffsetManual - var.t1YOffsetSensorless)}
-
-; Visualizzazione risultati
-M291 P{"=== RISULTATI CALIBRAZIONE Y ===^T0 Manuale: " ^ var.t0YOffsetManual ^ "mm^T0 Sensorless: " ^ var.t0YOffsetSensorless ^ "mm^T0 Differenza: " ^ var.t0Difference ^ "mm^^T1 Manuale: " ^ var.t1YOffsetManual ^ "mm^T1 Sensorless: " ^ var.t1YOffsetSensorless ^ "mm^T1 Differenza: " ^ var.t1Difference ^ "mm"} R"Risultati Calibrazione" S0 T10
-
-; Analisi accuratezza
-if var.t0Difference <= 0.5 && var.t1Difference <= 0.5
-    M291 P"Calibrazione ECCELLENTE! Differenze minime tra manuale e sensorless MC23L. Valori altamente affidabili." R"Calibrazione Perfetta" S0 T5
-elif var.t0Difference <= 1.0 && var.t1Difference <= 1.0
-    M291 P"Calibrazione BUONA. Differenze accettabili con MC23L. Valori affidabili per uso normale." R"Calibrazione Buona" S0 T3
-else
-    M291 P"ATTENZIONE: Differenze significative rilevate. Consigliabile ripetere la calibrazione o verificare configurazione MC23L." R"Verifica Necessaria" S0 T5
-
-; Scelta valori da utilizzare
-M291 P"Quale calibrazione utilizzare?" R"Scelta Calibrazione" S4 K{"Manuale","Sensorless","Media dei Due","Non Salvare"}
-
-if input = 0      ; Manuale
-    var finalT0Offset = {var.t0YOffsetManual}
-    var finalT1Offset = {var.t1YOffsetManual}
-    M291 P"Utilizzati valori calibrazione MANUALE." R"Manuale Selezionato" S0 T2
-elif input = 1    ; Sensorless
-    var finalT0Offset = {var.t0YOffsetSensorless}
-    var finalT1Offset = {var.t1YOffsetSensorless}
-    M291 P"Utilizzati valori calibrazione SENSORLESS MC23L." R"Sensorless Selezionato" S0 T2
-elif input = 2    ; Media
-    var finalT0Offset = {(var.t0YOffsetManual + var.t0YOffsetSensorless) / 2}
-    var finalT1Offset = {(var.t1YOffsetManual + var.t1YOffsetSensorless) / 2}  
-    M291 P"Utilizzati valori MEDI tra manuale e sensorless." R"Media Selezionata" S0 T2
-else              ; Non salvare
-    M291 P"Calibrazione non salvata. I valori rimangono invariati." R"Non Salvato" S0 T3
-    goto skipSave
-
-; Salvataggio configurazione
-M291 P"Salvare i valori nelle variabili globali?" R"Salvataggio Config" S4 K{"Si", "Solo Display"}
-
-if input = 0  ; Si, salva
-    ; Salvataggio offset Y nelle variabili globali
-    set global.yPT0Position = {var.finalT0Offset}  ; Tool 0 Y position globale
-    set global.yPT1Position = {var.finalT1Offset}  ; Tool 1 Y position globale
-
-    echo >>"yPT0-offset.g" "set global.yPT0Position = " ^ var.finalT0Offset
-    echo >>"yPT1-offset.g" "set global.yPT1Position = " ^ var.finalT1Offset
-       
-    M291 P{"OFFSET Y SALVATI NELLE VARIABILI GLOBALI!^global.yPT0Position = " ^ global.yPT0Position ^ "mm^global.yPT1Position = " ^ global.yPT1Position ^ "mm"} R"Salvato in Variabili Globali" S0 T5
-
-    M98 P"0:/sys/yPT0-offset.g"
-    M98 P"0:/sys/yPT1-offset.g"
-
-
-; ========================================
-; FASE 7: TEST DI VERIFICA
-; ========================================
-M291 P"Eseguire test di verifica degli offset calibrati?" R"Test Verifica" S4 K{"Si", "No"}
-
-if input = 0  ; Si, testa
-    M291 P"FASE 7: TEST DI VERIFICA. Esecuzione test di movimento verso posizioni calibrate..." R"Fase 7: Test" S0 T5
-    
-    ; Test T0
-    M291 P"Test T0: movimento verso posizione calibrata..." R"Test T0" S0 T3
-    G1 X{var.xPT0Position} F1000              ; Posizione X corretta per T0
-    G1 Y{var.finalT0Offset} F800
-    M400
-    M291 P{"T0 in posizione finale X=" ^ var.xPT0Position ^ "mm, Y=" ^ move.axes[1].machinePosition ^ "mm. Posizione corretta per ingaggio T0?"} R"Verifica T0" S4 K{"Si","No"}
-    var t0TestOK = input
-    
-    ; Test T1  
-    M291 P"Test T1: movimento verso posizione calibrata..." R"Test T1" S0 T3
-    G1 X{var.xPT1Position} F1000              ; Posizione X corretta per T1
-    G1 Y{var.finalT1Offset} F800
-    M400
-    M291 P{"T1 in posizione finale X=" ^ var.xPT1Position ^ "mm, Y=" ^ move.axes[1].machinePosition ^ "mm. Posizione corretta per ingaggio T1?"} R"Verifica T1" S4 K{"Si","No"}
-    var t1TestOK = input
-    
-    ; Risultati test
-    if var.t0TestOK = 0 && var.t1TestOK = 0
-        M291 P"TEST SUPERATO! Entrambi i tool sono perfettamente posizionati!" R"Test Perfetto ✓" S0 T3
-    elif var.t0TestOK = 1 && var.t1TestOK = 0
-        M291 P"T0 necessita regolazione, T1 OK" R"T0 da Rivedere" S0 T3
-    elif var.t0TestOK = 0 && var.t1TestOK = 1
-        M291 P"T1 necessita regolazione, T0 OK" R"T1 da Rivedere" S0 T3
-    else
-        M291 P"Entrambi i tool necessitano regolazione. Ripetere calibrazione." R"Ripetere Calibrazione" S0 T3
-
-; ========================================
-; FINALIZZAZIONE
-; ========================================
-M291 P"FINALIZZAZIONE: Ripristino configurazione normale MC23L..." R"Finalizzazione" S0 T3
-
-; Ripristino posizione sicura
-G1 Y0 F1000                            ; Torna a Y=0
-G1 Z100 F1000                          ; Posizione Z sicura
-M564 H1 S1                             ; Ripristina limiti software
-
-; Ripristino configurazioni MC23L normali
-M569 P71.0 S1 D4                       ; Driver Y configurazione normale finale
-M569 P72.0 S1 D4                       ; Driver Y configurazione normale finale
-M906 Y{var.sensorlessCurrentNormal}    ; Ripristina corrente normale
-M913 Y100                              ; Ripristina percentuale normale
-
-M291 P{"=== CALIBRAZIONE Y OFFSET MC23L COMPLETATA ===" ^ "global.yPT0Position = " ^ global.yPT0Position ^ "mm (X=480)" ^ "global.yPT1Position = " ^ global.yPT1Position ^ "mm (X=620)" ^ "" ^ "Posizioni complete dei tool salvate nelle variabili globali!"} R"Calibrazione Completata ✓" S0

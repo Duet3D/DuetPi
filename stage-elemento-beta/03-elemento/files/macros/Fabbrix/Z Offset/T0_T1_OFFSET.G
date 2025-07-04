@@ -1,13 +1,13 @@
 ; Complete Sequential Z Calibration OPTIMIZED: Bed Tilt -> Single G30 Reference -> T0 -> T1
 ; Procedura ottimizzata: Tilt bed -> UN SOLO riferimento G30 -> T0 -> T1
 
-M291 P"CALIBRAZIONE Z OFFSET T0/T1. Sequenza: 1) Tilt bed 2) Riferimento Piano di stampa 3) Offset T0 4) Offset T1" R"Calibrazione Z Offset" S2
+M291 P"CALIBRAZIONE Z OFFSET. Sequenza: 1) Tilt bed 2) Riferimento G30 unico 3) Offset T0 4) Offset T1" R"Calibrazione Z Offset T0 - T1" S2
 
 ; Definizione variabili per movimenti custom
 ; Movimenti Z disponibili: 0.1mm, 0.05mm, 0.02mm, 0.01mm
-var zCoarseStep = 1    ; Movimento grossolano
-var zMediumStep = 0.2   ; Movimento medio  
-var zFineStep = 0.1     ; Movimento fine
+var zCoarseStep = 5    ; Movimento grossolano
+var zMediumStep = 1   ; Movimento medio  
+var zFineStep = 0.2     ; Movimento fine
 var zUltraFineStep = 0.05 ; Movimento ultra-fine
 
 ; ========================================
@@ -15,12 +15,9 @@ var zUltraFineStep = 0.05 ; Movimento ultra-fine
 ; ========================================
 M291 P"FASE 1: PREPARAZIONE SISTEMA. Riscaldamento bed a 65°C..." R"Fase 1: Preparazione" S0 T10
 
-M190 S65
+M190 S50
 M290 S0 R0
 M561                                            ; DISABILITA compensazione bed (CRUCIALE!)
-G10 L1 P0 Z35
-G10 L1 P1 Z35
-M500 P10:31
 M501
 G29 S2                                          ; Cancella heightmap esistente
 M104 T0 S180
@@ -36,7 +33,7 @@ M291 P"FASE 2: CALIBRAZIONE TILT BED. Calibrazione del tilt fisico senza compens
 T-1
 M18 C
 G32                                             ; Calibra tilt ma NON attiva compensazione
-
+;G28
 ; Verifica risultati tilt
 if abs(move.calibration.initial.deviation) < 0.05
     M291 P{"Tilt fisico ECCELLENTE! Deviazione: " ^ move.calibration.initial.deviation ^ "mm - Procedura su bed piano"} R"Tilt Perfetto" S0 T3
@@ -55,7 +52,9 @@ G1 Z50 F1000
 M400
 G1 X550 Y300 F2000
 M18 C
+T0 P0
 G30                                      ; Riferimento sul bed FISICO non compensato
+T-1 P0
 G29 S2
 
 M291 P"Riferimento G30 stabilito sul bed fisico reale. Offset calcolati sulla geometria effettiva del sistema." R"Riferimento Fisico Creato" S0 T3
@@ -69,28 +68,28 @@ M291 P"FASE 4: CALIBRAZIONE Z OFFSET T0. Posizionamento T0 senza re-probing..." 
 T0 P0
 M18 C
 G28 C
-G1 Z50 F250
+G1 Z50 F600
 T-1 P0
 T0
-G1 Z15 F250
 G1 X550 Y300 F2000
+G1 Z45 F600
 M564 H0 S0
 
-M291 P{"T0 - AVVICINAMENTO GROSSOLANO. MOVIMENTO: " ^ var.zCoarseStep ^ "mm"} R"T0: Avvicinamento" S0 T3
+M291 P{"T0 - AVVICINAMENTO GROSSOLANO. MOVIMENTO:" ^ var.zCoarseStep ^ "mm"} R"T0: Avvicinamento" S0 T3
 
 ; Loop calibrazione grossolana T0
 while true
-    M291 R{"T0 Movimento Grossolano " ^ var.zCoarseStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zCoarseStep ^ "mm","+" ^ var.zCoarseStep ^ "mm","Prossima Fase","STOP"}
+    M291 R{"T0 Movimento Grossolano " ^ var.zCoarseStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zCoarseStep ^ "mm","+" ^ var.zCoarseStep ^ "mm","Prossima Fase","CANCELLA"}
     
     if input = 0
         G91
-        G1 Z{-var.zCoarseStep} F100
+        G1 Z{-var.zCoarseStep} F600
         G90
         M400
         ;M291 P{"T0 GIÙ 0.1mm. Z: " ^ move.axes[2].machinePosition ^ "mm"} R"Movimento" S0 T1
     elif input = 1
         G91
-        G1 Z{var.zCoarseStep} F100
+        G1 Z{var.zCoarseStep} F600
         G90
         M400
         ;M291 P{"T0 SU 0.1mm. Z: " ^ move.axes[2].machinePosition ^ "mm"} R"Movimento" S0 T1
@@ -99,11 +98,11 @@ while true
     elif input = 3
         abort "Calibrazione T0 annullata"
 
-M291 P{"T0 - REGOLAZIONE MEDIA. MOVIMENTO: " ^ var.zMediumStep ^ "mm"} R"T0: Regolazione Media" S0 T3
+M291 P{"T0 - REGOLAZIONE MEDIA. MOVIMENTO:" ^ var.zMediumStep ^ "mm"} R"T0: Regolazione Media" S0 T3
 
 ; Loop calibrazione media T0
 while true
-    M291 R{"T0 Movimento Medio " ^ var.zMediumStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zMediumStep ^ "mm","+" ^ var.zMediumStep ^ "mm","Prossima Fase","Fase Precedente","STOP"}
+    M291 R{"T0 Movimento Medio " ^ var.zMediumStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zMediumStep ^ "mm","+" ^ var.zMediumStep ^ "mm","Prossima Fase","Fase Precedente","CANCELLA"}
     
     if input = 0
         G91
@@ -125,11 +124,11 @@ while true
     elif input = 4
         abort "Calibrazione T0 annullata"
 
-M291 P{"T0 - REGOLAZIONE FINE. MOVIMENTO: " ^ var.zFineStep ^ "mm"} R"T0: Regolazione Fine" S0 T3
+M291 P{"T0 - REGOLAZIONE FINE. MOVIMENTO:" ^ var.zFineStep ^ "mm"} R"T0: Regolazione Fine" S0 T3
 
 ; Loop calibrazione fine T0
 while true
-    M291 R{"T0 Movimento Fine " ^ var.zFineStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zFineStep ^ "mm","+" ^ var.zFineStep ^ "mm","Prossima Fase","Fase Precedente","STOP"}
+    M291 R{"T0 Movimento Fine" ^ var.zFineStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zFineStep ^ "mm","+" ^ var.zFineStep ^ "mm","Prossima Fase","Fase Precedente","CANCELLA"}
     
     if input = 0
         G91
@@ -151,11 +150,11 @@ while true
     elif input = 4
         abort "Calibrazione T0 annullata"
 
-M291 P{"T0 - REGOLAZIONE ULTRA-FINE. MOVIMENTO: " ^ var.zUltraFineStep ^ "mm"} R"T0: Ultra-Fine" S0 T3
+M291 P{"T0 - REGOLAZIONE ULTRA-FINE. MOVIMENTO:" ^ var.zUltraFineStep ^ "mm"} R"T0: Ultra-Fine" S0 T3
 
 ; Loop calibrazione ultra-fine T0
 while true
-    M291 R{"T0 Ultra-Fine " ^ var.zUltraFineStep ^ "mm"} P"Nozzle T0 deve toccare LEGGERMENTE il bed:" S4 K{"-" ^ var.zUltraFineStep ^ "mm","+" ^ var.zUltraFineStep ^ "mm","SALVA T0","Fase Precedente","STOP"}
+    M291 R{"T0 Ultra-Fine" ^ var.zUltraFineStep ^ "mm"} P"Nozzle T0 deve toccare LEGGERMENTE il bed:" S4 K{"-" ^ var.zUltraFineStep ^ "mm","+" ^ var.zUltraFineStep ^ "mm","SALVA T0","Fase Precedente","CANCELLA"}
     
     if input = 0
         G91
@@ -183,17 +182,13 @@ while true
 M291 P"OFFSET T0 SALVATO! Passaggio alla calibrazione T1..." R"T0 Completato" S0 T5
 
 
-G91
-G0 Z5 F1000
-G90
+M501
+
+G1 Z50 F600
 
 T1
 
-G91
-G0 Z-5 F1000
-G90
 
-G1 Z15 F250
 
 
 
@@ -208,17 +203,17 @@ M291 P{"T1 - AVVICINAMENTO GROSSOLANO. MOVIMENTO:" ^ var.zCoarseStep ^ "mm"} R"T
 
 ; Loop calibrazione grossolana T1
 while true
-    M291 R{"T1 Movimento Grossolano " ^ var.zCoarseStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zCoarseStep ^ "mm","+" ^ var.zCoarseStep ^ "mm","Prossima Fase","STOP"}
+    M291 R{"T1 Movimento Grossolano " ^ var.zCoarseStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zCoarseStep ^ "mm","+" ^ var.zCoarseStep ^ "mm","Prossima Fase","CANCELLA"}
     
     if input = 0
         G91
-        G1 Z{-var.zCoarseStep} F100
+        G1 Z{-var.zCoarseStep} F600
         G90
         M400
         ;M291 P{"T1 GIÙ 0.1mm. Z: " ^ move.axes[2].machinePosition ^ "mm"} R"Movimento" S0 T1
     elif input = 1
         G91
-        G1 Z{var.zCoarseStep} F100
+        G1 Z{var.zCoarseStep} F600
         G90
         M400
         ;M291 P{"T1 SU 0.1mm. Z: " ^ move.axes[2].machinePosition ^ "mm"} R"Movimento" S0 T1
@@ -227,11 +222,11 @@ while true
     elif input = 3
         abort "Calibrazione T1 annullata"
 
-M291 P{"T1 - REGOLAZIONE MEDIA. MOVIMENTO: " ^ var.zMediumStep ^ "mm"} R"T1: Regolazione Media" S0 T3
+M291 P{"T1 - REGOLAZIONE MEDIA. MOVIMENTO:" ^ var.zMediumStep ^ "mm"} R"T1: Regolazione Media" S0 T3
 
 ; Loop calibrazione media T1
 while true
-    M291 R{"T1 Movimento Medio " ^ var.zMediumStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zMediumStep ^ "mm","+" ^ var.zMediumStep ^ "mm","Prossima Fase","Fase Precedente","STOP"}
+    M291 R{"T1 Movimento Medio " ^ var.zMediumStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zMediumStep ^ "mm","+" ^ var.zMediumStep ^ "mm","Prossima Fase","Fase Precedente","CANCELLA"}
     
     if input = 0
         G91
@@ -253,11 +248,11 @@ while true
     elif input = 4
         abort "Calibrazione T1 annullata"
 
-M291 P{"T1 - REGOLAZIONE FINE. MOVIMENTO: " ^ var.zFineStep ^ "mm"} R"T1: Regolazione Fine" S0 T3
+M291 P{"T1 - REGOLAZIONE FINE. MOVIMENTO:" ^ var.zFineStep ^ "mm"} R"T1: Regolazione Fine" S0 T3
 
 ; Loop calibrazione fine T1
 while true
-    M291 R{"T0 Movimento Fine " ^ var.zFineStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zFineStep ^ "mm","+" ^ var.zFineStep ^ "mm","Prossima Fase","Fase Precedente","STOP"}
+    M291 R{"T0 Movimento Fine" ^ var.zFineStep ^ "mm"} P"Scegliere l'azione:" S4 K{"-" ^ var.zFineStep ^ "mm","+" ^ var.zFineStep ^ "mm","Prossima Fase","Fase Precedente","CANCELLA"}
     
     if input = 0
         G91
@@ -279,11 +274,11 @@ while true
     elif input = 4
         abort "Calibrazione T1 annullata"
 
-M291 P{"T1 - REGOLAZIONE ULTRA-FINE. MOVIMENTO: " ^ var.zUltraFineStep ^ "mm"} R"T1: Ultra-Fine" S0 T3
+M291 P{"T1 - REGOLAZIONE ULTRA-FINE. MOVIMENTO:" ^ var.zUltraFineStep ^ "mm"} R"T1: Ultra-Fine" S0 T3
 
 ; Loop calibrazione ultra-fine T1
 while true
-    M291 R{"T1 Ultra-Fine " ^ var.zUltraFineStep ^ "mm"} P"Nozzle T1 deve toccare LEGGERMENTE il bed:" S4 K{"-" ^ var.zUltraFineStep ^ "mm","+" ^ var.zUltraFineStep ^ "mm","SALVA T0","Fase Precedente","STOP"}
+    M291 R{"T1 Ultra-Fine" ^ var.zUltraFineStep ^ "mm"} P"Nozzle T1 deve toccare LEGGERMENTE il bed:" S4 K{"-" ^ var.zUltraFineStep ^ "mm","+" ^ var.zUltraFineStep ^ "mm","SALVA T1","Fase Precedente","CANCELLA"}
     
     if input = 0
         G91
@@ -320,7 +315,7 @@ M501
 ; Riattiva la compensazione bed se disponibile
 M291 P"Riattivare la compensazione automatica del bed per le stampe future?" R"Riattivazione Compensazione" S4 K{"Si", "No"}
 if input = 0  ; Yes
-    G29 S1 P"scan_leveling.csv"                                      ; Riattiva la heightmap esistente
+    G29 S1                                      ; Riattiva la heightmap esistente
     M291 P"Compensazione bed riattivata per le stampe." R"Compensazione Attiva" S0 T3
 else
     M291 P"Compensazione bed rimane disattivata. Ricordare di attivarla prima delle stampe con G29 S1." R"Compensazione Disattiva" S0 T5
@@ -352,7 +347,6 @@ if input = 0  ; Yes
     var t1TestResult = input
     
     G1 Z50 F1000
-    
     T-1
     
     ; Risultati test
@@ -364,12 +358,6 @@ if input = 0  ; Yes
         M291 P"T1 necessita ricalibrare, T0 OK" R"Attenzione T1" S0
     else
         M291 P"Entrambi i tool potrebbero necessitare ricalibrare" R"Attenzione Entrambi" S0
-
-M291 P"Eseguire Calibrazione Z Max?" R"Aggiornamento Z MAX" S4 K{"Si", "No"}
-
-if input = 0  ; Yes
-    T0
-    G1 H3 Z650
 
 ; Messaggio finale
 M291 P"CALIBRAZIONE T0 E T1 COMPLETATA!" R"Calibrazione Offest" S0

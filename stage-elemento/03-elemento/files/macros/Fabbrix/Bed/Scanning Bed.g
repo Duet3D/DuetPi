@@ -1,4 +1,4 @@
-M190 S60
+M190 S0
 T-1                   
 M98 P"0:/macros/Calibration/inputshaping.g"
 M557 X0:1080 Y26:520 P20:10                            ; define grid for mesh bed compensation

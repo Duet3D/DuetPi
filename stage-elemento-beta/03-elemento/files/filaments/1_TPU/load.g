@@ -1,5 +1,5 @@
 if state.status = "processing"
-    T0
+    T1
     M109 S{heat.heaters[1].active}
     M118 P0 S"Loading TPU"
     M83
@@ -8,7 +8,7 @@ if state.status = "processing"
     G1 E50 F100
     M400
 else
-    T0
+    T1
     M118 P0 S"Heating for TPU"
     M109 S220
     M118 P0 S"Loading TPU"
@@ -21,5 +21,5 @@ else
     M109 S41
     M116
     M106 S0
-M118 P0 S"TPU Loaded on T0"
+M118 P0 S"TPU Loaded on T1"
 

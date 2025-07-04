@@ -3,5 +3,10 @@
 rm -f "${ROOTFS_DIR}/etc/apt/apt.conf.d/51cache"
 find "${ROOTFS_DIR}/var/lib/apt/lists/" -type f -delete
 on_chroot << EOF
+apt-get autoremove -y
+apt-get autoclean
 apt-get clean
+rm -rf /var/lib/apt/lists/*
+rm -rf /tmp/*
+rm -rf /var/tmp/*
 EOF
