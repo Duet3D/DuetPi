@@ -1,7 +1,7 @@
 M118 P0 L2 S"T0 Post"
 M116 P0
 if state.status == "processing" && job.duration != null
-	M590 D0 S0
+	M591 D0 S0
 	if heat.heaters[1].active > 160
     M83
     G1 E5 F200
