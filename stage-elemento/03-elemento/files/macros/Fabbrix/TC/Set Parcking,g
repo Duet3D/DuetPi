@@ -4,7 +4,7 @@ M30 sys/yPT0-offset.g
 G28        ;da valutare quando e come far lasciare il tool o cosa farne del tool se serve che sia agganciato
 G0 C0 F6000     ;Azzeramento Tool
 M291 R"Calibrazione Parcheggio T0 - Fase di Homing" P"Esecuzione dell'azzeramento degli assi in corso. Attendere il completamento dell'operazione."
-G0 Z50 F1500
+G0 Z200 F1500
 M564 H0 S0 ;disabilita i limiti software e permette di muovere assi non azzerati
 G0 X{global.xPT0Position} Y200 F10000
 M291 R"Calibrazione Parcheggio T0 - Posizionamento Utensile" P"Posizionare manualmente l'utensile T0 sul sistema di cambio utensile (ToolChange). Verificare il corretto allineamento prima di premere OK per continuare." S2
@@ -74,7 +74,7 @@ M98 P"yPT0-offset.g"
 G90
 G0 Y{move.axes[1].min} F4000
 G28 Y
-T0 P0
+T0
 M400
 G0 Y0
 M291 R"Calibrazione Parcheggio T0 - Verifica Aggancio" P"Verificare visivamente che l'utensile sia correttamente agganciato e posizionato. L'utensile risulta correttamente inserito?" S2
@@ -83,13 +83,10 @@ M291 R"Calibrazione Parcheggio T0 - Verifica Parcheggio" P"Verificare che l'uten
 M291 R"Calibrazione Parcheggio T0 - Procedura Terminata" S2 P"La calibrazione del parcheggio per l'utensile T0 è stata completata con successo."
 
 
-T-1
 M291 R"Calibrazione Parcheggio T1 - AVVERTENZA IMPORTANTE" P"ATTENZIONE: Questa procedura cancellerà tutti gli offset! Procedere esclusivamente se strettamente necessario e sotto supervisione dell'assistenza tecnica." S2
 M30 sys/yPT1-offset.g
-G28        ;da valutare quando e come far lasciare il tool o cosa farne del tool se serve che sia agganciato
-G0 C0 F6000     ;Azzeramento Tool
 M291 R"Calibrazione Parcheggio T1 - Fase di Homing" P"Esecuzione dell'azzeramento degli assi in corso. Attendere il completamento dell'operazione."
-G0 Z50 F1500
+G0 Z200 F1500
 M564 H0 S0 ;disabilita i limiti software e permette di muovere assi non azzerati
 G0 X{global.xPT1Position} Y200 F10000
 M291 R"Calibrazione Parcheggio T1 - Posizionamento Utensile" P"Posizionare manualmente l'utensile T1 sul sistema di cambio utensile (ToolChange). Verificare il corretto allineamento prima di premere OK per continuare." S2
@@ -159,7 +156,7 @@ M98 P"yPT1-offset.g"
 G90
 G0 Y{move.axes[1].min} F4000
 G28 Y
-T1 P0
+T1 
 M400
 G0 Y0
 M291 R"Calibrazione Parcheggio T1 - Verifica Aggancio" P"Verificare visivamente che l'utensile sia correttamente agganciato e posizionato. L'utensile risulta correttamente inserito?" S2

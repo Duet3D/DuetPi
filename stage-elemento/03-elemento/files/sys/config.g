@@ -27,8 +27,6 @@ M569 P121.0 S0 D2                                      ; driver 121.0 goes forwa
 M569 P122.0 S0 D2                                      ; driver 122.0 goes forwards (extruder 1)
 M569 P0.0 S0 D2 V0                                     ; driver 122.0 goes forwards (TC)
 
-;assicura motori più freddi
-M917 X70 Y70 Z80 E70:70
 
 ; Axes C
 M584 C0.0
@@ -58,6 +56,11 @@ M92 E260:224                                           ; configure steps per mm
 M566 E120:120                                        ; set maximum instantaneous speed changes (mm/min)
 M203 E10000:10000                                      ; set maximum speeds (mm/min)
 M201 E5000:5000                                          ; set accelerations (mm/s^2)
+
+
+
+;assicura motori più freddi
+M917 X70 Y70 Z80 C70 E70:70
 
 ; Kinematics
 M669 K0                                                ; configure Cartesian kinematics
@@ -165,20 +168,6 @@ M563 P1 S"T1" D1 H2 F0                                 ; create tool #0
 M568 P1 R0 S0 
 M591 D0 P3 C"121.io1.in" S1 L25.3 A0 E3      ; MFM config
 M591 D1 P3 C"122.io1.in" S1 L28.2 A0 E3      ; MFM config
-
-; Miscellaneous
-;T0                                       ; select first tool
-if sensors.gpIn[7].value == 1 && sensors.gpIn[8].value == 1 
-    M118 P0 S"No extruder in printer, please resolve conflict"
-if sensors.gpIn[6].value == 1 && sensors.gpIn[7].value == 1
-    M118 P0 S"Extruder T0 on TC"
-    T0 P0
-    G92 C60
-if sensors.gpIn[6].value == 1 && sensors.gpIn[8].value == 1
-    M118 P0 S"Extruder T1 on TC"
-    T1 P0
-    G92 C60
-    
 
 global bedTemperatureT0 = 0
 global bedTemperatureT1 = 0
