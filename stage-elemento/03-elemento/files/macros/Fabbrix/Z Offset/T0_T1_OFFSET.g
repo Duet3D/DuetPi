@@ -377,7 +377,7 @@ M501
 ; Riattiva la compensazione bed se disponibile
 M291 P"Riattivare la compensazione automatica del bed per le stampe future?" R"Riattivazione Compensazione" S4 K{"Si", "No"}
 if input = 0  ; Yes
-    G29 S1                                      ; Riattiva la heightmap esistente
+    G29 S1 P"scan_leveling.csv"                                     ; Riattiva la heightmap esistente
     M118 P0 S"====================================================" L3
     M118 P0 S"FASE 6: COMPENSAZIONE RIATTIVATA" L3
     M118 P0 S"Stato: Compensazione bed ATTIVA" L3
@@ -391,7 +391,7 @@ else
     M118 P0 S"Nota: Ricordare di attivare con G29 S1 prima di stampare" L3
     M118 P0 S"====================================================" L3
     echo >>"eventlog.txt" "FASE 6 COMPLETATA - Compensazione bed NON riattivata a "
-    M291 P"Compensazione bed rimane disattivata. Ricordare di attivarla prima delle stampe con G29 S1." R"Compensazione Disattiva" S0 T5
+    M291 P"Compensazione bed rimane disattivata. Ricordare di attivarla prima delle stampe con G29 S1 P"scan_leveling.csv"." R"Compensazione Disattiva" S0 T5
 
 G1 Z100 F1000
 
@@ -412,7 +412,9 @@ if input = 0  ; Yes
     ; Test T0
     T0
     G1 Z15 F250
+    M400
     G1 X550 Y300 F2000
+    M400
     G1 Z0.2 F100
     M291 P"TEST T0: Verificare distanza nozzle-bed. OK?" R"Verifica T0" S4 K{"Si", "No"}
     var t0TestResult = input
@@ -421,7 +423,9 @@ if input = 0  ; Yes
     ; Test T1
     T1
     G1 Z15 F250
+    M400
     G1 X550 Y300 F2000
+    M400
     G1 Z0.2 F100
     M291 P"TEST T1: Verificare distanza nozzle-bed. OK?" R"Verifica T1" S4 K{"Si", "No"}
     var t1TestResult = input
@@ -429,6 +433,9 @@ if input = 0  ; Yes
     G1 Z50 F1000
     T-1
     
+    M109 T0 S0
+    M109 T1 S0
+
     ; Risultati test
     if var.t0TestResult = 0 && var.t1TestResult = 0
         M118 P0 S"====================================================" L3
@@ -484,3 +491,4 @@ M118 P0 S"====================================================" L3
 echo >>"eventlog.txt" "CALIBRAZIONE Z COMPLETATA - T0: " ^ tools[0].offsets[2] ^ "mm, T1: " ^ tools[1].offsets[2] ^ "mm, Diff: " ^ tools[0].offsets[2] - tools[1].offsets[2] ^ "mm a "
 
 M291 P"CALIBRAZIONE T0 E T1 COMPLETATA!" R"Calibrazione Offset" S0
+
