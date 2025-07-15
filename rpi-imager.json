@@ -7,7 +7,7 @@
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
       "release_date": "2025-06-11",
       "extract_size": 6509559808,
-      "extract_sha256": "B93aabeac5c104b8126c211a37175c8e26e43b9f1598cf691759933c45e095e23",
+      "extract_sha256": "93aabeac5c104b8126c211a37175c8e26e43b9f1598cf691759933c45e095e23",
       "image_download_size": 1891861986,
       "image_download_sha256": "c014e8e462e6af63e4af5586d9e4931e96acef6920b7c8f4179ec2752af72cd2",
       "init_format": "systemd",
