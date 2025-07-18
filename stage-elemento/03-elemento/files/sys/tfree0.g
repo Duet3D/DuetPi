@@ -10,10 +10,10 @@ if (move.axes[0].homed = false || move.axes[1].homed = false)
 	G28 X
     G92 C60
 G0 X{global.xPT0Position}  Y{move.axes[1].min} F5000    
-N400
+M400
 M564 H0 S0
 G0 X{global.xPT0Position}  Y{move.axes[1].min - global.yPT0Position + 11} F5000
-N400
+M400
 G0 Y{move.axes[1].min - global.yPT0Position} F5000
 M400
 G0 C0 F5000
