@@ -1,4 +1,6 @@
     T1
+	M564 H1 S0
+	G0 X{global.xPT1Position}  Y{-global.yPT1Position} F5000
     M109 S260
     M118 P0 S"Loading CFF"
     M83

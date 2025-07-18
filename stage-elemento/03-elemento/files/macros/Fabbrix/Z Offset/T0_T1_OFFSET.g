@@ -89,7 +89,7 @@ M291 P"FASE 3: RIFERIMENTO G30. Creazione riferimento Z sul bed reale senza comp
 
 G1 Z50 F1000
 M400
-G1 X550 Y300 F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
 M18 C
 T0 P0
 G30                                      ; Riferimento sul bed FISICO non compensato
@@ -117,7 +117,7 @@ G28 C
 G1 Z50 F600
 T-1 P0
 T0
-G1 X550 Y300 F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
 G1 Z45 F600
 M564 H0 S0
 
@@ -251,7 +251,7 @@ T1
 ; ========================================
 M291 P"FASE 5: CALIBRAZIONE T1. Posizionamento usando stesso riferimento..." R"Fase 5: Offset T1" S0 T5
 
-G1 X550 Y300 F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
 
 M291 P{"T1 - AVVICINAMENTO GROSSOLANO. MOVIMENTO:" ^ var.zCoarseStep ^ "mm"} R"T1: Avvicinamento" S0 T3
 
@@ -391,7 +391,7 @@ else
     M118 P0 S"Nota: Ricordare di attivare con G29 S1 prima di stampare" L3
     M118 P0 S"====================================================" L3
     echo >>"eventlog.txt" "FASE 6 COMPLETATA - Compensazione bed NON riattivata a "
-    M291 P"Compensazione bed rimane disattivata. Ricordare di attivarla prima delle stampe con G29 S1 P"scan_leveling.csv"." R"Compensazione Disattiva" S0 T5
+    M291 P"Compensazione bed rimane disattivata. Ricordare di attivarla prima delle stampe con G29 S1" R"Compensazione Disattiva" S0 T5
 
 G1 Z100 F1000
 
@@ -413,7 +413,7 @@ if input = 0  ; Yes
     T0
     G1 Z15 F250
     M400
-    G1 X550 Y300 F2000
+    G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
     M400
     G1 Z0.2 F100
     M291 P"TEST T0: Verificare distanza nozzle-bed. OK?" R"Verifica T0" S4 K{"Si", "No"}
@@ -424,7 +424,7 @@ if input = 0  ; Yes
     T1
     G1 Z15 F250
     M400
-    G1 X550 Y300 F2000
+    G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
     M400
     G1 Z0.2 F100
     M291 P"TEST T1: Verificare distanza nozzle-bed. OK?" R"Verifica T1" S4 K{"Si", "No"}
@@ -486,9 +486,7 @@ M118 P0 S"CALIBRAZIONE Z OFFSET COMPLETATA" L3
 M118 P0 S{"T0 Offset: " ^ tools[0].offsets[2] ^ "mm"} L3
 M118 P0 S{"T1 Offset: " ^ tools[1].offsets[2] ^ "mm"} L3
 M118 P0 S{"Differenza T0-T1: " ^ tools[0].offsets[2] - tools[1].offsets[2] ^ "mm"} L3
-M118 P0 S{"Data completamento: "} L3
 M118 P0 S"====================================================" L3
 echo >>"eventlog.txt" "CALIBRAZIONE Z COMPLETATA - T0: " ^ tools[0].offsets[2] ^ "mm, T1: " ^ tools[1].offsets[2] ^ "mm, Diff: " ^ tools[0].offsets[2] - tools[1].offsets[2] ^ "mm a "
 
 M291 P"CALIBRAZIONE T0 E T1 COMPLETATA!" R"Calibrazione Offset" S0
-

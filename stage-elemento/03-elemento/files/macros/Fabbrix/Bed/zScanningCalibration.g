@@ -6,11 +6,11 @@ if sensors.probes[0].value[0] = 1000
 if move.axes[0].homed != true || move.axes[1].homed != true || move.axes[2].homed != true
 	G28                    
 M18 C
-G1 X500 Y300
+G1 X{move.axes[0].max/2} Y{move.axes[1].max}
 G30 K0 S-3
 M558.1 K1 S0.5
 M558.2 K1 S-1
 G1 Z50
-G1 X550 Y300 F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
 G30
 M501    

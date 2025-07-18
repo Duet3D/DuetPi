@@ -80,7 +80,7 @@ M574 C1 S3                                             ; Stall detect coupler at
 M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/bed pivot point at front left, rear middle and front right
 
 ; Probes
-M558 A2 Z1 K0 B1 P8 C"io4.in" H35 F300:150 T9000 S0.1 R0.5    ; set Z probe type to bltouch and the dive height + speeds
+M558 A2 Z1 K0 B1 P8 C"io4.in" H35 F300:150 T9000 S0.2 R0.5    ; set Z probe type to bltouch and the dive height + speeds
 G31 K0 P500 X0 Y55 Z0.6                            ; 4.25   ;0.6
 M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F3000 T3000
 G31 K1 X0 Y36 P8248
@@ -166,8 +166,8 @@ M563 P0 S"T0" D0 H1 F0                                 ; create tool #0
 M568 P0 R0 S0                                          ; set initial tool #0 active and standby temperatures to 0C
 M563 P1 S"T1" D1 H2 F0                                 ; create tool #0
 M568 P1 R0 S0 
-M591 D0 P3 C"121.io1.in" S1 L25.3 A0 E3      ; MFM config
-M591 D1 P3 C"122.io1.in" S1 L28.2 A0 E3      ; MFM config
+M591 D0 P3 C"121.io1.in" S0 L28 A0 E10      ; MFM config
+M591 D1 P3 C"122.io1.in" S0 L34 A0 E3      ; MFM config
 
 global bedTemperatureT0 = 0
 global bedTemperatureT1 = 0

@@ -1,5 +1,7 @@
     T0
-    M109 S220
+	M564 H1 S0
+	G0 X{global.xPT0Position}  Y{-global.yPT0Position} F5000
+    M109 S240
     M118 P0 S"Unloading PETG"
     M83
     G1 E30 F100
@@ -7,8 +9,8 @@
     G10 T0 S170
     G4 S5
     M116
-    G1 E-80 F1000
-    G1 E-250 F3000
+    G1 E-180 F1000
+    G1 E-100 F3000
     M400
     M117 "PETG Unloaded"
     M118 P0 S"PETG Unloaded"

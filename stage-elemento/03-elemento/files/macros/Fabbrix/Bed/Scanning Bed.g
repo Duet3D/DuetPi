@@ -1,4 +1,4 @@
-M190 S0
+M190 S55
 T-1                   
 M98 P"0:/macros/Calibration/inputshaping.g"
 M557 X0:1080 Y26:520 P20:10                            ; define grid for mesh bed compensation
@@ -7,11 +7,13 @@ G32
 M117 "K1 CALIB"
 M118 P0 S"K1 CALIB" L3
 G1 Z50 F2000
-G1 X550 Y300 F3000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F3000
 M18 C
-G30 K0 S-3
+G30 K0 S-1
 M558.1 K1 S0.5
 M558.2 K1 S-1
+M500 P31
+M501
 G28 C
 G1 Z50 F1000
 M117 "K1 BED CALIBRATING"
@@ -21,7 +23,7 @@ G29 S2
 M290 S0 R0
 M561
 M18 C
-G1 X550 Y300 F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
 T0 P0
 ;G30 K0
 G92 C0 
@@ -30,6 +32,6 @@ G29 S3 K1 P"scan_leveling.csv"
 G1 Z50
 T-1 P0
 M18 C
-G1 X550 Y300 F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
 G30
 M501
