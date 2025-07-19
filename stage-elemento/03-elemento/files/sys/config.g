@@ -42,7 +42,7 @@ M584 X70.0 Y71.0:72.0 Z73.0:74.0:75.0                  ; set axis mapping
 M350 X16 Y16 Z16 I1                                    ; configure microstepping with interpolation
 M906 X2200 Y2200 Z2000                                 ; set axis driver currents
 M92 X100 Y100 Z640                                     ; configure steps per mm
-M208 X-30:1100 Y-10:600 Z0:620                         ; set minimum and maximum axis limits
+M208 X-30:1100 Y-10:605 Z0:620                         ; set minimum and maximum axis limits
 M566 X600 Y600 Z20 P1                                  ; set maximum instantaneous speed changes (mm/min)
 M203 X18000 Y18000 Z1500                                 ; set maximum speeds (mm/min)
 M201 X10000 Y10000 Z40                                   ; set accelerations (mm/s^2)
@@ -102,13 +102,13 @@ M950 H0 C"out0" T0                                     ; create heater #0
 M143 H0 P0 T0 C0 S125 A0                               ; configure heater monitor #0 for heater #0
 M307 H0 R0.027 K0.040:0.000 D43.51 E1.35 S1.00 B1      ; configure model of heater #0
 M950 H1 C"121.out0" T1                                 ; create heater #1
-M143 H1 P0 T1 C0 S285 A0                               ; configure heater monitor #0 for heater #1
+M143 H1 P0 T1 C0 S310 A0                               ; configure heater monitor #0 for heater #1
 M307 H1 R1.774 K0.315:0.076 D6.54 E1.35 S1.00 B0 V23.4 ; configure model of heater #1
 M950 H2 C"122.out0" T2                                 ; create heater #2
-M143 H2 P0 T2 C0 S285 A0                               ; configure heater monitor #0 for heater #2
+M143 H2 P0 T2 C0 S310 A0                               ; configure heater monitor #0 for heater #2
 M307 H2 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #2
 M950 H3 C"!out4" T3                                    ; create heater #3
-M143 H3 P0 T3 C0 S285 A0                               ; configure heater monitor #0 for heater #3
+M143 H3 P0 T3 C-1 S285 A0                               ; configure heater monitor #0 for heater #3
 M307 H3 R2.43 D5.5 E1.35 K0.56 B0                      ; configure model of heater #3
 
 ;M570 H3 P180 T20 R20
