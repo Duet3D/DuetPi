@@ -21,7 +21,7 @@ G1 X210 Y50 F3000      ; Muovi X a 210mm, Y a 50mm con velocità 3000mm/min
 
 ; === FASE 2: RICHIESTA SCELTA TEMPERATURA ===
 ; Mostra dialog con le opzioni di temperatura
-M291 P"Scegli l'operazione desiderata:" R"Controllo Temperatura" S4 K{"Cambia Nozzle","PID T0","Raffredda"}
+M291 P"Scegli l'operazione desiderata:" R"Controllo Temperatura" S4 K{"Cambia Nozzle","Raffredda"}
 
 ; === FASE 3: GESTIONE DELLE SCELTE ===
 ; Controlla quale opzione è stata selezionata
@@ -84,20 +84,14 @@ if input == 0
             ; No, non sostituire il nozzle
             M291 P"Sostituzione nozzle annullata." R"Annullato" S1 T2
     
-elif input == 1
-    ; Opzione 3: Riscalda a 280°C
-    M291 P"Regolazione PID T0" R"Riscaldamento, Non lasciare macchina incustodita" S1 T5
-    M303 T0 F1 S280 P0.7  
-    M500
-    M291 P"PID 280°C eseguito!" R"Completato" S1 T3
     
-elif input == 2
+elif input == 1
     ; Opzione 4: Raffredda a 90°C
-    M291 P"Raffreddamento a 90°C in corso..." R"Raffreddamento" S1 T5
+    M291 P"Raffreddamento a 60°C in corso..." R"Raffreddamento" S1 T5
     M104 T0 S60                 ; Imposta temperatura hotend a 90°C
     M109 T0 S60
     M104 T0 S0                 
-    M291 P"Temperatura 90°C raggiunta!" R"Completato" S1 T3
+    M291 P"Temperatura 60°C raggiunta!" R"Completato" S1 T3
     
 else
     ; Nessuna selezione o errore

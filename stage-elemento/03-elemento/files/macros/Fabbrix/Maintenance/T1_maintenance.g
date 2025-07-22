@@ -17,11 +17,11 @@ else
 
 T1                     ; Seleziona tool 1
 G1 Z250 F1000         ; Muovi Z a 250mm con velocità 1000mm/min
-G1 X210 Y50 F3000      ; Muovi X a 210mm, Y a 50mm con velocità 3000mm/min
+G1 X810 Y50 F3000      ; Muovi X a 210mm, Y a 50mm con velocità 3000mm/min
 
 ; === FASE 2: RICHIESTA SCELTA TEMPERATURA ===
 ; Mostra dialog con le opzioni di temperatura
-M291 P"Scegli l'operazione desiderata:" R"Controllo Temperatura" S4 K{"Cambia Nozzle","PID T1","Raffredda"}
+M291 P"Scegli l'operazione desiderata:" R"Controllo Temperatura" S4 K{"Cambia Nozzle","Raffredda"}
 
 ; === FASE 3: GESTIONE DELLE SCELTE ===
 ; Controlla quale opzione è stata selezionata
@@ -32,10 +32,10 @@ if input == 0
     M109 S150                ; Attendi che raggiunga 150°C
     M291 P"Temperatura 150°C raggiunta!" R"Completato" S1 T3
     
-    ; Controlla se c'è filamento caricato in T0 tramite Object Model
+    ; Controlla se c'è filamento caricato in T1 tramite Object Model
     if move.extruders[0].filament != null
         ; Filamento presente - chiedi se scaricare e procedere
-        M291 P"ATTENZIONE: Rilevato filamento caricato in T0. Vuoi scaricare il filamento e procedere con la sostituzione del nozzle?" R"Filamento Rilevato" S4 K{"SI","NO"}
+        M291 P"ATTENZIONE: Rilevato filamento caricato in T1. Vuoi scaricare il filamento e procedere con la sostituzione del nozzle?" R"Filamento Rilevato" S4 K{"SI","NO"}
         
         if input == 0
             ; Sì, scaricare il filamento e procedere
@@ -57,11 +57,11 @@ if input == 0
             M104 S150                ; Ritorna a 150°C per sostituzione
             M109 S150                ; Attendi temperatura
             
-            G1 X210 Y50 F3000      ; Muovi X a 210mm, Y a 50mm con velocità 3000mm/min
+            G1 X810 Y50 F3000      ; Muovi X a 210mm, Y a 50mm con velocità 3000mm/min
 
             ; Procedi con sostituzione nozzle
             M291 P"Temperatura impostata a 150°C. Procedi con la sostituzione del nozzle." R"Sostituzione in corso" S1 T0
-            M291 P"ATTENZIONE: Usa sempre gli strumenti appropriati e fai attenzione alle superfici calde!" R"Sicurezza" S2 T10
+            M291 P"ATTENZIONE: Usa sempre gli strumenti appropriati e fai attenzione alle superfici calde!" R"Sicurezza" S2 T0
             M291 P"Una volta sostituito il nozzle, premi OK per continuare." R"Attesa" S2
             M291 P"Sostituzione completata!" R"Completato" S1 T3
             
@@ -77,27 +77,21 @@ if input == 0
         if input == 0
             ; Sì, sostituire il nozzle
             M291 P"Procedi con la sostituzione del nozzle. La temperatura è mantenuta a 150°C per facilitare l'operazione." R"Sostituzione in corso" S1 T0
-            M291 P"ATTENZIONE: Usa sempre gli strumenti appropriati e fai attenzione alle superfici calde!" R"Sicurezza" S2 T10
+            M291 P"ATTENZIONE: Usa sempre gli strumenti appropriati e fai attenzione alle superfici calde!" R"Sicurezza" S2 T0
             M291 P"Una volta sostituito il nozzle, premi OK per continuare." R"Attesa" S2
             M291 P"Sostituzione completata!" R"Completato" S1 T3
         else
             ; No, non sostituire il nozzle
             M291 P"Sostituzione nozzle annullata." R"Annullato" S1 T2
     
-elif input == 1
-    ; Opzione 3: Riscalda a 280°C
-    M291 P"Regolazione PID T1" R"Riscaldamento, Non lasciare macchina incustodita" S1 T5
-    M303 T1 F1 S280 P0.7  
-    M500
-    M291 P"PID 280°C eseguito!" R"Completato" S1 T3
     
-elif input == 2
+elif input == 1
     ; Opzione 4: Raffredda a 90°C
-    M291 P"Raffreddamento a 90°C in corso..." R"Raffreddamento" S1 T5
+    M291 P"Raffreddamento a 60°C in corso..." R"Raffreddamento" S1 T5
     M104 T1 S60                 ; Imposta temperatura hotend a 90°C
     M109 T1 S60
     M104 T1 S0                 
-    M291 P"Temperatura 90°C raggiunta!" R"Completato" S1 T3
+    M291 P"Temperatura 60°C raggiunta!" R"Completato" S1 T3
     
 else
     ; Nessuna selezione o errore

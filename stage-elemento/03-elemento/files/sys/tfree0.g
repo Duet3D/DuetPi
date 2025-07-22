@@ -8,7 +8,7 @@ M118 P0 L2 S"T0 Free"
 if (move.axes[0].homed = false || move.axes[1].homed = false)
     G28 Y
 	G28 X
-    G92 C60
+    G92 C60 
 G0 X{global.xPT0Position}  Y{move.axes[1].min} F5000    
 M400
 M564 H0 S0

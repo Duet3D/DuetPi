@@ -20,5 +20,6 @@ while true
         break
 
 G90                     ; absolute positioning
-G1 X{move.axes[0].max/2} Y{move.axes[1].max} F6000      ; go Center of bed
+G1 X{move.axes[0].max/2} Y{move.axes[1].max/2} 
+F6000      ; go Center of bed
 G28 C

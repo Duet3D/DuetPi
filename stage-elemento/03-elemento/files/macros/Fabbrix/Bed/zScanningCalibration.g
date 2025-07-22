@@ -11,6 +11,7 @@ G30 K0 S-3
 M558.1 K1 S0.5
 M558.2 K1 S-1
 G1 Z50
-G1 X{move.axes[0].max/2} Y{move.axes[1].max} F2000
+G1 X{move.axes[0].max/2} Y{move.axes[1].max/2} 
+F2000
 G30
 M501    

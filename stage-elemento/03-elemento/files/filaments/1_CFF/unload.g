@@ -5,7 +5,7 @@
     M118 P0 S"Unloading CFF"
     M83
     G1 E30 F100
-    M106 S255
+    M106 P1 S255
     G10 T1 S220
     G4 S5
     M116
