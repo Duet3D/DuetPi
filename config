@@ -8,4 +8,4 @@ export FIRST_USER_PASS="f@6brix"
 export USE_QCOW2=0
 export DISABLE_FIRST_BOOT_USER_RENAME=1
 #export APT_PROXY="http://indolab.local:3142"
-#export TARGET_ARCH='armhf'  # o 'arm64' o 'amd64'
+export TARGET_ARCH='armhf'  # o 'arm64' o 'amd64'
