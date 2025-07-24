@@ -14,7 +14,7 @@ G0 Y{move.axes[1].min} F3000
 M564 H0 S0
 G91
 while true
-    M291 R"Calibrazione T0, avvicinati a 5mm dalle spine di parcheggio" P"Scegliere l'azione:" S4 K{"-5mm","+5mm","Prossima Fase","CANCELLA"}
+    M291 R"Calibrazione T0" P"Avvicinati a 5mm dalle spine di parcheggio" S4 K{"-5mm","+5mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
         G1 Y-5 F600
@@ -31,7 +31,7 @@ while true
         abort "Calibrazione TC su T0 annullata"
 
 while true
-    M291 R"Calibrazione T0 Fine, centra le spine fino a inserirne metà nel tool" P"Scegliere l'azione:" S4 K{"-1mm","+1mm","Prossima Fase","CANCELLA"}
+    M291 R"Calibrazione T0 Media" P"ATTENZIONE! Centra le spine fino a inserirne metà nel tool! ATTENZIONE!" S4 K{"-1mm","+1mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
         G1 Y-1 F400
@@ -48,7 +48,7 @@ while true
         abort "Calibrazione TC su T0 annullata"
 
 while true
-    M291 R"Calibrazione T0 Fine, inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza" P"Scegliere l'azione:" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T0","CANCELLA"}
+    M291 R"Calibrazione T0 Fine" P"Inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza, serra il parcheggio prima di proseguire" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T0","CANCELLA"}
     if input = 0
         G91
         G1 Y-0.1 F200
@@ -96,7 +96,7 @@ G0 Y{move.axes[1].min} F3000
 M564 H0 S0
 G91
 while true
-    M291 R"Calibrazione T1, avvicinati a 5mm dalle spine di parcheggio" P"Scegliere l'azione:" S4 K{"-5mm","+5mm","Prossima Fase","CANCELLA"}
+    M291 R"Calibrazione T1" P"Avvicinati a 5mm dalle spine di parcheggio" S4 K{"-5mm","+5mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
         G1 Y-5 F600
@@ -113,7 +113,7 @@ while true
         abort "Calibrazione TC su T1 annullata"
 
 while true
-    M291 R"Calibrazione T1 Fine, centra le spine fino a inserirne metà nel tool" P"Scegliere l'azione:" S4 K{"-1mm","+1mm","Prossima Fase","CANCELLA"}
+    M291 R"Calibrazione T1 Media" P"ATTENZIONE! Centra le spine fino a inserirne metà nel tool! ATTENZIONE!" S4 K{"-1mm","+1mm","Prossima Fase","CANCELLA"}
     if input = 0
         G91
         G1 Y-1 F400
@@ -130,7 +130,7 @@ while true
         abort "Calibrazione TC su T1 annullata"
 
 while true
-    M291 R"Calibrazione T1 Fine, inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza" P"Scegliere l'azione:" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T1","CANCELLA"}
+    M291 R"Calibrazione T1 Fine" P"Inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza, serra il parcheggio prima di proseguire" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T1","CANCELLA"}
     if input = 0
         G91
         G1 Y-0.1 F200
