@@ -13,7 +13,7 @@ if state.status == "processing" && job.duration != null
 	G0 Y{move.axes[1].min - 70 } F6000
 	M400
 	M564 H1 S1
-M703
+;M703
 M564 H0 S0
 G0 Y{move.axes[1].min} F5000
 M400

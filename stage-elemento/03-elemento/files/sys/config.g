@@ -80,7 +80,7 @@ M574 C1 S3                                             ; Stall detect coupler at
 M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/bed pivot point at front left, rear middle and front right
 
 ; Probes
-M558 A2 Z1 K0 B1 P8 C"io4.in" H35 F300:150 T9000 S0.2 R0.5    ; set Z probe type to bltouch and the dive height + speeds
+M558 A2 Z1 K0 B1 P8 C"io4.in" H35:5 F300:150 T9000 S0.2 R0.5    ; set Z probe type to bltouch and the dive height + speeds
 G31 K0 P500 X0 Y36 Z0.6                            ; 4.25   ;0.6
 M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F3000 T3000
 G31 K1 X0 Y53 Z0.6
