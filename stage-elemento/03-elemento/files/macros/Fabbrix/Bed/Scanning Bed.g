@@ -1,5 +1,6 @@
 ; Macro K1 Calibration con Feedback Utente
 ; Nome file: k1_calibration_feedback.g
+M98 P"0:/macros/Calibration/inputshaping.g"
 
 ; === FASE 1: PREPARAZIONE ===
 M291 P"Avvio calibrazione K1. Riscaldamento piatto a 55°C..." R"Preparazione K1" S1 T3
@@ -11,9 +12,11 @@ M291 P"Esecuzione input shaping..." R"Input Shaping" S1 T3
 M98 P"0:/macros/Calibration/inputshaping.g"
 M291 P"Input shaping completato!" R"Completato" S1 T2
 
+M208 X-30:1100 Y-65:605 Z0:620                         ; set minimum and maximum axis limits
 ; Definizione griglia mesh
 M291 P"Configurazione griglia mesh (X0:1080 Y26:520 P20:10)..." R"Setup Mesh" S1 T2
-M557 X0:1080 Y26:520 P20:10                            ; define grid for mesh bed compensation
+
+M557 X0:1060 Y-10:600 P20:10                            ; define grid for mesh bed compensation
 
 ; === FASE 2: HOMING E CALIBRAZIONE K1 ===
 M291 P"Esecuzione homing completo..." R"Homing" S1 T3
@@ -37,7 +40,8 @@ G30 K0 S-1
 
 M291 P"Configurazione parametri K1 (velocità 0.5, offset -1)..." R"Config K1" S1 T2
 M558.1 K1 S0.5
-M558.2 K1 S-1
+
+
 
 M291 P"Salvataggio configurazione K1..." R"Salvataggio" S1 T2
 M500 P31
@@ -79,6 +83,9 @@ M18 C                   ; Rilascia motore C
 M291 P"Posizionamento finale e probe di verifica..." R"Verifica Finale" S1 T3
 G1 X{move.axes[0].max/2} Y{move.axes[1].max/2} F2000
 G30                     ; Probe finale di verifica
+
+M208 X-30:1100 Y-10:605 Z0:620                         ; set minimum and maximum axis limits
+
 
 M291 P"Ricaricamento configurazione finale..." R"Config Finale" S1 T2
 M501

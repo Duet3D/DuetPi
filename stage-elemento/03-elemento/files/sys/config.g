@@ -81,11 +81,10 @@ M671 X-16:550:1116 Y73:765:73 S20                      ; position of leadscrew/b
 
 ; Probes
 M558 A2 Z1 K0 B1 P8 C"io4.in" H35 F300:150 T9000 S0.2 R0.5    ; set Z probe type to bltouch and the dive height + speeds
-G31 K0 P500 X0 Y55 Z0.6                            ; 4.25   ;0.6
+G31 K0 P500 X0 Y36 Z0.6                            ; 4.25   ;0.6
 M558 K1 B1 H10 P11 C"120.i2c.ldc1612" F3000 T3000
-G31 K1 X0 Y36 P8248
-M558.1 K1 A-6.163e-4 B8.308e-8 C-3.304e-11
-M558.2 K1 S16 R136875
+G31 K1 X0 Y53 Z0.6
+M558.2 K1 S16 R135728
 
 
 ; Mesh Bed Compensation

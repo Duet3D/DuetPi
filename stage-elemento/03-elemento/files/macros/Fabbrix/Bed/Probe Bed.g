@@ -3,8 +3,9 @@
 
 ; === FASE 1: CONFIGURAZIONE GRIGLIA ===
 M291 P"Avvio probe leveling. Configurazione griglia mesh..." R"Setup Probe Leveling" S1 T3
+M208 X-30:1100 Y-50:605 Z0:620                         ; set minimum and maximum axis limits
 
-M557 X0:1060 Y50:500 P10:5                            ; define grid for mesh bed compensation
+M557 X0:1060 Y-10:600 P10:5                            ; define grid for mesh bed compensation
 M291 P"Griglia configurata: X0:1060 Y0:565 con 10x5 punti (50 punti totali)" R"Griglia OK" S1 T3
 
 M190 S60
@@ -33,7 +34,7 @@ G29 S2                          ; Clear mesh bed compensation
 
 ; === FASE 4: PREPARAZIONE PROBE ===
 M291 P"Preparazione probe per scansione..." R"Setup Probe" S1 T2
-T0 P0                           ; Seleziona tool T0
+;T0 P0                           ; Seleziona tool T0
 
 M291 P"Posizionamento centrale piatto..." R"Posizionamento" S1 T2
 G1 X{move.axes[0].max/2} Y{move.axes[1].max/2} F1000
@@ -62,6 +63,8 @@ M291 P"Posizionamento finale e probe di verifica..." R"Verifica Finale" S1 T3
 G1 X{move.axes[0].max/2} Y{move.axes[1].max/2} F2000
 G30                             ; Probe finale di controllo
 
+M208 X-30:1100 Y-10:605 Z0:620                         ; set minimum and maximum axis limits
+M500
 M291 P"Ricaricamento configurazione..." R"Config Finale" S1 T2
 M501
 
