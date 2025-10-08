@@ -9,8 +9,8 @@
     G10 T1 S170
     G4 S5
     M116
-    G1 E-180 F1000
-    G1 E-100 F3000
+    G1 E-180 F120
+    G1 E-100 F1000
     M400
     M117 "TPU Unloaded"
     M118 P0 S"TPU Unloaded"

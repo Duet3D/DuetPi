@@ -24,8 +24,8 @@ cp -p files/TCb.conf "${ROOTFS_DIR}/boot/firmware/TCb.conf"
 cp -p files/TC.conf "${ROOTFS_DIR}/opt/dsf/sd/sys/TC.conf"
 cp -p files/TCb.conf "${ROOTFS_DIR}/opt/dsf/sd/sys/TCb.conf"
 
-cp -p files/fabbrix_cura_5_10_1.zip "${ROOTFS_DIR}/boot/firmware/macros/fabbrix_cura_5_10_1.zip"
-cp -p files/fabbrix_cura_5_10_1.zip "${ROOTFS_DIR}/opt/dsf/sd/macros/fabbrix_cura_5_10_1.zip"
+#cp -p files/fabbrix_cura_5_10_1.zip "${ROOTFS_DIR}/boot/firmware/macros/fabbrix_cura_5_10_1.zip"
+#cp -p files/fabbrix_cura_5_10_1.zip "${ROOTFS_DIR}/opt/dsf/sd/macros/fabbrix_cura_5_10_1.zip"
 
 install -m 644 -v files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/firmware/"
 
