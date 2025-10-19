@@ -1,8 +1,0 @@
-; === daemon.g ===
-; Logging automatico durante la stampa, ogni 60s
-; Esegui solo se è in corso una stampa
-if job.duration != null
-  set global.logFile = job.file.fileName ^ ".log"
-  M28 {global.logFile}
-  echo > heat.heaters[0].current^ "," ^heat.heaters[1].current
-  M29

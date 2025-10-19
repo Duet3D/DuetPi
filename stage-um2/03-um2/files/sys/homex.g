@@ -1,8 +1,6 @@
 ; homex.g
 ; called to home the X axis
-;                                       ; driver 70.0 goes forwards (X axis)
-M915 P0 S2 F0 H250 R0
-M574 X2 S3		
+;                                       ; driver 70.0 goes forwards (X axis)	
 M913 X70
 M564 H0 S0
 

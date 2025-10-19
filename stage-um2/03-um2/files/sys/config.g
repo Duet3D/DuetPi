@@ -41,6 +41,14 @@ M208 X205 Y205 Z200 S2                                      ; set axis maxima
 ; Endstops
 ;M574 X1 S3                                   ; configure active-high endstop for low end on X via pin io0.in
 ;M574 Y1 S3 
+; --- ASSE X: Sensorless High End ---
+M915 P0 S2 F0 H250 R0    ; Driver0: soglia S2, no filtro, min 250steps/sec
+M574 X2 S3               ; Endstop high end, sensorless singolo motore
+
+; --- ASSE Y: Sensorless Low End ---
+M915 P1 S3 F0 H250 R0    ; Driver1: soglia S3, no filtro, min 250steps/sec
+M574 Y1 S3               ; Endstop low end, sensorless singolo motore
+
 M574 Z2 S1 P"!io2.in"                                  ; configure active-high endstop for high end on Z via pin io2.in
 
 ; Heaters
