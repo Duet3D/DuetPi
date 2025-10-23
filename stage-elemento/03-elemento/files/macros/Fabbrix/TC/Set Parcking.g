@@ -48,7 +48,7 @@ while true
         abort "Calibrazione TC su T0 annullata"
 
 while true
-    M291 R"Calibrazione T0 Fine" P"Inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza, serra il parcheggio prima di proseguire" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T0","CANCELLA"}
+    M291 R"Calibrazione T0 Fine" P"Inserisci spessimetro tra parcheggio e profilo e muovi il tool fino a sentire resistenza, serra il parcheggio prima di proseguire" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T0","CANCELLA"}
     if input = 0
         G91
         G1 Y-0.1 F200
@@ -130,7 +130,7 @@ while true
         abort "Calibrazione TC su T1 annullata"
 
 while true
-    M291 R"Calibrazione T1 Fine" P"Inserisci spessimetro tra parcheggio e profilo di alluminio e muovi il tool fino a sentire una resistenza, serra il parcheggio prima di proseguire" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T1","CANCELLA"}
+    M291 R"Calibrazione T1 Fine" P"Inserisci spessimetro tra parcheggio e profilo e muovi il tool fino a sentire resistenza, serra il parcheggio prima di proseguire" S4 K{"-0.1mm","+0.1mm","Salva Parcheggio T1","CANCELLA"}
     if input = 0
         G91
         G1 Y-0.1 F200

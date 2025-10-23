@@ -54,13 +54,13 @@ if input == 0
             M291 P"Filamento scaricato! Ora puoi procedere con la sostituzione del nozzle." R"Pronto per sostituzione" S1 T3
             G1 X500 Y0 F3000
             ; Abbassa temperatura per sostituzione nozzle
-            M104 S150                ; Ritorna a 150°C per sostituzione
-            M109 S150                ; Attendi temperatura
+            M104 S300                ; Ritorna a 150°C per sostituzione
+            M109 S300                ; Attendi temperatura
             
             G1 X210 Y50 F3000      ; Muovi X a 210mm, Y a 50mm con velocità 3000mm/min
 
             ; Procedi con sostituzione nozzle
-            M291 P"Temperatura impostata a 150°C. Procedi con la sostituzione del nozzle." R"Sostituzione in corso" S1 T0
+            M291 P"Temperatura impostata a 300°C. Procedi con la sostituzione del nozzle." R"Sostituzione in corso" S1 T0
             M291 P"ATTENZIONE: Usa sempre gli strumenti appropriati e fai attenzione alle superfici calde!" R"Sicurezza" S2 T00
             M291 P"Una volta sostituito il nozzle, premi OK per continuare." R"Attesa" S2
             M291 P"Sostituzione completata!" R"Completato" S1 T3
@@ -88,6 +88,7 @@ if input == 0
 elif input == 1
     ; Opzione 4: Raffredda a 90°C
     M291 P"Raffreddamento a 60°C in corso..." R"Raffreddamento" S1 T5
+	M109 P0 S255
     M104 T0 S60                 ; Imposta temperatura hotend a 90°C
     M109 T0 S60
     M104 T0 S0                 

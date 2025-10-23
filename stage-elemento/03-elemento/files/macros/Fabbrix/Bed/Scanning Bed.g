@@ -4,7 +4,7 @@ M98 P"0:/macros/Calibration/inputshaping.g"
 
 ; === FASE 1: PREPARAZIONE ===
 M291 P"Avvio calibrazione K1. Riscaldamento piatto a 55°C..." R"Preparazione K1" S1 T3
-M190 S60                  ; Riscalda piatto a 55°C e attendi
+;M190 S60                  ; Riscalda piatto a 55°C e attendi
 M291 P"Piatto riscaldato! Inizializzazione sistema..." R"Temperatura OK" S1 T2
 
 T-1                       ; Deseleziona tutti i tool
