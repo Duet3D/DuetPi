@@ -3,9 +3,7 @@ M569 P72.0 S1 D2
 M915 P71.0 S0 F0 H190 R0
 M915 P72.0 S0 F0 H190 R0
 M574 Y2 S4		
-M906 X2200 Y2200 Z2200                                 ; set axis driver currents
-
-M913 Y100
+M913 Y80
 
 M564 H0 S0
 M400 ; Wait for current moves to finish
