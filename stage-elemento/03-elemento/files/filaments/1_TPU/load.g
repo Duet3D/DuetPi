@@ -5,6 +5,6 @@
     M118 P0 S"Loading TPU"
     M83
     G1 E10 F120
-    G1 E70 F1200
+    G1 E70 F120
     G1 E50 F100
     M400
