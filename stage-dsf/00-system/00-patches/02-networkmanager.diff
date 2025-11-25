@@ -1,0 +1,9 @@
+--- stage-dsf.orig/rootfs/etc/NetworkManager/NetworkManager.conf
++++ stage-dsf/rootfs/etc/NetworkManager/NetworkManager.conf
+@@ -1,5 +1,6 @@
+ [main]
+ plugins=ifupdown,keyfile
++dns=dnsmasq
+ 
+ [ifupdown]
+ managed=false
