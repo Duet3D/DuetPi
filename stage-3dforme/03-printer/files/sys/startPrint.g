@@ -1,0 +1,3 @@
+M118 S"Print Start"
+M300 S4000 P1000
+G4 P500

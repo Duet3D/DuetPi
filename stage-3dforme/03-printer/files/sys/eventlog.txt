@@ -1,0 +1,50 @@
+2023-01-27 16:11:50 Event logging started
+2023-01-27 16:13:56 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:13:56 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:13:57 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:13:57 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:13:57 Error: M104: Invalid tool number
+2023-01-27 16:13:57 Print End
+2023-01-27 16:13:57 Extruded Material = 49.7
+2023-01-27 16:13:57 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:13:57 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:13:57 Done printing file
+2023-01-27 16:13:57 Done printing file
+2023-01-27 16:13:57 Finished printing file 0:/gcodes/FarmaTest.gcode, print time was 0h 5m
+2023-01-27 16:14:52 File 0:/gcodes/FarmaTest.gcode selected for printing
+2023-01-27 16:14:52 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:14:52 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:14:52 Print Start
+2023-01-27 16:14:52 L1
+2023-01-27 16:14:52 L2
+2023-01-27 16:14:52 L3
+2023-01-27 16:14:52 Extruder 0 has no filament sensor
+2023-01-27 16:14:52 Error: in file macro line 6: M591: parameter 'D' too high
+2023-01-27 16:14:52 Extruder 0 has no filament sensor
+2023-01-27 16:14:52 Error: in file macro line 6: M591: parameter 'D' too high
+2023-01-27 16:15:15 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:15:15 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:15:17 Cleaning...
+2023-01-27 16:15:21 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:15:21 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:15:34 Printing...
+2023-01-27 16:20:06 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:20:06 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:20:07 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:20:07 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:20:07 Error: M104: Invalid tool number
+2023-01-27 16:20:07 Print End
+2023-01-27 16:20:07 Extruded Material = 49.7
+2023-01-27 16:20:07 Error: Can't turn heater 1 on while in fault state
+2023-01-27 16:20:07 Error: Can't turn heater 2 on while in fault state
+2023-01-27 16:20:07 Done printing file
+2023-01-27 16:20:07 Done printing file
+2023-01-27 16:20:07 Finished printing file 0:/gcodes/FarmaTest.gcode, print time was 0h 5m

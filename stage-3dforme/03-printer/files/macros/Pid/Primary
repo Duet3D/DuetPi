@@ -1,0 +1,6 @@
+; Macro to tune primary heater as tool
+; start with all heaters at ambient
+
+T0 P0 ; select tool and suppress tool change macros
+G10 P0 S0:195 R0:195; set secondary heater to 190 active and standby
+M303 T0 S195 ; tune primary heater as tool

@@ -1,0 +1,6 @@
+build-essential
+cmake
+libevent-dev
+libjpeg-dev
+libbsd-dev
+git

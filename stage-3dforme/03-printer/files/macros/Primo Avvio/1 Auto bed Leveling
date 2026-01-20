@@ -1,0 +1,5 @@
+M561
+M290 R0 S0
+M190 S55
+M98 P"0:/sys/homeall.g"
+G29 S0
