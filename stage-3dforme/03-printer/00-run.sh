@@ -29,13 +29,13 @@ cp -p files/TC.conf "${ROOTFS_DIR}/opt/dsf/sd/sys/TC.conf"
 
 install -m 644 -v files/wpa_supplicant.conf "${ROOTFS_DIR}/boot/firmware/"
 
-install -m 644 -v files/720_1280_background.png "${ROOTFS_DIR}/usr/share/wallpapers/720_1280_background.png"
+install -m 644 -v files/3dforme.png "${ROOTFS_DIR}/usr/share/wallpapers/3dforme.png"
 
 on_chroot << EOF
 chown -R dsf:dsf /opt/dsf/sd/*
 systemctl disable bluetooth 
 systemctl enable ssh
 
-update-alternatives --install /usr/share/desktop-base/720_1280_background.png desktop-background /usr/share/wallpapers/720_1280_background.png 80
-update-alternatives --set desktop-background /usr/share/wallpapers/720_1280_background.png
+update-alternatives --install /usr/share/desktop-base/3dforme.png desktop-background /usr/share/wallpapers/3dforme.png 80
+update-alternatives --set desktop-background /usr/share/wallpapers/3dforme.png
 EOF

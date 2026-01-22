@@ -1,7 +1,7 @@
 export ENABLE_SSH=1
-export STAGE_LIST="stage0 stage1 stage2 stage-dsf stage3 stage4 stage-elemento"
-export IMG_NAME="ElementoTC"
-export TARGET_HOSTNAME="ElementoTC"
+export STAGE_LIST="stage0 stage1 stage2 stage-dsf stage3 stage4 stage-3dforme"
+export IMG_NAME="3dforme"
+export TARGET_HOSTNAME="3dforme"
 export DEPLOY_COMPRESSION="xz"
 export FIRST_USER_NAME="pi"
 export FIRST_USER_PASS="f@6brix"

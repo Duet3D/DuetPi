@@ -1,2 +1,4 @@
 bossa
 wmctrl
+xserver-xorg-input-libinput
+xserver-xorg-input-synaptics
