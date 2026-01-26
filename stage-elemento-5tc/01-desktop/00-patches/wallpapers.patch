@@ -1,0 +1,22 @@
+--- stage-dsf-gui.orig/rootfs/etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf
++++ stage-dsf-gui/rootfs/etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf
+@@ -1,7 +1,7 @@
+ [*]
+ wallpaper_mode=crop
+ wallpaper_common=1
+-wallpaper=/usr/share/rpd-wallpaper/fisherman.jpg
++wallpaper=/etc/alternatives/desktop-background
+ desktop_bg=#d6d6d3d3dede
+ desktop_fg=#e8e8e8e8e8e8
+ desktop_shadow=#d6d6d3d3dede
+--- stage-dsf-gui.orig/rootfs/etc/xdg/pcmanfm/LXDE-pi/desktop-items-1.conf
++++ stage-dsf-gui/rootfs/etc/xdg/pcmanfm/LXDE-pi/desktop-items-1.conf
+@@ -1,7 +1,7 @@
+ [*]
+ wallpaper_mode=crop
+ wallpaper_common=1
+-wallpaper=/usr/share/rpd-wallpaper/fisherman.jpg
++wallpaper=/etc/alternatives/desktop-background
+ desktop_bg=#d6d6d3d3dede
+ desktop_fg=#e8e8e8e8e8e8
+ desktop_shadow=#d6d6d3d3dede
