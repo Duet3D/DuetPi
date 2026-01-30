@@ -27,6 +27,7 @@ ExecStart=/usr/local/bin/ustreamer \
   --resolution=1920x1080 \
   --desired-fps=15 \
   --persistent \
+  --rotate=180 \
   --no-log-colors \
   --drop-same-frames=30 \
   --host=0.0.0.0 \
