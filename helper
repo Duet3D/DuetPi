@@ -3,3 +3,5 @@ sudo docker run -it --privileged --volumes-from=pigen_work pi-gen /bin/bash
 sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker-preserve.sh -c config_um2 
 
 sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker-preserve.sh -c config_5tc
+
+sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker-preserve.sh -c config_3dforme

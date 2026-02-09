@@ -1,0 +1,7 @@
+;Calibrate top tool heater.
+;Set minimum temperature for the other tool
+
+T0 P0 ; select tool and suppress tool change macros
+G10 P0 S0:160 R0:160 ; set secondary heater to 190 active and standby
+M116
+M303 T0 H1 S205 F1 P0.7 ; tune primary heater as tool

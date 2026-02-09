@@ -1,0 +1,26 @@
+[
+    {
+        "cmd_code": "M1201",
+        "cmd_name": "OpenDoor",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_open.py",
+        "cmd_enabled": true,
+        "cmd_timeout": "5",
+        "cmd_capture_output": false
+    },
+    {
+        "cmd_code": "M1202",
+        "cmd_name": "LockDoor",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_lock.py",
+        "cmd_enabled": true,
+        "cmd_timeout": "5",
+        "cmd_capture_output": false
+    },
+    {
+        "cmd_code": "M1203",
+        "cmd_name": "door_init",
+        "cmd_command": "python3 /opt/dsf/sd/sys/ExecOnMcode/door_init.py",
+        "cmd_enabled": true,
+        "cmd_timeout": "5",
+        "cmd_capture_output": false
+    }
+]
