@@ -1,0 +1,12 @@
+bossa-cli
+gpiod
+minicom
+vim
+dnsmasq
+openbsd-inetd
+hostapd
+proftpd-core
+telnetd
+python3-pip
+libcamera-apps
+libcamera-tools

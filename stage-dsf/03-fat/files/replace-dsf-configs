@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [[ "$(sha256sum /boot/firmware/sys/config.g | cut -d ' ' -f 1)" != "CONFIG_G_SHA256SUM" ]]; then
+	# Overwrite sys files
+	cp -rf /boot/firmware/sys/* /opt/dsf/sd/sys/
+
+	# Overwite filament files
+	if [[ -d /boot/firmware/filaments ]]; then
+		cp -rf /boot/firmware/filaments/* /opt/dsf/sd/filaments/
+	fi
+
+	# Overwrite gcode files
+	if [[ -d /boot/firmware/gcodes ]]; then
+		cp -rf /boot/firmware/gcodes/* /opt/dsf/sd/gcodes/
+	fi
+
+	# Overwrite menu files
+	if [[ -d /boot/firmware/menu ]]; then
+		cp -rf /boot/firmware/menu/* /opt/dsf/sd/menu/
+	fi
+
+	# Overwite macro files
+	if [[ -d /boot/firmware/macros ]]; then
+		cp -rf /boot/firmware/macros/* /opt/dsf/sd/macros/
+	fi
+
+	# Adjust ownership and permissions again
+	chown -R dsf:dsf /opt/dsf/sd
+	chmod -R 660 /opt/dsf/sd/**
+	chmod -R 770 /opt/dsf/sd/**/
+fi
+

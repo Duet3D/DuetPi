@@ -1,0 +1,22 @@
+--- stage-dsf.orig/rootfs/etc/apt/apt.conf.d/20auto-upgrades
++++ stage-dsf/rootfs/etc/apt/apt.conf.d/20auto-upgrades
+@@ -1,2 +1,2 @@
+-APT::Periodic::Update-Package-Lists "1";
+-APT::Periodic::Unattended-Upgrade "1";
++APT::Periodic::Update-Package-Lists "0";
++APT::Periodic::Unattended-Upgrade "0";
+--- stage-dsf.orig/rootfs/etc/apt/apt.conf.d/50unattended-upgrades
++++ stage-dsf/rootfs/etc/apt/apt.conf.d/50unattended-upgrades
+@@ -28,7 +28,11 @@ Unattended-Upgrade::Origins-Pattern {
+         // but the Debian release itself will not be automatically upgraded.
+ //      "origin=Debian,codename=${distro_codename}-updates";
+ //      "origin=Debian,codename=${distro_codename}-proposed-updates";
+-        "origin=Debian,codename=${distro_codename},label=Debian";
++//      "origin=Debian,codename=${distro_codename},label=Debian";
++
++        // Upgrade DuetPi components via Duet3D package server
++        "site=pkg.duet3d.com";
++
+         "origin=Debian,codename=${distro_codename},label=Debian-Security";
+         "origin=Debian,codename=${distro_codename}-security,label=Debian-Security";
+ //      "o=Debian Backports,n=${distro_codename}-backports,l=Debian Backports";

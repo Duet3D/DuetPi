@@ -1,0 +1,7 @@
+--- stage-dsf-gui.orig/rootfs/etc/xdg/lxsession/rpd-x/autostart
++++ stage-dsf-gui/rootfs/etc/xdg/lxsession/rpd-x/autostart
+@@ -1,3 +1,4 @@
+ @lxpanel-pi
+ @pcmanfm-pi
+ @xscreensaver -no-splash
++@launch-dwc

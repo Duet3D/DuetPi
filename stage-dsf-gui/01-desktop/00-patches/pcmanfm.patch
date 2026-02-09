@@ -1,0 +1,54 @@
+--- stage-dsf-gui.orig/rootfs/etc/xdg/pcmanfm/default/pcmanfm.conf
++++ stage-dsf-gui/rootfs/etc/xdg/pcmanfm/default/pcmanfm.conf
+@@ -2,9 +2,9 @@
+ bm_open_method=0
+ 
+ [volume]
+-mount_on_startup=1
+-mount_removable=1
+-autorun=1
++mount_on_startup=0
++mount_removable=0
++autorun=0
+ 
+ [desktop]
+ wallpaper_mode=0
+--- stage-dsf-gui.orig/rootfs/etc/xdg/libfm/libfm.conf
++++ stage-dsf-gui/rootfs/etc/xdg/libfm/libfm.conf
+@@ -1,5 +1,5 @@
+ [config]
+-single_click=0
++single_click=1
+ use_trash=1
+ confirm_del=1
+ terminal=x-terminal-emulator %s
+@@ -7,6 +7,7 @@ thumbnail_local=1
+ thumbnail_max=2048
+ cutdown_menus=1
+ real_expanders=1
++quick_exec=1
+ 
+ [ui]
+ big_icon_size=48
+--- stage-dsf-gui.orig/rootfs/etc/xdg/pcmanfm/default/desktop-items-0.conf
++++ stage-dsf-gui/rootfs/etc/xdg/pcmanfm/default/desktop-items-0.conf
+@@ -1,7 +1,7 @@
+ [*]
+ wallpaper_mode=crop
+ wallpaper_common=1
+-wallpaper=/usr/share/rpd-wallpaper/sunrise.jpg
++wallpaper=/usr/share/rpd-wallpaper/duet3d.png
+ desktop_bg=#d6d6d3d3dede
+ desktop_fg=#e8e8e8e8e8e8
+ desktop_shadow=#d6d6d3d3dede
+--- stage-dsf-gui.orig/rootfs/etc/xdg/pcmanfm/default/desktop-items-1.conf
++++ stage-dsf-gui/rootfs/etc/xdg/pcmanfm/default/desktop-items-1.conf
+@@ -1,7 +1,7 @@
+ [*]
+ wallpaper_mode=crop
+ wallpaper_common=1
+-wallpaper=/usr/share/rpd-wallpaper/sunrise.jpg
++wallpaper=/usr/share/rpd-wallpaper/duet3d.png
+ desktop_bg=#d6d6d3d3dede
+ desktop_fg=#e8e8e8e8e8e8
+ desktop_shadow=#d6d6d3d3dede

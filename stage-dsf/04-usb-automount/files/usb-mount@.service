@@ -1,0 +1,9 @@
+[Unit]
+Description=Mount USB Drive on %i
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecCondition=/bin/bash -c "! findmnt /dev/%i > /dev/null"
+ExecStart=/usr/bin/pmount --umask 000 /dev/%i /media/%i
+ExecStop=/usr/bin/pumount /dev/%i

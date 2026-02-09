@@ -1,0 +1,11 @@
+[Unit]
+Description=Replace default config files
+Before=duetcontrolserver.service
+
+[Service]
+ExecStart=/usr/bin/replace-dsf-configs
+ExecStartPost=systemctl disable replace-dsf-configs.service
+Type=oneshot
+
+[Install]
+WantedBy=basic.target
