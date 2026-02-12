@@ -1,7 +1,7 @@
 {
   "main": {
     "language": "en",
-    "lastHostname": "192.168.1.60",
+    "lastHostname": "",
     "darkTheme": true,
     "useBinaryPrefix": true,
     "disableAutoComplete": false,
@@ -25,7 +25,7 @@
     },
     "webcam": {
       "enabled": true,
-      "url": "http://192.168.1.60:8090/?action=stream",
+      "url": "http://IP:8090/?action=stream",
       "updateInterval": 4000,
       "liveUrl": "",
       "useFix": false,
@@ -34,10 +34,6 @@
       "flip": "none"
     },
     "enabledPlugins": [
-      "ObjectModelBrowser",
-      "HeightMap",
-      "OnScreenKeyboard",
-      "ExecOnMcode"
     ],
     "plugins": {}
   },
@@ -80,7 +76,7 @@
     "singleBedControl": false,
     "singleChamberControl": false,
     "spindleRPM": [10000, 75000, 5000, 2500, 1000, 0],
-    "enabledPlugins": ["ExecOnMcode"],
+    "enabledPlugins": [],
     "plugins": {}
   }
 }

@@ -5,3 +5,5 @@ sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker-preserve.sh -c config_um2
 sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker-preserve.sh -c config_5tc
 
 sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker-preserve.sh -c config_3dforme
+
+sudo CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker.sh -c config
