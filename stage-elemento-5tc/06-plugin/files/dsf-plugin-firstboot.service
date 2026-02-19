@@ -1,0 +1,18 @@
+[Unit]
+Description=DSF Plugin First-Boot Installer
+# Run after the network and DSF are up
+After=network-online.target duetcontrolserver.service
+Wants=network-online.target
+Requires=duetcontrolserver.service
+# Only run if the flag file exists (removed on success by the script via systemctl disable)
+ConditionPathExists=/opt/dsf-plugins-pending/.pending
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/install-dsf-plugin.sh
+RemainAfterExit=no
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
