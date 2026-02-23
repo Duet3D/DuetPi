@@ -1,14 +1,14 @@
 #!/bin/bash
 # install-dsf-plugin.sh
 # Runs once at first boot (after pi-gen first-run reboot) to install DSF plugins.
-# Managed by dsf-plugin-firstboot.service — deletes itself after success.
+# Managed by dsf-plugin-firstboot.service — disables itself after success.
 
 set -euo pipefail
 
 LOG="/var/log/dsf-plugin-firstboot.log"
 PLUGIN_DIR="/opt/dsf-plugins-pending"
 PLUGIN_MANAGER="/opt/dsf/bin/PluginManager"
-MAX_WAIT=120   # seconds to wait for DSF to become ready
+MAX_WAIT=120   # seconds to wait for DSF plugin service to be ready
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"
@@ -16,19 +16,19 @@ log() {
 
 log "=== DSF Plugin First-Boot Installer ==="
 
-# ── 1. Wait for DuetControlServer to be fully operational ──────────────────────
-log "Waiting for DuetControlServer to become ready (max ${MAX_WAIT}s)..."
+# ── 1. Wait for DuetControlServer AND Plugin Service to be fully operational ───
+log "Waiting for DuetControlServer and Plugin Service to become ready (max ${MAX_WAIT}s)..."
 elapsed=0
-until /opt/dsf/bin/PluginManager list &>/dev/null; do
+until output=$("$PLUGIN_MANAGER" list 2>&1) && ! echo "$output" | grep -qi "not started\|cannot\|failed\|error"; do
     if (( elapsed >= MAX_WAIT )); then
-        log "ERROR: DuetControlServer did not become ready in ${MAX_WAIT}s. Aborting."
+        log "ERROR: DSF Plugin Service did not become ready in ${MAX_WAIT}s. Aborting."
         exit 1
     fi
     sleep 5
     (( elapsed += 5 ))
     log "  ...still waiting (${elapsed}s elapsed)"
 done
-log "DuetControlServer is ready."
+log "DuetControlServer and Plugin Service are ready."
 
 # ── 2. Install every .zip found in the pending directory ───────────────────────
 if [[ ! -d "$PLUGIN_DIR" ]]; then
@@ -51,13 +51,17 @@ for plugin in "${plugins[@]}"; do
     cp "$plugin" "$tmp_copy"
 
     log "Installing plugin: $(basename "$plugin")"
-    if "$PLUGIN_MANAGER" install "$tmp_copy" >> "$LOG" 2>&1; then
-        log "  ✓ Successfully installed $(basename "$plugin")"
-        rm -f "$tmp_copy"
-    else
+    output=$("$PLUGIN_MANAGER" install "$tmp_copy" 2>&1)
+    echo "$output" >> "$LOG"
+
+    if echo "$output" | grep -qi "failed\|error\|not started\|cannot"; then
         log "  ✗ Failed to install $(basename "$plugin")"
+        log "  Output: $output"
         rm -f "$tmp_copy"
         all_ok=false
+    else
+        log "  ✓ Successfully installed $(basename "$plugin")"
+        rm -f "$tmp_copy"
     fi
 done
 
@@ -65,6 +69,8 @@ done
 if $all_ok; then
     log "All plugins installed successfully."
     systemctl disable dsf-plugin-firstboot.service >> "$LOG" 2>&1
+    # Remove the flag file so ConditionPathExists won't trigger even if re-enabled
+    rm -f "${PLUGIN_DIR}/.pending"
     log "Service disabled. First-boot installation complete."
 else
     log "One or more plugins failed to install. Service will NOT be disabled — will retry on next boot."

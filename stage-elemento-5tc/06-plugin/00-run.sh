@@ -1,9 +1,5 @@
 #!/bin/bash
 # pi-gen stage script — place this in your custom stage directory, e.g.:
-#   stage-custom/01-dsf-plugin-firstboot/01-run.sh
-#
-# Directory layout expected inside your pi-gen stage:
-#
 #   stage-custom/
 #   └── 01-dsf-plugin-firstboot/
 #       ├── 01-run.sh                        ← this file

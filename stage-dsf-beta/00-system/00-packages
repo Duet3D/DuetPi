@@ -10,3 +10,4 @@ telnetd
 python3-pip
 libcamera-apps
 libcamera-tools
+python3-dsf-python

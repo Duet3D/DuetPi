@@ -1,10 +1,10 @@
 [Unit]
 Description=DSF Plugin First-Boot Installer
-# Run after the network and DSF are up
-After=network-online.target duetcontrolserver.service
+# Aspetta che DCS e ENTRAMBI i plugin service siano completamente avviati
+After=network-online.target duetcontrolserver.service duetpluginservice.service duetpluginservice-root.service
 Wants=network-online.target
-Requires=duetcontrolserver.service
-# Only run if the flag file exists (removed on success by the script via systemctl disable)
+Requires=duetcontrolserver.service duetpluginservice.service duetpluginservice-root.service
+# Solo se il flag file esiste (rimosso dallo script dopo il successo)
 ConditionPathExists=/opt/dsf-plugins-pending/.pending
 
 [Service]
