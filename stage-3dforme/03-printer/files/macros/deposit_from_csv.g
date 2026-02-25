@@ -11,7 +11,7 @@
 ;   J = temperatura T1 (°C, opzionale)
 ; ============================================================
 
-G28
+
 
 if {!exists(param.N)}
   abort "Parametro richiesto: N<file>"
@@ -21,7 +21,7 @@ if {!exists(param.V)}
   abort "Parametro richiesto: V<volume>"
 if {!exists(param.C)}
   abort "Parametro richiesto: C<TEMP0>"
-  if {!exists(param.J)}
+if {!exists(param.J)}
   abort "Parametro richiesto: J<TEMP1>"
   
 var feed = exists(param.F) ? param.F : 1000
@@ -29,15 +29,18 @@ var eFeed = exists(param.E) ? param.E : 100
 var file = "/sys/points/" ^ param.N ^ ".csv"
 
 ; Gestione temperature T0 e T1
-if {exists(param.C)}
-  echo ">>> Impostazione temperatura T0: " ^ param.C ^ "°C"
-  G10 P0 S{param.C}:{param.J}         ; Imposta temperatura attiva T0
-  ;M116 P0                       ; Attendi che T0 raggiunga la temperatura
-  
+if {exists(param.C) && exists(param.J)}
+  echo ">>> Impostazione temperatura T0: " ^ param.C ^ "°C"  ^ param.J ^ "°C"
+  M568 P0 S{param.C}:{param.J}; Imposta temperatura attiva T0
+  M116 P0                       ; Attendi che T0 raggiunga la temperatura
+else
+  abort "Temperatura non settata"
       ; Attendi che T1 raggiunga la temperatura
 
 if {!fileexists(var.file)}
   abort "File CSV non trovato: " ^ var.file
+
+G28
 
 echo ">>> Inizio lettura punti da: " ^ var.file
 echo ">>> Z impostato: " ^ param.Z ^ " mm"
@@ -103,6 +106,8 @@ while true
 
 echo ">>> Deposizione completata: " ^ var.pointCount ^ " punti depositati"
 echo ">>> Volume totale: " ^ {var.pointCount * param.V} ^ " mm³"
+
+M568 P0 S0:0
 
 ; Ritrazione finale opzionale
 ; G1 E-2 F300
