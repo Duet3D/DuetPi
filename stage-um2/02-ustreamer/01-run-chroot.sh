@@ -22,7 +22,8 @@ After=network.target
 [Service]
 ExecStart=/usr/local/bin/ustreamer \
   --device=/dev/video0 \
-  --resolution=1920x1080 \
+  --format=mjpeg  \
+  --resolution=640x480  \
   --desired-fps=15 \
   --persistent \
   --no-log-colors \
