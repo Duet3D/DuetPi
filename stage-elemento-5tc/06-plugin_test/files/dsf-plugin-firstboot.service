@@ -1,0 +1,19 @@
+[Unit]
+Description=DSF Plugin First-Boot Installer
+# After= senza Requires= evita il ciclo di dipendenze con multi-user.target
+After=network-online.target duetcontrolserver.service duetpluginservice.service duetpluginservice-root.service
+Wants=network-online.target duetcontrolserver.service duetpluginservice.service duetpluginservice-root.service
+# Solo se il flag file esiste (rimosso dallo script dopo il successo)
+ConditionPathExists=/opt/dsf-plugins-pending/.pending
+
+[Service]
+Type=oneshot
+# Attesa extra prima di eseguire — dà tempo ai plugin service di inizializzarsi internamente
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/local/bin/install-dsf-plugin.sh
+RemainAfterExit=no
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
