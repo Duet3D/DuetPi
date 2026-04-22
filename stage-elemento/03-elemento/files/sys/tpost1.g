@@ -6,7 +6,7 @@ if state.status == "processing" && job.duration != null
     M83
     ;G1 E5 F200
 	M564 H1 S0
-	G0 X{global.xPT1Position}  Y{-global.yPT1Position+11} F5000
+	G0 X{global.xPT1Position + tools[1].offsets[0]}  Y{-global.yPT1Position+11} F5000
 	G0 Y{move.axes[1].min - 40 } F6000 
 	G0 Y{move.axes[1].min - 70 } F6000 
 	G0 Y{move.axes[1].min - 40 } F6000
