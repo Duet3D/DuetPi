@@ -1,0 +1,48 @@
+;##FE31-00000-001
+; ============================================================
+; TC.conf — Tool Changer config + Boot configuration
+;
+; Le righe con "; CHIAVE="valore"" vengono lette dallo script
+; firstboot-tailscale.sh al primo avvio. Sono commenti validi
+; per RepRapFirmware e non influenzano il comportamento della stampante.
+; ============================================================
+
+; ----- IDENTIFICAZIONE STAMPANTE -----
+; PRINTER_SERIAL="FE31-00000-001"
+; PRINTER_NAME="ElementoTC-SN001"
+
+; ----- TAILSCALE -----
+; Chiave di autenticazione (obbligatoria per il login automatico).
+; Generala su https://login.tailscale.com/admin/settings/keys
+; Usa una chiave "reusable" ed "ephemeral:false" per stampanti permanenti.
+; TAILSCALE_AUTHKEY="tskey-auth-kcef7cB6fy11CNTRL-Sj7UWQjR1TVkR2jk2prHTVDihwB6bQnGj"
+
+; Nome con cui la stampante compare nella rete Tailscale.
+; Se omesso viene usato l'hostname di sistema (es. ElementoTC).
+; Consiglio: usare seriale per distinguere più macchine uguali.
+; TAILSCALE_HOSTNAME="elemento-tc-sn001"
+
+; Abilita SSH via Tailscale (0=no, 1=sì).
+; Con 1 puoi fare "ssh pi@elemento-tc-sn001" dalla rete tailscale
+; senza esporre la porta 22 su internet.
+; TAILSCALE_SSH="1"
+
+; Accetta il DNS di Tailscale (MagicDNS). Default 0 per non
+; sovrascrivere il DNS della rete locale della stampante.
+; TAILSCALE_ACCEPT_DNS="0"
+
+; ============================================================
+; GCODE Tool Changer — eseguito da M98 P"TC.conf" in config.g
+; ============================================================
+
+; Miscellaneous
+if sensors.gpIn[7].value == 1 && sensors.gpIn[8].value == 1
+    M118 P0 S"No extruder in printer, please resolve conflict"
+if sensors.gpIn[6].value == 1 && sensors.gpIn[7].value == 1
+    M118 P0 S"Extruder T0 on TC"
+    T0 P0
+    G92 C60
+if sensors.gpIn[6].value == 1 && sensors.gpIn[8].value == 1
+    M118 P0 S"Extruder T1 on TC"
+    T1 P0
+    G92 C60

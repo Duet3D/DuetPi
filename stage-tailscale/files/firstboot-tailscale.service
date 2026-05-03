@@ -1,0 +1,14 @@
+[Unit]
+Description=First boot Tailscale setup
+After=network-online.target tailscaled.service
+Wants=network-online.target tailscaled.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/firstboot-tailscale.sh
+RemainAfterExit=yes
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target
