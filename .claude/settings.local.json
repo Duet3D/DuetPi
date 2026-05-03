@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -Depth 2)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(ConvertTo-Json)",
+      "Bash(Out-String)",
+      "PowerShell(cd \"c:\\\\Users\\\\angelo\\\\Documents\\\\Claude\\\\Projects\\\\Duet3D Printer\\\\DuetPi\"; Get-ChildItem -Force | Format-Table -Property Name, @{Name='Type'; Expression={if\\($_.PSIsContainer\\) {'DIR'} else {'FILE'}}}  -AutoSize)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\angelo\\\\Documents\\\\Claude\\\\Projects\\\\Duet3D Printer\\\\DuetPi\\\\stage-elemento-5tc\\\\\" -Recurse -Force | Select-Object FullName | head -100)"
+    ]
+  }
+}

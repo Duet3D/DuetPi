@@ -12,13 +12,13 @@ if (move.axes[0].homed = false || move.axes[1].homed = false)
 G0 X{global.xPT1Position + tools[1].offsets[0]}  Y{move.axes[1].min} F5000  
 M400
 M564 H0 S0
-G0 X{global.xPT1Position + tools[1].offsets[0]}  Y{move.axes[1].min - global.yPT0Position + 11} F5000
+G0 X{global.xPT1Position + tools[1].offsets[0]}  Y{move.axes[1].min - global.yPT1Position + 11} F5000
 M400
 G0 Y{move.axes[1].min - global.yPT1Position} F5000
 M400
 G0 C0 F5000
 M400
-G0 Y{-global.yPT0Position + 11} F1000
+G0 Y{-global.yPT1Position + 11} F1000
 G0 Y{move.axes[1].min} F5000
 M400
 M564 H1 S1
