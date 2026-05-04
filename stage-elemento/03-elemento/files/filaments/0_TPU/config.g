@@ -1,4 +1,4 @@
-M572 D0 S0.060							        ;Pressure Adv PLA settings
-M591 D0 L28 A0 E10                          ;Filament Monitor settings
-M201 E500:500
-M566 E60:60
+M572 D0 S0.0							        ;Pressure Adv PLA settings
+M591 D0 L26 S2 A0 E3 R30:160                         ;Filament Monitor settings
+M201 E600:600
+M566 E50:50

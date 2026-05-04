@@ -21,7 +21,7 @@ M569 P70.0 S0 D4                                       ; driver 70.0 goes forwar
 M569 P71.0 S1 D4                                       ; driver 71.0 goes forwards (Y axis)
 M569 P72.0 S1 D4                                       ; driver 72.0 goes forwards (Y axis)
 M569 P73.0 S0 D4                                       ; driver 73.0 goes forwards (ZL axis)
-M569 P74.0 S0 D2                                       ; driver 74.0 goes forwards (Z axis)
+M569 P74.0 S0 D4                                       ; driver 74.0 goes forwards (Z axis)
 M569 P75.0 S0 D4                                       ; driver 75.0 goes forwards (Z axis)
 M569 P121.0 S0 D2                                      ; driver 121.0 goes forwards (extruder 0)
 M569 P122.0 S0 D2                                      ; driver 122.0 goes forwards (extruder 1)
@@ -42,7 +42,7 @@ M584 X70.0 Y71.0:72.0 Z73.0:74.0:75.0                  ; set axis mapping
 M350 X16 Y16 Z16 I1                                    ; configure microstepping with interpolation
 M906 X2200 Y2200 Z2000                                 ; set axis driver currents
 M92 X100 Y100 Z640                                     ; configure steps per mm
-M208 X-30:1100 Y-10:605 Z0:620                         ; set minimum and maximum axis limits
+M208 X-30:1100 Y-10:605 Z0:650                         ; set minimum and maximum axis limits
 M566 X600 Y600 Z20 P1                                  ; set maximum instantaneous speed changes (mm/min)
 M203 X18000 Y18000 Z1500                                 ; set maximum speeds (mm/min)
 M201 X10000 Y10000 Z40                                   ; set accelerations (mm/s^2)
@@ -52,7 +52,7 @@ M204 P10000 T14000
 M584 E121.0:122.0                                      ; set extruder mapping
 M350 E4:4 I1                                           ; configure microstepping with interpolation
 M906 E1000:1000                                        ; set extruder driver currents
-M92 E260:232                                           ; configure steps per mm
+M92 E260:232                                           ; configure steps per mm t0-1.75 t1-2.85
 M566 E120:120                                        ; set maximum instantaneous speed changes (mm/min)
 M203 E10000:10000                                      ; set maximum speeds (mm/min)
 M201 E5000:5000                                          ; set accelerations (mm/s^2)
