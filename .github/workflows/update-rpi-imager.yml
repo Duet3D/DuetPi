@@ -1,0 +1,136 @@
+name: Update rpi-imager.json
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to process (e.g. bookworm-2025-06-11)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Determine release tag and date
+        id: meta
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            TAG="${{ github.event.inputs.tag }}"
+          else
+            TAG="${{ github.event.release.tag_name }}"
+          fi
+          if [[ "$TAG" =~ ([0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
+            DATE="${BASH_REMATCH[1]}"
+          else
+            echo "Cannot extract YYYY-MM-DD date from tag: $TAG"
+            exit 1
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout rpi-imager branch
+        uses: actions/checkout@v5
+        with:
+          ref: rpi-imager
+          fetch-depth: 1
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq unzip
+
+      - name: Free up runner disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
+          df -h /
+
+      - name: Update rpi-imager.json from release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          DATE: ${{ steps.meta.outputs.date }}
+        run: |
+          set -euo pipefail
+
+          # os_list index -> asset filename suffix (must match order in rpi-imager.json)
+          SUFFIXES=("DuetPi-arm64" "DuetPi" "DuetPi-lite-arm64" "DuetPi-lite")
+
+          WORKDIR="$(mktemp -d)"
+          trap 'rm -rf "$WORKDIR"' EXIT
+
+          for i in "${!SUFFIXES[@]}"; do
+            SUFFIX="${SUFFIXES[$i]}"
+            ZIP_NAME="image_${DATE}-${SUFFIX}.zip"
+            URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/${ZIP_NAME}"
+
+            echo "::group::[$((i+1))/${#SUFFIXES[@]}] ${ZIP_NAME}"
+
+            rm -f "${WORKDIR}"/*.zip "${WORKDIR}"/*.img
+
+            echo "Downloading ${ZIP_NAME}"
+            gh release download "${TAG}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --pattern "${ZIP_NAME}" \
+              --dir "${WORKDIR}"
+
+            ZIP_PATH="${WORKDIR}/${ZIP_NAME}"
+            ZIP_SIZE=$(stat -c%s "${ZIP_PATH}")
+            ZIP_SHA=$(sha256sum "${ZIP_PATH}" | cut -d' ' -f1)
+            echo "zip: size=${ZIP_SIZE} sha256=${ZIP_SHA}"
+
+            echo "Extracting ${ZIP_NAME}"
+            unzip -o "${ZIP_PATH}" '*.img' -d "${WORKDIR}"
+            rm -f "${ZIP_PATH}"
+
+            IMG_PATH="$(find "${WORKDIR}" -maxdepth 1 -name '*.img' -print -quit)"
+            if [[ -z "${IMG_PATH}" ]]; then
+              echo "No .img found inside ${ZIP_NAME}"
+              exit 1
+            fi
+            IMG_SIZE=$(stat -c%s "${IMG_PATH}")
+            IMG_SHA=$(sha256sum "${IMG_PATH}" | cut -d' ' -f1)
+            echo "img: size=${IMG_SIZE} sha256=${IMG_SHA}"
+
+            rm -f "${IMG_PATH}"
+
+            jq --indent 2 \
+              --argjson i "${i}" \
+              --arg url "${URL}" \
+              --arg date "${DATE}" \
+              --argjson zsize "${ZIP_SIZE}" \
+              --arg zsha "${ZIP_SHA}" \
+              --argjson isize "${IMG_SIZE}" \
+              --arg isha "${IMG_SHA}" \
+              '.os_list[$i].url = $url
+               | .os_list[$i].release_date = $date
+               | .os_list[$i].extract_size = $isize
+               | .os_list[$i].extract_sha256 = $isha
+               | .os_list[$i].image_download_size = $zsize
+               | .os_list[$i].image_download_sha256 = $zsha' \
+              rpi-imager.json > rpi-imager.json.tmp
+            mv rpi-imager.json.tmp rpi-imager.json
+
+            df -h /
+            echo "::endgroup::"
+          done
+
+      - name: Commit and push changes
+        env:
+          TAG: ${{ steps.meta.outputs.tag }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- rpi-imager.json; then
+            echo "rpi-imager.json is already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rpi-imager.json
+          git commit -m "Update rpi-imager.json for ${TAG}"
+          git push origin HEAD:rpi-imager
