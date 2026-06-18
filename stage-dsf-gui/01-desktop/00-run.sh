@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-install -m 644 files/duet3d.png "${ROOTFS_DIR}/usr/share/wallpapers/duet3d.png"
+install -m 644 files/duet3d.png "${ROOTFS_DIR}/usr/share/rpd-wallpaper/duet3d.png"
 install -m 644 files/dwc.png "${ROOTFS_DIR}/usr/share/icons/dwc.png"
 
 install -m 755 -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop"
@@ -15,12 +15,5 @@ on_chroot << EOF
 systemctl disable cups cups-browsed
 apt-get purge -y system-config-printer
 apt-get autoremove -y
-
-update-alternatives --install /usr/share/desktop-base/duet3d.png desktop-background /usr/share/wallpapers/duet3d.png 80
-update-alternatives --set desktop-background /usr/share/wallpapers/duet3d.png
-
-raspi-config nonint do_camera 0
-raspi-config nonint do_glamor 0
-
-raspi-config nonint do_wayland W2
 EOF
+
