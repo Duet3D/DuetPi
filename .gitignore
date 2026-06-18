@@ -5,3 +5,4 @@ SKIP
 SKIP_IMAGES
 .pc
 *-pc
+.vscode/

@@ -29,9 +29,9 @@ below.
 To install the required dependencies for `pi-gen` you should run:
 
 ```bash
-apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip \
+apt install coreutils quilt parted qemu-user-binfmt debootstrap zerofree zip \
 dosfstools e2fsprogs libarchive-tools libcap2-bin grep rsync xz-utils file git curl bc \
-gpg pigz xxd arch-test bmap-tools
+gpg pigz xxd arch-test bmap-tools kmod
 ```
 
 The file `depends` contains a list of tools needed.  The format of this
@@ -64,7 +64,7 @@ environment variables.
 
 The following environment variables are supported:
 
- * `IMG_NAME` (Default: `raspios-$RELEASE-$ARCH`, for example: `raspios-bookworm-armhf`)
+ * `IMG_NAME` (Default: `raspios-$RELEASE-$ARCH`, for example: `raspios-trixie-armhf`)
 
    The name of the image to build with the current stage directories. Use this
    variable to set the root name of your OS, eg `IMG_NAME=Frobulator`.
@@ -75,7 +75,7 @@ The following environment variables are supported:
    The release name to use in `/etc/issue.txt`. The default should only be used
    for official Raspberry Pi builds.
 
-* `RELEASE` (Default: `bookworm`)
+* `RELEASE` (Default: `trixie`)
 
    The release version to build images against. Valid values are any supported
    Debian release. However, since different releases will have different sets of
@@ -183,6 +183,8 @@ The following environment variables are supported:
    a name chosen by the final user. This security feature is designed to prevent shipping images
    with a default username and help prevent malicious actors from taking over your devices.
 
+   If the FIRST_USER_NAME is set to `pi` and no `FIRST_USER_PASS` is set, the setup wizard will be launched on first boot to allow the user to set the password.
+
  * `FIRST_USER_PASS` (Default: unset)
 
    Password for the first user. If unset, the account is locked.
@@ -192,6 +194,14 @@ The following environment variables are supported:
    Disable the renaming of the first user during the first boot. This make it so `FIRST_USER_NAME`
    stays activated. `FIRST_USER_PASS` must be set for this to work. Please be aware of the implied
    security risk of defining a default username and password for your devices.
+
+ * `PASSWORDLESS_SUDO` (Default: `0`)
+
+   Setting to `1` will enable passwordless sudo for the first user. This allows
+   the user to run commands with sudo without entering a password. Note that
+   this is a security risk and should only be enabled if you understand the
+   implications. The user will still be able to use sudo with a password even
+   when this is set to `0`.
 
  * `WPA_COUNTRY` (Default: unset)
 
@@ -227,6 +237,10 @@ The following environment variables are supported:
  * `EXPORT_CONFIG_DIR` (Default: `$BASE_DIR/export-image`)
 
     If set, use this directory path as the location of scripts to run when generating images. An absolute or relative path can be given for a location outside the pi-gen directory.
+
+ * `ENABLE_CLOUD_INIT` (Default: `1`)
+
+    If set to `1`, cloud-init and netplan will be installed and configured. This will allow you to configure your Raspberry Pi using cloud-init configuration files. The cloud-init configuration files should be placed in the bootfs or by editing the files in `stage2/04-cloud-init/files`. Cloud-init will be configured to read them on first boot.
 
 A simple example for building Raspberry Pi OS:
 
