@@ -6,8 +6,11 @@ install -m644 files/duet3d.plymouth "${ROOTFS_DIR}/usr/share/plymouth/themes/due
 install -m644 files/duet3d.script "${ROOTFS_DIR}/usr/share/plymouth/themes/duet3d/duet3d.script"
 install -m644 files/splash.png "${ROOTFS_DIR}/usr/share/plymouth/themes/duet3d/splash.png"
 
-# Change default Plytmouth theme and turn off SSH in the GUI variant
+# Pin the theme via plymouthd.conf so rpd-plym-splash upgrades cannot revert it
+install -m644 files/plymouthd.conf "${ROOTFS_DIR}/etc/plymouth/plymouthd.conf"
+
+# Apply the theme (rebuilding the initramfs) and turn off SSH in the GUI variant
 on_chroot << EOF
-plymouth-set-default-theme duet3d
+plymouth-set-default-theme -R duet3d
 systemctl disable ssh
 EOF
