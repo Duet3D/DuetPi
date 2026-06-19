@@ -4,6 +4,9 @@ install -m 644 files/duet3d.png "${ROOTFS_DIR}/usr/share/rpd-wallpaper/duet3d.pn
 install -m 644 files/dwc.png "${ROOTFS_DIR}/usr/share/icons/dwc.png"
 install -Dm 644 files/password-store "${ROOTFS_DIR}/etc/chromium.d/password-store"
 
+# Override the packaged DWC launcher until these changes ship in duetwebcontrol
+install -m 755 files/launch-dwc "${ROOTFS_DIR}/usr/bin/launch-dwc"
+
 install -m 755 -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop"
 install -dm 755 -o 1000 -g 1000 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/.config"
 install -dm 755 -o 1000 -g 1000 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/.config/labwc"
