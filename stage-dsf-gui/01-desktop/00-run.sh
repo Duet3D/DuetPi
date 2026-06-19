@@ -15,15 +15,18 @@ install -m 644 -o 1000 -g 1000 files/wayfire.ini "${ROOTFS_DIR}/home/$FIRST_USER
 install -m 755 -o 1000 -g 1000 files/launch-dwc.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/launch-dwc.desktop"
 install -m 755 -o 1000 -g 1000 files/view-dcs-log.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/view-dcs-log.desktop"
 
-# Disable touch mouse-emulation in the stock labwc config so Chromium receives
-# native touch (a drag scrolls instead of selecting), and make the DWC window
-# borderless and maximized. Anchored on the stock Kodi rule and closing tag;
-# the greps fail the build if either anchor moves in a future release
+# Disable touch mouse-emulation in the stock labwc config - on every per-device
+# entry and as a fallback - so Chromium gets native touch (a drag scrolls rather
+# than selecting), and make the DWC window borderless and maximized. Anchored on
+# the stock Kodi rule; the checks fail the build if the anchor moves or any
+# mouse-emulation entry is left enabled
 rc_xml="${ROOTFS_DIR}/etc/xdg/labwc/rc.xml"
 sed -i 's#\(<windowRule identifier="Kodi" serverDecoration="yes" />\)#\1\n    <windowRule identifier="chrom*" serverDecoration="no"><action name="Maximize" /></windowRule>#' "$rc_xml"
+sed -i 's/mouseEmulation="yes"/mouseEmulation="no"/g' "$rc_xml"
 sed -i 's#</openbox_config>#  <touch mouseEmulation="no" />\n</openbox_config>#' "$rc_xml"
 grep -q 'identifier="chrom\*"' "$rc_xml"
-grep -q '<touch mouseEmulation="no"' "$rc_xml"
+grep -q '<touch mouseEmulation="no" />' "$rc_xml"
+if grep -q 'mouseEmulation="yes"' "$rc_xml"; then echo "labwc rc.xml: touch mouse-emulation still enabled" >&2; exit 1; fi
 
 on_chroot << EOF
 systemctl disable cups cups-browsed
