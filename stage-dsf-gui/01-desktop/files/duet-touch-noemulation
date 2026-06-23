@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# On the first graphical login, turn off labwc touch mouse-emulation so DWC gets native touch (a finger drag scrolls
+# instead of click-dragging). The stock "autotouch" helper creates ~/.config/labwc/rc.xml at session start with
+# mouseEmulation="yes"; this flips it to "no" exactly once and then records a marker, so a user who later re-enables
+# emulation by hand keeps that choice
+
+rc="$HOME/.config/labwc/rc.xml"
+marker="$HOME/.config/labwc/.touch-emulation-initialised"
+
+# Already done once: never touch the user's config again
+[ -e "$marker" ] && exit 0
+
+# autotouch is an XDG-autostart entry too with no defined ordering against this one, so wait for it to have written
+# a touch entry before acting
+n=0
+while [ "$n" -lt 15 ]; do
+	grep -qs mouseEmulation "$rc" && break
+	sleep 1
+	n=$((n + 1))
+done
+
+# No touch entry this session (e.g. no touchscreen attached yet): try again on the next login rather than marking
+# ourselves done
+grep -qs mouseEmulation "$rc" || exit 0
+
+if grep -qs 'mouseEmulation="yes"' "$rc"; then
+	sed -i 's/mouseEmulation="yes"/mouseEmulation="no"/g' "$rc"
+	labwc --reconfigure 2>/dev/null || pkill -HUP -x labwc
+fi
+
+touch "$marker"
