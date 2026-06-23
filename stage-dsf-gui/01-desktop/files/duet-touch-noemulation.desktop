@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Duet touch native-scroll setup
+Comment=Disable touch mouse-emulation once so DWC scrolls natively
+Exec=/usr/local/bin/duet-touch-noemulation
+Terminal=false
+Type=Application
+NoDisplay=true
