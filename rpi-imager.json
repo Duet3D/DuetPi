@@ -3,54 +3,70 @@
     {
       "name": "DuetPi (64-bit)",
       "description": "Raspberry Pi OS (Bookworm) with GUI and software for Duet3D controllers",
-      "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2025-06-11/image_2025-06-11-DuetPi-arm64.zip",
+      "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi-arm64.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
-      "release_date": "2025-06-11",
-      "extract_size": 6509559808,
-      "extract_sha256": "93aabeac5c104b8126c211a37175c8e26e43b9f1598cf691759933c45e095e23",
-      "image_download_size": 1891861986,
-      "image_download_sha256": "c014e8e462e6af63e4af5586d9e4931e96acef6920b7c8f4179ec2752af72cd2",
+      "release_date": "2026-06-23",
+      "extract_size": 5704253440,
+      "extract_sha256": "561c57536cc0ad0bf08165624f955852aa5d73e61d1157d2f7f74eee3e28c107",
+      "image_download_size": 1728408966,
+      "image_download_sha256": "128c643de950ea47f96ec8e1fdeecfdba06f6c37e346ff4f4905ffa3576f899a",
       "init_format": "systemd",
-      "devices": ["pi3-64bit", "pi4-64bit", "pi5-64bit"]
+      "devices": [
+        "pi3-64bit",
+        "pi4-64bit",
+        "pi5-64bit"
+      ]
     },
     {
       "name": "DuetPi (32-bit)",
       "description": "Raspberry Pi OS (Bookworm) with GUI and software for Duet3D controllers",
-      "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2025-06-11/image_2025-06-11-DuetPi.zip",
+      "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
-      "release_date": "2025-06-11",
-      "extract_size": 5754585088,
-      "extract_sha256": "5e08d4b6ec7a9d0d7d74f3662a81a9a65da045dc0b2e5d803cc4f0fea7183eaf",
-      "image_download_size": 1892496990,
-      "image_download_sha256": "cd9c94991a8b71e335e02fa715cbb8137ae184ff2646b9a2b8b33c420f918815",
+      "release_date": "2026-06-23",
+      "extract_size": 5041553408,
+      "extract_sha256": "769e7012bb33041028c23a83aa7fcd0aa2f2e27717070165cfd07a8fa85b0c40",
+      "image_download_size": 1671551131,
+      "image_download_sha256": "7a7eb428278b9b562083dbd5b9af1a90da7cfec97ef6e5c8ddf351586642fe58",
       "init_format": "systemd",
-      "devices": ["pi3-32bit", "pi4-32bit", "pi5-32bit"]
+      "devices": [
+        "pi3-32bit",
+        "pi4-32bit",
+        "pi5-32bit"
+      ]
     },
     {
       "name": "DuetPi Lite (64-bit)",
       "description": "Headless Raspberry Pi OS (Bookworm) with software for Duet3D controllers",
-      "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2025-06-11/image_2025-06-11-DuetPi-lite-arm64.zip",
+      "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi-lite-arm64.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
-      "release_date": "2025-06-11",
-      "extract_size": 3783262208,
-      "extract_sha256": "b3d40bcb2b39d41cdbfd2bb6430615ca6e5fdd75106810a4fbad3e042325a172",
-      "image_download_size": 1005611723,
-      "image_download_sha256": "17a12c67f7b7dfab14dae9a53d2b2152b386fa18810f8ac7b9a08955ed262ca5",
+      "release_date": "2026-06-23",
+      "extract_size": 4211081216,
+      "extract_sha256": "42fa8435f29baef5dd60c953932dbfbd0700e01ab731ebbc9bc554cf0b264df6",
+      "image_download_size": 1211362266,
+      "image_download_sha256": "b501f1d81e52db90f98ab65269dd65afc5aa1e58370568edd2456f357265e062",
       "init_format": "systemd",
-      "devices": ["pi3-64bit", "pi4-64bit", "pi5-64bit"]
+      "devices": [
+        "pi3-64bit",
+        "pi4-64bit",
+        "pi5-64bit"
+      ]
     },
     {
       "name": "DuetPi Lite (32-bit)",
       "description": "Headless Raspberry Pi OS (Bookworm) with software for Duet3D controllers",
-      "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2025-06-11/image_2025-06-11-DuetPi-lite.zip",
+      "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi-lite.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
-      "release_date": "2025-06-11",
-      "extract_size": 3523215360,
-      "extract_sha256": "f3cb2c4c7db132ab2ada4908dfbd919b23e074b6b2ea01fc57675ef58df6cb27",
-      "image_download_size": 1098117636,
-      "image_download_sha256": "937d2450344de9bf8e54b1c396b93fefc7355a1fc92eca8b9f31bd5697cc9011",
+      "release_date": "2026-06-23",
+      "extract_size": 3816816640,
+      "extract_sha256": "a50bf1942cd53b557b4366cb527f665d462d4225a5e05b0b9b29dc7c336c7c01",
+      "image_download_size": 1184988236,
+      "image_download_sha256": "4edf84989c1b1a0346c6c68b8829e633bbe641b84ac0b0a73474db9c363fea9e",
       "init_format": "systemd",
-      "devices": ["pi3-32bit", "pi4-32bit", "pi5-32bit"]
+      "devices": [
+        "pi3-32bit",
+        "pi4-32bit",
+        "pi5-32bit"
+      ]
     }
   ]
 }
