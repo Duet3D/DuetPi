@@ -2,7 +2,7 @@
   "os_list": [
     {
       "name": "DuetPi (64-bit)",
-      "description": "Raspberry Pi OS (Bookworm) with GUI and software for Duet3D controllers",
+      "description": "Raspberry Pi OS (Trixie) with GUI and software for Duet3D controllers",
       "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi-arm64.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
       "release_date": "2026-06-23",
@@ -19,7 +19,7 @@
     },
     {
       "name": "DuetPi (32-bit)",
-      "description": "Raspberry Pi OS (Bookworm) with GUI and software for Duet3D controllers",
+      "description": "Raspberry Pi OS (Trixie) with GUI and software for Duet3D controllers",
       "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
       "release_date": "2026-06-23",
@@ -36,7 +36,7 @@
     },
     {
       "name": "DuetPi Lite (64-bit)",
-      "description": "Headless Raspberry Pi OS (Bookworm) with software for Duet3D controllers",
+      "description": "Headless Raspberry Pi OS (Trixie) with software for Duet3D controllers",
       "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi-lite-arm64.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
       "release_date": "2026-06-23",
@@ -53,7 +53,7 @@
     },
     {
       "name": "DuetPi Lite (32-bit)",
-      "description": "Headless Raspberry Pi OS (Bookworm) with software for Duet3D controllers",
+      "description": "Headless Raspberry Pi OS (Trixie) with software for Duet3D controllers",
       "url": "https://github.com/Duet3D/DuetPi/releases/download/trixie-2026-06-23/image_2026-06-23-DuetPi-lite.zip",
       "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
       "release_date": "2026-06-23",
