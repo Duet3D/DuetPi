@@ -134,3 +134,21 @@ jobs:
           git add rpi-imager.json
           git commit -m "Update rpi-imager.json for ${TAG}"
           git push origin HEAD:rpi-imager
+
+      - name: Update download redirects on pkg.duet3d.com
+        if: github.event_name == 'workflow_dispatch' || github.event.release.prerelease == false
+        uses: appleboy/ssh-action@v1.2.5
+        env:
+          TAG: ${{ steps.meta.outputs.tag }}
+          DATE: ${{ steps.meta.outputs.date }}
+        with:
+          host: pkg.duet3d.com
+          username: pkg
+          key: ${{ secrets.PKG_DEPLOY_KEY }}
+          envs: TAG,DATE
+          script: |
+            set -eu
+            for variant in DuetPi DuetPi-arm64 DuetPi-lite DuetPi-lite-arm64; do
+              printf 'Redirect /%s.zip https://github.com/Duet3D/DuetPi/releases/download/%s/image_%s-%s.zip\n' "$variant" "$TAG" "$DATE" "$variant"
+            done > /var/www/pkg/.htaccess
+            cat /var/www/pkg/.htaccess
