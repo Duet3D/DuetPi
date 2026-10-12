@@ -1,14 +1,13 @@
 quilt
 parted
 realpath:coreutils
-qemu-arm:qemu-user-binfmt
+qemu-aarch64:qemu-user-binfmt
 debootstrap
 zerofree
 zip
 mkdosfs:dosfstools
 mke2fs:e2fsprogs
 capsh:libcap2-bin
-bsdtar:libarchive-tools
 grep
 rsync
 xz:xz-utils
