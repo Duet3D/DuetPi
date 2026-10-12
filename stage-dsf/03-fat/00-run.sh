@@ -21,8 +21,9 @@ install -m 644 files/replace-dsf-configs.service "${ROOTFS_DIR}/usr/lib/systemd/
 
 # Obtain and install the latest RepRapFirmware files for Duet 3
 RRF_ASSETS_URL=`curl "https://api.github.com/repos/Duet3D/RepRapFirmware/releases" | jq 'map(select( .prerelease == false )) | .[0].assets_url' -r`
-RRF_PKG_URL=`curl "$RRF_ASSETS_URL" | jq '.[] | select(.browser_download_url | test("Duet2and3Firmware.*\\\\.zip$")) | .browser_download_url' -r`
-curl -L "$RRF_PKG_URL" | bsdtar -xf - --include "Duet3*" --include "DuetWiFiServer.bin" -C "${ROOTFS_DIR}/boot/firmware/firmware"
+RRF_PKG_URL=`curl "$RRF_ASSETS_URL" | jq '.[] | select(.browser_download_url | test("Duet3Firmware-[0-9].*\\\\.zip$")) | .browser_download_url' -r`
+# The release zip is the combined SD bundle, so everything but the DWC web files is firmware
+curl -L "$RRF_PKG_URL" | bsdtar -xf - --include "Duet*" -C "${ROOTFS_DIR}/boot/firmware/firmware"
 
 # Obtain and install the latest DWC SD package
 DWC_ASSETS_URL=`curl "https://api.github.com/repos/Duet3D/DuetWebControl/releases" | jq 'map(select( .prerelease == false )) | .[0].assets_url' -r`
