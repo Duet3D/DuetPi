@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Link
+Name=Duet Web Control
+Icon=/usr/share/icons/dwc.png
+URL=/usr/share/applications/launch-dwc.desktop
