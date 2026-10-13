@@ -12,8 +12,13 @@ install -dm 755 -o 1000 -g 1000 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/.config"
 install -dm 755 -o 1000 -g 1000 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/.config/labwc"
 install -m 755 -o 1000 -g 1000 files/autostart "${ROOTFS_DIR}/home/$FIRST_USER_NAME/.config/labwc/autostart"
 install -m 644 -o 1000 -g 1000 files/wayfire.ini "${ROOTFS_DIR}/home/$FIRST_USER_NAME/.config/wayfire.ini"
-install -m 755 -o 1000 -g 1000 files/launch-dwc.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/launch-dwc.desktop"
-install -m 755 -o 1000 -g 1000 files/view-dcs-log.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/view-dcs-log.desktop"
+# libfm answers a desktop entry lying on the desktop with its "execute this text file?" dialog, so the
+# entries go where applications live and the desktop gets Type=Link stubs, the same shape the Pi OS
+# menu writes for its own shortcuts
+install -m 644 files/launch-dwc.desktop "${ROOTFS_DIR}/usr/share/applications/launch-dwc.desktop"
+install -m 644 files/view-dcs-log.desktop "${ROOTFS_DIR}/usr/share/applications/view-dcs-log.desktop"
+install -m 644 -o 1000 -g 1000 files/launch-dwc-link.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/launch-dwc.desktop"
+install -m 644 -o 1000 -g 1000 files/view-dcs-log-link.desktop "${ROOTFS_DIR}/home/$FIRST_USER_NAME/Desktop/view-dcs-log.desktop"
 
 # Make the DWC window borderless and maximized via a labwc window rule, anchored on the stock Kodi rule; the check
 # fails the build if that anchor ever moves
